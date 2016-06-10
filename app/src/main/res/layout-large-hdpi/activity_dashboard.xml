@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color" >
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <EditText
+        android:layout_width="200dp"
+        android:textSize="@dimen/text_size_large"
+        android:layout_height="wrap_content"
+        android:id="@+id/selected_date"
+        android:hint="Select a date"
+        android:focusable="false"/>
+    <Button
+        android:id="@+id/txtdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Submit"
+
+        android:layout_below="@+id/selected_date"
+        android:layout_alignParentStart="true" />
+
+
+
+
+</RelativeLayout>

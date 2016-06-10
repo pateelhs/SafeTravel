@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="9"
+    android:background="#B2B2B2">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#ff5757"
+            android:text="FEEDBACK"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+    </FrameLayout>
+
+     <FrameLayout
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="#ffffff" >
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+            
+              <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.15" >
+           <TextView 
+               android:layout_height="match_parent"
+               android:layout_width="match_parent"
+               android:text="DATE"
+               android:gravity="center"
+               />
+            </FrameLayout>
+             <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75" >
+            <Spinner
+        android:id="@+id/feeddatespinner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"       
+        />
+            </FrameLayout>
+            
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.20"
+                 >
+            <TextView 
+               android:layout_height="match_parent"
+               android:layout_width="match_parent"
+               android:text="TRIP"
+               android:gravity="center"
+               />
+            </FrameLayout>
+             <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.90" >
+            <Spinner
+        android:id="@+id/feedlogspinner"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"       
+        />
+            </FrameLayout>
+             
+            </LinearLayout>
+    </FrameLayout>
+    
+ <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="#ffffff" >
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+            
+              <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            
+            <TextView 
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                
+                android:text="RATING"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            </FrameLayout>
+              <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            <ImageView 
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/new1good"/>
+             </FrameLayout>
+              <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+             <ImageView 
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                 android:background="@drawable/new1neutral"
+                />
+              </FrameLayout>
+              <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+              <ImageView 
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                 android:background="@drawable/new1bad"
+                 android:layout_gravity="center"
+                />
+               </FrameLayout>
+              <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <ImageView 
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                 android:background="@drawable/new1stressful"
+                 android:layout_gravity="center"
+                />
+               </FrameLayout>
+            
+            </LinearLayout>
+      
+      </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:text="Vehicle Condition"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:textSize="13sp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton1"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:checked="false"
+
+                    android:text=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton2"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton3"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton4"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="#ffffff" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:text="Driver Behaviour"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:textSize="13sp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton5"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton6"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:text=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton7"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton8"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="#ffffff" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:text="Travel Time"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="13sp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton9"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton10"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton11"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton12"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="#ffffff" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:text="Overall Experience"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="12sp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton13"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton14"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton15"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <RadioButton
+                    android:id="@+id/Radiobutton16"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text=""/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="#ffffff" >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="5000"
+            app:counterTextAppearance="@style/counterText"
+            app:counterOverflowTextAppearance="@style/counterOverride">
+            <EditText
+                android:id="@+id/othercommentseditText1"
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColorHint="#B2B2B2"
+                android:hint="Other Comments"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="5000"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/feedbackdone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:background="#ff5757"
+            android:gravity="center"
+            android:text="DONE"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

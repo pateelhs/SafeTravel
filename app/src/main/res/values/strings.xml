@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RideIT</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="icon">Icon</string>
+
+    <string name="drawer_open">Menu Open</string>
+    <string name="drawer_close">Close Menu</string>
+    <string name="menu_About"> About </string>
+    <string name="about_text"> About page </string>
+    <string name="from_city">From City</string>
+    <string name="from_site">From Site</string>
+    <string name="select_time">Select Time</string>
+
+    <string name="service_type">Service Type</string>
+
+
+    <!--GCM-->
+    <string name="gcm_defaultSenderId">85186746391</string>
+    <string name="server_registered">Server Registered</string>
+    <string name="server_registering">server registering</string>
+    <string name="server_register_error">could not register server</string>
+    <string name="server_unregistered">Server un registered</string>
+    <string name="server_unregister_error">server unregister error</string>
+    <string name="gcm_unregistered">gcm unregistered</string>
+    <string name="gcm_registered">gcm registered</string>
+    <string name="gcm_deleted">gcm deleted</string>
+    <string name="gcm_error">gcm</string>
+    <string name="gcm_recoverable_error">gcm_recoverable_error</string>
+    <string name="upstream_message_id_hint">Message ID</string>
+                      
+    
+      <string name="help_string">\n <b>Instructions </b>\n\n       
+      
+		1. Check internet connectivity\n\n
+
+        2. Ensure GPS is on\n\n
+
+        3. Enter “1111” in the Unique No. Field\n\n
+
+        4. Enter the phone number registered with your Transport Desk, i.e., the number in which you 
+           receive your transport related notifications/SMSs\n\n
+
+        5. Click “Submit”\n\n
+
+        6. Note the OTP that you receive\n\n
+
+        7. Key in the OTP and click “Submit”\n\n
+
+        8. Welcome screen with Trip Time and Trip Date\n\n
+
+        9. Cab (car icon) and your location (blue dot) on map.Click on the cab icon to see who are the 
+           people travelling in the cab and also who have already boarded\n\n
+
+        10. Swipe right or click navigation icon for “Trip Details”, “About”, “Help”, "Emergency Contact", "Manage Booking", "Feedback", "My Cab"\n\n
+
+        11. To access driver or escort’s phone number, swipe right from home screen, and click on “Trip 
+            Details”.  Driver and Escort’s numbers appear as links that can be clicked to dial.
+		 \n\n\n
+				
+				</string>
+
+    <string-array name="menu_list">
+
+
+        <item>TripDetails</item>
+        <item>About</item>
+        <item>Help</item>
+        <item>Emergency Contact</item>
+        <item>Trip History</item>
+        <item>Manage Booking</item>
+        <item>FeedBack</item>
+        <item>MY CAB</item>
+
+
+    </string-array>
+
+
+</resources>

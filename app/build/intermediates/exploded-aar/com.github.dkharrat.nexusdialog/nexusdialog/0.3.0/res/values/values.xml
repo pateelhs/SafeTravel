@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/dia/projects/NexusDialog/nexusdialog/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="required_field_error_msg">%s is a required field</string>
+    <string name="validation_error_title">Invalid Input</string>
+</resources>

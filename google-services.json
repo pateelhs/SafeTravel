@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "85186746391",
+    "project_id": "keonicssafetravel"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85186746391:android:cc623886917450cb",
+        "android_client_info": {
+          "package_name": "com.agiledge.keocometemployee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjl5YaJ4GcI3l_9BGcoMcMlUtgTV8B0Qc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-77361276-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

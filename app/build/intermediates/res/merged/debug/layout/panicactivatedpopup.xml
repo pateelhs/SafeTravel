@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:background="#BF000000" >
+
+        <ImageView
+            android:id="@+id/panicpopupactivated"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/panic_pop_up_activate" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1" 
+       >
+
+
+            <Button
+                android:id="@+id/hidepanic"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+          android:layout_centerHorizontal="true"
+                android:background="#ff4343"
+                android:text="Hide"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+       
+    </RelativeLayout>
+
+</RelativeLayout>
