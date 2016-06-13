@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="armeabi-v7a,armeabi"
-    api-level="22"
-    density="hdpi"
+    api-level="23"
+    density="xxhdpi"
     format="7"
-    timestamp="61287502760678"
+    timestamp="275018129548936"
     token="-204022842126997392" >
 
     <task
         name="javac"
-        duration="8745" />
+        duration="8197" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="10148" />
+        duration="121" />
     <task
         name="verifier"
-        duration="2636" />
+        duration="42" />
 
     <artifact
         location="C:\Users\Pateel\Documents\SafeTravel\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="61287502760678" >
+    <build timestamp="275018129548936" >
         <artifact
             location="C:\Users\Pateel\Documents\SafeTravel\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />

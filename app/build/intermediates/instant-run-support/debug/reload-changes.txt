@@ -1,0 +1,2 @@
+CHANGED,C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\agiledge\keocometemployee\BuildConfig$override.class
+CHANGED,C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

@@ -45,6 +45,7 @@ public class DateModify extends AppCompatActivity {
 
     List<String> scheduleddates=new ArrayList<String>();
     List<String> calscheduleddates=new ArrayList<String>();
+    DatePicker picker ;
     public int year, month;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,126 +55,16 @@ public class DateModify extends AppCompatActivity {
         setContentView(R.layout.datemodify);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-//
-//        DatePicker picker = (DatePicker) findViewById(R.id.main_dp);
-//        picker.setDate(2015, 7);
-//        picker.setOnDateSelectedListener(new DatePicker.OnDateSelectedListener() {
-//            @Override
-//            public void onDateSelected(List<String> date) {
-//                String result = "";
-//                Iterator iterator = date.iterator();
-//                while (iterator.hasNext()) {
-//                    result += iterator.next();
-//                    if (iterator.hasNext()) {
-//                        result += "\n";
-//                    }
-//                }
-//                Toast.makeText(DateModify.this, result, Toast.LENGTH_LONG).show();
-//            }
-//        });
-
-
-//        List<String> tmp = new ArrayList<>();
-//        tmp.add("2015-7-1");
-//        tmp.add("2015-7-8");
-//        tmp.add("2015-7-16");
-//        DPCManager.getInstance().setDecorBG(tmp);
-//
-//        DatePicker picker = (DatePicker) findViewById(R.id.main_dp);
-//        picker.setDate(2015, 7);
-//        picker.setDPDecor(new DPDecor() {
-//            @Override
-//            public void drawDecorBG(Canvas canvas, Rect rect, Paint paint) {
-//                paint.setColor(Color.RED);
-//                canvas.drawCircle(rect.centerX(), rect.centerY(), rect.width() / 2F, paint);
-//            }
-//        });
-//        picker.setOnDateSelectedListener(new DatePicker.OnDateSelectedListener() {
-//            @Override
-//            public void onDateSelected(List<String> date) {
-//                String result = "";
-//                Iterator iterator = date.iterator();
-//                while (iterator.hasNext()) {
-//                    result += iterator.next();
-//                    if (iterator.hasNext()) {
-//                        result += "\n";
-//                    }
-//                }
-//                Toast.makeText(DateModify.this, result, Toast.LENGTH_LONG).show();
-//            }
-//        });
-
-        // Example of custom date's foreground decor
-//        List<String> tmpTL = new ArrayList<>();
-//        tmpTL.add("2015-10-5");
-//        tmpTL.add("2016-6-9");
-//        tmpTL.add("2015-10-6");
-//        tmpTL.add("2015-10-7");
-//        tmpTL.add("2015-10-8");
-//        tmpTL.add("2015-10-9");
-//        tmpTL.add("2015-10-10");
-//        tmpTL.add("2015-10-11");
-//        DPCManager.getInstance().setDecorTL(tmpTL);
-//
-//        List<String> tmpTR = new ArrayList<>();
-//        tmpTR.add("2015-10-10");
-//        tmpTR.add("2015-10-11");
-//        tmpTR.add("2015-10-12");
-//        tmpTR.add("2015-10-13");
-//        tmpTR.add("2015-10-14");
-//        tmpTR.add("2015-10-15");
-//        tmpTR.add("2015-10-16");
-
-        getschedules();
-
-        DatePicker picker = (DatePicker) findViewById(R.id.main_dp);
+       picker=(DatePicker) findViewById(R.id.main_dp);
         Calendar now = Calendar.getInstance();
-         year = now.get(Calendar.YEAR);
-         month = now.get(Calendar.MONTH) + 1;
-        picker.setDate(year, month);
-
-        picker.setFestivalDisplay(false);
-        picker.setTodayDisplay(true);
-        picker.setHolidayDisplay(true);
-        picker.setDeferredDisplay(false);
+        year = now.get(Calendar.YEAR);
+        month = now.get(Calendar.MONTH)+1;
+        picker.setDate(year, month-2);
+       // picker.setFestivalDisplay(false);
+        //picker.setTodayDisplay(false);
+        //picker.setHolidayDisplay(true);
+        //picker.setDeferredDisplay(false);
         picker.setMode(DPMode.SINGLE);
-
-//        picker.setDPDecor(new DPDecor() {
-//            @Override
-//            public void drawDecorTL(Canvas canvas, Rect rect, Paint paint, String data) {
-//                super.drawDecorTL(canvas, rect, paint, data);
-//                switch (data) {
-//                    case "2016-6-5":
-//                    case "2016-6-7":
-//                    case "2016-6-9":
-//                    case "2016-6-11":
-//                        paint.setColor(Color.GREEN);
-//                        canvas.drawRect(rect, paint);
-//                        break;
-//                    default:
-//                        paint.setColor(Color.RED);
-//                        canvas.drawCircle(rect.centerX(), rect.centerY(), rect.width() / 2, paint);
-//                        break;
-//                }
-//            }
-//
-//            @Override
-//            public void drawDecorTR(Canvas canvas, Rect rect, Paint paint, String data) {
-//                super.drawDecorTR(canvas, rect, paint, data);
-//                switch (data) {
-//                    case "2015-10-10":
-//                    case "2015-10-11":
-//                    case "2015-10-12":
-//                        paint.setColor(Color.BLUE);
-//                        canvas.drawCircle(rect.centerX(), rect.centerY(), rect.width() / 2, paint);
-//                        break;
-//                    default:
-//                        paint.setColor(Color.YELLOW);
-//                        canvas.drawRect(rect, paint);
-//                        break;
-//                }
-//            }
-//        });
         picker.setOnDatePickedListener(new DatePicker.OnDatePickedListener() {
             @Override
             public void onDatePicked(String date) {
@@ -185,12 +76,12 @@ public class DateModify extends AppCompatActivity {
                         mnth="0"+month;
                     }
                     else
-                    mnth=""+month;
+                        mnth=""+month;
                     if(day<10){
                         dte="0"+day;
                     }
                     else
-                    dte=""+day;
+                        dte=""+day;
                     date=dte+"/"+mnth+"/"+date.split("-")[0];
                     boolean flag=false;
 
@@ -204,30 +95,10 @@ public class DateModify extends AppCompatActivity {
             }
         });
 
-        // DatePicker Example in dialog
-        //Commented by Pateel to hide date picker button functionality
-//        Button btnPick = (Button) findViewById(R.id.main_btn);
-//        btnPick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                final AlertDialog dialog = new AlertDialog.Builder(DateModify.this).create();
-//                dialog.show();
-//                DatePicker picker = new DatePicker(DateModify.this);
-//                picker.setDate(year, month);
-//                picker.setMode(DPMode.SINGLE);
-//                picker.setOnDatePickedListener(new DatePicker.OnDatePickedListener() {
-//                    @Override
-//                    public void onDatePicked(String date) {
-//                        Toast.makeText(DateModify.this, date, Toast.LENGTH_LONG).show();
-//                        dialog.dismiss();
-//                    }
-//                });
-//                ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(
-//                        ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-//                dialog.getWindow().setContentView(picker, params);
-//                dialog.getWindow().setGravity(Gravity.CENTER);
-//            }
-//        });
+        getschedules();
+
+
+
     }
     public void getschedules() {
 
@@ -264,19 +135,9 @@ public class DateModify extends AppCompatActivity {
                                 String date=dte+"/"+mnth+"/"+dates.get(i).toString().split("-")[0];
 
                                 scheduleddates.add(date);
-
                             }
-                            DatePicker picker = (DatePicker) findViewById(R.id.main_dp);
-                            picker.setDate(year, month);
-                            DPCManager.getInstance().setDecorTR(calscheduleddates);
-                           // Toast.makeText(getApplicationContext(), calscheduleddates.size(), Toast.LENGTH_LONG).show();
-                            picker.setDPDecor(new DPDecor() {
-                                @Override
-                                public void drawDecorTR(Canvas canvas, Rect rect, Paint paint) {
-                                    paint.setColor(Color.RED);
-                                    canvas.drawRect(rect, paint);
-                                }
-                            });
+
+                            showschedules();
 
                         } else {
                             Toast.makeText(getApplicationContext(), "Something went wrong!", Toast.LENGTH_LONG).show();
@@ -285,6 +146,7 @@ public class DateModify extends AppCompatActivity {
 
 
                     } catch (Exception e) {
+
 
                         e.printStackTrace();
                     }
@@ -327,17 +189,21 @@ public class DateModify extends AppCompatActivity {
 
 
     }
+public void showschedules(){
 
-    public void fillschedules(){
-        DatePicker picker = (DatePicker) findViewById(R.id.main_dp);
-        DPCManager.getInstance().setDecorTR(calscheduleddates);
-
-        picker.setDPDecor(new DPDecor() {
-            @Override
-            public void drawDecorTR(Canvas canvas, Rect rect, Paint paint) {
-                paint.setColor(Color.RED);
-                canvas.drawRect(rect, paint);
-            }
-        });
+List<String> calsch=new ArrayList<String>();
+    for(int i=0;i<calscheduleddates.size();i++) {
+        calsch.add(calscheduleddates.get(i));
     }
+    DPCManager.getInstance().setDecorBG(calsch);
+    picker.setDPDecor(new DPDecor() {
+        @Override
+        public void drawDecorBG(Canvas canvas, Rect rect, Paint paint) {
+            paint.setColor(Color.RED);
+            canvas.drawCircle(rect.centerX(), rect.centerY(), rect.width() / 2F, paint);
+        }
+    });
+    picker.setDate(year,month);
+}
+
 }

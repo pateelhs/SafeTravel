@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\escortstatus.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\escortstatus.xml"
-    },
-    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\tripstatuspopup.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\tripstatuspopup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\escortstatus.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\escortstatus.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\tripdetails.xml",
