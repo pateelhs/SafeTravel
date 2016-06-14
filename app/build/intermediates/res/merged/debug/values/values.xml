@@ -552,6 +552,7 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_bar_height">256dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_sheet_modal_elevation">16dp</dimen>
     <dimen name="design_bottom_sheet_modal_peek_height">256dp</dimen>
@@ -584,6 +585,7 @@
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
     <dimen name="error_label_spacing">12dp</dimen>
+    <dimen name="expanded_toolbar_title_margin_start">64dp</dimen>
     <dimen name="floating_label_bottom_spacing">8dp</dimen>
     <dimen name="floating_label_inside_spacing">12dp</dimen>
     <dimen name="floating_label_top_spacing">4dp</dimen>

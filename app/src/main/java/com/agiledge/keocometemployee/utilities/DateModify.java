@@ -1,5 +1,6 @@
 package com.agiledge.keocometemployee.utilities;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Canvas;
@@ -9,9 +10,16 @@ import android.graphics.Rect;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.agiledge.keocometemployee.R;
@@ -47,6 +55,7 @@ public class DateModify extends AppCompatActivity {
     List<String> calscheduleddates=new ArrayList<String>();
     DatePicker picker ;
     public int year, month;
+    private TransparentProgressDialog pd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +64,8 @@ public class DateModify extends AppCompatActivity {
         setContentView(R.layout.datemodify);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+        pd = new TransparentProgressDialog(this, R.drawable.loading);
+        pd.show();
        picker=(DatePicker) findViewById(R.id.main_dp);
         Calendar now = Calendar.getInstance();
         year = now.get(Calendar.YEAR);
@@ -140,12 +151,14 @@ public class DateModify extends AppCompatActivity {
                             showschedules();
 
                         } else {
+                            pd.dismiss();
                             Toast.makeText(getApplicationContext(), "Something went wrong!", Toast.LENGTH_LONG).show();
 
                         }
 
 
                     } catch (Exception e) {
+                        pd.dismiss();
 
 
                         e.printStackTrace();
@@ -157,7 +170,8 @@ public class DateModify extends AppCompatActivity {
             {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
+                    pd.dismiss();
+                    Toast.makeText(getApplicationContext(), "Error while communicating" , Toast.LENGTH_LONG).show();
 
 
                 }
@@ -204,6 +218,9 @@ List<String> calsch=new ArrayList<String>();
         }
     });
     picker.setDate(year,month);
+    pd.dismiss();
 }
+
+
 
 }

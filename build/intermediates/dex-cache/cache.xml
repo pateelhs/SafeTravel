@@ -1,12 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<items version="2" />
 
-    <item
-        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="82f9ce959685cb05d92f67e76748ce706f078579">
-        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d8d6f3f4d3e89946fb3a9775f43243019b9952c3\classes.dex" />
-    </item>
-
-</items>

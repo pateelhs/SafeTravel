@@ -6,12 +6,14 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.drawable.ColorDrawable;
 import android.location.LocationManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -200,91 +202,110 @@ public class MainActivity extends Activity {
 	        //String macAddress= GetMacAddress.MAC_ADDRESS;
 	        if(isEnabled)
 	        {
-
-		jobj.put("ACTION", "IMEI_CHECK");
-		jobj.put("IMEI_NUMBER",macAddress);
-				JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
-					@Override
-					public void onResponse(JSONObject response) {
-						try {
-							if (response.getString("result").equalsIgnoreCase("TRUE")) {
-								if (mdialog != null && mdialog.isShowing()) {
-									mdialog.dismiss();
-								}
-								Intent in = new Intent(getApplicationContext(), MapClass.class);
-								in.putExtra("user_type", response.getString("user_type"));
-								in.putExtra("TRIP_ID", response.getString("TRIP_ID"));
-								in.putExtra("TRIP_CODE", response.getString("TRIP_CODE"));
-								in.putExtra("TRIP_DATE", response.getString("TRIP_DATE"));
-								in.putExtra("TRIP_LOG", response.getString("TRIP_LOG"));
-								in.putExtra("REG_NO", response.getString("REG_NO"));
-								in.putExtra("TRIP_TIME", response.getString("TRIP_TIME"));
-								in.putExtra("DRIVER_NAME", response.getString("DRIVER_NAME"));
-								in.putExtra("DRIVER_CONTACT", response.getString("DRIVER_CONTACT"));
-								in.putExtra("EMPS_COUNT", response.getString("EMPS_COUNT"));
-								in.putExtra("SECURITY", response.getString("SECURITY"));
-								in.putExtra("EMP_ID", response.getString("EMP_ID"));
-
-								in.putExtra("EMP_NAME", response.getString("EMP_NAME"));
-								in.putExtra("EMP_PERSONNELNO", response.getString("EMP_PERSONNELNO"));
-								in.putExtra("EMP_GENDER", response.getString("EMP_GENDER"));
-								in.putExtra("EMP_EMAIL", response.getString("EMP_EMAIL"));
-								in.putExtra("EMP_SITE", response.getString("EMP_SITE"));
-								in.putExtra("MSGVIEW", "NO");
-								if(response.getString("SECURITY").equalsIgnoreCase("YES"))
-								{
-									in.putExtra("ESCORT_NAME", response.getString("ESCORT_NAME"));
-									in.putExtra("ESCORT_CONTACT", response.getString("ESCORT_CONTACT"));
-								}
-
-								if(response.getString("EMPS_COUNT")!=null&&!response.getString("EMPS_COUNT").equalsIgnoreCase("")) {
-									for (int i = 1; i <= Integer.parseInt(response.getString("EMPS_COUNT")); i++) {
-										in.putExtra("PERSONNEL_NO" + i, response.getString("PERSONNEL_NO" + i));
-										in.putExtra("EMP_NAME" + i, response.getString("EMP_NAME" + i));
-										in.putExtra("GENDER" + i, response.getString("GENDER" + i));
-										in.putExtra("EMP_ID" + i, response.getString("EMP_ID" + i));
-										in.putExtra("EMP_CONTACT" + i, response.getString("EMP_CONTACT" + i));
-
+				final SharedPreferences sharedpref=MainActivity.this.getPreferences(Context.MODE_PRIVATE);
+				String username=sharedpref.getString("APP_USERNAME","NOT_FOUND");
+				String email=sharedpref.getString("APP_EMAIL","NOT_FOUND");
+				String gender=sharedpref.getString("APP_EMP_GENDER","NOT_FOUND");
+				Log.d("check username",username);
+				if(username.equalsIgnoreCase("NOT_FOUND")||email.equalsIgnoreCase("NOT_FOUND")||gender.equalsIgnoreCase("NOT_FOUND")) {
+					jobj.put("ACTION", "IMEI_CHECK");
+					jobj.put("IMEI_NUMBER", macAddress);
+					JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
+						@Override
+						public void onResponse(JSONObject response) {
+							try {
+								if (response.getString("result").equalsIgnoreCase("TRUE")) {
+									if (mdialog != null && mdialog.isShowing()) {
+										mdialog.dismiss();
 									}
-								}
-								startActivity(in);
-								finish();
+									SharedPreferences.Editor editor = sharedpref.edit();
+									editor.putString("APP_USERNAME", response.getString("EMP_NAME"));
+									editor.putString("APP_EMAIL", response.getString("EMP_EMAIL"));
+									editor.putString("APP_EMP_GENDER", response.getString("EMP_GENDER"));
 
-							} else {
+									Intent in = new Intent(getApplicationContext(), Home_Activity.class);
+									in.putExtra("user_type", response.getString("user_type"));
+									in.putExtra("TRIP_ID", response.getString("TRIP_ID"));
+									in.putExtra("TRIP_CODE", response.getString("TRIP_CODE"));
+									in.putExtra("TRIP_DATE", response.getString("TRIP_DATE"));
+									in.putExtra("TRIP_LOG", response.getString("TRIP_LOG"));
+									in.putExtra("REG_NO", response.getString("REG_NO"));
+									in.putExtra("TRIP_TIME", response.getString("TRIP_TIME"));
+									in.putExtra("DRIVER_NAME", response.getString("DRIVER_NAME"));
+									in.putExtra("DRIVER_CONTACT", response.getString("DRIVER_CONTACT"));
+									in.putExtra("EMPS_COUNT", response.getString("EMPS_COUNT"));
+									in.putExtra("SECURITY", response.getString("SECURITY"));
+									in.putExtra("EMP_ID", response.getString("EMP_ID"));
+
+									in.putExtra("EMP_NAME", response.getString("EMP_NAME"));
+									in.putExtra("EMP_PERSONNELNO", response.getString("EMP_PERSONNELNO"));
+									in.putExtra("EMP_GENDER", response.getString("EMP_GENDER"));
+									in.putExtra("EMP_EMAIL", response.getString("EMP_EMAIL"));
+									in.putExtra("EMP_SITE", response.getString("EMP_SITE"));
+									in.putExtra("MSGVIEW", "NO");
+									if (response.getString("SECURITY").equalsIgnoreCase("YES")) {
+										in.putExtra("ESCORT_NAME", response.getString("ESCORT_NAME"));
+										in.putExtra("ESCORT_CONTACT", response.getString("ESCORT_CONTACT"));
+									}
+
+									if (response.getString("EMPS_COUNT") != null && !response.getString("EMPS_COUNT").equalsIgnoreCase("")) {
+										for (int i = 1; i <= Integer.parseInt(response.getString("EMPS_COUNT")); i++) {
+											in.putExtra("PERSONNEL_NO" + i, response.getString("PERSONNEL_NO" + i));
+											in.putExtra("EMP_NAME" + i, response.getString("EMP_NAME" + i));
+											in.putExtra("GENDER" + i, response.getString("GENDER" + i));
+											in.putExtra("EMP_ID" + i, response.getString("EMP_ID" + i));
+											in.putExtra("EMP_CONTACT" + i, response.getString("EMP_CONTACT" + i));
+
+										}
+									}
+									startActivity(in);
+									finish();
+
+								} else {
+									if (mdialog != null && mdialog.isShowing()) {
+										mdialog.dismiss();
+									}
+									Toast.makeText(getApplicationContext(), "Something went wrong!", Toast.LENGTH_LONG).show();
+									Intent in = new Intent(getApplicationContext(),
+											Onetimeregister.class);
+									startActivity(in);
+									finish();
+
+
+								}
+							} catch (Exception e) {
 								if (mdialog != null && mdialog.isShowing()) {
 									mdialog.dismiss();
 								}
-								Toast.makeText(getApplicationContext(), "Something went wrong!", Toast.LENGTH_LONG).show();
-								Intent in = new Intent(getApplicationContext(),
-										Onetimeregister.class);
-								startActivity(in);
-								finish();
-
-
+								e.printStackTrace();
 							}
-						} catch (Exception e) {
+						}
+					}
+							, new Response.ErrorListener()
+
+					{
+						@Override
+						public void onErrorResponse(VolleyError error) {
+							Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
 							if (mdialog != null && mdialog.isShowing()) {
 								mdialog.dismiss();
 							}
-							e.printStackTrace();
+
 						}
-					}
+					});
+
+					// Adding request to request queue
+					AppController.getInstance().addToRequestQueue(req);
 				}
-						,new Response.ErrorListener()
-
-				{
-					@Override
-					public void onErrorResponse (VolleyError error){
-						Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
-						if (mdialog != null && mdialog.isShowing()) {
-							mdialog.dismiss();
-						}
-
+				else{
+					if (mdialog != null && mdialog.isShowing()) {
+						mdialog.dismiss();
 					}
-				});
+					Intent in = new Intent(getApplicationContext(), Home_Activity.class);
+					startActivity(in);
+					finish();
 
-				// Adding request to request queue
-				AppController.getInstance().addToRequestQueue(req);
+				}
 //		ServerCommunication sobj=new ServerCommunication(jobj);
 //		sobj.setDataDownloadListen(new DataDownloadListener()
 //		{

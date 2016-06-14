@@ -46,7 +46,7 @@ public class FeedBackActivity extends Activity {
 		setContentView(R.layout.feedback);
 		List<String> dates = new ArrayList<String>();
 		List<String> logs = new ArrayList<String>();
-		logs.add("IN");
+		//logs.add("IN");
 		logs.add("OUT");
 
 		Calendar cal = Calendar.getInstance();
