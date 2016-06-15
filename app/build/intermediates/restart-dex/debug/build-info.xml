@@ -4,47 +4,30 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="5484673817568"
+    timestamp="28895819847152"
     token="-204022842126997392" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="9328" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="9174" />
     <task
         name="verifier"
-        duration="0" />
+        duration="9904" />
 
-    <build timestamp="4897073720165" >
+    <artifact
+        location="C:\Users\Pateel\Documents\SafeTravel\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="28895819847152" >
         <artifact
             location="C:\Users\Pateel\Documents\SafeTravel\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="5484673817568" />
-    <build timestamp="329974665003605" >
-        <artifact
-            location="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>

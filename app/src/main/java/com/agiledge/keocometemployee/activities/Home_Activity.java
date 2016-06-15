@@ -59,10 +59,6 @@ public class Home_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
-        final SharedPreferences sharedpref=Home_Activity.this.getPreferences(Context.MODE_PRIVATE);
-        String username=sharedpref.getString("APP_USERNAME","NOT_FOUND");
-        Log.d("check username",username);
-        Toast.makeText(getApplicationContext(),""+username,Toast.LENGTH_LONG).show();
      //   toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
         GridView gridView = (GridView) findViewById(R.id.grid);
@@ -103,50 +99,7 @@ public class Home_Activity extends AppCompatActivity {
                 }
             }
         });
-//        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            public void onItemClick(AdapterView<?> parent, View view,
-//                                    int position, long id) {
-//                if (position == 0) {
-//                    Intent myIntent = new Intent(view.getContext(), MapClass.class);
-//                    startActivityForResult(myIntent, 0);
-//                }
-//
-//                if (position == 1) {
-//                    Intent myIntent = new Intent(view.getContext(), ManageBookingActivity.class);
-//                    startActivityForResult(myIntent, 0);
-//                }
-//
-//                if (position == 2) {
-//                    Intent myIntent = new Intent(view.getContext(), TripDetailsActivity.class);
-//                    startActivityForResult(myIntent, 0);
-//                }
-//
-//                if (position == 3) {
-//                    Intent myIntent = new Intent(view.getContext(), EmergencyContactActivity.class);
-//                    startActivityForResult(myIntent, 0);
-//                }
-//
-//                if (position == 4) {
-//                    Intent myIntent = new Intent(view.getContext(), FeedBackActivity.class);
-//                    startActivityForResult(myIntent, 0);
-//                }
-//
-//                if (position == 5) {
-//                    Intent myIntent = new Intent(view.getContext(), AboutActivity.class);
-//                    startActivityForResult(myIntent, 0);
-//                }
-//
-//                if (position == 6) {
-//                    Intent myIntent = new Intent(view.getContext(), ListItemActivity1.class);
-//                    startActivityForResult(myIntent, 0);
-//                }
-//
-//                if (position == 7) {
-//                    Intent myIntent = new Intent(view.getContext(), ListItemActivity2.class);
-//                    startActivityForResult(myIntent, 0);
-//                }
-//            }
-//        });
+
 
     }
 

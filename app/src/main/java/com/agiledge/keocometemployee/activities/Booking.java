@@ -32,6 +32,7 @@ import android.widget.Toast;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
+import com.agiledge.keocometemployee.utilities.TransparentProgressDialog;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -56,6 +57,8 @@ public class Booking extends AppCompatActivity {
   static public boolean setdate=false;
     private String selectedbranchid;
     private String selectedsiteid;
+
+
 
     public static class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
         public void open() {
@@ -205,6 +208,7 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(parent.getChildAt(0)!=null) {
                     ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
+                    selectedsiteid=siteidarr[position];
 
                 }
 
@@ -355,6 +359,7 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             EditText fromdate=(EditText) findViewById(R.id.selected_fromdate);
             EditText todate=(EditText) findViewById(R.id.selected_todate);
             Spinner time=(Spinner) findViewById(R.id.pro_typ);
+
             boolean valid=true;
         String macAddress = wifiInf.getMacAddress();
             if(fromdate.getText().toString().equalsIgnoreCase("")){
@@ -366,6 +371,18 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 todate.setError("Please select date!");
                 valid=false;
             }
+            if(valid) {
+                SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+                Date fd = sdf.parse(fromdate.getText().toString());
+                Date td=sdf.parse(todate.getText().toString());
+                if(fd.after(td)){
+                    fromdate.setError("To date should be after from date!");
+                    valid=false;
+                }
+
+            }
+
+
 
             Spinner sitespinner = (Spinner) findViewById(R.id.frequency1);
               if(sitespinner.getSelectedItem()==null){
@@ -381,7 +398,8 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 td=sdf.parse(todate.getText().toString());
                 if(fd.after(td)){
                     valid=false;
-                    fromdate.setError("Please select after to date!");
+                    todate.setError("Please select after from date!");
+                    Toast.makeText(getApplicationContext(),"To date should be after from date!",Toast.LENGTH_LONG).show();
                 }
                 JSONObject jobj = new JSONObject();
                 jobj.put("ACTION", "BOOKING");
@@ -390,6 +408,7 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 jobj.put("TO_DATE", todate.getText().toString());
                 jobj.put("LOG_IN", "WEEKLY OFF");
                 jobj.put("LOG_OUT", time.getSelectedItem().toString());
+                jobj.put("SITE_ID",selectedsiteid);
 
                 JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
                     @Override
@@ -436,37 +455,6 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
     }
 
-    private class TransparentProgressDialog extends Dialog {
-
-        private ImageView iv;
-
-        public TransparentProgressDialog(Context context, int resourceIdOfImage) {
-            super(context, R.style.TransparentProgressDialog);
-            WindowManager.LayoutParams wlmp = getWindow().getAttributes();
-            wlmp.gravity = Gravity.CENTER_HORIZONTAL;
-            getWindow().setAttributes(wlmp);
-            setTitle(null);
-            setCancelable(false);
-            setOnCancelListener(null);
-            LinearLayout layout = new LinearLayout(context);
-            layout.setOrientation(LinearLayout.VERTICAL);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            iv = new ImageView(context);
-            iv.setImageResource(resourceIdOfImage);
-            layout.addView(iv, params);
-            addContentView(layout, params);
-        }
-
-        @Override
-        public void show() {
-            super.show();
-            RotateAnimation anim = new RotateAnimation(0.0f, 360.0f, Animation.RELATIVE_TO_SELF, .5f, Animation.RELATIVE_TO_SELF, .5f);
-            anim.setInterpolator(new LinearInterpolator());
-            anim.setRepeatCount(Animation.INFINITE);
-            anim.setDuration(1000);
-            iv.setAnimation(anim);
-            iv.startAnimation(anim);
-        }
 
         @Override
         public void onBackPressed()
@@ -480,7 +468,6 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
 
 
-    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

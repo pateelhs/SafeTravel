@@ -202,11 +202,10 @@ public class MainActivity extends Activity {
 	        //String macAddress= GetMacAddress.MAC_ADDRESS;
 	        if(isEnabled)
 	        {
-				final SharedPreferences sharedpref=MainActivity.this.getPreferences(Context.MODE_PRIVATE);
+				SharedPreferences sharedpref=getPreferences(Context.MODE_PRIVATE);
 				String username=sharedpref.getString("APP_USERNAME","NOT_FOUND");
 				String email=sharedpref.getString("APP_EMAIL","NOT_FOUND");
 				String gender=sharedpref.getString("APP_EMP_GENDER","NOT_FOUND");
-				Log.d("check username",username);
 				if(username.equalsIgnoreCase("NOT_FOUND")||email.equalsIgnoreCase("NOT_FOUND")||gender.equalsIgnoreCase("NOT_FOUND")) {
 					jobj.put("ACTION", "IMEI_CHECK");
 					jobj.put("IMEI_NUMBER", macAddress);
@@ -218,11 +217,13 @@ public class MainActivity extends Activity {
 									if (mdialog != null && mdialog.isShowing()) {
 										mdialog.dismiss();
 									}
+									SharedPreferences sharedpref=getPreferences(Context.MODE_PRIVATE);
 									SharedPreferences.Editor editor = sharedpref.edit();
 									editor.putString("APP_USERNAME", response.getString("EMP_NAME"));
 									editor.putString("APP_EMAIL", response.getString("EMP_EMAIL"));
 									editor.putString("APP_EMP_GENDER", response.getString("EMP_GENDER"));
-
+									editor.putString("APP_EMPID",response.getString("EMP_ID"));
+									editor.commit();
 									Intent in = new Intent(getApplicationContext(), Home_Activity.class);
 									in.putExtra("user_type", response.getString("user_type"));
 									in.putExtra("TRIP_ID", response.getString("TRIP_ID"));
@@ -306,156 +307,6 @@ public class MainActivity extends Activity {
 					finish();
 
 				}
-//		ServerCommunication sobj=new ServerCommunication(jobj);
-//		sobj.setDataDownloadListen(new DataDownloadListener()
-//		{
-//			public void dataSuccess(String result)
-//			{
-//				try {
-//					if(result!=null&&!result.equalsIgnoreCase(""))
-//					{
-//					JSONObject robj;
-//					robj = new JSONObject(result);
-//
-//				if(robj!=null && robj.getString("result").equalsIgnoreCase("true"))
-//
-//
-//				{
-//					if(mdialog != null && mdialog.isShowing()){
-//    	        		mdialog.dismiss();
-//    	        	}
-//			//		Toast.makeText(getApplicationContext(),"valli"+ result, Toast.LENGTH_LONG).show();
-//
-//					Intent in = new Intent(getApplicationContext(), MapClass.class);
-//							in.putExtra("user_type", robj.getString("user_type"));
-//				            in.putExtra("TRIP_ID", robj.getString("TRIP_ID"));
-//						    in.putExtra("TRIP_CODE", robj.getString("TRIP_CODE"));
-//							in.putExtra("TRIP_DATE", robj.getString("TRIP_DATE"));
-//							in.putExtra("TRIP_LOG", robj.getString("TRIP_LOG"));
-//							in.putExtra("REG_NO", robj.getString("REG_NO"));
-//							in.putExtra("TRIP_TIME", robj.getString("TRIP_TIME"));
-//							in.putExtra("DRIVER_NAME", robj.getString("DRIVER_NAME"));
-//							in.putExtra("DRIVER_CONTACT", robj.getString("DRIVER_CONTACT"));
-//							in.putExtra("EMPS_COUNT", robj.getString("EMPS_COUNT"));
-//							in.putExtra("SECURITY", robj.getString("SECURITY"));
-//							in.putExtra("EMP_ID", robj.getString("EMP_ID"));
-//
-//							 in.putExtra("EMP_NAME", robj.getString("EMP_NAME"));
-//					         in.putExtra("EMP_PERSONNELNO", robj.getString("EMP_PERSONNELNO"));
-//					         in.putExtra("EMP_GENDER", robj.getString("EMP_GENDER"));
-//					         in.putExtra("EMP_EMAIL", robj.getString("EMP_EMAIL"));
-//					         in.putExtra("EMP_SITE", robj.getString("EMP_SITE"));
-//							in.putExtra("MSGVIEW", "NO");
-//
-//
-////							   // JSONARRAY
-////					         in.putExtra("ALLATLONGS", robj.getJSONArray("LAT").length());
-////					         for(int j=1;j<=robj.getJSONArray("LAT").length();j++){
-////					        	 in.putExtra("LAT"+j,robj.getJSONArray("LAT").getString(j) );
-////					         }
-////					         for(int j=1;j<=robj.getJSONArray("LONG").length();j++){
-////					        	 in.putExtra("LONG"+j,robj.getJSONArray("LONG").getString(j) );
-////					         }
-////					         for(int j=1;j<=robj.getJSONArray("REGNO").length();j++){
-////					        	 in.putExtra("REGNO"+j,robj.getJSONArray("REGNO").getString(j) );
-////					         }
-////					        	 for(int j=1;j<=robj.getJSONArray("TRIPID").length();j++){
-////						        	 in.putExtra("TRIPID"+j,robj.getJSONArray("TRIPID").getString(j) );
-////					        	 }
-//
-//
-////		cancel
-//						/*	in.putExtra("FROM_DATE", robj.getString("FROM_DATE"));
-//					         in.putExtra("TO_DATE", robj.getString("TO_DATE"));
-//					         in.putExtra("LOG_IN", robj.getString("LOG_IN"));
-//					         in.putExtra("LOG_OUT", robj.getString("LOG_OUT"));
-//
-//					         // JSONARRAY
-//					         in.putExtra("ALTIMES", robj.getJSONArray("ALTERDATE").length()+"");
-//					         in.putExtra("OUT_LOGS_COUNT",robj.getJSONArray("OUT_LOGS").length()+"" );
-//					         in.putExtra("IN_LOGS_COUNT",robj.getJSONArray("IN_LOGS").length()+"" );
-//								for(int s=0;s<robj.getJSONArray("IN_LOGS").length();s++ ){
-//									in.putExtra("IN_LOGS"+(s+1),robj.getJSONArray("IN_LOGS").getString(s) );
-//								}
-//
-//								for(int t=0;t<robj.getJSONArray("OUT_LOGS").length();t++ ){
-//									in.putExtra("OUT_LOGS"+(t+1),robj.getJSONArray("OUT_LOGS").getString(t) );
-//									}
-//					         for(int j=0;j<robj.getJSONArray("ALTERDATE").length();j++){
-//					        	 in.putExtra("ALTERDATE"+(j+1),robj.getJSONArray("ALTERDATE").getString(j) );
-//					         }
-//					         for(int j=0;j<robj.getJSONArray("AL_LOG_IN").length();j++){
-//					        	 in.putExtra("AL_LOG_IN"+(j+1),robj.getJSONArray("AL_LOG_IN").getString(j) );
-//					         }
-//					         for(int j=0;j<robj.getJSONArray("AL_LOG_OUT").length();j++){
-//					        	 in.putExtra("AL_LOG_OUT"+(j+1),robj.getJSONArray("AL_LOG_OUT").getString(j));
-//					         }
-//					         in.putExtra("ADHOCTYPECOUNT", robj.getJSONArray("ADHOCTYPE").length()+"");
-//								for(int i=0;i<Integer.parseInt(robj.getJSONArray("ADHOCTYPE").length()+"");i++)
-//								{
-//									in.putExtra("ADHOCTYPE"+(i+1),robj.getJSONArray("ADHOCTYPE").getString(i) );
-//
-//								}
-////		cancel		*/
-//							if(robj.getString("SECURITY").equalsIgnoreCase("YES"))
-//							{
-//								in.putExtra("ESCORT_NAME", robj.getString("ESCORT_NAME"));
-//								in.putExtra("ESCORT_CONTACT", robj.getString("ESCORT_CONTACT"));
-//							}
-//
-//							if(robj.getString("EMPS_COUNT")!=null&&!robj.getString("EMPS_COUNT").equalsIgnoreCase(""))
-//							{
-//							for(int i=1;i<=Integer.parseInt(robj.getString("EMPS_COUNT"));i++)
-//							{
-//								in.putExtra("PERSONNEL_NO"+i, robj.getString("PERSONNEL_NO"+i));
-//								in.putExtra("EMP_NAME"+i, robj.getString("EMP_NAME"+i));
-//								in.putExtra("GENDER"+i, robj.getString("GENDER"+i));
-//								in.putExtra("EMP_ID"+i, robj.getString("EMP_ID"+i));
-//								in.putExtra("EMP_CONTACT"+i, robj.getString("EMP_CONTACT"+i));
-//
-//							}
-//
-//							// cancel
-//						//	Toast.makeText(getApplicationContext(),"SAN"+ robj.getString("FROM_DATE")+robj.getString("TO_DATE")+robj.getString("LOG_IN")+robj.getString("LOG_OUT")+robj.getString("ALTERDATE"), Toast.LENGTH_LONG).show();
-//
-//							}
-//					 startActivity(in);
-//					 finish();
-//				}
-//				else if(robj!=null && robj.getString("result").equalsIgnoreCase("false"))
-//				{
-//					if(mdialog != null && mdialog.isShowing()){
-//    	        		mdialog.dismiss();
-//    	        	}
-//					 Intent in = new Intent(getApplicationContext(),
-//								Onetimeregister.class);
-//			         startActivity(in);
-//					 finish();
-//				}
-//
-//				}
-//					else
-//					{
-//						if(mdialog != null && mdialog.isShowing()){
-//			        		mdialog.dismiss();
-//			        	}
-//						Toast.makeText(getApplicationContext(), " No Internet", Toast.LENGTH_SHORT).show();
-//     //  Toast.makeText(getApplicationContext(), "Vicky", Toast.LENGTH_LONG).show();
-//					}
-//				} catch (JSONException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
-//			}
-//			public void datafail()
-//			{
-//				if(mdialog != null && mdialog.isShowing()){
-//	        		mdialog.dismiss();
-//	        	}
-//				Toast.makeText(getApplicationContext(), "oops communication error", Toast.LENGTH_SHORT).show();
-//			}
-//		});
-//		sobj.execute();
 	        }
 	        else
 	        {

@@ -54,7 +54,7 @@
                 android:layout_height="match_parent"
                 android:columnWidth="100dp"
                 android:gravity="center"
-                android:listSelector="@color/md_cyan_50"
+                android:listSelector="@color/md_blue_500"
                 android:numColumns="auto_fit"
                 android:stretchMode="columnWidth" />
         </LinearLayout>

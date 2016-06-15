@@ -1,3 +1,320 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="fa86b821db7817ee3ccfd0e14d7c602a7b58ed47">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_9c3800194fb6b74ec12ed2029163e165415b5f1f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.2.3\118ae1bc7f3aeeddfe564f0edfd79c11d09d17d1\httpmime-4.2.3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="118ae1bc7f3aeeddfe564f0edfd79c11d09d17d1">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\httpmime-4.2.3_33d67657ffb8d13d10a13281b9200c93b6982fa0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_86c9a11239f0e4e5e95fee8c312735f38c34928d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-measurement-8.4.0_5d1d166f4472bd4af6a262e5b856a2a0a951db2c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.2.2\b76bee23cd3f3ee9b98bc7c2c14670e821ddbbfd\httpcore-4.2.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b76bee23cd3f3ee9b98bc7c2c14670e821ddbbfd">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\httpcore-4.2.2_a157a993718c03f6eda81e5a47257eaf70685f9e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-8.4.0_b47cae1479d329d821768b92bce48d072e1c39cf\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_e90f792100486350663c322e1a9b4b3cb9da704f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-8.4.0_b261876a8ea6ac85001fd7708f55fe1f0fba68c4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-8.4.0_4d96c375b4c05f240e90fa37026a0ee736a3eae6\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-8.4.0_75adaa52ba5eb3175371d940bcc53e94763883cf\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.github.ganfra\material-spinner\1.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d0df3bf618b078d102a4234ceff33c44026e64b9">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.ganfra-material-spinner-1.1.1_3b4ba3f4254450489a18914896b0b5ae36573f96\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.4.0_7780ff0b080a9f9a4f7ac07f3f0520b230f58266\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-8.4.0_ed480ae3fcd8b25aa2d4498ccdf52845bf35d136\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.github.frankiesardo\linearlistview\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d52b800eb529f69bd5c807142349fe0967df8c99">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.frankiesardo-linearlistview-1.0.1_64bfccd8f031b9c8510107273b3b7a0929a776f9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-8.4.0_956a3e8109952b655b59319026934cfe000862d9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-8.4.0_c5d6bff0f4e32a82d52022c32290fce98e51436c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_6d9a13bf3842172bffb0520461b5d0f0619fe207\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-8.4.0_2dca02b95d3be3d764b1d81b7f0acfc59eb9c0d9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_3fd25d543d580787c980353de13481371104ca9f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-8.4.0_8a0c278612bd1c9bd55a6d762fd02644def5215a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-8.4.0_9f3a90efba47e3638c9b821470e82e4010b3c059\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_ef20e063d3f48106897fcc164649ffc60ae56757\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-8.4.0_f40825fec8f7ed8960702c17b04089b783b94dfa\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.0.0\ddd99896e9569eaababbe81b35d80e1b91c4ad85\eventbus-3.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\eventbus-3.0.0_91f5aa1f217e274dc4be64371e931c1a43f178f0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_69b2a84115d7b97318bfb905c9ebb834dac84fdb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_ec0b39a5ed4ba3b6d92d74d7dc9aa21f45cb1b60\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c96713571fde278d7efcdf8764e7a9924536cd90">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d8d6f3f4d3e89946fb3a9775f43243019b9952c3\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-8.4.0_80f5eff243858bbc8324dd4d5d89cbfa13a6fdfe\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-23.0.0_f1717fbeba3d29ba50f1bcbb6f8fa9126a7220c4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.github.dkharrat.nexusdialog\nexusdialog\0.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7b32f6ae24464b8fa55e99bad84aa75ac4c59d79">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.dkharrat.nexusdialog-nexusdialog-0.3.0_17360300b9c5895bf938c7bffe100e9331eddd21\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_736822192fb570e8b845758dfe2432e799f05001\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_7763e53f56c4a97bf5266f53935cd18a72e5a5fe\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-8.4.0_a82fb82c4dbafac4755776cead13908e1eede429\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-8.4.0_021e939a07b55ea7e61572cd81c70218519a2f04\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-8.4.0_1521c6e140804919fcdc3686669241d0e3e55862\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-8.4.0_993157af57ad7405f6868d4dac414293a6ba04f7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.2.0\b8c0920fbe8225e30b8f378474528ca163c9c9e4\MPAndroidChart-v2.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b8c0920fbe8225e30b8f378474528ca163c9c9e4">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.2.0_48d504ab060498cb621110003e89c9d07dfcc2ea\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_cdf1d0724acfbbb697ddd4b51b85c8ced72b83c4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-8.4.0_1bf01f73f8e7bf47994f2a675bcc4bdced71d9d7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\.gradle\caches\modules-2\files-2.1\eu.the4thfloor.volley\com.android.volley\2015.05.28\b0b08cc0ac897e596abe6b263a9507cba875b705\com.android.volley-2015.05.28.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b0b08cc0ac897e596abe6b263a9507cba875b705">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.volley-2015.05.28_8b62d65f495986cbd32aef597161f007f048e9ec\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_2cc52e5c460857c88dceadf1ec5aca499b6b571d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-8.4.0_53ba88411e867844ce7136504f6d4227694bcacc\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-8.4.0_17e243ff557e4f43324d41a1125c4e12c591f9ef\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-8.4.0_78cb1dc39f4f7968c0d4d453ec027c1467393ab1\classes.dex" />
+    </item>
+    <item
+        jar="C:\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_f5594e1c28595ecccd1473616f81da89b99c0bb0\classes.dex" />
+    </item>
+
+</items>

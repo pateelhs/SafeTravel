@@ -274,13 +274,13 @@ public final class R {
 		public static final int wallet_buy_button_place_holder = 0x7f07003e;
 	}
 	public static final class style {
-		public static final int Theme_AppInvite_Preview = 0x7f0a0102;
-		public static final int Theme_AppInvite_Preview_Base = 0x7f0a001e;
-		public static final int Theme_IAPTheme = 0x7f0a0109;
-		public static final int WalletFragmentDefaultButtonTextAppearance = 0x7f0a0111;
-		public static final int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f0a0112;
-		public static final int WalletFragmentDefaultDetailsTextAppearance = 0x7f0a0113;
-		public static final int WalletFragmentDefaultStyle = 0x7f0a0114;
+		public static final int Theme_AppInvite_Preview = 0x7f0a0104;
+		public static final int Theme_AppInvite_Preview_Base = 0x7f0a0020;
+		public static final int Theme_IAPTheme = 0x7f0a010b;
+		public static final int WalletFragmentDefaultButtonTextAppearance = 0x7f0a0113;
+		public static final int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f0a0114;
+		public static final int WalletFragmentDefaultDetailsTextAppearance = 0x7f0a0115;
+		public static final int WalletFragmentDefaultStyle = 0x7f0a0116;
 	}
 	public static final class styleable {
 		public static final int[] AdsAttrs = { 0x7f010027, 0x7f010028, 0x7f010029 };
