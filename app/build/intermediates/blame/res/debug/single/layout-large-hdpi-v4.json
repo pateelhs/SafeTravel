@@ -44,12 +44,12 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\otp.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\cabalertpopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\cabalertpopup.xml"
-    },
-    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\popup.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\cabalertpopup.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\cabalertpopup.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\activity_dashboard.xml",

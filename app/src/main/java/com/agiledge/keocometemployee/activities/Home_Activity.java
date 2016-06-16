@@ -5,26 +5,22 @@ package com.agiledge.keocometemployee.activities;
  */
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.adapter.CustomAndroidGridViewAdapter;
-import com.agiledge.keocometemployee.navdrawermenu.AboutActivity;
 import com.agiledge.keocometemployee.navdrawermenu.EmergencyContactActivity;
 import com.agiledge.keocometemployee.navdrawermenu.FeedBackActivity;
 import com.agiledge.keocometemployee.navdrawermenu.ManageBookingActivity;
 import com.agiledge.keocometemployee.navdrawermenu.TripDetailsActivity;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -50,7 +46,7 @@ public class Home_Activity extends AppCompatActivity {
             R.drawable.menu_tracking,
             R.drawable.menu_booking,
             R.drawable.menu_details,
-            R.drawable.menu_emergency,
+            R.drawable.warning,
             R.drawable.menu_feedback,
             R.drawable.menu_about
     };
@@ -59,8 +55,10 @@ public class Home_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
-     //   toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
+       toolbar = (Toolbar) findViewById(R.id.toolbar_home);
+        setSupportActionBar(toolbar);
+       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setHomeButtonEnabled(true);
         GridView gridView = (GridView) findViewById(R.id.grid);
         gridView.setAdapter(new CustomAndroidGridViewAdapter(Home_Activity.this, gridViewStrings, gridViewImages));
 
@@ -92,7 +90,7 @@ public class Home_Activity extends AppCompatActivity {
                         startActivityForResult(feed, 0);
                         break;
                     case 5:
-                        Intent about = new Intent(Home_Activity.this, AboutActivity.class);
+                        Intent about = new Intent(Home_Activity.this, TrackMyCabActivity.class);
                         startActivityForResult(about, 0);
                         break;
 
@@ -109,4 +107,11 @@ public class Home_Activity extends AppCompatActivity {
         collapsingToolbarLayoutAndroid.setTitle("RideIT");
     }
 
+    @Override
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+        System.exit(0);
+
+    }
 }

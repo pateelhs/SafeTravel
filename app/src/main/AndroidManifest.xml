@@ -142,7 +142,8 @@
             android:name=".navdrawermenu.AdocDetails"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
-        <activity android:name=".utilities.DateModify"
+        <activity
+            android:name=".utilities.DateModify"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".activities.TripHistoryList"
@@ -150,7 +151,11 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".activities.Home_Activity"
-             />
+            android:theme="@style/AppTheme_home" />
+        <activity
+            android:name=".activities.TrackMyCabActivity"
+            android:label="Live Tracking"
+            android:theme="@style/AppTheme_home" />
 
         <!-- Goolge API Key -->
         <meta-data

@@ -1,6 +1,5 @@
 package com.agiledge.keocometemployee.utilities;
 
-import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Canvas;
@@ -10,16 +9,9 @@ import android.graphics.Rect;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Gravity;
 import android.view.MenuItem;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.LinearInterpolator;
-import android.view.animation.RotateAnimation;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.agiledge.keocometemployee.R;
@@ -70,7 +62,7 @@ public class DateModify extends AppCompatActivity {
         Calendar now = Calendar.getInstance();
         year = now.get(Calendar.YEAR);
         month = now.get(Calendar.MONTH)+1;
-        picker.setDate(year, month-2);
+        picker.setDate(2016, 1);
        // picker.setFestivalDisplay(false);
         //picker.setTodayDisplay(false);
         //picker.setHolidayDisplay(true);

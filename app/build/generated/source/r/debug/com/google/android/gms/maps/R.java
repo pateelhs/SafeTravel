@@ -159,10 +159,10 @@ public final class R {
 		public static final int ic_plusone_small_off_client = 0x7f0200b4;
 		public static final int ic_plusone_standard_off_client = 0x7f0200b5;
 		public static final int ic_plusone_tall_off_client = 0x7f0200b6;
-		public static final int places_ic_clear = 0x7f0200ec;
-		public static final int places_ic_search = 0x7f0200ed;
-		public static final int powered_by_google_dark = 0x7f0200ef;
-		public static final int powered_by_google_light = 0x7f0200f0;
+		public static final int places_ic_clear = 0x7f0200eb;
+		public static final int places_ic_search = 0x7f0200ec;
+		public static final int powered_by_google_dark = 0x7f0200ee;
+		public static final int powered_by_google_light = 0x7f0200ef;
 	}
 	public static final class id {
 		public static final int adjust_height = 0x7f0e0035;
@@ -196,14 +196,14 @@ public final class R {
 		public static final int monochrome = 0x7f0e005f;
 		public static final int none = 0x7f0e0011;
 		public static final int normal = 0x7f0e000d;
-		public static final int place_autocomplete_clear_button = 0x7f0e0168;
-		public static final int place_autocomplete_powered_by_google = 0x7f0e016a;
-		public static final int place_autocomplete_prediction_primary_text = 0x7f0e016c;
-		public static final int place_autocomplete_prediction_secondary_text = 0x7f0e016d;
-		public static final int place_autocomplete_progress = 0x7f0e016b;
-		public static final int place_autocomplete_search_button = 0x7f0e0166;
-		public static final int place_autocomplete_search_input = 0x7f0e0167;
-		public static final int place_autocomplete_separator = 0x7f0e0169;
+		public static final int place_autocomplete_clear_button = 0x7f0e0169;
+		public static final int place_autocomplete_powered_by_google = 0x7f0e016b;
+		public static final int place_autocomplete_prediction_primary_text = 0x7f0e016d;
+		public static final int place_autocomplete_prediction_secondary_text = 0x7f0e016e;
+		public static final int place_autocomplete_progress = 0x7f0e016c;
+		public static final int place_autocomplete_search_button = 0x7f0e0167;
+		public static final int place_autocomplete_search_input = 0x7f0e0168;
+		public static final int place_autocomplete_separator = 0x7f0e016a;
 		public static final int production = 0x7f0e0049;
 		public static final int sandbox = 0x7f0e004a;
 		public static final int satellite = 0x7f0e0038;
@@ -220,10 +220,10 @@ public final class R {
 		public static final int google_play_services_version = 0x7f0b0006;
 	}
 	public static final class layout {
-		public static final int place_autocomplete_fragment = 0x7f03005b;
-		public static final int place_autocomplete_item_powered_by_google = 0x7f03005c;
-		public static final int place_autocomplete_item_prediction = 0x7f03005d;
-		public static final int place_autocomplete_progress = 0x7f03005e;
+		public static final int place_autocomplete_fragment = 0x7f03005c;
+		public static final int place_autocomplete_item_powered_by_google = 0x7f03005d;
+		public static final int place_autocomplete_item_prediction = 0x7f03005e;
+		public static final int place_autocomplete_progress = 0x7f03005f;
 	}
 	public static final class raw {
 		public static final int gtm_analytics = 0x7f060000;
@@ -274,13 +274,13 @@ public final class R {
 		public static final int wallet_buy_button_place_holder = 0x7f07003e;
 	}
 	public static final class style {
-		public static final int Theme_AppInvite_Preview = 0x7f0a0104;
-		public static final int Theme_AppInvite_Preview_Base = 0x7f0a0020;
-		public static final int Theme_IAPTheme = 0x7f0a010b;
-		public static final int WalletFragmentDefaultButtonTextAppearance = 0x7f0a0113;
-		public static final int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f0a0114;
-		public static final int WalletFragmentDefaultDetailsTextAppearance = 0x7f0a0115;
-		public static final int WalletFragmentDefaultStyle = 0x7f0a0116;
+		public static final int Theme_AppInvite_Preview = 0x7f0a0105;
+		public static final int Theme_AppInvite_Preview_Base = 0x7f0a0021;
+		public static final int Theme_IAPTheme = 0x7f0a010c;
+		public static final int WalletFragmentDefaultButtonTextAppearance = 0x7f0a0114;
+		public static final int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f0a0115;
+		public static final int WalletFragmentDefaultDetailsTextAppearance = 0x7f0a0116;
+		public static final int WalletFragmentDefaultStyle = 0x7f0a0117;
 	}
 	public static final class styleable {
 		public static final int[] AdsAttrs = { 0x7f010027, 0x7f010028, 0x7f010029 };

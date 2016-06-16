@@ -2415,8 +2415,8 @@ public class MapClass extends Activity implements OnItemClickListener {
 		return true;
 	}
 
-	 
-	   
+
+
 	public void legendAlert() {
 		final Dialog dialog = new Dialog(MapClass.this);
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);

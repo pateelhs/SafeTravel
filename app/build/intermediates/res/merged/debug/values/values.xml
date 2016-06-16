@@ -790,7 +790,7 @@
     </style>
     <style name="AppTheme.ActionBar" parent="AppTheme">
         <item name="windowActionBarOverlay">false</item>
-        <item name="colorPrimary">@color/md_red_400</item>
+        <item name="colorPrimary">@color/md_teal_300</item>
     </style>
     <style name="AppTheme.ActionBar.Transparent" parent="AppTheme">
         <item name="android:windowContentOverlay">@null</item>
@@ -798,6 +798,16 @@
         <item name="colorPrimary">@android:color/transparent</item>
     </style>
     <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme_home" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_teal_300</item>
+        <item name="colorPrimaryDark">@color/md_teal_300</item>
+        <item name="colorAccent">@color/md_cyan_300</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="listLayout">@layout/abc_select_dialog_material</item>

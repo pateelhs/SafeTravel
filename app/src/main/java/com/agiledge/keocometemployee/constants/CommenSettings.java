@@ -12,6 +12,7 @@ public class CommenSettings {
 		
   	// local host192.168.1.107
 	public static String serverAddress="http://180.179.227.73/atomKeo/employeeappservlet";
+	//http://180.179.227.102/visaempapp/AndroidAppForEmployee
     //public static String serverAddress="http://192.168.1.122:8080/CoreAtom/employeeappservlet";
 	 
 	// cd live	 

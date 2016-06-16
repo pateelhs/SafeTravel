@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
@@ -83,42 +84,16 @@ public class OTPActivity extends Activity{
 										if (mdialog != null && mdialog.isShowing()) {
 											mdialog.dismiss();
 										}
-										Intent in = new Intent(getApplicationContext(),
-												MapClass.class);
-										Bundle extras = getIntent().getExtras();
+										SharedPreferences sharedpref=getPreferences(Context.MODE_PRIVATE);
+										SharedPreferences.Editor editor = sharedpref.edit();
+										editor.putString("APP_USERNAME", response.getString("EMP_NAME"));
+										editor.putString("APP_EMAIL", response.getString("EMP_EMAIL"));
+										editor.putString("APP_EMP_GENDER", response.getString("EMP_GENDER"));
+										editor.putString("APP_EMPID",response.getString("EMP_ID"));
+										editor.putString("APP_USERTYPE",response.getString("user_type"));
+										editor.commit();
+										Intent in = new Intent(getApplicationContext(), Home_Activity.class);
 										in.putExtra("user_type", response.getString("user_type"));
-										in.putExtra("EMP_NAME", extras.getString("EMP_NAME"));
-										in.putExtra("EMP_PERSONNELNO", extras.getString("EMP_PERSONNELNO"));
-										in.putExtra("EMP_GENDER", extras.getString("EMP_GENDER"));
-										in.putExtra("EMP_EMAIL", extras.getString("EMP_EMAIL"));
-										in.putExtra("EMP_SITE", extras.getString("EMP_SITE"));
-										in.putExtra("EMP_ID", extras.getString("EMP_ID"));
-										in.putExtra("TRIP_ID", response.getString("TRIP_ID"));
-										in.putExtra("TRIP_CODE", response.getString("TRIP_CODE"));
-										in.putExtra("TRIP_DATE", response.getString("TRIP_DATE"));
-										in.putExtra("TRIP_LOG", response.getString("TRIP_LOG"));
-										in.putExtra("REG_NO", response.getString("REG_NO"));
-										in.putExtra("TRIP_TIME", response.getString("TRIP_TIME"));
-										in.putExtra("DRIVER_NAME", response.getString("DRIVER_NAME"));
-										in.putExtra("DRIVER_CONTACT", response.getString("DRIVER_CONTACT"));
-										in.putExtra("EMPS_COUNT", response.getString("EMPS_COUNT"));
-										in.putExtra("MSGVIEW", "YES");
-										in.putExtra("SECURITY", response.getString("SECURITY"));
-										if (response.getString("SECURITY").equalsIgnoreCase("YES")) {
-											in.putExtra("ESCORT_NAME", response.getString("ESCORT_NAME"));
-											in.putExtra("ESCORT_CONTACT", response.getString("ESCORT_CONTACT"));
-										}
-										if (!response.getString("EMPS_COUNT").equalsIgnoreCase("") && response.getString("EMPS_COUNT") != null) {
-											for (int i = 1; i <= Integer.parseInt(response.getString("EMPS_COUNT")); i++) {
-												in.putExtra("PERSONNEL_NO" + i, response.getString("PERSONNEL_NO" + i));
-												in.putExtra("EMP_NAME" + i, response.getString("EMP_NAME" + i));
-												in.putExtra("GENDER" + i, response.getString("GENDER" + i));
-												in.putExtra("EMP_ID" + i, response.getString("EMP_ID" + i));
-												in.putExtra("EMP_CONTACT" + i, response.getString("EMP_CONTACT" + i));
-
-											}
-
-										}
 										startActivity(in);
 										finish();
 									} else {

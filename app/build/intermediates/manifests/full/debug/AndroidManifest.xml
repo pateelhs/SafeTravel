@@ -149,7 +149,13 @@
             android:name="com.agiledge.keocometemployee.activities.TripHistoryList"
             android:label="My Rides"
             android:theme="@style/AppTheme" />
-        <activity android:name="com.agiledge.keocometemployee.activities.Home_Activity" />
+        <activity
+            android:name="com.agiledge.keocometemployee.activities.Home_Activity"
+            android:theme="@style/AppTheme_home" />
+        <activity
+            android:name="com.agiledge.keocometemployee.activities.TrackMyCabActivity"
+            android:label="Live Tracking"
+            android:theme="@style/AppTheme_home" />
 
         <!-- Goolge API Key -->
         <meta-data

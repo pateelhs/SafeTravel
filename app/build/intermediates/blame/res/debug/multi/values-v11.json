@@ -2945,9 +2945,30 @@
                     "startLine": 169,
                     "startColumn": 4,
                     "startOffset": 10259,
-                    "endLine": 174,
+                    "endLine": 178,
                     "endColumn": 12,
-                    "endOffset": 10673
+                    "endOffset": 10670
+                },
+                "from": {
+                    "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1364,
+                        "endLine": 38,
+                        "endColumn": 12,
+                        "endOffset": 1775
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 179,
+                    "startColumn": 4,
+                    "startOffset": 10675,
+                    "endLine": 184,
+                    "endColumn": 12,
+                    "endOffset": 11089
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -2963,12 +2984,12 @@
             },
             {
                 "to": {
-                    "startLine": 175,
+                    "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 10678,
-                    "endLine": 180,
+                    "startOffset": 11094,
+                    "endLine": 190,
                     "endColumn": 12,
-                    "endOffset": 11098
+                    "endOffset": 11514
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -2984,12 +3005,12 @@
             },
             {
                 "to": {
-                    "startLine": 181,
+                    "startLine": 191,
                     "startColumn": 4,
-                    "startOffset": 11103,
-                    "endLine": 186,
+                    "startOffset": 11519,
+                    "endLine": 196,
                     "endColumn": 12,
-                    "endOffset": 11526
+                    "endOffset": 11942
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3005,12 +3026,12 @@
             },
             {
                 "to": {
-                    "startLine": 187,
+                    "startLine": 197,
                     "startColumn": 4,
-                    "startOffset": 11531,
-                    "endLine": 192,
+                    "startOffset": 11947,
+                    "endLine": 202,
                     "endColumn": 12,
-                    "endOffset": 11952
+                    "endOffset": 12368
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3026,12 +3047,12 @@
             },
             {
                 "to": {
-                    "startLine": 193,
+                    "startLine": 203,
                     "startColumn": 4,
-                    "startOffset": 11957,
-                    "endLine": 198,
+                    "startOffset": 12373,
+                    "endLine": 208,
                     "endColumn": 12,
-                    "endOffset": 12379
+                    "endOffset": 12795
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3047,12 +3068,12 @@
             },
             {
                 "to": {
-                    "startLine": 199,
+                    "startLine": 209,
                     "startColumn": 4,
-                    "startOffset": 12384,
-                    "endLine": 204,
+                    "startOffset": 12800,
+                    "endLine": 214,
                     "endColumn": 12,
-                    "endOffset": 12804
+                    "endOffset": 13220
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3068,11 +3089,11 @@
             },
             {
                 "to": {
-                    "startLine": 205,
+                    "startLine": 215,
                     "startColumn": 4,
-                    "startOffset": 12809,
+                    "startOffset": 13225,
                     "endColumn": 88,
-                    "endOffset": 12893
+                    "endOffset": 13309
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3087,11 +3108,11 @@
             },
             {
                 "to": {
-                    "startLine": 206,
+                    "startLine": 216,
                     "startColumn": 4,
-                    "startOffset": 12898,
+                    "startOffset": 13314,
                     "endColumn": 100,
-                    "endOffset": 12994
+                    "endOffset": 13410
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3106,12 +3127,12 @@
             },
             {
                 "to": {
-                    "startLine": 207,
+                    "startLine": 217,
                     "startColumn": 4,
-                    "startOffset": 12999,
-                    "endLine": 211,
+                    "startOffset": 13415,
+                    "endLine": 221,
                     "endColumn": 12,
-                    "endOffset": 13402
+                    "endOffset": 13818
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3127,12 +3148,12 @@
             },
             {
                 "to": {
-                    "startLine": 212,
+                    "startLine": 222,
                     "startColumn": 4,
-                    "startOffset": 13407,
-                    "endLine": 216,
+                    "startOffset": 13823,
+                    "endLine": 226,
                     "endColumn": 12,
-                    "endOffset": 13822
+                    "endOffset": 14238
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3148,12 +3169,12 @@
             },
             {
                 "to": {
-                    "startLine": 217,
+                    "startLine": 227,
                     "startColumn": 4,
-                    "startOffset": 13827,
-                    "endLine": 218,
+                    "startOffset": 14243,
+                    "endLine": 228,
                     "endColumn": 12,
-                    "endOffset": 13929
+                    "endOffset": 14345
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3169,12 +3190,12 @@
             },
             {
                 "to": {
-                    "startLine": 219,
+                    "startLine": 229,
                     "startColumn": 4,
-                    "startOffset": 13934,
-                    "endLine": 220,
+                    "startOffset": 14350,
+                    "endLine": 230,
                     "endColumn": 12,
-                    "endOffset": 14058
+                    "endOffset": 14474
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3190,11 +3211,11 @@
             },
             {
                 "to": {
-                    "startLine": 221,
+                    "startLine": 231,
                     "startColumn": 4,
-                    "startOffset": 14063,
+                    "startOffset": 14479,
                     "endColumn": 70,
-                    "endOffset": 14129
+                    "endOffset": 14545
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3209,11 +3230,11 @@
             },
             {
                 "to": {
-                    "startLine": 222,
+                    "startLine": 232,
                     "startColumn": 4,
-                    "startOffset": 14134,
+                    "startOffset": 14550,
                     "endColumn": 82,
-                    "endOffset": 14212
+                    "endOffset": 14628
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3228,12 +3249,12 @@
             },
             {
                 "to": {
-                    "startLine": 223,
+                    "startLine": 233,
                     "startColumn": 4,
-                    "startOffset": 14217,
-                    "endLine": 273,
+                    "startOffset": 14633,
+                    "endLine": 283,
                     "endColumn": 12,
-                    "endOffset": 17920
+                    "endOffset": 18336
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3249,12 +3270,12 @@
             },
             {
                 "to": {
-                    "startLine": 274,
+                    "startLine": 284,
                     "startColumn": 4,
-                    "startOffset": 17925,
-                    "endLine": 325,
+                    "startOffset": 18341,
+                    "endLine": 335,
                     "endColumn": 12,
-                    "endOffset": 21768
+                    "endOffset": 22184
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3270,11 +3291,11 @@
             },
             {
                 "to": {
-                    "startLine": 326,
+                    "startLine": 336,
                     "startColumn": 4,
-                    "startOffset": 21773,
+                    "startOffset": 22189,
                     "endColumn": 90,
-                    "endOffset": 21859
+                    "endOffset": 22275
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-v11\\values-v11.xml",
@@ -3289,11 +3310,11 @@
             },
             {
                 "to": {
-                    "startLine": 327,
+                    "startLine": 337,
                     "startColumn": 4,
-                    "startOffset": 21864,
+                    "startOffset": 22280,
                     "endColumn": 117,
-                    "endOffset": 21977
+                    "endOffset": 22393
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\8.4.0\\res\\values-v11\\appinvite_styles.xml",
@@ -3308,12 +3329,12 @@
             },
             {
                 "to": {
-                    "startLine": 328,
+                    "startLine": 338,
                     "startColumn": 4,
-                    "startOffset": 21982,
-                    "endLine": 338,
+                    "startOffset": 22398,
+                    "endLine": 348,
                     "endColumn": 12,
-                    "endOffset": 22687
+                    "endOffset": 23103
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\values-v11\\styles.xml",
