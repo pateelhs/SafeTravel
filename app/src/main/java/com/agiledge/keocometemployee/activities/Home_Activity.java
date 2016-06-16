@@ -31,7 +31,7 @@ public class Home_Activity extends AppCompatActivity {
     CoordinatorLayout rootLayoutAndroid;
     Context context;
     ArrayList arrayList;
-
+    String displayname="Hi ",empid="";
     public static String[] gridViewStrings = {
             "Track My Cab",
             "Book Cab",
@@ -59,6 +59,11 @@ public class Home_Activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
        // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //getSupportActionBar().setHomeButtonEnabled(true);
+        Bundle extras=getIntent().getExtras();
+        if(extras!=null){
+            displayname+=extras.getString("displayname");
+            empid=extras.getString("empid");
+        }
         GridView gridView = (GridView) findViewById(R.id.grid);
         gridView.setAdapter(new CustomAndroidGridViewAdapter(Home_Activity.this, gridViewStrings, gridViewImages));
 
@@ -83,6 +88,7 @@ public class Home_Activity extends AppCompatActivity {
                         break;
                     case 3:
                         Intent emergency = new Intent(Home_Activity.this, EmergencyContactActivity.class);
+                        emergency.putExtra("empid",empid);
                         startActivityForResult(emergency, 0);
                         break;
                     case 4:
@@ -104,7 +110,7 @@ public class Home_Activity extends AppCompatActivity {
     private void initInstances() {
         rootLayoutAndroid = (CoordinatorLayout) findViewById(R.id.android_coordinator_layout);
         collapsingToolbarLayoutAndroid = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_android_layout);
-        collapsingToolbarLayoutAndroid.setTitle("RideIT");
+        collapsingToolbarLayoutAndroid.setTitle(displayname);
     }
 
     @Override

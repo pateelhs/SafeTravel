@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +15,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.agiledge.keocometemployee.R;
-import com.agiledge.keocometemployee.activities.MapClass;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
 import com.android.volley.Response;
@@ -49,7 +47,7 @@ public class EmergencyContactActivity extends Activity {
 		Bundle extras = getIntent().getExtras();
 		String empid="";
 		if (extras != null) {
-		    empid = extras.getString("EMP_ID");
+		    empid = extras.getString("empid");
 		}
 		try{
 		JSONObject jobj=new JSONObject();
@@ -185,10 +183,7 @@ public class EmergencyContactActivity extends Activity {
 		closebtn.setOnClickListener(new OnClickListener() {
 
 	    		public void onClick(View v) {
-	    			EmergencyContactActivity.this.finish();
-	    		//	onBackPressed();
-	    			Intent intent = new Intent(EmergencyContactActivity.this, MapClass.class);
-	    			startActivity(intent);
+	    			finish();
 	    			
 	    }
 		 });

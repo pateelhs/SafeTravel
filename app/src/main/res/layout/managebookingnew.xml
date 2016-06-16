@@ -2,7 +2,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/md_teal_300"
+    android:background="@color/md_red_400"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TableLayout

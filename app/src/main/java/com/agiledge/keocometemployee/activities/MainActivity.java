@@ -2,14 +2,17 @@ package com.agiledge.keocometemployee.activities;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.drawable.ColorDrawable;
 import android.location.LocationManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -24,7 +27,6 @@ import android.widget.Toast;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
-import com.agiledge.keocometemployee.utilities.TransparentProgressDialog;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -34,54 +36,64 @@ import org.json.JSONObject;
 public class MainActivity extends Activity {
 
 	public static String macAddress;
-	  private ProgressDialog mdialog;
 	private static final int REQUEST_CODE=0;
-	private TransparentProgressDialog pd;
 	boolean startapp=false;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-		pd = new TransparentProgressDialog(this, R.drawable.loading);
-		pd.show();
 		WifiManager wimanager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
 		macAddress = wimanager.getConnectionInfo().getMacAddress();
-		
-		
-		
-		//registerReceiver();
-		SharedPreferences sharedpref=getPreferences(Context.MODE_PRIVATE);
-		String username=sharedpref.getString("APP_USERNAME","NOT_FOUND");
-		String email=sharedpref.getString("APP_EMAIL","NOT_FOUND");
-		String gender=sharedpref.getString("APP_EMP_GENDER","NOT_FOUND");
-		if(username.equalsIgnoreCase("NOT_FOUND")||email.equalsIgnoreCase("NOT_FOUND")||gender.equalsIgnoreCase("NOT_FOUND")) {
-			initial();
-		}
+		if(isConnected())
+		start();
 		else{
-			pd.hide();
-			boolean isEnabled = isGPSenabled();
-			if(isEnabled) {
-				Intent in = new Intent(getApplicationContext(), Home_Activity.class);
-				startActivity(in);
-				finish();
-			}
-			else{
-				buildAlertMessageNoGps();
-
-
-			}
+			new AlertDialog.Builder(this)
+					.setTitle("No Internet")
+					.setMessage("This app needs internet connectivity,please enable and try again!")
+					.setNegativeButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int which) {
+							System.exit(1);
+						}
+					})
+					.setIcon(android.R.drawable.ic_dialog_alert)
+					.show();
+		}
 
 		}
 
-		
 
-
-
-         //dialog.show();
           
         
 		
+		public void start(){
+			SharedPreferences sharedpref=getPreferences(Context.MODE_PRIVATE);
+			String username=sharedpref.getString("APP_USERNAME","NOT_FOUND");
+			String email=sharedpref.getString("APP_EMAIL","NOT_FOUND");
+			String gender=sharedpref.getString("APP_EMP_GENDER","NOT_FOUND");
+			String user_type=sharedpref.getString("APP_USERTYPE","NOT_FOUND");
+			String empid=sharedpref.getString("APP_EMPID","NOT_FOUND");
+
+			if(username.equalsIgnoreCase("NOT_FOUND")||email.equalsIgnoreCase("NOT_FOUND")||gender.equalsIgnoreCase("NOT_FOUND")||user_type.equalsIgnoreCase("NOT_FOUND")||empid.equalsIgnoreCase("NOT_FOUND")) {
+				initial();
+			}
+			else {
+				boolean isEnabled = isGPSenabled();
+				if (isEnabled) {
+					Intent in = new Intent(getApplicationContext(), Home_Activity.class);
+					in.putExtra("user_type", user_type);
+					in.putExtra("displayname",username);
+					in.putExtra("gender",gender);
+					in.putExtra("email",email);
+					in.putExtra("empid",empid);
+					startActivity(in);
+					finish();
+				} else {
+					buildAlertMessageNoGps();
+
+
+				}
+			}
 		}
 
 		@Override
@@ -151,7 +163,7 @@ public class MainActivity extends Activity {
 	    protected void onStart() {
 	    	super.onStart();
 			if(startapp)
-				initial();
+				start();
 	    	}
 
 		public void initial()
@@ -178,15 +190,18 @@ public class MainActivity extends Activity {
 									editor.putString("APP_EMP_GENDER", response.getString("EMP_GENDER"));
 									editor.putString("APP_EMPID",response.getString("EMP_ID"));
 									editor.putString("APP_USERTYPE",response.getString("user_type"));
-									editor.apply();
-									pd.hide();
+									editor.commit();
 									Intent in = new Intent(getApplicationContext(), Home_Activity.class);
 									in.putExtra("user_type", response.getString("user_type"));
+									in.putExtra("displayname",response.getString("EMP_NAME"));
+									in.putExtra("gender",response.getString("EMP_GENDER"));
+									in.putExtra("email",response.getString("EMP_EMAIL"));
+									in.putExtra("empid",response.getString("EMP_ID"));
+
 									startActivity(in);
 									finish();
 
 								} else {
-									pd.hide();
 									Intent in = new Intent(getApplicationContext(),
 											Onetimeregister.class);
 									startActivity(in);
@@ -195,7 +210,6 @@ public class MainActivity extends Activity {
 
 								}
 							} catch (Exception e) {
-								pd.hide();
 								e.printStackTrace();
 							}
 						}
@@ -206,7 +220,7 @@ public class MainActivity extends Activity {
 						@Override
 						public void onErrorResponse(VolleyError error) {
 							Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
-							pd.hide();
+
 
 						}
 					});
@@ -217,7 +231,6 @@ public class MainActivity extends Activity {
 	        }
 	        else
 	        {
-	        	pd.hide();
 	        	buildAlertMessageNoGps();
 	        	
 	        }
@@ -229,6 +242,15 @@ public class MainActivity extends Activity {
 			super.onBackPressed();
 			System.exit(1);
 		}
+public boolean isConnected(){
+	ConnectivityManager cm =
+			(ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+
+	NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+	boolean isConnected = activeNetwork != null &&
+			activeNetwork.isConnectedOrConnecting();
+	return isConnected;
+}
 
 }
 

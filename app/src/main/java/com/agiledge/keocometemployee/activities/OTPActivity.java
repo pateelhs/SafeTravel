@@ -94,6 +94,11 @@ public class OTPActivity extends Activity{
 										editor.commit();
 										Intent in = new Intent(getApplicationContext(), Home_Activity.class);
 										in.putExtra("user_type", response.getString("user_type"));
+										in.putExtra("displayname",response.getString("EMP_NAME"));
+										Toast.makeText(getApplicationContext(),response.getString("EMP_NAME"),Toast.LENGTH_LONG).show();
+										in.putExtra("gender",response.getString("EMP_GENDER"));
+										in.putExtra("email",response.getString("EMP_EMAIL"));
+
 										startActivity(in);
 										finish();
 									} else {

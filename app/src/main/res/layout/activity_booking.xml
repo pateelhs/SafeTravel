@@ -120,7 +120,7 @@
                 android:layout_width="match_parent" android:layout_below="@id/proodut_tyepe"
                 android:spinnerMode="dropdown" />
         </RelativeLayout>
-        <com.linearlistview.LinearListView android:orientation="vertical"  android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/chat_divider" android:showDividers="middle" style="@style/details_content_layout" />
+
         <!--<RelativeLayout android:layout_height="wrap_content"-->
 
             <!--android:id="@+id/product_company" android:layout_width="300dp"-->
@@ -133,7 +133,7 @@
                 <!--android:layout_height="wrap_content" android:id="@+id/pro_comp"-->
                 <!--android:layout_width="match_parent" android:layout_below="@id/proodut_compani" />-->
         <!--</RelativeLayout>-->
-        <com.linearlistview.LinearListView android:orientation="vertical"  android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/chat_divider" android:showDividers="middle" style="@style/details_content_layout" />
+
         <Button
             android:id="@+id/submit_book"
             android:layout_width="match_parent"
