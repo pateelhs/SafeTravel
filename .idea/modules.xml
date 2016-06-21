@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/DatePicker/DatePicker.iml" filepath="$PROJECT_DIR$/DatePicker/DatePicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/SafeTravel.iml" filepath="$PROJECT_DIR$/SafeTravel.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circleimageview/circleimageview.iml" filepath="$PROJECT_DIR$/circleimageview/circleimageview.iml" />
     </modules>
   </component>
 </project>

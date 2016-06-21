@@ -58,10 +58,8 @@ dependencies {
     compile 'com.android.support:multidex:1.0.0'
     compile 'com.github.ganfra:material-spinner:1.1.1'
     compile project(':DatePicker')
+    compile project(':circleimageview')
     compile 'org.greenrobot:eventbus:3.0.0'
-
-
-
 
 
 }

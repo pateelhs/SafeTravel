@@ -1,11 +1,11 @@
 [
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_dark.xml",
@@ -24,12 +24,12 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\feedback_20.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_dark.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_pause_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bifurcator.png",
@@ -37,7 +37,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_details.png",
@@ -49,7 +49,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\singlelady_noesc.png",
@@ -57,7 +57,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_radio_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
@@ -73,15 +73,15 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_borderless_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_help.png",
@@ -129,7 +129,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_edit_text_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_dark.xml",
@@ -142,6 +142,10 @@
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\out_time.png",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\out_time.png"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\panic_floating.png",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\panic_floating.png"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_booking.png",
@@ -157,7 +161,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_switch_thumb_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new1bad.png",
@@ -177,7 +181,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_history.png",
@@ -197,11 +201,11 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\em_btn.xml",
@@ -220,8 +224,12 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\chat_divider.png"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\legend_info.png",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\legend_info.png"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_seekbar_track_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\a.png",
@@ -233,7 +241,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_textfield_search_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gradient_bg.xml",
@@ -242,6 +250,10 @@
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_dark.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_connecting_mono_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\female_avatar.png",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\female_avatar.png"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
@@ -285,7 +297,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new1good.png",
@@ -297,15 +309,19 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_dialog_material_background_light.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_cab_background_top_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\uber_icon.png",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\uber_icon.png"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\warning.png",
@@ -313,7 +329,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_item_background_holo_light.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\panic_icon.png",
@@ -353,7 +369,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_check_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_light.xml",
@@ -373,7 +389,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_ratingbar_full_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
@@ -381,7 +397,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
@@ -397,7 +413,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
@@ -421,7 +437,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_text_cursor_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
@@ -433,7 +449,7 @@
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_tab_indicator_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\live_trackingadmin.png",
@@ -452,8 +468,12 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\custom_selector.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\my_car.png",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\my_car.png"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_btn_colored_material.xml"
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\completed_jobs.png",

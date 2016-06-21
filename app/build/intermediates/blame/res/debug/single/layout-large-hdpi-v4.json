@@ -36,10 +36,6 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\listview_item_row.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\onetimeregister.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\onetimeregister.xml"
-    },
-    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\otp.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\otp.xml"
     },

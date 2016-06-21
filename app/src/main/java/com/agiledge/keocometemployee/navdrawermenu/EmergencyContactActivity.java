@@ -4,8 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -30,6 +28,7 @@ public class EmergencyContactActivity extends Activity {
 	String PersonName1, PersonMob1,PersonName2, PersonMob2;
 	EditText edname1,ednumber1,edname2,ednumber2;
 	private ProgressDialog mdialog;
+	String empid="";
 	
 	@Override
 	 
@@ -45,7 +44,7 @@ public class EmergencyContactActivity extends Activity {
 		ButtonClick();
 		ButtonSave();
 		Bundle extras = getIntent().getExtras();
-		String empid="";
+
 		if (extras != null) {
 		    empid = extras.getString("empid");
 		}
@@ -98,7 +97,7 @@ public class EmergencyContactActivity extends Activity {
 					if (mdialog != null && mdialog.isShowing()) {
 						mdialog.dismiss();
 					}
-					Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
+					Toast.makeText(getApplicationContext(), "Error while communicating", Toast.LENGTH_LONG).show();
 
 
 				}
@@ -245,13 +244,7 @@ public class EmergencyContactActivity extends Activity {
 						ednumber2.setError("Mobile Number should be Maximum 10 digits?");}
 					else
 					{
-	    			Bundle extras = getIntent().getExtras();
 
-						SharedPreferences sharedpref=getPreferences(Context.MODE_PRIVATE);
-						String empid=sharedpref.getString("APP_EMPID","NOT_FOUND");
-	    			if (!empid.equalsIgnoreCase("NOT_FOUND")) {
-	    			    empid = extras.getString("EMP_ID");
-	    			}
 	    			try{
 	    			JSONObject jobj=new JSONObject();
 	    			jobj.put("ACTION", "ICE_REGISTER");

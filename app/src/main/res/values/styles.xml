@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
      
     
@@ -20,9 +20,18 @@
         <item name="android:spinnerDropDownItemStyle">@android:color/black</item>
     </style>
 
-    <!-- Application theme. -->
+    <!-- Application theme by pateel. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:activatedBackgroundIndicator">@drawable/listitem_background</item>
+        <item name="android:background"  tools:ignore="NewApi">@color/md_white_1000</item>
+        <item name="background">@color/md_teal_300</item>
+        <item name="android:textColor">@color/black_color</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- Application theme by pateel. -->
+    <style name="AppTheme2" parent="AppBaseTheme">
+        <item name="background">@color/md_teal_300</item>
+        <item name="android:textColor">@color/black_color</item>
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     <style name="TransparentProgressDialog" parent="android:Theme.Dialog">

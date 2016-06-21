@@ -2069,16 +2069,7 @@ public class MapClass extends Activity implements OnItemClickListener {
 			bckprsdcount++;
 			Toast.makeText(getApplicationContext(),"Press back again to exit!",Toast.LENGTH_LONG).show();
 		}
-	//	buildAlertMessageEXIT();
-//		Intent intent = new Intent(Intent.ACTION_MAIN);
-//        intent.addCategory(Intent.CATEGORY_HOME);
-//        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//***Change Here***
-//        startActivity(intent);
-//        finish();
-//        System.exit(0);
-		// Toast.makeText(getApplicationContext(), "in start",
-		// Toast.LENGTH_LONG).show();
-		// finish();
+
 	}
 
 	private void panicalert() {
@@ -2184,117 +2175,6 @@ public class MapClass extends Activity implements OnItemClickListener {
 
 					// Adding request to request queue
 					AppController.getInstance().addToRequestQueue(req);
-//					ServerCommunication sobj = new ServerCommunication(jobj);
-//					sobj.setDataDownloadListen(new DataDownloadListener() {
-//						public void dataSuccess(String result) {
-//							try {
-//								if (result != null
-//										&& !result.equalsIgnoreCase("")) {
-//									JSONObject robj;
-//									robj = new JSONObject(result);
-//
-//									if (robj != null
-//											&& robj.getString("result")
-//													.equalsIgnoreCase("true")) {
-//										if (robj.getString("PANIC_STATUS")
-//												.equalsIgnoreCase("ACTIVATED")) {
-//											Toast.makeText(
-//													getApplicationContext(),
-//													"Panic Activated!",
-//													Toast.LENGTH_LONG).show();
-//											ImageView panicactiv = (ImageView) findViewById(R.id.panicalaram);
-//											panicactiv
-//													.setImageResource(R.drawable.panic_activated);
-//
-//										}
-//									} else if (robj != null
-//											&& robj.getString("result")
-//													.equalsIgnoreCase("false"))
-//
-//									{
-//										Toast.makeText(getApplicationContext(),
-//												"Opertaion Failed!",
-//												Toast.LENGTH_LONG).show();
-//									}
-//
-//								}
-//								// else
-//
-//								// Toast.makeText(getApplicationContext(),
-//								// "Oops Error In Communication",
-//								// Toast.LENGTH_SHORT).show();
-//
-//							} catch (JSONException e) {
-//
-//								// TODO Auto-generated catch block
-//								e.printStackTrace();
-//								AppController.getInstance().trackException(e);
-//							}
-//						}
-//
-//						public void datafail() {
-//
-//							Toast.makeText(getApplicationContext(),
-//									"No Network", Toast.LENGTH_SHORT).show();
-//						}
-//
-//					});
-//					sobj.execute();ServerCommunication sobj = new ServerCommunication(jobj);
-//					sobj.setDataDownloadListen(new DataDownloadListener() {
-//						public void dataSuccess(String result) {
-//							try {
-//								if (result != null
-//										&& !result.equalsIgnoreCase("")) {
-//									JSONObject robj;
-//									robj = new JSONObject(result);
-//
-//									if (robj != null
-//											&& robj.getString("result")
-//													.equalsIgnoreCase("true")) {
-//										if (robj.getString("PANIC_STATUS")
-//												.equalsIgnoreCase("ACTIVATED")) {
-//											Toast.makeText(
-//													getApplicationContext(),
-//													"Panic Activated!",
-//													Toast.LENGTH_LONG).show();
-//											ImageView panicactiv = (ImageView) findViewById(R.id.panicalaram);
-//											panicactiv
-//													.setImageResource(R.drawable.panic_activated);
-//
-//										}
-//									} else if (robj != null
-//											&& robj.getString("result")
-//													.equalsIgnoreCase("false"))
-//
-//									{
-//										Toast.makeText(getApplicationContext(),
-//												"Opertaion Failed!",
-//												Toast.LENGTH_LONG).show();
-//									}
-//
-//								}
-//								// else
-//
-//								// Toast.makeText(getApplicationContext(),
-//								// "Oops Error In Communication",
-//								// Toast.LENGTH_SHORT).show();
-//
-//							} catch (JSONException e) {
-//
-//								// TODO Auto-generated catch block
-//								e.printStackTrace();
-//								AppController.getInstance().trackException(e);
-//							}
-//						}
-//
-//						public void datafail() {
-//
-//							Toast.makeText(getApplicationContext(),
-//									"No Network", Toast.LENGTH_SHORT).show();
-//						}
-//
-//					});
-//					sobj.execute();
 				} catch (Exception e) {
 					e.printStackTrace();
 					AppController.getInstance().trackException(e);

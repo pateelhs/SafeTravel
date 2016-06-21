@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.agiledge.keocometemployee"
-    android:versionCode="4"
-    android:versionName="1.0.3" >
+    android:versionCode="5"
+    android:versionName="1.0.4" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -58,7 +58,8 @@
         <activity
             android:name="com.agiledge.keocometemployee.activities.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme2" >
             <intent-filter>
                 <action
                     android:name="android.intent.action.MAIN"
@@ -88,11 +89,13 @@
         <activity
             android:name="com.agiledge.keocometemployee.navdrawermenu.TripDetailsActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
         <activity
             android:name="com.agiledge.keocometemployee.navdrawermenu.AboutActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
         <activity
             android:name="com.agiledge.keocometemployee.navdrawermenu.EmergencyContactActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -129,7 +132,8 @@
         <activity
             android:name="com.agiledge.keocometemployee.navdrawermenu.FeedBackActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
         <activity
             android:name="com.agiledge.keocometemployee.activities.LiveTrackingActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -141,10 +145,12 @@
         <activity
             android:name="com.agiledge.keocometemployee.navdrawermenu.AdocDetails"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
         <activity
             android:name="com.agiledge.keocometemployee.utilities.DateModify"
-            android:theme="@style/AppTheme" />
+            android:label="Modify Booking"
+            android:theme="@style/AppTheme2" />
         <activity
             android:name="com.agiledge.keocometemployee.activities.TripHistoryList"
             android:label="My Rides"
@@ -155,8 +161,11 @@
         <activity
             android:name="com.agiledge.keocometemployee.activities.TrackMyCabActivity"
             android:label="Live Tracking"
-            android:theme="@style/AppTheme_home" />
-
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name="com.agiledge.keocometemployee.activities.Booking"
+            android:label="Book Your transport"
+            android:theme="@style/AppTheme2" />
         <!-- Goolge API Key -->
         <meta-data
             android:name="com.google.android.gms.version"
@@ -213,9 +222,6 @@
            android:value="AIzaSyD_hQvsRYtDDnBizDkQNBXRUN-CHvMkvgE"
         -->
 
-        <activity android:name="com.agiledge.keocometemployee.activities.Booking" >
-            android:label="Book Your transport"
-        </activity>
         <activity android:name="com.agiledge.keocometemployee.navdrawermenu.spinner" />
 
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->

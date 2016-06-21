@@ -3,6 +3,7 @@ package com.agiledge.keocometemployee.activities;
 /**
  * Created by Pateel on 6/14/2016.
  */
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,9 +15,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
+import android.widget.ImageView;
 
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.adapter.CustomAndroidGridViewAdapter;
+import com.agiledge.keocometemployee.navdrawermenu.AboutActivity;
 import com.agiledge.keocometemployee.navdrawermenu.EmergencyContactActivity;
 import com.agiledge.keocometemployee.navdrawermenu.FeedBackActivity;
 import com.agiledge.keocometemployee.navdrawermenu.ManageBookingActivity;
@@ -31,11 +34,13 @@ public class Home_Activity extends AppCompatActivity {
     CoordinatorLayout rootLayoutAndroid;
     Context context;
     ArrayList arrayList;
-    String displayname="Hi ",empid="";
+    ImageView profile;
+
+    String displayname="Hi ",empid="",gender="",user_type="";
     public static String[] gridViewStrings = {
-            "Track My Cab",
+            "My Cab",
             "Book Cab",
-            "My Trip Details",
+            "Trip Details",
             "Emergency Contacts",
             "Feedback",
             "About",
@@ -57,17 +62,21 @@ public class Home_Activity extends AppCompatActivity {
         setContentView(R.layout.home_activity);
        toolbar = (Toolbar) findViewById(R.id.toolbar_home);
         setSupportActionBar(toolbar);
+        profile=(ImageView) findViewById(R.id.profile_image);
        // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //getSupportActionBar().setHomeButtonEnabled(true);
         Bundle extras=getIntent().getExtras();
         if(extras!=null){
             displayname+=extras.getString("displayname");
             empid=extras.getString("empid");
+            gender=extras.getString("gender");
+            user_type=extras.getString("user_type");
         }
         GridView gridView = (GridView) findViewById(R.id.grid);
         gridView.setAdapter(new CustomAndroidGridViewAdapter(Home_Activity.this, gridViewStrings, gridViewImages));
 
         initInstances();
+        setprofile();
         gridView.setOnItemClickListener(new OnItemClickListener()
         {
             @Override
@@ -75,7 +84,9 @@ public class Home_Activity extends AppCompatActivity {
                                     long arg3) {
                 switch (position) {
                     case 0:
-                        Intent map = new Intent(Home_Activity.this, MapClass.class);
+                        Intent map = new Intent(Home_Activity.this, TrackMyCabActivity.class);
+                        map.putExtra("empid",empid);
+                        map.putExtra("user_type",user_type);
                         startActivityForResult(map, 0);
                         break;
                     case 1:
@@ -96,7 +107,7 @@ public class Home_Activity extends AppCompatActivity {
                         startActivityForResult(feed, 0);
                         break;
                     case 5:
-                        Intent about = new Intent(Home_Activity.this, TrackMyCabActivity.class);
+                        Intent about = new Intent(Home_Activity.this, AboutActivity.class);
                         startActivityForResult(about, 0);
                         break;
 
@@ -120,4 +131,13 @@ public class Home_Activity extends AppCompatActivity {
         System.exit(0);
 
     }
+   private void setprofile(){
+
+           if(gender.equalsIgnoreCase("F")){
+          profile.setImageResource(R.drawable.avatar_female);
+       }
+       else
+               profile.setImageResource(R.drawable.avatar_male);
+
+   }
 }

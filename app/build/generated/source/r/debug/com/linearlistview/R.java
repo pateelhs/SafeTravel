@@ -8,10 +8,10 @@ package com.linearlistview;
 
 public final class R {
 	public static final class attr {
-		public static final int dividerThickness = 0x7f0100d1;
+		public static final int dividerThickness = 0x7f0100d5;
 	}
 	public static final class styleable {
-		public static final int[] LinearListView = { 0x010100b2, 0x7f0100d1 };
+		public static final int[] LinearListView = { 0x010100b2, 0x7f0100d5 };
 		public static final int LinearListView_android_entries = 0;
 		public static final int LinearListView_dividerThickness = 1;
 	}

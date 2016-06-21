@@ -120,7 +120,7 @@
                 android:layout_width="match_parent" android:layout_below="@id/proodut_tyepe"
                 android:spinnerMode="dropdown" />
         </RelativeLayout>
-        
+
         <!--<RelativeLayout android:layout_height="wrap_content"-->
 
             <!--android:id="@+id/product_company" android:layout_width="300dp"-->
