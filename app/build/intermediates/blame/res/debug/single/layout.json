@@ -48,12 +48,12 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\mycab.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\exitpopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\exitpopup.xml"
-    },
-    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\exitpopup.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\exitpopup.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
@@ -68,12 +68,12 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\form_labeled_element.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.github.dkharrat.nexusdialog\\nexusdialog\\0.3.0\\res\\layout\\form_labeled_element.xml"
-    },
-    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\form_labeled_element.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.github.dkharrat.nexusdialog\\nexusdialog\\0.3.0\\res\\layout\\form_labeled_element.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_spinner.xml",
@@ -136,12 +136,12 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\map.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_layout_snackbar_include.xml"
-    },
-    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\modify.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\modify.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",

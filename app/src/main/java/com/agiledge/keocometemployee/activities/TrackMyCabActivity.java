@@ -55,7 +55,6 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -92,6 +91,7 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
         int empcount=0;
         List<String> allempids=new ArrayList<String>();
         boolean isMarkerRotating=false;
+        boolean slidestatus=false;
 
 
 
@@ -669,7 +669,7 @@ public void getTripDetails(){
         {
             try {
                 if(resetmap)
-                    clearAllMarkers();
+                   clearAllMarkers();
                 else
                 resetmap=true;
                     getTripDetails();
@@ -786,7 +786,7 @@ public void getTripDetails(){
             @Override
             public void onResponse(JSONObject response) {
                 try {
-                    if (response.getString("result").equalsIgnoreCase("TRUE")) {
+                    if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
                         JSONArray LAT = response.getJSONArray("LAT");
                         JSONArray LONG = response.getJSONArray("LONG");
                         JSONArray REGNO = response.getJSONArray("REGNO");
@@ -873,22 +873,25 @@ public void getTripDetails(){
                                 }
 
                                 LatLng lat1=new LatLng(latitude,longitude);
-                                LatLng lat2=new LatLng(12.9716,77.5946);
-                                double brng=bearingBetweenLocations(lat1,lat2);
+                                LatLng road=new LatLng(12.959869773633582,77.64835351807531);
+                                LatLng lat2=new LatLng(12.959791489282114,77.64889220777359);
+                                double brng=bearingBetweenLocations(road,lat2);
                                 Marker marker1 = mGoogleMap.addMarker(new MarkerOptions()
-                                        .position(lat1)
-                                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.uber_icon))
-                                        .title("Test marker"));
-                                rotateMarker(marker1,Float.parseFloat(brng+""));
+                                        .position(road)
+                                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.uber_car90))
+                                        .rotation(Float.parseFloat(brng+"")).title("Test marker"));
+                                animateMarker(marker1,road,lat2);
+                                //rotateMarker(marker1,road,lat2,Float.parseFloat(brng+""));
                                 mGoogleMap.addMarker(marker);
+
                             }
-                            CameraPosition cameraPosition = new CameraPosition.Builder()
+                          /*  CameraPosition cameraPosition = new CameraPosition.Builder()
                                     .target(new LatLng(latitude,
                                             longitude)).zoom(11)
                                     .build();
 
                             mGoogleMap.animateCamera(CameraUpdateFactory
-                                    .newCameraPosition(cameraPosition));
+                                    .newCameraPosition(cameraPosition));*/
 
                         } else {
                             Toast.makeText(getApplicationContext(), "Something went wrong!", Toast.LENGTH_LONG).show();
@@ -919,7 +922,7 @@ public void getTripDetails(){
     }
 
     public void clearAllMarkers(){
-        mGoogleMap.clear();
+       // mGoogleMap.clear();
     }
 
     public void setETA(double cablat,double cablng,double emplat,double emplng){
@@ -990,15 +993,15 @@ public void getTripDetails(){
         m_Runnable.run();
     }
 
-    private void rotateMarker(final Marker marker, final float toRotation) {
+    private void rotateMarker(final Marker marker,final LatLng startltlng,final LatLng endltlng ,final float toRotation) {
         if(!isMarkerRotating) {
             final Handler handler = new Handler();
             final long start = SystemClock.uptimeMillis();
             final float startRotation = marker.getRotation();
             final long duration = 1000;
+            long elapsed = SystemClock.uptimeMillis() - start;
 
             final Interpolator interpolator = new LinearInterpolator();
-
             handler.post(new Runnable() {
                 @Override
                 public void run() {
@@ -1006,9 +1009,7 @@ public void getTripDetails(){
 
                     long elapsed = SystemClock.uptimeMillis() - start;
                     float t = interpolator.getInterpolation((float) elapsed / duration);
-
                     float rot = t * toRotation + (1 - t) * startRotation;
-
                     marker.setRotation(-rot > 180 ? rot / 2 : rot);
                     if (t < 1.0) {
                         // Post again 16ms later.
@@ -1020,7 +1021,28 @@ public void getTripDetails(){
             });
         }
     }
+    public void animateMarker(final Marker marker,final LatLng startltlng,final LatLng endltlng){
+        final Interpolator interpolator = new LinearInterpolator();
+        final long start = SystemClock.uptimeMillis();
+        final long duration = 3000;
 
+        final Handler handler = new Handler();
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                final long elapsed = SystemClock.uptimeMillis() - start;
+                float t = interpolator.getInterpolation((float) elapsed / duration);
+                double lat = t * endltlng.latitude + (1 - t) * startltlng.latitude;
+                double lng = t * endltlng.longitude + (1 - t) * startltlng.longitude;
+                LatLng intermediatePosition = new LatLng(lat, lng);
+                marker.setPosition(intermediatePosition);
+                if (t < 1.0) {
+                    // Post again 16ms later.
+                    handler.postDelayed(this, 1000);
+                }
+            }
+        });
+    }
     private double bearingBetweenLocations(LatLng latLng1,LatLng latLng2) {
 
         double PI = 3.14159;

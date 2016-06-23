@@ -73,11 +73,13 @@
         <activity
             android:name="com.agiledge.keocometemployee.activities.Onetimeregister"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
         <activity
             android:name="com.agiledge.keocometemployee.activities.OTPActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
         <activity
             android:name="com.agiledge.keocometemployee.activities.MapClass"
             android:configChanges="orientation|screenSize|keyboardHidden"

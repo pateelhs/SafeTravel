@@ -11,6 +11,7 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -68,6 +69,7 @@ public class Home_Activity extends AppCompatActivity {
         Bundle extras=getIntent().getExtras();
         if(extras!=null){
             displayname+=extras.getString("displayname");
+            Log.d("name",displayname);
             empid=extras.getString("empid");
             gender=extras.getString("gender");
             user_type=extras.getString("user_type");
@@ -123,7 +125,11 @@ public class Home_Activity extends AppCompatActivity {
         collapsingToolbarLayoutAndroid = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_android_layout);
         collapsingToolbarLayoutAndroid.setTitle(displayname);
     }
+    @Override
+    public void onPause() {
+        super.onPause();
 
+    }
     @Override
     public void onBackPressed()
     {

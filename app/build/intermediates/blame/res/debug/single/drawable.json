@@ -20,6 +20,10 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\dotted_line.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_off.png",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\toggle_off.png"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\feedback_20.png",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\feedback_20.png"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divider.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\divider.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
@@ -188,6 +196,18 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\menu_history.png"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_selector.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\toggle_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\uber_car90.png",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\uber_car90.png"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\iconcar.png",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\iconcar.png"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
@@ -270,6 +290,10 @@
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\map_uber_car.png",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\map_uber_car.png"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\panic_pop_up_activate.png",
@@ -424,6 +448,10 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\only_driver.png"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edit_bg_new.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\edit_bg_new.xml"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\person_2.png",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\person_2.png"
     },
@@ -490,6 +518,10 @@
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\list_row_selector.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\list_row_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_on.png",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\drawable\\toggle_on.png"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\list_selector.xml",

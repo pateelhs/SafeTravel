@@ -73,10 +73,13 @@
         <activity
             android:name=".activities.Onetimeregister"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            />
         <activity
             android:name=".activities.OTPActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme2"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activities.MapClass"

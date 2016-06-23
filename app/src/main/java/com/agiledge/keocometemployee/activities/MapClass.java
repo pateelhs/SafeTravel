@@ -153,7 +153,7 @@ public class MapClass extends Activity implements OnItemClickListener {
 			WifiManager wimanager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
 			macAddress = wimanager.getConnectionInfo().getMacAddress();
 			// Todo change the layout background
-
+			//for gcm
 			mRegistrationBroadcastReceiver = new BroadcastReceiver() {
 				@Override
 				public void onReceive(Context context, Intent intent) {
@@ -178,6 +178,7 @@ public class MapClass extends Activity implements OnItemClickListener {
 				Intent intent = new Intent(this, RegistrationIntentService.class);
 				startService(intent);
 			}
+			//for gcm end
 
 			aldates = new ArrayList<String>();
 			al_login = new ArrayList<String>();

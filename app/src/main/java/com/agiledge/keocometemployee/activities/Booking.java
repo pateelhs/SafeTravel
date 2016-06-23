@@ -4,30 +4,29 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Gravity;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.LinearInterpolator;
-import android.view.animation.RotateAnimation;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
@@ -36,6 +35,7 @@ import com.agiledge.keocometemployee.utilities.TransparentProgressDialog;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.android.gms.common.api.GoogleApiClient;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -50,14 +50,38 @@ public class Booking extends AppCompatActivity {
     public static Button submit;
     private TransparentProgressDialog pd;
     private String[] branchsitearr;
-   public String[] sitearr;
+    public String[] sitearr;
     private String[] brancharr;
     private String[] siteidarr;
     private String[] branchidarr;
-  static public boolean setdate=false;
+    static public boolean setdate = false;
     private String selectedbranchid;
     private String selectedsiteid;
+    ToggleButton toggleButton;
+    TextView bookfor;
+    AutoCompleteTextView ACTV;
+    ArrayAdapter<String> adapter;
+    boolean searchstatus=true,isSearchselected=false,issearchChecked=false;
+    ArrayList<String> searchempids=new ArrayList<String>();
+    String searchselectedempid="";
 
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+    }
 
 
     public static class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
@@ -68,7 +92,7 @@ public class Booking extends AppCompatActivity {
         }
 
         @Override
-        public Dialog onCreateDialog(Bundle savedInstanceState){
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
             //Use the current date as the default date in the date picker
             final Calendar c = Calendar.getInstance();
             int year = c.get(Calendar.YEAR);
@@ -86,7 +110,7 @@ public class Booking extends AppCompatActivity {
             THEME_TRADITIONAL
          */
 
-            DatePickerDialog dpd = new DatePickerDialog(getActivity(),AlertDialog.THEME_DEVICE_DEFAULT_LIGHT,this,year, month, day);
+            DatePickerDialog dpd = new DatePickerDialog(getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_LIGHT, this, year, month, day);
             //DatePickerDialog dpd = new DatePickerDialog(getActivity(),AlertDialog.THEME_DEVICE_DEFAULT_DARK,this,year, month, day);
             //DatePickerDialog dpd = new DatePickerDialog(getActivity(), AlertDialog.THEME_HOLO_LIGHT,this,year, month, day);
             //DatePickerDialog dpd = new DatePickerDialog(getActivity(),AlertDialog.THEME_HOLO_DARK,this,year, month, day);
@@ -95,11 +119,11 @@ public class Booking extends AppCompatActivity {
             //Get the DatePicker instance from DatePickerDialog
             DatePicker dp = dpd.getDatePicker();
             //Set the DatePicker minimum date selection to current date
-            dp.setMinDate(c.getTimeInMillis()-1000);//get the current day
+            dp.setMinDate(c.getTimeInMillis() - 1000);//get the current day
             //dp.setMinDate(System.currentTimeMillis() - 1000);// Alternate way to get the current day
             dpd.setTitle("Choose a Date");
             //Add 6 days with current date
-            c.add(Calendar.DAY_OF_MONTH,60);
+            c.add(Calendar.DAY_OF_MONTH, 60);
 
             //Set the maximum date to select from DatePickerDialog
             dp.setMaxDate(c.getTimeInMillis());
@@ -118,24 +142,24 @@ public class Booking extends AppCompatActivity {
             if (day < 10) {
                 sday = "0" + day;
             }
-            if(setdate) {
-                    et1.setText(sday + "/" + smonth + "/" + year);
+            if (setdate) {
+                et1.setText(sday + "/" + smonth + "/" + year);
+            } else {
+                et2.setText(sday + "/" + smonth + "/" + year);
             }
-            else{
-                    et2.setText(sday + "/" + smonth + "/" + year);
-            }
-
 
 
         }
+
+
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
-        Spinner location=(Spinner) findViewById(R.id.service11);
-        final Spinner sitespnr=(Spinner) findViewById(R.id.frequency1);
+        Spinner location = (Spinner) findViewById(R.id.service11);
+        final Spinner sitespnr = (Spinner) findViewById(R.id.frequency1);
         Spinner logoutspinner = (Spinner) findViewById(R.id.pro_typ);
         AppController.getInstance().trackScreenView("Booking Activity");// for Google analytics data
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -143,16 +167,71 @@ public class Booking extends AppCompatActivity {
         et1 = (EditText) findViewById(R.id.selected_fromdate);
         et2 = (EditText) findViewById(R.id.selected_todate);
         submit = (Button) findViewById(R.id.submit_book);
+        toggleButton = (ToggleButton) findViewById(R.id.toggleButton1);
+        ACTV = (AutoCompleteTextView) findViewById(R.id.auto);
+        SharedPreferences sharedpref=getPreferences(Context.MODE_PRIVATE);
+        String user_type=sharedpref.getString("APP_USERTYPE","NOT_FOUND");
+        ACTV.setVisibility(View.INVISIBLE);
+        if(user_type.equalsIgnoreCase("Admin"))
+            ACTV.setVisibility(View.VISIBLE);
+        bookfor = (TextView) findViewById(R.id.bookfor);
         fillvalues();
         pd = new TransparentProgressDialog(this, R.drawable.loading);
         pd.show();
+        ACTV.setThreshold(3);
 
+        ACTV.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if(count>2&&searchstatus&&!isSearchselected) {
+                    searchfill(s.toString());
+                }
+                if(count<3)
+                    isSearchselected=false;
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+        ACTV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                searchselectedempid=searchempids.get(position);
+                isSearchselected=true;
+                ACTV.dismissDropDown();
+
+            }
+        });
+        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(CompoundButton arg0, boolean isChecked) {
+                if (isChecked == true) {
+                    bookfor.setText("Others ");
+                    issearchChecked=true;
+                    ACTV.setVisibility(View.VISIBLE);
+                } else {
+                    bookfor.setText("Self  ");
+                    ACTV.setVisibility(View.INVISIBLE);
+                    issearchChecked=false;
+                }
+            }
+        });
         et1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DialogFragment newFragment = new DatePickerFragment();
                 newFragment.show(getSupportFragmentManager(), "datePicker");
-                setdate=true;
+                setdate = true;
 
 
             }
@@ -162,7 +241,7 @@ public class Booking extends AppCompatActivity {
             public void onClick(View v) {
                 DialogFragment newFragment = new DatePickerFragment();
                 newFragment.show(getSupportFragmentManager(), "datePicker");
-                setdate=false;
+                setdate = false;
 
 
             }
@@ -174,57 +253,56 @@ public class Booking extends AppCompatActivity {
                 book();
 
 
-
             }
         });
 
 
+        location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
+                selectedbranchid = branchidarr[position];
+                sitespnr.setAdapter(null);
+                ArrayList<String> sitelist = new ArrayList<>();
+                for (int i = 0; i < sitearr.length; i++) {
+                    if (branchidarr[position].equalsIgnoreCase(branchsitearr[i]))
+                        sitelist.add(sitearr[i]);
+                }
+                ArrayAdapter<String> adp = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, sitelist);
+                adp.setDropDownViewResource(R.layout.my_spinner);
+                sitespnr.setAdapter(adp);
 
-location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-        selectedbranchid=branchidarr[position];
-        sitespnr.setAdapter(null);
-        ArrayList<String> sitelist = new ArrayList<>();
-        for (int i = 0; i < sitearr.length; i++) {
-            if(branchidarr[position].equalsIgnoreCase(branchsitearr[i]))
-                sitelist.add(sitearr[i]);
-        }
-        ArrayAdapter<String> adp = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, sitelist);
-        adp.setDropDownViewResource(R.layout.my_spinner);
-        sitespnr.setAdapter(adp);
+            }
 
-    }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
 
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-        // sometimes you need nothing here
-    }});
+                // sometimes you need nothing here
+            }
+        });
 
         sitespnr.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(parent.getChildAt(0)!=null) {
+                if (parent.getChildAt(0) != null) {
                     ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
-                    selectedsiteid=siteidarr[position];
+                    selectedsiteid = siteidarr[position];
 
                 }
 
 
-
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
                 // sometimes you need nothing here
-            }});
+            }
+        });
         logoutspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(parent.getChildAt(0)!=null)
+                if (parent.getChildAt(0) != null)
                     ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
 
 
@@ -234,12 +312,56 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onNothingSelected(AdapterView<?> parent) {
 
                 // sometimes you need nothing here
-            }});
+            }
+        });
 
     }
 
 
+    public void searchfill(String searchkey)
+    {
+        try {
+            JSONObject jobj = new JSONObject();
+            jobj.put("ACTION", "SEARCH_EMPLOYEE");
+            jobj.put("SEARCHKEY",searchkey);
+            searchstatus=false;
+            JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    try {
+                        String data[];
+                        searchempids=new ArrayList<String>();
+                    if(response.getString("RESULT").equalsIgnoreCase("TRUE")){
+                        JSONArray namearr=response.getJSONArray("NAMES");
+                        JSONArray idarr=response.getJSONArray("IDS");
+                        data=new String[namearr.length()];
+                        for(int i=0;i<namearr.length();i++){
+                            data[i]=namearr.get(i).toString();
+                            searchempids.add(idarr.get(i).toString());
+                        }
+                    }else{
+                        data=new String[1];
+                        data[0]=response.getString("MESSAGE");
+                    }
+                        adapter= new ArrayAdapter<String>(Booking.this,android.R.layout.select_dialog_item,data);
+                        ACTV.setAdapter(adapter);
+                        adapter.setNotifyOnChange(true);
+                        ACTV.showDropDown();
+                        searchstatus=true;
+                    }catch(Exception e){e.printStackTrace();
+                    }
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
+                }
+            });
 
+            // Adding request to request queue
+            AppController.getInstance().addToRequestQueue(req);
+        }catch (Exception e){e.printStackTrace();}
+    }
     public void fillvalues() {
         try {
             JSONObject jobj = new JSONObject();
@@ -259,26 +381,26 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             JSONArray branch = response.getJSONArray("BRANCH");
                             JSONArray siteids = response.getJSONArray("SITE_ID");
                             JSONArray site = response.getJSONArray("SITE");
-                            JSONArray jbranchsite=response.getJSONArray("SITEBRANCH");
-                            branchsitearr=new String[jbranchsite.length()];
-                            for(int i=0;i<jbranchsite.length();i++){
-                            branchsitearr[i]=jbranchsite.getString(i);
+                            JSONArray jbranchsite = response.getJSONArray("SITEBRANCH");
+                            branchsitearr = new String[jbranchsite.length()];
+                            for (int i = 0; i < jbranchsite.length(); i++) {
+                                branchsitearr[i] = jbranchsite.getString(i);
                             }
-                            sitearr=new String[site.length()];
-                            for(int i=0;i<site.length();i++){
-                                sitearr[i]=site.getString(i);
+                            sitearr = new String[site.length()];
+                            for (int i = 0; i < site.length(); i++) {
+                                sitearr[i] = site.getString(i);
                             }
-                            siteidarr=new String[siteids.length()];
-                            for(int i=0;i<siteids.length();i++){
-                                siteidarr[i]=siteids.getString(i);
+                            siteidarr = new String[siteids.length()];
+                            for (int i = 0; i < siteids.length(); i++) {
+                                siteidarr[i] = siteids.getString(i);
                             }
-                            brancharr=new String[branch.length()];
-                            for(int i=0;i<branch.length();i++){
-                                brancharr[i]=branch.getString(i);
+                            brancharr = new String[branch.length()];
+                            for (int i = 0; i < branch.length(); i++) {
+                                brancharr[i] = branch.getString(i);
                             }
-                            branchidarr=new String[branchids.length()];
-                            for(int i=0;i<branchids.length();i++){
-                                branchidarr[i]=branchids.getString(i);
+                            branchidarr = new String[branchids.length()];
+                            for (int i = 0; i < branchids.length(); i++) {
+                                branchidarr[i] = branchids.getString(i);
                             }
                             ArrayList<String> branchlist = new ArrayList<>();
                             for (int i = 0; i < branch.length(); i++) {
@@ -289,8 +411,8 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             branchspinner.setAdapter(branchadp);
                             ArrayList<String> sitelist = new ArrayList<>();
                             for (int i = 0; i < site.length(); i++) {
-                                if(branchidarr[0].equalsIgnoreCase(branchsitearr[i]))
-                                sitelist.add(site.getString(i));
+                                if (branchidarr[0].equalsIgnoreCase(branchsitearr[i]))
+                                    sitelist.add(site.getString(i));
                             }
                             ArrayAdapter<String> adp = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, sitelist);
                             adp.setDropDownViewResource(R.layout.my_spinner);
@@ -352,54 +474,53 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
     }
 
     public void book() {
-        try{
-        WifiManager wifiMan = (WifiManager) this.getSystemService(
-                Context.WIFI_SERVICE);
-        WifiInfo wifiInf = wifiMan.getConnectionInfo();
-            EditText fromdate=(EditText) findViewById(R.id.selected_fromdate);
-            EditText todate=(EditText) findViewById(R.id.selected_todate);
-            Spinner time=(Spinner) findViewById(R.id.pro_typ);
+        try {
+            WifiManager wifiMan = (WifiManager) this.getSystemService(
+                    Context.WIFI_SERVICE);
+            WifiInfo wifiInf = wifiMan.getConnectionInfo();
+            EditText fromdate = (EditText) findViewById(R.id.selected_fromdate);
+            EditText todate = (EditText) findViewById(R.id.selected_todate);
+            Spinner time = (Spinner) findViewById(R.id.pro_typ);
 
-            boolean valid=true;
-        String macAddress = wifiInf.getMacAddress();
-            if(fromdate.getText().toString().equalsIgnoreCase("")){
+            boolean valid = true;
+            String macAddress = wifiInf.getMacAddress();
+            if (fromdate.getText().toString().equalsIgnoreCase("")) {
                 fromdate.setError("Please select date!");
-                valid=false;
+                valid = false;
 
             }
-            if(todate.getText().toString().equalsIgnoreCase("")){
+            if (todate.getText().toString().equalsIgnoreCase("")) {
                 todate.setError("Please select date!");
-                valid=false;
+                valid = false;
             }
-            if(valid) {
+            if (valid) {
                 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
                 Date fd = sdf.parse(fromdate.getText().toString());
-                Date td=sdf.parse(todate.getText().toString());
-                if(fd.after(td)){
+                Date td = sdf.parse(todate.getText().toString());
+                if (fd.after(td)) {
                     fromdate.setError("To date should be after from date!");
-                    valid=false;
+                    valid = false;
                 }
 
             }
 
 
-
             Spinner sitespinner = (Spinner) findViewById(R.id.frequency1);
-              if(sitespinner.getSelectedItem()==null){
-                valid=false;
-                Toast.makeText(getApplicationContext(),"Please select site!",Toast.LENGTH_LONG).show();
+            if (sitespinner.getSelectedItem() == null) {
+                valid = false;
+                Toast.makeText(getApplicationContext(), "Please select site!", Toast.LENGTH_LONG).show();
             }
 
-            if(valid) {
-                Date fd=new Date();
-                Date td=new Date();
-                SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yyyy");
-                fd=sdf.parse(fromdate.getText().toString());
-                td=sdf.parse(todate.getText().toString());
-                if(fd.after(td)){
-                    valid=false;
+            if (valid) {
+                Date fd = new Date();
+                Date td = new Date();
+                SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+                fd = sdf.parse(fromdate.getText().toString());
+                td = sdf.parse(todate.getText().toString());
+                if (fd.after(td)) {
+                    valid = false;
                     todate.setError("Please select after from date!");
-                    Toast.makeText(getApplicationContext(),"To date should be after from date!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "To date should be after from date!", Toast.LENGTH_LONG).show();
                 }
                 JSONObject jobj = new JSONObject();
                 jobj.put("ACTION", "BOOKING");
@@ -408,7 +529,11 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 jobj.put("TO_DATE", todate.getText().toString());
                 jobj.put("LOG_IN", "WEEKLY OFF");
                 jobj.put("LOG_OUT", time.getSelectedItem().toString());
-                jobj.put("SITE_ID",selectedsiteid);
+                jobj.put("SITE_ID", selectedsiteid);
+                if(issearchChecked)
+                jobj.put("BOOKING_FOR",searchselectedempid);
+                else
+                    jobj.put("BOOKING_FOR","SELF");
 
                 JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
                     @Override
@@ -417,12 +542,12 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
                             if (response.getString("result").equalsIgnoreCase("TRUE")) {
                                 pd.dismiss();
-                                Toast.makeText(getApplicationContext(), ""+response.getString("MESSAGE"), Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "" + response.getString("MESSAGE"), Toast.LENGTH_LONG).show();
                                 finish();
 
                             } else {
                                 pd.dismiss();
-                                Toast.makeText(getApplicationContext(), ""+response.getString("MESSAGE"), Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "" + response.getString("MESSAGE"), Toast.LENGTH_LONG).show();
                                 finish();
                             }
 
@@ -445,27 +570,24 @@ location.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
                 // Adding request to request queue
                 AppController.getInstance().addToRequestQueue(req);
-            }else{
+            } else {
                 pd.dismiss();
             }
-    } catch (Exception e) {
-        e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
             pd.dismiss();
-    }
-
-    }
-
-
-        @Override
-        public void onBackPressed()
-        {
-
-            	super.onBackPressed();
-
-
-
         }
 
+    }
+
+
+    @Override
+    public void onBackPressed() {
+
+        super.onBackPressed();
+
+
+    }
 
 
     @Override

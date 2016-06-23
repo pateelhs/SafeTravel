@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:2:1-229:12
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:2:1-232:12
 	package
 		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:3:5-44
 		INJECTED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml
@@ -325,7 +325,7 @@ ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml
 	android:anyDensity
 		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:44:9-34
 application
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:52:5-227:19
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:52:5-230:19
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
@@ -509,199 +509,203 @@ ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:69:21-68
 activity#com.agiledge.keocometemployee.activities.Onetimeregister
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:73:9-76:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:73:9-78:15
 	android:screenOrientation
 		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:76:13-49
 	android:configChanges
 		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:75:13-74
+	android:theme
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:77:13-45
 	android:name
 		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:74:13-55
 activity#com.agiledge.keocometemployee.activities.OTPActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:77:9-80:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:79:9-83:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:80:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:83:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:79:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:81:13-74
+	android:theme
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:82:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:78:13-51
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:80:13-51
 activity#com.agiledge.keocometemployee.activities.MapClass
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:81:9-84:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:84:9-87:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:84:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:87:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:83:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:86:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:82:13-48
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:85:13-48
 activity#com.agiledge.keocometemployee.navdrawermenu.HelpActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:85:9-88:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:88:9-91:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:88:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:91:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:87:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:90:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:86:13-55
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:89:13-55
 activity#com.agiledge.keocometemployee.navdrawermenu.TripDetailsActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:89:9-93:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:92:9-96:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:93:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:96:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:92:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:95:13-74
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:91:13-45
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:94:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:90:13-62
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:93:13-62
 activity#com.agiledge.keocometemployee.navdrawermenu.AboutActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:94:9-98:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:97:9-101:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:98:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:101:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:96:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:99:13-74
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:97:13-45
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:100:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:95:13-56
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:98:13-56
 activity#com.agiledge.keocometemployee.navdrawermenu.EmergencyContactActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:99:9-103:57
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:102:9-106:57
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:102:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:105:13-49
 	android:windowSoftInputMode
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:103:13-54
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:106:13-54
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:101:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:104:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:100:13-67
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:103:13-67
 activity#com.agiledge.keocometemployee.navdrawermenu.TripHistoryActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:104:9-107:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:107:9-110:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:107:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:110:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:106:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:109:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:105:13-62
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:108:13-62
 activity#com.agiledge.keocometemployee.navdrawermenu.ManageBookingActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:108:9-111:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:111:9-114:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:111:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:114:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:110:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:113:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:109:13-64
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:112:13-64
 activity#com.agiledge.keocometemployee.navdrawermenu.CancelActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:112:9-115:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:115:9-118:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:115:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:118:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:114:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:117:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:113:13-57
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:116:13-57
 activity#com.agiledge.keocometemployee.navdrawermenu.ModifyActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:116:9-119:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:119:9-122:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:119:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:122:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:118:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:121:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:117:13-57
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:120:13-57
 activity#com.agiledge.keocometemployee.navdrawermenu.BookingActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:120:9-123:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:123:9-126:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:123:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:126:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:122:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:125:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:121:13-58
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:124:13-58
 activity#com.agiledge.keocometemployee.navdrawermenu.CancelDetails
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:124:9-127:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:127:9-130:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:127:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:130:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:126:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:129:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:125:13-56
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:128:13-56
 activity#com.agiledge.keocometemployee.navdrawermenu.ModifyDetails
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:128:9-131:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:131:9-134:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:131:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:134:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:130:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:133:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:129:13-56
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:132:13-56
 activity#com.agiledge.keocometemployee.navdrawermenu.FeedBackActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:132:9-136:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:135:9-139:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:136:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:139:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:134:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:137:13-74
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:135:13-45
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:138:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:133:13-59
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:136:13-59
 activity#com.agiledge.keocometemployee.activities.LiveTrackingActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:137:9-140:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:140:9-143:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:140:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:143:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:139:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:142:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:138:13-60
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:141:13-60
 activity#com.agiledge.keocometemployee.navdrawermenu.AdhocActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:141:9-144:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:144:9-147:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:144:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:147:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:143:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:146:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:142:13-56
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:145:13-56
 activity#com.agiledge.keocometemployee.navdrawermenu.AdocDetails
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:145:9-149:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:148:9-152:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:149:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:152:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:147:13-74
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:150:13-74
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:148:13-45
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:151:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:146:13-54
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:149:13-54
 activity#com.agiledge.keocometemployee.utilities.DateModify
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:150:9-153:48
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:153:9-156:48
 	android:label
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:152:13-43
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:155:13-43
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:153:13-45
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:156:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:151:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:154:13-49
 activity#com.agiledge.keocometemployee.activities.TripHistoryList
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:154:9-157:47
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:157:9-160:47
 	android:label
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:156:13-37
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:159:13-37
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:157:13-44
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:160:13-44
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:155:13-55
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:158:13-55
 activity#com.agiledge.keocometemployee.activities.Home_Activity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:158:9-160:52
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:161:9-163:52
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:160:13-49
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:163:13-49
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:159:13-53
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:162:13-53
 activity#com.agiledge.keocometemployee.activities.TrackMyCabActivity
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:161:9-164:48
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:164:9-167:48
 	android:label
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:163:13-42
-	android:theme
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:164:13-45
-	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:162:13-58
-activity#com.agiledge.keocometemployee.activities.Booking
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:165:9-167:48
-	android:label
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:166:13-48
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:166:13-42
 	android:theme
 		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:167:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:165:19-53
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:165:13-58
+activity#com.agiledge.keocometemployee.activities.Booking
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:168:9-170:48
+	android:label
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:169:13-48
+	android:theme
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:170:13-45
+	android:name
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:168:19-53
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:169:9-171:69
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:172:9-174:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
@@ -736,83 +740,83 @@ MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Patee
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:171:13-66
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:174:13-66
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:170:13-58
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:173:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:172:9-174:71
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:175:9-177:71
 	android:value
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:174:13-68
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:177:13-68
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:173:13-62
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:176:13-62
 receiver#com.google.android.gms.gcm.GcmReceiver
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:176:9-185:20
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:179:9-188:20
 	android:exported
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:178:13-36
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:181:13-36
 	android:permission
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:179:13-73
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:182:13-73
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:177:13-66
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:180:13-66
 intent-filter#com.agiledge.keocometemployee+com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:180:13-184:29
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:183:13-187:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:181:17-81
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:184:17-81
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:181:25-78
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:184:25-78
 category#com.agiledge.keocometemployee
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:183:17-74
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:186:17-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:183:27-71
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:186:27-71
 service#com.agiledge.keocometemployee.GCM.MyGcmListenerService
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:187:9-193:19
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:190:9-196:19
 	android:exported
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:189:13-37
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:192:13-37
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:188:13-53
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:191:13-53
 intent-filter#com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:190:13-192:29
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:193:13-195:29
 service#com.agiledge.keocometemployee.GCM.MyInstanceIDListenerService
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:194:9-200:19
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:197:9-203:19
 	android:exported
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:196:13-37
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:199:13-37
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:195:13-60
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:198:13-60
 intent-filter#com.google.android.gms.iid.InstanceID
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:197:13-199:29
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:200:13-202:29
 action#com.google.android.gms.iid.InstanceID
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:198:17-80
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:201:17-80
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:198:25-77
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:201:25-77
 service#com.agiledge.keocometemployee.GCM.RegistrationIntentService
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:201:9-203:40
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:204:9-206:40
 	android:exported
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:203:13-37
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:206:13-37
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:202:13-58
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:205:13-58
 receiver#com.google.android.gms.analytics.AnalyticsReceiver
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:205:9-211:20
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:208:9-214:20
 	android:enabled
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:207:13-35
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:210:13-35
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:206:13-78
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:209:13-78
 intent-filter#com.google.android.gms.analytics.ANALYTICS_DISPATCH
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:208:13-210:29
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:211:13-213:29
 action#com.google.android.gms.analytics.ANALYTICS_DISPATCH
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:209:17-94
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:212:17-94
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:209:25-91
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:212:25-91
 service#com.google.android.gms.analytics.AnalyticsService
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:213:9-216:40
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:216:9-219:40
 	android:enabled
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:215:13-35
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:218:13-35
 	android:exported
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:216:13-37
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:219:13-37
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:214:13-77
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:217:13-77
 activity#com.agiledge.keocometemployee.navdrawermenu.spinner
-ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:225:9-59
+ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:228:9-59
 	android:name
-		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:225:19-56
+		ADDED from C:\Users\Pateel\Documents\SafeTravel\app\src\main\AndroidManifest.xml:228:19-56
 activity#com.google.android.gms.ads.AdActivity
 ADDED from [com.google.android.gms:play-services-ads:8.4.0] C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:26:9-29:64
 	android:configChanges

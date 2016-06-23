@@ -3,29 +3,52 @@ package com.agiledge.keocometemployee.activities;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v4.content.LocalBroadcastManager;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.agiledge.keocometemployee.GCM.QuickstartPreferences;
+import com.agiledge.keocometemployee.GCM.RegistrationIntentService;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 
 import org.json.JSONObject;
 
 @SuppressWarnings("deprecation")
 public class OTPActivity extends Activity{
+	//GCM
+	private static final int REQUEST_CODE = 0;
+	private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
+	//private static final String TAG = "FSM_GCM";
+
+	private BroadcastReceiver mRegistrationBroadcastReceiver;
+	private ProgressBar mRegistrationProgressBar;
+	private TextView mInformationTextView;
+	private boolean isReceiverRegistered;
+	private static final String TAG = "Safe_GCM";
+
+
 	Button submit;
 	
 	EditText otpnumber;
@@ -44,7 +67,31 @@ public class OTPActivity extends Activity{
 		AppController.getInstance().trackScreenView("OTP activity");
 		WifiManager wimanager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
 		macAddress = wimanager.getConnectionInfo().getMacAddress();
-    	
+    	//gcm
+		mRegistrationBroadcastReceiver = new BroadcastReceiver() {
+			@Override
+			public void onReceive(Context context, Intent intent) {
+				//mRegistrationProgressBar.setVisibility(ProgressBar.GONE);
+				SharedPreferences sharedPreferences =
+						PreferenceManager.getDefaultSharedPreferences(context);
+				boolean sentToken = sharedPreferences
+						.getBoolean(QuickstartPreferences.SENT_TOKEN_TO_SERVER, false);
+				if (sentToken) {
+					//mInformationTextView.setText(getString(R.string.server_registering));
+				} else {
+					//mInformationTextView.setText(getString(R.string.gcm_error));
+				}
+			}
+		};
+		//mInformationTextView = (TextView) findViewById(R.id.informationTextView);
+
+		// Registering BroadcastReceiver
+		registerReceiver();
+		if (checkPlayServices()) {
+			// Start IntentService to register this application with GCM.
+			Intent intent = new Intent(this, RegistrationIntentService.class);
+			startService(intent);
+		}
     		
     	
         
@@ -95,7 +142,6 @@ public class OTPActivity extends Activity{
 										Intent in = new Intent(getApplicationContext(), Home_Activity.class);
 										in.putExtra("user_type", response.getString("user_type"));
 										in.putExtra("displayname",response.getString("EMP_NAME"));
-										Toast.makeText(getApplicationContext(),response.getString("EMP_NAME"),Toast.LENGTH_LONG).show();
 										in.putExtra("gender",response.getString("EMP_GENDER"));
 										in.putExtra("email",response.getString("EMP_EMAIL"));
 
@@ -131,87 +177,7 @@ public class OTPActivity extends Activity{
 
 							// Adding request to request queue
 							AppController.getInstance().addToRequestQueue(req);
-//					ServerCommunication sobj=new ServerCommunication(jobj);
-//					sobj.setDataDownloadListen(new DataDownloadListener()
-//					{
-//						public void dataSuccess(String result)
-//						{
-//							try {
-//								if(result!=null&&!result.equalsIgnoreCase(""))
-//								{
-//								JSONObject robj;
-//								robj = new JSONObject(result);
-//							if(robj.getString("result").equalsIgnoreCase("true"))
-//							{
-//								if(mdialog != null && mdialog.isShowing()){
-//			    	        		mdialog.dismiss();
-//			    	        	}
-//								Intent in = new Intent(getApplicationContext(),
-//										MapClass.class);
-//								 Bundle extras = getIntent().getExtras();
-//								 in.putExtra("user_type", robj.getString("user_type"));
-//								 in.putExtra("EMP_NAME", extras.getString("EMP_NAME"));
-//						         in.putExtra("EMP_PERSONNELNO", extras.getString("EMP_PERSONNELNO"));
-//						         in.putExtra("EMP_GENDER", extras.getString("EMP_GENDER"));
-//						         in.putExtra("EMP_EMAIL", extras.getString("EMP_EMAIL"));
-//						         in.putExtra("EMP_SITE", extras.getString("EMP_SITE"));
-//						         in.putExtra("EMP_ID", extras.getString("EMP_ID"));
-//						        	 	in.putExtra("TRIP_ID", robj.getString("TRIP_ID"));
-//									    in.putExtra("TRIP_CODE", robj.getString("TRIP_CODE"));
-//										in.putExtra("TRIP_DATE", robj.getString("TRIP_DATE"));
-//										in.putExtra("TRIP_LOG", robj.getString("TRIP_LOG"));
-//										in.putExtra("REG_NO", robj.getString("REG_NO"));
-//										in.putExtra("TRIP_TIME", robj.getString("TRIP_TIME"));
-//										in.putExtra("DRIVER_NAME", robj.getString("DRIVER_NAME"));
-//										in.putExtra("DRIVER_CONTACT", robj.getString("DRIVER_CONTACT"));
-//										in.putExtra("EMPS_COUNT", robj.getString("EMPS_COUNT"));
-//										in.putExtra("MSGVIEW", "YES");
-//										in.putExtra("SECURITY", robj.getString("SECURITY"));
-//										if(robj.getString("SECURITY").equalsIgnoreCase("YES"))
-//										{
-//											in.putExtra("ESCORT_NAME", robj.getString("ESCORT_NAME"));
-//											in.putExtra("ESCORT_CONTACT", robj.getString("ESCORT_CONTACT"));
-//										}
-//										if(!robj.getString("EMPS_COUNT").equalsIgnoreCase("")&&robj.getString("EMPS_COUNT")!=null)
-//										{
-//										for(int i=1;i<=Integer.parseInt(robj.getString("EMPS_COUNT"));i++)
-//										{
-//											in.putExtra("PERSONNEL_NO"+i, robj.getString("PERSONNEL_NO"+i));
-//											in.putExtra("EMP_NAME"+i, robj.getString("EMP_NAME"+i));
-//											in.putExtra("GENDER"+i, robj.getString("GENDER"+i));
-//											in.putExtra("EMP_ID"+i, robj.getString("EMP_ID"+i));
-//											in.putExtra("EMP_CONTACT"+i, robj.getString("EMP_CONTACT"+i));
-//
-//										}
-//
-//						         }
-//								 startActivity(in);
-//								 finish();
-//							}
-//								else
-//								{
-//									if(mdialog != null && mdialog.isShowing()){
-//						        		mdialog.dismiss();
-//						        	}
-//									Toast.makeText(getApplicationContext(), "Oops Communication Failure", Toast.LENGTH_SHORT).show();
-//
-//								}
-//								}
-//							} catch (JSONException e) {
-//								// TODO Auto-generated catch block
-//								e.printStackTrace();
-//								AppController.getInstance().trackException(e);
-//							}
-//							}
-//						public void datafail()
-//						{
-//							if(mdialog != null && mdialog.isShowing()){
-//				        		mdialog.dismiss();
-//				        	}
-//							Toast.makeText(getApplicationContext(), "Oops Communication Failure", Toast.LENGTH_SHORT).show();
-//						}
-//					});
-//					sobj.execute();
+
 					}catch(Exception e){e.printStackTrace();
 						if(mdialog != null && mdialog.isShowing()){
 							mdialog.dismiss();
@@ -229,7 +195,33 @@ public class OTPActivity extends Activity{
 			}
 		});
     }
-	
+	@Override
+	protected void onPause() {
+		LocalBroadcastManager.getInstance(this).unregisterReceiver(mRegistrationBroadcastReceiver);
+		isReceiverRegistered = false;
+		super.onPause();
+	}
+	private void registerReceiver(){
+		if(!isReceiverRegistered) {
+			LocalBroadcastManager.getInstance(this).registerReceiver(mRegistrationBroadcastReceiver,
+					new IntentFilter(QuickstartPreferences.REGISTRATION_COMPLETE));
+			isReceiverRegistered = true;
+		}
+	}
+	private boolean checkPlayServices() {
+		GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
+		int resultCode = apiAvailability.isGooglePlayServicesAvailable(this);
+		if (resultCode != ConnectionResult.SUCCESS) {
+			if (apiAvailability.isUserResolvableError(resultCode)) {
+				apiAvailability.getErrorDialog(this, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST).show();
+			} else {
+				Log.i(TAG, "This device is not supported.");
+				finish();
+			}
+			return false;
+		}
+		return true;
+	}
 	@Override
 	@Deprecated
 	protected Dialog onCreateDialog(int id) {
