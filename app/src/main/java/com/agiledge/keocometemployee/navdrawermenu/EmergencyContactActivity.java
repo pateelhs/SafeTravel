@@ -77,7 +77,7 @@ public class EmergencyContactActivity extends Activity {
 							if (mdialog != null && mdialog.isShowing()) {
 								mdialog.dismiss();
 							}
-							Toast.makeText(getApplicationContext(), "Something went wrong!", Toast.LENGTH_LONG).show();
+							Toast.makeText(getApplicationContext(), "Contact Details not found please fill in!", Toast.LENGTH_LONG).show();
 
 
 						}
