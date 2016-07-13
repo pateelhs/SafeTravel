@@ -1,9 +1,7 @@
 package com.agiledge.keocometemployee.navdrawermenu;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
-import android.telephony.TelephonyManager;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
@@ -71,12 +69,11 @@ public class CancelDetails extends Activity {
 				} else {
 					try {
 						JSONObject jobj = new JSONObject();
-						TelephonyManager tel = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-						String imei = tel.getDeviceId().toString();
+
 						TextView intime1 = (TextView) findViewById(R.id.cintimevalue);
 						TextView outtime1 = (TextView) findViewById(R.id.couttimevalue);
 						jobj.put("ACTION", "SCHEDULE_CANCEL");
-						jobj.put("IMEI", imei);
+						jobj.put("IMEI", CommenSettings.macAddress);
 						jobj.put("DATE", date);
 						if (cincheckBox1.isChecked() == true){
 							jobj.put("LOG_IN", "weekly off");

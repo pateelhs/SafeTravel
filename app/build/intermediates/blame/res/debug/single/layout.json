@@ -8,6 +8,10 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\mapadmin1.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\custom_dialog.xml"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_bar_up_container.xml"
     },
@@ -56,6 +60,10 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item_divider.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\spinner_item_divider.xml"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_lines.xml"
     },
@@ -68,12 +76,12 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\form_labeled_element.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.github.dkharrat.nexusdialog\\nexusdialog\\0.3.0\\res\\layout\\form_labeled_element.xml"
-    },
-    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\form_labeled_element.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.github.dkharrat.nexusdialog\\nexusdialog\\0.3.0\\res\\layout\\form_labeled_element.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_spinner.xml",
@@ -112,6 +120,10 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\booking.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fynn_prompt_dialog_titlebar.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\fynn_prompt_dialog_titlebar.xml"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\header.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\header.xml"
     },
@@ -126,6 +138,10 @@
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\canceldetails.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\canceldetails.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\button_end.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\button_end.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\manage_booking.xml",
@@ -184,6 +200,14 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_search_view.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\panic_admin.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\panic_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fynn_prompt_dialog_titlebar_skyblue.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\fynn_prompt_dialog_titlebar_skyblue.xml"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_chooser_dialog.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\layout\\mr_media_route_chooser_dialog.xml"
     },
@@ -196,12 +220,12 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nothing_selected.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.github.dkharrat.nexusdialog\\nexusdialog\\0.3.0\\res\\layout\\nothing_selected.xml"
-    },
-    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nothing_selected.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.github.dkharrat.nexusdialog\\nexusdialog\\0.3.0\\res\\layout\\nothing_selected.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\emergencycontact.xml",
@@ -356,6 +380,10 @@
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.github.dkharrat.nexusdialog\\nexusdialog\\0.3.0\\res\\layout\\form_section.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fynn_prompt_dialog_normal.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\fynn_prompt_dialog_normal.xml"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_prediction.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout\\place_autocomplete_item_prediction.xml"
     },
@@ -398,6 +426,10 @@
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_fragment.xml",
         "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_textview.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout\\spinner_textview.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_progress.xml",

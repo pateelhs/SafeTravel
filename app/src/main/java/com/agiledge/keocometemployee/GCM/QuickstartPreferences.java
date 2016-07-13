@@ -7,7 +7,7 @@ public class QuickstartPreferences {
 
     public static final String SENT_TOKEN_TO_SERVER = "sentTokenToServer";
     public static final String REGISTRATION_COMPLETE = "registrationComplete";
-    public static final String GCM_SENDER_ID = "85186746391";
+    public static final String GCM_SENDER_ID = "725846540622";
 
     public static final String PREFS_NAME = "GCM_DEMO";
     public static final String PREFS_PROPERTY_REG_ID = "registration_id";

@@ -1,0 +1,226 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".navdrawermenu.AdocDetails">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableLayout
+            android:id="@+id/tableLayout1112"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow12312"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/dmydate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date:"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dip"
+                    android:layout_marginRight="5dip"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/adhocdatevalue"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:text="21.12.2015"
+                    android:background="@drawable/textbackground"
+                    android:layout_height="wrap_content"
+                  />
+
+
+
+            </TableRow>
+
+
+        </TableLayout>
+        <TableLayout
+            android:id="@+id/tableLayout1111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:layout_span="1"
+
+                    android:height="50dp"
+                    android:gravity="center"
+                    android:text="Booked Time"
+                    android:visibility="invisible"
+                    android:layout_marginRight="30dp"/>
+
+                <TextView
+                    android:layout_span="1"
+                    android:layout_width="match_parent"
+
+                    android:height="20dp"
+                    android:gravity="center"
+                    android:text="Login time"
+                    android:background="@drawable/textbackground"
+                   android:layout_marginRight="20dp"
+                    android:clickable="false"/>
+
+                <TextView
+                    android:layout_span="1"
+                    android:layout_width="match_parent"
+                    android:clickable="false"
+                    android:height="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/textbackground"
+                    android:text="Logout time"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               >
+
+                <TextView
+                    android:layout_span="1"
+
+                    android:height="50dp"
+                    android:gravity="center"
+                    android:text="Scheduled Time"
+                    android:clickable="false"
+                    android:background="@color/white_color"
+                    android:layout_marginRight="30dp"/>
+
+                <TextView
+                    android:id="@+id/in_old"
+                    android:layout_span="1"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/textbackground"
+                    android:height="30dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_marginRight="20dp"
+                    android:clickable="false"/>
+
+                <TextView
+                    android:id="@+id/out_old"
+                    android:layout_span="1"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/textbackground"
+                    android:height="30dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:clickable="false"/>
+            </TableRow>
+           </TableLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+   android:background="@drawable/textbackground"/>
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login Time"
+
+                    android:layout_marginTop="0dip"
+                    android:layout_marginRight="5dip"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/intimespin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/textbackground"/>
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout Time"
+
+                    android:layout_marginTop="0dip"
+                    android:layout_marginEnd="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/outtimespin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/textbackground"/>
+
+            </TableRow>
+
+        </TableLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp" >
+
+        <Button
+            android:id="@+id/adhocdone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:background="@color/md_red_400"
+            android:onClick="onSaveButtonClick"
+            android:text="Modify"
+            android:textColor="@color/white_color"/>
+
+
+    </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

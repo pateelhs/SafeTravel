@@ -11,7 +11,8 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginRight="8dp" />
+        android:layout_marginRight="8dp"
+        android:src="@drawable/location_icon"/>
 
     <!-- Movie Title -->
     <TextView
@@ -21,7 +22,8 @@
         android:layout_alignTop="@+id/thumbnail"
         android:layout_toRightOf="@+id/thumbnail"
         android:textSize="@dimen/title"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:text="Area"/>
 
     <!-- Rating -->
     <TextView
@@ -31,7 +33,8 @@
         android:layout_below="@id/CustomerName"
         android:layout_marginTop="1dip"
         android:layout_toRightOf="@+id/thumbnail"
-        android:textSize="@dimen/rating" />
+        android:textSize="@dimen/rating"
+        android:text="Distance"/>
 
     <!-- Genre -->
     <TextView
@@ -43,7 +46,8 @@
         android:layout_marginTop="5dp"
         android:layout_toRightOf="@+id/thumbnail"
         android:textColor="@color/md_amber_900"
-        android:textSize="@dimen/genre" />
+        android:textSize="@dimen/genre"
+        android:text="Tripshift"/>
 
     <!-- Release Year -->
     <TextView
@@ -54,6 +58,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:textColor="@color/md_red_A400"
-        android:textSize="@dimen/time" />
+        android:textSize="15dp"
+        android:text="TripDate"/>
 
 </RelativeLayout>

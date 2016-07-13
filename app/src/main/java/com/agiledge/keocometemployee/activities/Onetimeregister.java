@@ -11,7 +11,6 @@ import android.content.Intent;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
@@ -26,6 +25,7 @@ import android.widget.Toast;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
+import com.agiledge.keocometemployee.constants.GetMacAddress;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -43,29 +43,28 @@ public class Onetimeregister extends Activity {
 	String uniqueno, mobileno;
 	EditText mobilenumber;
 	Button submit;
+	String android_id="";
 
-	//String s1 = "1111";
-//	String s2 = "2222";
-//	String s3 = "3333";
 	String post_result;
 	TelephonyManager tel;
-	//String IMEI;
 	static String action="INITIAL_LOGIN";
 	static int check=0;
 	
 	  private ProgressDialog mdialog;
+	String macaddress=GetMacAddress.getMacAddr();
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.onetimeregister);
-		WifiManager wimanager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-		macAddress = wimanager.getConnectionInfo().getMacAddress();
+		android_id = Settings.Secure.getString(this.getContentResolver(),
+				Settings.Secure.ANDROID_ID);
 		AppController.getInstance().trackScreenView("Onetime register Activity");
 		tvIsConnected = (TextView) findViewById(R.id.tvIsConnected);
 		//uniquenumber = (EditText) findViewById(R.id.uniquenumber);
 		mobilenumber = (EditText) findViewById(R.id.mobilenumber);
 		submit = (Button) findViewById(R.id.submit);
+
         if(isConnected()){
             tvIsConnected.setBackgroundColor(0xffffff);
             tvIsConnected.setText("Internet Connected");
@@ -231,7 +230,8 @@ public class Onetimeregister extends Activity {
 	    				JSONObject jobj=new JSONObject();
 	    				jobj.put("ACTION", "INITIAL_LOGIN");
 	    				jobj.put("MOBILE_NUMBER", mobilenumber.getText().toString());
-	    				jobj.put("IMEI_NUMBER",macAddress);
+
+	    				jobj.put("IMEI_NUMBER",android_id);
 							JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
 								@Override
 								public void onResponse(JSONObject response) {

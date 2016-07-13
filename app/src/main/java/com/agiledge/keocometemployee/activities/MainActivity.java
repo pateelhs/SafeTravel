@@ -13,7 +13,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.Gravity;
@@ -27,6 +26,7 @@ import android.widget.Toast;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
+import com.agiledge.keocometemployee.constants.GetMacAddress;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -38,13 +38,18 @@ public class MainActivity extends Activity {
 	public static String macAddress;
 	private static final int REQUEST_CODE=0;
 	boolean startapp=false;
+	String android_id="";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		try{
+			CommenSettings.macAddress= GetMacAddress.getMacAddr();
+		}catch (Exception e){e.printStackTrace();}
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		android_id = Settings.Secure.getString(this.getContentResolver(),
+				Settings.Secure.ANDROID_ID);
+	//	Toast.makeText(getApplicationContext(),""+CommenSettings.macAddress.toString(),Toast.LENGTH_LONG).show();
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-		WifiManager wimanager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-		macAddress = wimanager.getConnectionInfo().getMacAddress();
 		if(isConnected())
 		start();
 		else{
@@ -75,40 +80,39 @@ public class MainActivity extends Activity {
 			String empid=sharedpref.getString("APP_EMPID","NOT_FOUND");
 
 			if(username.equalsIgnoreCase("NOT_FOUND")||email.equalsIgnoreCase("NOT_FOUND")||gender.equalsIgnoreCase("NOT_FOUND")||user_type.equalsIgnoreCase("NOT_FOUND")||empid.equalsIgnoreCase("NOT_FOUND")) {
+				if(!android_id.equalsIgnoreCase(""))
 				initial();
+				else
+					Toast.makeText(getApplicationContext(),"Error occured code-001",Toast.LENGTH_LONG).show();
 			}
 			else {
-				boolean isEnabled = isGPSenabled();
-				if (isEnabled) {
+
 					Intent in = new Intent(getApplicationContext(), Home_Activity.class);
 					in.putExtra("user_type", user_type);
 					in.putExtra("displayname",username);
 					in.putExtra("gender",gender);
 					in.putExtra("email",email);
 					in.putExtra("empid",empid);
-					startActivity(in);
-					finish();
-				} else {
-					buildAlertMessageNoGps();
-
-
+					if(!android_id.equalsIgnoreCase("")) {
+						startActivity(in);
+						finish();
+					}
 				}
-			}
 		}
 
 		@Override
 		protected void onActivityResult(int requestCode, int resultCode, Intent data)
 		{
 			super.onActivityResult(requestCode, resultCode, data);
-			
-		
+
+
 		}
 
-	
+
 		private boolean isGPSenabled()
-	    {	
+	    {
 	    	final LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-	    	
+
 	    	return manager.isProviderEnabled(LocationManager.GPS_PROVIDER);
 	    }
 
@@ -146,9 +150,7 @@ public class MainActivity extends Activity {
 	 			@Override
 	 			public void onClick(View v) {
 	 				dialog.cancel();
-
-	    			System.exit(1);
-	 				
+					finish();
 	 			}
 	 		});
 	         dialog.show();
@@ -162,8 +164,8 @@ public class MainActivity extends Activity {
 	    }
 	    protected void onStart() {
 	    	super.onStart();
-			if(startapp)
-				start();
+//			if(startapp)
+//				start();
 	    	}
 
 		public void initial()
@@ -171,13 +173,9 @@ public class MainActivity extends Activity {
 		try
 		{
 		JSONObject jobj=new JSONObject();
-
-		  boolean isEnabled = isGPSenabled();
-			if(isEnabled)
-	        {
-
 					jobj.put("ACTION", "IMEI_CHECK");
-					jobj.put("IMEI_NUMBER", macAddress);
+					jobj.put("IMEI_NUMBER", android_id);
+
 					JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
 						@Override
 						public void onResponse(JSONObject response) {
@@ -228,15 +226,10 @@ public class MainActivity extends Activity {
 					// Adding request to request queue
 					AppController.getInstance().addToRequestQueue(req);
 
-	        }
-	        else
-	        {
-	        	buildAlertMessageNoGps();
-	        	
-	        }
+
 		}catch(Exception e){e.printStackTrace();}
 }
-		
+
 		public void onBackPressed()
 		{
 			super.onBackPressed();

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -21,6 +22,7 @@ public class ManageBookingActivity extends AppCompatActivity {
 
 	public static TextView textView;
 	ImageView modify,booking;
+	String user_type="";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,11 @@ public class ManageBookingActivity extends AppCompatActivity {
 		getSupportActionBar().setHomeButtonEnabled(true);
 		modify=(ImageView)findViewById(R.id.modify);
 		 booking=(ImageView) findViewById(R.id.booking);
+		Bundle extras=getIntent().getExtras();
+		if(extras!=null){
+			user_type=extras.getString("user_type");
+			Log.d("user_type from main",user_type.toString());
+		}
 
 	        
  modify.setOnClickListener(new OnClickListener() {
@@ -50,6 +57,7 @@ public class ManageBookingActivity extends AppCompatActivity {
 		public void onClick(View v) {
 			Intent in = new Intent(getApplicationContext(),
 					Booking.class);
+			in.putExtra("user_type",user_type);
 			 startActivity(in);
 }
 

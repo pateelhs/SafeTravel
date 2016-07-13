@@ -12,11 +12,13 @@ import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
-import android.net.wifi.WifiManager;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.TaskStackBuilder;
@@ -55,6 +57,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -66,7 +69,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
+public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener{
 
         GoogleMap mGoogleMap;
         SupportMapFragment mapFrag;
@@ -78,7 +81,7 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
         private int notificationIdOne = 111;
         private NotificationManager myNotificationManager;
         private TransparentProgressDialog pd;
-        public static String macAddress;
+        public static String macAddress=CommenSettings.macAddress;
         String tripid="",tripdate="",triptime="",empid="",user_type="";
         boolean tripstarted=false,panicactive=false,showadmincabs=true,distalert=true,cabalert=true,resetmap=false;
         int refreshinterval=20000;
@@ -92,8 +95,11 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
         List<String> allempids=new ArrayList<String>();
         boolean isMarkerRotating=false;
         boolean slidestatus=false;
+        boolean isRunning1st=true;
+        ArrayList<String> cabreglist=new ArrayList<String>();
 
 
+        String android_id="";
 
         @Override
         protected void onCreate(Bundle savedInstanceState)
@@ -102,6 +108,8 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
             setContentView(R.layout.activity_track_my_cab);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setHomeButtonEnabled(true);
+            android_id = Settings.Secure.getString(this.getContentResolver(),
+                    Settings.Secure.ANDROID_ID);
             Bundle extras=getIntent().getExtras();
             if(extras!=null){
                 empid=extras.getString("empid");
@@ -127,7 +135,7 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
                 }
             });
             if(user_type.equalsIgnoreCase("emp")) {
-                legendfab.hide();
+               // legendfab.hide();
                 refreshinterval=6000;
                 showadmincabs=false;
             }
@@ -141,8 +149,8 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
                 }
             });
 
-            WifiManager wimanager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-            macAddress = wimanager.getConnectionInfo().getMacAddress();
+
+
             pd = new TransparentProgressDialog(this, R.drawable.loading);
             if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 checkLocationPermission();
@@ -337,14 +345,17 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
         NotificationCompat.Builder  mBuilder = new NotificationCompat.Builder(this);
 
         mBuilder.setContentTitle("CAB PROXIMITY ALERT");
-        mBuilder.setContentText("Your cab is arriving");
+        mBuilder.setContentText("Your cab is on the way");
         mBuilder.setTicker("Your cab Arriving");
-        mBuilder.setSmallIcon(R.drawable.location_icon);
+        mBuilder.setSmallIcon(R.drawable.agile);
         // Increase notification number every time a new notification arrives
         mBuilder.setNumber(++numMessagesOne);
-
+        Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        mBuilder.setSound(alarmSound);
+        mBuilder.setColor(getResources().getColor(R.color.md_red_400));
+        mBuilder.setAutoCancel(true);
         // Creates an explicit intent for an Activity in your app
-        Intent resultIntent = new Intent(this, TrackMyCabActivity.class);
+        Intent resultIntent = new Intent(this, MainActivity.class);
         resultIntent.putExtra("notificationId", notificationIdOne);
 
         //This ensures that navigating backward from the Activity leads out of the app to Home page
@@ -372,7 +383,7 @@ public void getTripDetails(){
     try {
         JSONObject jobj = new JSONObject();
         jobj.put("ACTION", "TRIP_DETAILS");
-        jobj.put("IMEI_NUMBER",macAddress);
+        jobj.put("IMEI_NUMBER",android_id);
         JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -390,6 +401,8 @@ public void getTripDetails(){
                             time.setText("time:"+triptime);
                             tripstarted=true;
                             infofab.show();
+                            Toolbar tool=(Toolbar) findViewById(R.id.toolbar_top) ;
+                            tool.setVisibility(View.VISIBLE);
                             updateMyCabposition();
 
                         }
@@ -550,7 +563,7 @@ public void getTripDetails(){
                     double latitude = myLocation.getLatitude();
                     double longitude = myLocation.getLongitude();
                     jobj.put("EMP_ID", empid);
-                    jobj.put("IMEI_NUMBER",macAddress );
+                    jobj.put("IMEI_NUMBER",android_id );
                     jobj.put("TRIP_ID", tripid);
                     jobj.put("LAT", latitude + "");
                     jobj.put("LONG", longitude + "");
@@ -605,7 +618,7 @@ public void getTripDetails(){
                     {
                         @Override
                         public void onErrorResponse (VolleyError error){
-                            Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "Error while communicating in panic" + error.getMessage(), Toast.LENGTH_LONG).show();
 
 
                         }
@@ -677,7 +690,6 @@ public void getTripDetails(){
                         updateAdminCab();
                     }
                     TrackMyCabActivity.this.mHandler.postDelayed(m_Runnable, refreshinterval);
-                   // Toast.makeText(getApplicationContext(),"running",Toast.LENGTH_LONG).show();
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -741,8 +753,8 @@ public void getTripDetails(){
 //                                        line += "\t" + i + ")" + extras.getString("EMP_NAME" + i) + " " + extras.getString("GENDER" + i) + " " + tick + " " + " " + "\n";
 
 
-                                    mGoogleMap.setInfoWindowAdapter(new PopupAdapter(getLayoutInflater(), line));
-                                markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.my_car));
+                                mGoogleMap.setInfoWindowAdapter(new PopupAdapter(getLayoutInflater(), line));
+                                markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.my_cab));
                                 mCurrLocationMarker = mGoogleMap.addMarker(markerOptions);
                                 //move map camera
                                 mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
@@ -786,7 +798,7 @@ public void getTripDetails(){
             @Override
             public void onResponse(JSONObject response) {
                 try {
-                    if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
+                    if (response.getString("result").equalsIgnoreCase("TRUE")) {
                         JSONArray LAT = response.getJSONArray("LAT");
                         JSONArray LONG = response.getJSONArray("LONG");
                         JSONArray REGNO = response.getJSONArray("REGNO");
@@ -820,6 +832,8 @@ public void getTripDetails(){
                                         .equalsIgnoreCase("danger")) {
                                     marker.icon(BitmapDescriptorFactory
                                             .fromResource(R.drawable.pan_car));
+
+
                                 } else {
 
                                     if (Integer.parseInt(EMPINCOUNT
@@ -871,27 +885,23 @@ public void getTripDetails(){
                                     }
 
                                 }
+                              //  mGoogleMap.clear();
+//                                LatLng newlat=new LatLng(latitude,longitude);
+//                                LatLng road=new LatLng(12.959869773633582,77.64835351807531);
+//                                LatLng lat2=new LatLng(12.959791489282114,77.64889220777359);
+//                                double brng=bearingBetweenLocations(road,lat2);
+//                                Marker marker = mGoogleMap.addMarker(new MarkerOptions().position(road).icon(BitmapDescriptorFactory.fromResource(R.drawable.uber_car90)).title("Test marker"));
+//                                marker.setRotation(Float.parseFloat(""+brng));
+//                                animateMarker(marker,road,lat2)
+                                    mGoogleMap.addMarker(marker);
+                           CameraPosition cameraPosition = new CameraPosition.Builder()
+                                       .target(new LatLng(marker.getPosition().latitude,marker.getPosition().longitude)).zoom(11)
+                                        .build();
 
-                                LatLng lat1=new LatLng(latitude,longitude);
-                                LatLng road=new LatLng(12.959869773633582,77.64835351807531);
-                                LatLng lat2=new LatLng(12.959791489282114,77.64889220777359);
-                                double brng=bearingBetweenLocations(road,lat2);
-                                Marker marker1 = mGoogleMap.addMarker(new MarkerOptions()
-                                        .position(road)
-                                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.uber_car90))
-                                        .rotation(Float.parseFloat(brng+"")).title("Test marker"));
-                                animateMarker(marker1,road,lat2);
-                                //rotateMarker(marker1,road,lat2,Float.parseFloat(brng+""));
-                                mGoogleMap.addMarker(marker);
-
+                                mGoogleMap.animateCamera(CameraUpdateFactory
+                                        .newCameraPosition(cameraPosition));
                             }
-                          /*  CameraPosition cameraPosition = new CameraPosition.Builder()
-                                    .target(new LatLng(latitude,
-                                            longitude)).zoom(11)
-                                    .build();
 
-                            mGoogleMap.animateCamera(CameraUpdateFactory
-                                    .newCameraPosition(cameraPosition));*/
 
                         } else {
                             Toast.makeText(getApplicationContext(), "Something went wrong!", Toast.LENGTH_LONG).show();
@@ -909,7 +919,7 @@ public void getTripDetails(){
         {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), "Error while communicating" , Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "Error while communicating" , Toast.LENGTH_LONG).show();
 
 
             }
@@ -919,10 +929,11 @@ public void getTripDetails(){
         AppController.getInstance().addToRequestQueue(req);
     }catch(Exception e){e.printStackTrace();}
 
+
     }
 
     public void clearAllMarkers(){
-       // mGoogleMap.clear();
+        mGoogleMap.clear();
     }
 
     public void setETA(double cablat,double cablng,double emplat,double emplng){
@@ -947,7 +958,7 @@ public void getTripDetails(){
         {
             @Override
             public void onErrorResponse (VolleyError error){
-                Toast.makeText(getApplicationContext(), "Error while communicating", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Error while communicating ETA", Toast.LENGTH_LONG).show();
 
 
             }
@@ -1024,7 +1035,7 @@ public void getTripDetails(){
     public void animateMarker(final Marker marker,final LatLng startltlng,final LatLng endltlng){
         final Interpolator interpolator = new LinearInterpolator();
         final long start = SystemClock.uptimeMillis();
-        final long duration = 3000;
+        final long duration = 5000;
 
         final Handler handler = new Handler();
         handler.post(new Runnable() {
@@ -1035,7 +1046,9 @@ public void getTripDetails(){
                 double lat = t * endltlng.latitude + (1 - t) * startltlng.latitude;
                 double lng = t * endltlng.longitude + (1 - t) * startltlng.longitude;
                 LatLng intermediatePosition = new LatLng(lat, lng);
+                double brng=bearingBetweenLocations(startltlng,intermediatePosition);
                 marker.setPosition(intermediatePosition);
+                marker.setRotation(Float.parseFloat(""+brng));
                 if (t < 1.0) {
                     // Post again 16ms later.
                     handler.postDelayed(this, 1000);
@@ -1064,4 +1077,5 @@ public void getTripDetails(){
 
         return brng;
     }
+
 }

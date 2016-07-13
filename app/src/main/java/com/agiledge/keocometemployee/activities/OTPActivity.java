@@ -8,9 +8,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.provider.Settings;
 import android.support.v4.content.LocalBroadcastManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -50,7 +50,7 @@ public class OTPActivity extends Activity{
 
 
 	Button submit;
-	
+	String android_id="";
 	EditText otpnumber;
 	String serverotp="",users="";
 	String otp;
@@ -64,9 +64,10 @@ public class OTPActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.otp);
+		android_id = Settings.Secure.getString(this.getContentResolver(),
+				Settings.Secure.ANDROID_ID);
 		AppController.getInstance().trackScreenView("OTP activity");
-		WifiManager wimanager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-		macAddress = wimanager.getConnectionInfo().getMacAddress();
+
     	//gcm
 		mRegistrationBroadcastReceiver = new BroadcastReceiver() {
 			@Override
@@ -122,7 +123,7 @@ public class OTPActivity extends Activity{
 					{
 					JSONObject jobj=new JSONObject();
 		            jobj.put("ACTION","TRIP_DETAILS");
-					jobj.put("IMEI_NUMBER",macAddress);
+					jobj.put("IMEI_NUMBER",android_id);
 						JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
 							@Override
 							public void onResponse(JSONObject response) {

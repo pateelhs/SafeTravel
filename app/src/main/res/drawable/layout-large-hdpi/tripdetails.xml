@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="6" 
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ff5757" >
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+              <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:background="#ff5757" >
+        <TextView
+            android:id="@+id/tdh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TRIP DETAILS"
+            android:textColor="#ffffff"
+            android:textSize="35sp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_arrow" 
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+        </FrameLayout>      
+               <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:background="#ffffff" >
+        <TextView
+            android:id="@+id/dummytext2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="" />
+        </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+     <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2" >
+                   
+      <TextView
+           android:id="@+id/td1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="CAB NO"
+       android:layout_gravity="center_horizontal"
+          android:textStyle="bold"
+           android:textSize="30sp"
+           android:textColor="#555555"
+           android:layout_weight="0.2"/>
+      
+       <TextView
+              android:id="@+id/td2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+             android:layout_marginTop="0dp"
+              android:textColor="#555555"
+              android:textSize="20sp"
+              android:textStyle="italic"
+              android:layout_weight="1.8"/>
+       </LinearLayout>
+      </FrameLayout>
+      
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2" >
+                   
+       <TextView
+           android:id="@+id/td3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="DRIVER NAME"
+            android:layout_gravity="center_horizontal"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           android:textColor="#555555"
+           android:layout_weight="0.2"/>
+      
+       <TextView
+              android:id="@+id/td4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+              android:textColor="#555555"
+              android:textStyle="italic"
+              android:textSize="20sp"
+              android:layout_weight="1.8"    />
+       </LinearLayout>
+       
+    
+      </FrameLayout>
+      
+       <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+       
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2" >
+                   
+       <TextView
+           android:id="@+id/td5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="DRIVER CONTACT"
+           android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+           android:textSize="30sp"
+           android:textColor="#555555"
+           android:layout_weight="0.2"/>
+      
+       <TextView
+              android:id="@+id/td6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+              android:textSize="20sp"
+              android:textStyle="italic"
+              android:layout_weight="1.8"            
+              android:autoLink="phone" 
+              android:textColorLink="#555555" />
+       </LinearLayout>
+      </FrameLayout>
+      
+        <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+       
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2" >
+                   
+       <TextView
+           android:id="@+id/td7"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="TRIP CODE"
+           android:textStyle="bold"
+           android:layout_gravity="center_horizontal"
+           android:textSize="30sp"
+           android:textColor="#555555"
+           android:layout_weight="0.2"/>
+      
+       <TextView
+              android:id="@+id/td8"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:textStyle="italic"
+              android:textColor="#555555"
+              android:textSize="20sp"
+              android:layout_weight="1.8"/>
+       </LinearLayout>
+      </FrameLayout>
+      
+         <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+       
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2" >
+                   
+       <TextView
+           android:id="@+id/td9"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="ESCORT CONTACT"
+          android:layout_gravity="center_horizontal"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           android:textColor="#555555"
+           android:layout_weight="0.2"/>
+      
+       <TextView
+              android:id="@+id/td10"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:textStyle="italic"
+             android:autoLink="phone" 
+              android:textColorLink="#555555"
+              android:textSize="20sp"
+              android:layout_weight="1.8"/>
+       </LinearLayout>
+      </FrameLayout>
+
+</LinearLayout>

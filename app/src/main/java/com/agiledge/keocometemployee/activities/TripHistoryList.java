@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
@@ -45,6 +46,7 @@ public class TripHistoryList extends AppCompatActivity {
     private List<Trips> tripList = new ArrayList<Trips>();
     private ListView listView;
     private CustomListAdapter adapter;
+    String android_id="";
 
    // final ListView lv1 = (ListView) findViewById(R.id.list);
 
@@ -58,7 +60,8 @@ public class TripHistoryList extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         listView = (ListView) findViewById(R.id.list);
 
-
+        android_id = Settings.Secure.getString(this.getContentResolver(),
+                Settings.Secure.ANDROID_ID);
 
         adapter = new CustomListAdapter(this, tripList);
         listView.setAdapter(adapter);
@@ -93,8 +96,8 @@ public class TripHistoryList extends AppCompatActivity {
            String macAddress = wifiInf.getMacAddress();
         JSONObject jobj=new JSONObject();
         jobj.put("ACTION", "GET_JOBCARDS");
-        jobj.put("MAC_ADDRESS", macAddress);
-        JsonObjectRequest req = new JsonObjectRequest("http://180.179.227.159/fsm/devicecommunicator",jobj,new Response.Listener<JSONObject>() {
+        jobj.put("MAC_ADDRESS", android_id);
+        JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress,jobj,new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
 

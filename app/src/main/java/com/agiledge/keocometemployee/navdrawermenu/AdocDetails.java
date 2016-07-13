@@ -3,10 +3,12 @@ package com.agiledge.keocometemployee.navdrawermenu;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
-import android.net.wifi.WifiInfo;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +27,7 @@ import android.widget.Toast;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
+import com.agiledge.keocometemployee.utilities.PromptDialog;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -35,14 +38,19 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class AdocDetails extends Activity {
+	private CoordinatorLayout coordinatorLayout;
 	private TransparentProgressDialog pd;
 	private String date="";
 	private String scheduleid="";
+	String android_id="";
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.adocdetails);
+		coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
 		Spinner timespnr=(Spinner) findViewById(R.id.adhoctimespinner);
 		pd = new TransparentProgressDialog(this, R.drawable.loading);
+		android_id = Settings.Secure.getString(this.getContentResolver(),
+				Settings.Secure.ANDROID_ID);
 		pd.show();
 		timespnr.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 			@Override
@@ -85,13 +93,10 @@ public class AdocDetails extends Activity {
 
 	public void fillvalues() {
 		try {
-			WifiManager wifiMan = (WifiManager) this.getSystemService(
-					Context.WIFI_SERVICE);
-			WifiInfo wifiInf = wifiMan.getConnectionInfo();
-			String macAddress = wifiInf.getMacAddress();
+
 			JSONObject jobj = new JSONObject();
 			jobj.put("ACTION", "MODIFY_CHECK");
-			jobj.put("IMEI",macAddress);
+			jobj.put("IMEI",android_id);
 			jobj.put("DATE",date);
 			final Spinner logoutspinner = (Spinner) findViewById(R.id.adhoctimespinner);
 			JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
@@ -133,8 +138,24 @@ public class AdocDetails extends Activity {
 			}, new Response.ErrorListener() {
 				@Override
 				public void onErrorResponse(VolleyError error) {
-					Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
-					pd.dismiss();
+					Snackbar snackbar = Snackbar
+							.make(coordinatorLayout, "No internet connection!", Snackbar.LENGTH_LONG)
+							.setAction("RETRY", new View.OnClickListener() {
+								@Override
+								public void onClick(View view) {
+									fillvalues();
+								}
+							});
+
+					// Changing message text color
+					snackbar.setActionTextColor(Color.RED);
+
+					// Changing action button text color
+					View sbView = snackbar.getView();
+					TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+					textView.setTextColor(Color.YELLOW);
+					pd.hide();
+					snackbar.show();
 
 
 				}
@@ -151,29 +172,52 @@ public class AdocDetails extends Activity {
 
 	public void book() {
 		try{
-			WifiManager wifiMan = (WifiManager) this.getSystemService(
-					Context.WIFI_SERVICE);
-			WifiInfo wifiInf = wifiMan.getConnectionInfo();
+
 			Spinner time=(Spinner) findViewById(R.id.adhoctimespinner);
 			TextView txtdate=(TextView) findViewById(R.id.adhocdatevalue);
 			boolean valid=true;
-			String macAddress = wifiInf.getMacAddress();
+
 			if(valid) {
 				JSONObject jobj = new JSONObject();
 				jobj.put("ACTION", "SCHEDULE_ALTER");
 				jobj.put("SCHEDULE_ID",scheduleid);
-				jobj.put("IMEI", macAddress);
+				jobj.put("IMEI", android_id);
 				jobj.put("DATE", txtdate.getText().toString());
 				jobj.put("LOG_OUT", time.getSelectedItem().toString());
 
 				JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
 					@Override
 					public void onResponse(JSONObject response) {
+
 						try {
 
-								pd.dismiss();
-								Toast.makeText(getApplicationContext(), ""+response.getString("STATUS"), Toast.LENGTH_SHORT).show();
-								finish();
+
+							pd.dismiss();
+							{
+								new PromptDialog.Builder(AdocDetails.this)
+										.setTitle("Modify")
+										.setCanceledOnTouchOutside(false)
+										.setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
+										.setButton1TextColor(R.color.md_blue_400)
+
+										.setMessage(""+response.getString("STATUS"))
+
+										.setButton1("OK", new PromptDialog.OnClickListener() {
+
+											@Override
+											public void onClick(Dialog dialog, int which) {
+												dialog.dismiss();
+												Intent manage= new Intent(AdocDetails.this,ManageBookingActivity.class);
+												startActivityForResult(manage, 0);
+												finish();
+											}
+										})
+										.show();
+							}
+
+//								pd.dismiss();
+//								Toast.makeText(getApplicationContext(), ""+response.getString("STATUS"), Toast.LENGTH_SHORT).show();
+//								finish();
 
 
 
@@ -186,9 +230,24 @@ public class AdocDetails extends Activity {
 				}, new Response.ErrorListener() {
 					@Override
 					public void onErrorResponse(VolleyError error) {
-						Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_SHORT).show();
-						pd.dismiss();
+						Snackbar snackbar = Snackbar
+								.make(coordinatorLayout, "No internet connection!", Snackbar.LENGTH_LONG)
+								.setAction("RETRY", new View.OnClickListener() {
+									@Override
+									public void onClick(View view) {
+										book();
+									}
+								});
 
+						// Changing message text color
+						snackbar.setActionTextColor(Color.RED);
+
+						// Changing action button text color
+						View sbView = snackbar.getView();
+						TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+						textView.setTextColor(Color.YELLOW);
+						pd.hide();
+						snackbar.show();
 
 					}
 				});

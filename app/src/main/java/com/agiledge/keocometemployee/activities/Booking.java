@@ -6,9 +6,10 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.net.wifi.WifiInfo;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
@@ -23,6 +24,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,6 +33,8 @@ import android.widget.ToggleButton;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
+import com.agiledge.keocometemployee.constants.GetMacAddress;
+import com.agiledge.keocometemployee.utilities.PromptDialog;
 import com.agiledge.keocometemployee.utilities.TransparentProgressDialog;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -47,6 +51,7 @@ import java.util.Date;
 
 public class Booking extends AppCompatActivity {
     public static EditText et1, et2;
+    private CoordinatorLayout coordinatorLayout;
     public static Button submit;
     private TransparentProgressDialog pd;
     private String[] branchsitearr;
@@ -58,12 +63,15 @@ public class Booking extends AppCompatActivity {
     private String selectedbranchid;
     private String selectedsiteid;
     ToggleButton toggleButton;
+    String android_id="";
     TextView bookfor;
     AutoCompleteTextView ACTV;
     ArrayAdapter<String> adapter;
     boolean searchstatus=true,isSearchselected=false,issearchChecked=false;
     ArrayList<String> searchempids=new ArrayList<String>();
     String searchselectedempid="";
+    String macaddress= GetMacAddress.getMacAddr();
+   public String user_type;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -163,17 +171,31 @@ public class Booking extends AppCompatActivity {
         Spinner logoutspinner = (Spinner) findViewById(R.id.pro_typ);
         AppController.getInstance().trackScreenView("Booking Activity");// for Google analytics data
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         getSupportActionBar().setHomeButtonEnabled(true);
+        android_id = Settings.Secure.getString(this.getContentResolver(),
+                Settings.Secure.ANDROID_ID);
         et1 = (EditText) findViewById(R.id.selected_fromdate);
         et2 = (EditText) findViewById(R.id.selected_todate);
         submit = (Button) findViewById(R.id.submit_book);
+        coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
         toggleButton = (ToggleButton) findViewById(R.id.toggleButton1);
         ACTV = (AutoCompleteTextView) findViewById(R.id.auto);
+        Bundle extras=getIntent().getExtras();
+        if(extras!=null){
+
+           String user_type=extras.getString("user_type");
+        }
         SharedPreferences sharedpref=getPreferences(Context.MODE_PRIVATE);
+        LinearLayout one = (LinearLayout) findViewById(R.id.lin);
+        one.setVisibility(View.GONE);
         String user_type=sharedpref.getString("APP_USERTYPE","NOT_FOUND");
-        ACTV.setVisibility(View.INVISIBLE);
+
+
         if(user_type.equalsIgnoreCase("Admin"))
-            ACTV.setVisibility(View.VISIBLE);
+        {
+            one.setVisibility(View.VISIBLE);}
+
         bookfor = (TextView) findViewById(R.id.bookfor);
         fillvalues();
         pd = new TransparentProgressDialog(this, R.drawable.loading);
@@ -318,7 +340,7 @@ public class Booking extends AppCompatActivity {
     }
 
 
-    public void searchfill(String searchkey)
+    public void searchfill(final String searchkey)
     {
         try {
             JSONObject jobj = new JSONObject();
@@ -354,7 +376,24 @@ public class Booking extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
+                    Snackbar snackbar = Snackbar
+                            .make(coordinatorLayout, "No internet connection!", Snackbar.LENGTH_LONG)
+                            .setAction("RETRY", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    searchfill(searchkey);
+                                }
+                            });
+
+                    // Changing message text color
+                    snackbar.setActionTextColor(Color.RED);
+
+                    // Changing action button text color
+                    View sbView = snackbar.getView();
+                    TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+                    textView.setTextColor(Color.YELLOW);
+                   // pd.hide();
+                    snackbar.show();
                 }
             });
 
@@ -406,16 +445,16 @@ public class Booking extends AppCompatActivity {
                             for (int i = 0; i < branch.length(); i++) {
                                 branchlist.add(branch.getString(i));
                             }
-                            ArrayAdapter<String> branchadp = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, branchlist);
-                            branchadp.setDropDownViewResource(R.layout.my_spinner);
+                            ArrayAdapter<String> branchadp = new ArrayAdapter<String>(getApplicationContext(), R.layout.spinner_textview, branchlist);
+                            branchadp.setDropDownViewResource(R.layout.spinner_textview);
                             branchspinner.setAdapter(branchadp);
                             ArrayList<String> sitelist = new ArrayList<>();
                             for (int i = 0; i < site.length(); i++) {
                                 if (branchidarr[0].equalsIgnoreCase(branchsitearr[i]))
                                     sitelist.add(site.getString(i));
                             }
-                            ArrayAdapter<String> adp = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, sitelist);
-                            adp.setDropDownViewResource(R.layout.my_spinner);
+                            ArrayAdapter<String> adp = new ArrayAdapter<String>(getApplicationContext(), R.layout.spinner_textview, sitelist);
+                            adp.setDropDownViewResource(R.layout.spinner_textview);
                             sitespinner.setAdapter(adp);
 //                            sitespinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 //                                TextView tv=(TextView)findViewById(R.id.spintext);
@@ -436,15 +475,15 @@ public class Booking extends AppCompatActivity {
                             for (int i = 0; i < logouts.length(); i++) {
                                 logoutslist.add(logouts.getString(i));
                             }
-                            ArrayAdapter<String> logoutsadp = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, logoutslist);
-                            logoutsadp.setDropDownViewResource(R.layout.my_spinner);
+                            ArrayAdapter<String> logoutsadp = new ArrayAdapter<String>(getApplicationContext(), R.layout.spinner_textview, logoutslist);
+                            logoutsadp.setDropDownViewResource(R.layout.spinner_textview);
                             logoutspinner.setAdapter(logoutsadp);
 
                             pd.dismiss();
 
                         } else {
 
-                            Toast.makeText(getApplicationContext(), "Communication failure!", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "Something went wrong!", Toast.LENGTH_LONG).show();
                         }
 
 
@@ -457,8 +496,24 @@ public class Booking extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
-                    pd.dismiss();
+                    Snackbar snackbar = Snackbar
+                            .make(coordinatorLayout, "No internet connection!", Snackbar.LENGTH_LONG)
+                            .setAction("RETRY", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    fillvalues();
+                                }
+                            });
+
+                    // Changing message text color
+                    snackbar.setActionTextColor(Color.RED);
+
+                    // Changing action button text color
+                    View sbView = snackbar.getView();
+                    TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+                    textView.setTextColor(Color.YELLOW);
+                    pd.hide();
+                    snackbar.show();
 
 
                 }
@@ -475,15 +530,14 @@ public class Booking extends AppCompatActivity {
 
     public void book() {
         try {
-            WifiManager wifiMan = (WifiManager) this.getSystemService(
-                    Context.WIFI_SERVICE);
-            WifiInfo wifiInf = wifiMan.getConnectionInfo();
+
+
             EditText fromdate = (EditText) findViewById(R.id.selected_fromdate);
             EditText todate = (EditText) findViewById(R.id.selected_todate);
             Spinner time = (Spinner) findViewById(R.id.pro_typ);
 
             boolean valid = true;
-            String macAddress = wifiInf.getMacAddress();
+            String macAddress = CommenSettings.macAddress;
             if (fromdate.getText().toString().equalsIgnoreCase("")) {
                 fromdate.setError("Please select date!");
                 valid = false;
@@ -522,9 +576,9 @@ public class Booking extends AppCompatActivity {
                     todate.setError("Please select after from date!");
                     Toast.makeText(getApplicationContext(), "To date should be after from date!", Toast.LENGTH_LONG).show();
                 }
-                JSONObject jobj = new JSONObject();
+                final JSONObject jobj = new JSONObject();
                 jobj.put("ACTION", "BOOKING");
-                jobj.put("IMEI", macAddress);
+                jobj.put("IMEI", android_id);
                 jobj.put("FROM_DATE", fromdate.getText().toString());
                 jobj.put("TO_DATE", todate.getText().toString());
                 jobj.put("LOG_IN", "WEEKLY OFF");
@@ -539,16 +593,55 @@ public class Booking extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
-
+                            //Toast.makeText(getApplicationContext(),""+jobj.toString(),Toast.LENGTH_LONG).show();
+                            Log.d("Booking RESPONSE*****",""+response.toString());
                             if (response.getString("result").equalsIgnoreCase("TRUE")) {
                                 pd.dismiss();
-                                Toast.makeText(getApplicationContext(), "" + response.getString("MESSAGE"), Toast.LENGTH_LONG).show();
-                                finish();
+                                {
+                                    new PromptDialog.Builder(Booking.this)
+                                            .setTitle("Booking")
+                                            .setCanceledOnTouchOutside(false)
+                                            .setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
+                                            .setButton1TextColor(R.color.md_blue_400)
+
+                                            .setMessage(""+response.getString("MESSAGE"))
+                                            .setButton1("OK", new PromptDialog.OnClickListener() {
+
+                                                @Override
+                                                public void onClick(Dialog dialog, int which) {
+                                                    dialog.dismiss();
+                                                    finish();
+                                                }
+                                            })
+                                            .show();
+                                }
+//                                pd.dismiss();
+//                                Toast.makeText(getApplicationContext(), "" + response.getString("MESSAGE"), Toast.LENGTH_LONG).show();
+//                                finish();
 
                             } else {
                                 pd.dismiss();
-                                Toast.makeText(getApplicationContext(), "" + response.getString("MESSAGE"), Toast.LENGTH_LONG).show();
-                                finish();
+                                {
+                                    new PromptDialog.Builder(Booking.this)
+                                            .setTitle("Booking")
+                                            .setCanceledOnTouchOutside(false)
+                                            .setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
+                                            .setButton1TextColor(R.color.md_blue_400)
+
+                                            .setMessage(""+response.getString("MESSAGE"))
+                                            .setButton1("OK", new PromptDialog.OnClickListener() {
+
+                                                @Override
+                                                public void onClick(Dialog dialog, int which) {
+                                                    dialog.dismiss();
+                                                    finish();
+                                                }
+                                            })
+                                            .show();
+                                }
+//                                pd.dismiss();
+//                                Toast.makeText(getApplicationContext(), "" + response.getString("MESSAGE"), Toast.LENGTH_LONG).show();
+//                                finish();
                             }
 
 
@@ -561,9 +654,24 @@ public class Booking extends AppCompatActivity {
                 }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
-                        pd.dismiss();
+                        Snackbar snackbar = Snackbar
+                                .make(coordinatorLayout, "No internet connection!", Snackbar.LENGTH_LONG)
+                                .setAction("RETRY", new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        book();
+                                    }
+                                });
 
+                        // Changing message text color
+                        snackbar.setActionTextColor(Color.RED);
+
+                        // Changing action button text color
+                        View sbView = snackbar.getView();
+                        TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+                        textView.setTextColor(Color.YELLOW);
+                        pd.hide();
+                        snackbar.show();
 
                     }
                 });

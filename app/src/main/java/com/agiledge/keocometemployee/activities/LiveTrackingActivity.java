@@ -56,7 +56,7 @@ public class LiveTrackingActivity extends Activity implements OnItemClickListene
 	
 	//GetMacAddress macAddress;
 	// Google Map
-	public static String macAddress;
+	//public static String macAddress;
 	static boolean active=true;
 	private GoogleMap googleMap;
 	static int alertval=0,escval=0,tripstatusval=0;
@@ -87,7 +87,7 @@ public class LiveTrackingActivity extends Activity implements OnItemClickListene
 				setContentView(R.layout.mycab);
 		AppController.getInstance().trackScreenView("Live tracking screen");
 		WifiManager wimanager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-		macAddress = wimanager.getConnectionInfo().getMacAddress();
+		String macAddress =CommenSettings.macAddress;
 		
 			
 			     
@@ -761,7 +761,7 @@ public class LiveTrackingActivity extends Activity implements OnItemClickListene
 			    	}
 			    	
 					jobj.put("EMP_ID",empid);
-					jobj.put("IMEI_NUMBER",macAddress);
+					jobj.put("IMEI_NUMBER",CommenSettings.macAddress);
 					jobj.put("TRIP_ID",tripid);
 					jobj.put("LAT",latitude+"");
 					jobj.put("LONG", longitude+"");

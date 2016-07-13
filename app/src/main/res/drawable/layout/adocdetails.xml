@@ -1,0 +1,202 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navdrawermenu.AdocDetails">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="7" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="#ff5757"
+            android:gravity="center"
+            android:text="MODIFY BOOKING"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+</RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <FrameLayout
+                android:layout_width="58dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/dmydate"
+                    android:layout_width="44dp"
+                    android:paddingTop="12dp"
+                    android:layout_height="27dp"
+                    android:gravity="start"
+                    android:text="DATE"
+
+                    android:textColor="@color/black_color" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7" >
+
+                <TextView
+                    android:id="@+id/adhocdatevalue"
+                    android:layout_width="163dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="21.12.2015"
+                    android:textColor="@color/black_color"
+                    android:layout_gravity="right|top" />
+            </FrameLayout>
+
+           <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+           </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/md_red_400">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/gameTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="In Time"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:background="@color/md_red_400"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gameScore"
+            android:layout_weight="1"
+            android:background="@color/md_red_400"
+            android:text="Out Time"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="78dp"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="0dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_weight="0.39">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3" >
+
+            <TextView
+                android:id="@+id/dmytime"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:gravity="start"
+                android:text="TIME"
+                android:paddingTop="12dp"
+                android:textColor="@color/black_color"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/intimespin"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+
+
+                android:layout_gravity="center"
+
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85" >
+
+            <Spinner
+                android:id="@+id/outtimespin"
+                android:layout_width="153dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical" />
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>
+
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</FrameLayout>
+
+    <Button
+        android:id="@+id/adhocdone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_weight="2"
+        android:layout_gravity="bottom"
+        android:background="#ff5757"
+        android:gravity="center"
+        android:text="MODIFY"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+
+</LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>

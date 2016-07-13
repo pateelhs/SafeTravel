@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
+import com.agiledge.keocometemployee.constants.GetMacAddress;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -26,6 +27,7 @@ import java.util.List;
 public class ModifyDetails extends Activity {
 
 	public static TextView textView;
+	String macaddress= GetMacAddress.getMacAddr();
 
 	
 	protected void onCreate(Bundle savedInstanceState) {
@@ -109,7 +111,7 @@ public class ModifyDetails extends Activity {
 						String outValue = modoutspinner.getSelectedItem().toString();
 						
 						jobj.put("ACTION", "SCHEDULE_ALTER");
-						jobj.put("IMEI", imei);
+						jobj.put("IMEI", CommenSettings.macAddress);
 						jobj.put("DATE", date);
 						if (mincheckBox1.isChecked() == true){
 							jobj.put("LOG_IN", inValue);

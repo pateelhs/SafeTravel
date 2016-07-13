@@ -3,9 +3,8 @@ package com.agiledge.keocometemployee.navdrawermenu;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
-import android.content.Context;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -17,6 +16,7 @@ import android.widget.Toast;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
+import com.agiledge.keocometemployee.constants.GetMacAddress;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -35,6 +35,7 @@ public class FeedBackActivity extends Activity {
 	RadioButton time1, time2, time3, time4;
 	RadioButton overall1, overall2, overall3, overall4;
 	EditText comment;
+	String android_id="";
 	TextView feedbackdone;
 	int selectedvehiclecondition, selecteddriverbehaviour, selectedtraveltime,
 			selectedoverallexp;
@@ -48,7 +49,8 @@ public class FeedBackActivity extends Activity {
 		List<String> logs = new ArrayList<String>();
 		//logs.add("IN");
 		logs.add("OUT");
-
+		android_id = Settings.Secure.getString(this.getContentResolver(),
+				Settings.Secure.ANDROID_ID);
 		Calendar cal = Calendar.getInstance();
 		SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
 		dates.add(format.format(cal.getTime()));
@@ -300,13 +302,12 @@ public class FeedBackActivity extends Activity {
 								.toString();
 						String date1 = datespinner.getSelectedItem().toString();
 
-					//	TelephonyManager tel = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-					//	String imei = tel.getDeviceId().toString();
-						WifiManager wimanager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-						String imei = wimanager.getConnectionInfo().getMacAddress();
+
+
+						String macaddress= GetMacAddress.getMacAddr();
 						jobj.put("ACTION", "EMP_FEEDBACK");
 						EditText othercmts = (EditText) findViewById(R.id.othercommentseditText1);
-						jobj.put("IMEI", imei);
+						jobj.put("IMEI", android_id);
 						jobj.put("DATE", date1);
 						jobj.put("LOGTYPE", logType);
 						jobj.put("VC", selectedvehiclecondition + "");

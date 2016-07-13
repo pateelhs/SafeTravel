@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_blue_50"
+    android:padding="8dp">
+
+    <!-- Thumbnail Image -->
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/locations"
+        android:background="@color/md_blue_50"
+        />
+
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/CustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:textColor="@color/md_red_500"
+        android:text="Area"
+        android:background="@color/md_blue_50"/>
+
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/Issue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CustomerName"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="@dimen/rating"
+        android:text="Trip Shift"
+        android:background="@color/md_blue_50"/>
+
+    <!-- Genre -->
+    <TextView
+        android:id="@+id/Priority"
+        android:textStyle="bold"
+        android:text="Distance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Issue"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="@color/md_amber_900"
+        android:textSize="@dimen/genre"
+        android:background="@color/md_blue_50"/>
+
+    <!-- Release Year -->
+    <TextView
+        android:id="@+id/time1"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/md_black_1000"
+        android:textSize="@dimen/time"
+        android:text="Trip Date"
+        android:background="@color/md_blue_50"/>
+
+</RelativeLayout>

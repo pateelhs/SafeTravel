@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import com.agiledge.keocometemployee.R;
+import com.agiledge.keocometemployee.constants.GetMacAddress;
 
 @SuppressLint("ResourceAsColor")
 public class TripHistoryActivity extends Activity {
 
 	ListView lv;
 	Context context;
+	String macaddress= GetMacAddress.getMacAddr();
 
 	
 

@@ -1,13 +1,12 @@
 package com.agiledge.keocometemployee.utilities;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.Window;
@@ -47,6 +46,7 @@ public class DateModify extends AppCompatActivity {
     List<String> calscheduleddates=new ArrayList<String>();
     DatePicker picker ;
     public int year, month;
+    String android_id="";
     private TransparentProgressDialog pd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +55,8 @@ public class DateModify extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.datemodify);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        android_id = Settings.Secure.getString(this.getContentResolver(),
+                Settings.Secure.ANDROID_ID);
         getSupportActionBar().setHomeButtonEnabled(true);
         pd = new TransparentProgressDialog(this, R.drawable.loading);
         pd.show();
@@ -93,6 +95,7 @@ public class DateModify extends AppCompatActivity {
                         Intent k = new Intent(DateModify.this, AdocDetails.class);
                         k.putExtra("CLICKDATE", date);
                         startActivity(k);
+                        finish();
                     }
                 }catch (Exception e){e.printStackTrace();}
             }
@@ -107,10 +110,10 @@ public class DateModify extends AppCompatActivity {
 
         try {
             JSONObject jobj = new JSONObject();
-            WifiManager wimanager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-            String macAddress = wimanager.getConnectionInfo().getMacAddress();
+
+           // String macaddress= GetMacAddress.getMacAddr();
             jobj.put("ACTION", "GET_SCHEDULES");
-            jobj.put("IMEI", macAddress);
+            jobj.put("IMEI", android_id);
             JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
@@ -163,7 +166,7 @@ public class DateModify extends AppCompatActivity {
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     pd.dismiss();
-                    Toast.makeText(getApplicationContext(), "Error while communicating" , Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Server took too long to respond or internet connectivity is low" , Toast.LENGTH_LONG).show();
 
 
                 }

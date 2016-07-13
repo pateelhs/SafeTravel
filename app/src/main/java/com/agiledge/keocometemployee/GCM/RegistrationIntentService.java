@@ -17,12 +17,10 @@
 package com.agiledge.keocometemployee.GCM;
 
 import android.app.IntentService;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.wifi.WifiInfo;
-import android.net.wifi.WifiManager;
 import android.preference.PreferenceManager;
+import android.provider.Settings;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.widget.Toast;
@@ -51,6 +49,8 @@ public class RegistrationIntentService extends IntentService {
   //  SharedPreferences sharedPreferences ;
     String token;
     private GetMacAddress mac;
+    String macaddress=GetMacAddress.getMacAddr();
+    String android_id="";
 
     public RegistrationIntentService() {
         super(TAG);
@@ -108,20 +108,17 @@ public class RegistrationIntentService extends IntentService {
 
 
         try {
-            WifiManager wifiMan = (WifiManager) this.getSystemService(
-                    Context.WIFI_SERVICE);
-            WifiInfo wifiInf = wifiMan.getConnectionInfo();
-
-
-            String macAddress = wifiInf.getMacAddress();
-            JSONObject json = new JSONObject();
+            android_id = Settings.Secure.getString(this.getContentResolver(),
+                    Settings.Secure.ANDROID_ID);
+            final JSONObject json = new JSONObject();
             json.put("ACTION","INSERT_GCM_TOKEN");
             json.put("TOKEN", token);
-            json.put("MAC_ADDRESS", macAddress);
+            json.put("MAC_ADDRESS", android_id);
 
             JsonObjectRequest req = new JsonObjectRequest(server.serverAddress, json, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    Log.d("GCM token",""+json.toString());
                     try {
                         if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
                            // sharedPreferences.edit().putBoolean(QuickstartPreferences.SENT_TOKEN_TO_SERVER, true).apply();

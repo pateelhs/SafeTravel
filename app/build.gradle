@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'android-apt'
 android {
     dexOptions {
         incremental = true;
@@ -53,7 +53,8 @@ dependencies {
     //compile 'com.github.PhilJay:MPAndroidChart:v2.2.0'
     compile 'com.github.frankiesardo:linearlistview:1.0.1@aar'
 
-
+    compile 'com.jakewharton:butterknife:8.1.0'
+    apt 'com.jakewharton:butterknife-compiler:8.1.0'
     compile 'com.google.android.gms:play-services-gcm:8.4.0'
     compile 'com.android.support:multidex:1.0.0'
     compile 'com.github.ganfra:material-spinner:1.1.1'
