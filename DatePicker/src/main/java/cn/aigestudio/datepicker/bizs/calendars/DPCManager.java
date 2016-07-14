@@ -7,10 +7,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 
 import cn.aigestudio.datepicker.entities.DPInfo;
-import cn.aigestudio.datepicker.views.DatePicker;
 
 /**
  * 日期管理器
@@ -19,7 +17,7 @@ import cn.aigestudio.datepicker.views.DatePicker;
  * @author AigeStudio 2015-06-12
  */
 public final class DPCManager {
-    private static final HashMap<Integer, HashMap<Integer, DPInfo[][]>> DATE_CACHE = new HashMap<>();
+    private static HashMap<Integer, HashMap<Integer, DPInfo[][]>> DATE_CACHE = new HashMap<>();
 
     private static final HashMap<String, Set<String>> DECOR_CACHE_BG = new HashMap<>();
     private static final HashMap<String, Set<String>> DECOR_CACHE_TL = new HashMap<>();
@@ -74,6 +72,8 @@ public final class DPCManager {
      * @param date 日期列表 List of date
      */
     public void setDecorBG(List<String> date) {
+        DATE_CACHE.clear();
+        DATE_CACHE=new HashMap<>();
         setDecor(date, DECOR_CACHE_BG);
     }
 
