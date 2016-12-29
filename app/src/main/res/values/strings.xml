@@ -18,7 +18,7 @@
 
 
     <!--GCM-->
-    <string name="gcm_defaultSenderId">85186746391</string>
+    <string name="gcm_defaultSenderId">725846540622</string>
     <string name="server_registered">Server Registered</string>
     <string name="server_registering">server registering</string>
     <string name="server_register_error">could not register server</string>
@@ -77,5 +77,18 @@
 
     </string-array>
 
+    <!--Fetch Address-->
+    <string name="no_geocoder_available">No geocoder available</string>
 
+    <string name="fetch_address">Fetch address</string>
+
+    <string name="address_found">Address found</string>
+    <string name="permissions_not_granted_read_phone_state">permissions not granted read phone state</string>
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+    <string name="permission_camera_rationale">Camera permission is needed to show the camera preview.</string>
+    <string name="permission_read_phone_state_rationale">Read phone state permission needed app to work.</string>
+    <string name="confirm">Confirm</string>
 </resources>

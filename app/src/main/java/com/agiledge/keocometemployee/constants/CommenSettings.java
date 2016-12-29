@@ -2,25 +2,38 @@ package com.agiledge.keocometemployee.constants;
 
 
 public class CommenSettings {
-	// san demo
-  //	public static String serverAddress="http://180.179.50.153/TestDemoAtom/AndroidAppForEmployee";	
-	
-	// new live
-	 //public static String serverAddress="http://180.179.50.153/TestDemo/AndroidAppForEmployee";
+
   	
   	// public static String serverAddress="http://180.179.50.153/DemoAtom/AndroidAppForEmployee";
-		
-  	// local host192.168.1.107
-//public static String serverAddress="http://180.179.227.73/atomKeo/employeeappservlet";
+	// test bus
+
+	public static String bus_serverAddress="http://180.179.227.73/stsAtomUAT/AndroidAppForEmployee";
+
+//test
+//public static String bus_serverAddress="http://192.168.0.123:8081/CoreAtom/AndroidAppForEmployee";
+	//to check update version
+	public static final String SIREN_JSON_URL = "http://180.179.227.159/stsAtomUAT/KeoVersion.json";
+//192.168.43.243
+//LIVE
+public static String serverAddress_wemp="http://180.179.227.73/atomKeo/employeeappservlet";   //oold roiginal
+
+	public static String serverAddress="http://180.179.227.73/stsAtomUAT/AndroidAppForEmployee";
 	public static String macAddress="";
-	//http://180.179.227.102/visaempapp/AndroidAppForEmployee
-   public static String serverAddress="http://192.168.1.106:8080/atomKeo/employeeappservlet";
+	public static String android_id="";
+	public static String empid="";
+	public static String gender="";
+	public static String user_type="";
+	public static String displayname="";
+	public static String email="";
+
+
+
+
+
+	//local
+// public static String serverAddress1="http://180.179.227.102/stsAtomUAT/AndroidAppForEmployee";
 	 
-	// cd live	 
-	// public static String serverAddress="http://180.179.227.159/cdAtom/AndroidAppForEmployee";
-	 
-	// shutle app live
-	//		 public static String serverAddress="http://180.179.227.102/gssAtomUAT/AndroidAppForEmployee";
+
 	 
 }
 

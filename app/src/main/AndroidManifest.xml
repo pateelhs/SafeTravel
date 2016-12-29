@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.agiledge.keocometemployee"
-    android:versionCode="7"
-    android:versionName="1.0.6">
+    android:versionCode="10"
+    android:versionName="1.0.9">
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -12,7 +13,7 @@
         android:name="com.agiledge.keocometemployee.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.agiledge.field_serv.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.agiledge.keocometemployee.permission.C2D_MESSAGE" />
 
     <permission
         android:name="com.agiledge.keocometemployee.permission.MAPS_RECEIVE"
@@ -54,12 +55,14 @@
         android:allowBackup="true"
         android:icon="@drawable/applogo"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
         <activity
             android:name=".activities.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@style/AppTheme2"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            >
             <intent-filter>
                 <action
                     android:name="android.intent.action.MAIN"
@@ -147,9 +150,8 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".navdrawermenu.AdocDetails"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:theme="@style/AppTheme2"
-            android:screenOrientation="portrait" />
+            android:label="Modify Booking"
+            android:theme="@style/AppTheme2" />
         <activity
             android:name=".utilities.DateModify"
             android:label="Modify Booking"
@@ -163,17 +165,45 @@
             android:theme="@style/AppTheme_home" />
         <activity
             android:name=".activities.TrackMyCabActivity"
-            android:label="Live Tracking"
+            android:label="Bus Track"
             android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activities.LateNightCabTrack"
+            android:label="Late Night Cab"
+            android:theme="@style/AppTheme2" />
+
         <activity android:name=".activities.Booking"
             android:label="Book Your transport"
             android:theme="@style/AppTheme2" />
 
-        <activity android:name=".activities.PanicAdminActivity"
+        <activity android:name="com.agiledge.keocometemployee.activities.PanicAdminActivity"
             android:label="Panic Action"
+            android:windowSoftInputMode="adjustNothing"
             android:theme="@style/AppTheme">
 
+
         </activity>
+
+        <activity android:name="com.agiledge.keocometemployee.activities.PanicAdminBus"
+            android:label="Panic Action"
+            android:windowSoftInputMode="adjustNothing"
+            android:theme="@style/AppTheme">
+
+
+        </activity>
+        <activity
+            android:name="com.agiledge.keocometemployee.utilities.EmplistPanic"
+            android:theme="@style/AppTheme"
+            android:noHistory="true"
+            android:label="Employees on board">
+
+        </activity>
+
+
+        <activity
+            android:name=".activities.TrackBus"
+            android:label="Live Tracking Bus"
+            android:theme="@style/AppTheme2" />
         <!-- Goolge API Key -->
         <meta-data
             android:name="com.google.android.gms.version"
@@ -232,6 +262,25 @@
 
 
         <activity android:name=".navdrawermenu.spinner" />
+
+        <service
+            android:name=".Shuttlebook.FetchAddressIntentService"
+            android:exported="false" />
+
+        <activity android:name=".Shuttlebook.Book" />
+        <activity android:name=".Shuttlebook.MapsActivity"
+            android:label="Bus Track"
+            android:theme="@style/AppTheme2"></activity>
+        <!--&lt;!&ndash; Broadcast Receiver that will process AppWidget updates &ndash;&gt;-->
+        <!--<receiver android:name="MovieSearchWidget" android:label="@string/app_name">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />-->
+            <!--</intent-filter>-->
+            <!--<meta-data android:name="android.appwidget.provider" android:resource="@xml/agile" />-->
+        <!--</receiver>-->
+
+        <!--&lt;!&ndash; Service to perform web API queries &ndash;&gt;-->
+        <!--<service android:name=".widget.MovieSearchWidget$UpdateService" />-->
 
     </application>
 

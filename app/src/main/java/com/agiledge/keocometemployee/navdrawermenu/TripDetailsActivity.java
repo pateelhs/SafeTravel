@@ -2,7 +2,6 @@ package com.agiledge.keocometemployee.navdrawermenu;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
 import android.net.wifi.WifiManager;
@@ -10,6 +9,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -18,7 +18,6 @@ import android.widget.TextView;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
-import com.agiledge.keocometemployee.utilities.PromptDialog;
 import com.agiledge.keocometemployee.utilities.TransparentProgressDialog;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -26,10 +25,12 @@ import com.android.volley.toolbox.JsonObjectRequest;
 
 import org.json.JSONObject;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 @SuppressLint("ResourceAsColor")
 public class TripDetailsActivity extends Activity {
 	private CoordinatorLayout coordinatorLayout;
-
+	SweetAlertDialog pDialog;
 	public static TextView textView;
 	private TransparentProgressDialog pd;
 	TextView regno;
@@ -52,6 +53,10 @@ public class TripDetailsActivity extends Activity {
 		dcontct=(TextView) findViewById(R.id.td6);
 		tcode=(TextView) findViewById(R.id.td8);
 		econt=(TextView) findViewById(R.id.td10);
+		pDialog = new SweetAlertDialog(this, SweetAlertDialog.PROGRESS_TYPE);
+		pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
+		pDialog.setTitleText("Loading...");
+		pDialog.setCancelable(false);
 		coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
 		WifiManager wimanager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
 		macAddress = wimanager.getConnectionInfo().getMacAddress();
@@ -65,17 +70,18 @@ public class TripDetailsActivity extends Activity {
 
 	public void fillvalues() {
 		try {
-			pd.show();
+			pDialog.show();
 			JSONObject jobj = new JSONObject();
 			jobj.put("ACTION", "TRIP_DETAILS");
-			jobj.put("IMEI_NUMBER",android_id);
-			JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
+			jobj.put("IMEI_NUMBER",CommenSettings.android_id);
+
+			JsonObjectRequest req = new JsonObjectRequest(CommenSettings.bus_serverAddress, jobj, new Response.Listener<JSONObject>() {
 				@Override
 				public void onResponse(JSONObject response) {
 					try {
-
+						Log.d("trip details page",response.toString());
 						if (response.getString("result").equalsIgnoreCase("TRUE")) {
-							pd.hide();
+							pDialog.dismiss();
 							if(!response.getString("TRIP_ID").equalsIgnoreCase("")){
 								regno.setText(response.getString("REG_NO"));
 								dname.setText(response.getString("DRIVER_NAME"));
@@ -87,24 +93,25 @@ public class TripDetailsActivity extends Activity {
 								}
 							}
 							else{
-								pd.dismiss();
+								pDialog.dismiss();
 								{
-									new PromptDialog.Builder(TripDetailsActivity.this)
-											.setTitle("Trip Status")
-											.setCanceledOnTouchOutside(false)
-											.setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
-											.setButton1TextColor(R.color.md_blue_400)
-
-											.setMessage("Trip Not Started")
-											.setButton1("OK", new PromptDialog.OnClickListener() {
-
-												@Override
-												public void onClick(Dialog dialog, int which) {
-													dialog.dismiss();
-													finish();
-												}
-											})
-											.show();
+//									new PromptDialog.Builder(TripDetailsActivity.this)
+//											.setTitle("Trip Status")
+//											.setCanceledOnTouchOutside(false)
+//											.setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
+//											.setButton1TextColor(R.color.md_blue_400)
+//
+//											.setMessage("Trip Not Started")
+//											.setButton1("OK", new PromptDialog.OnClickListener() {
+//
+//												@Override
+//												public void onClick(Dialog dialog, int which) {
+//													dialog.dismiss();
+//													finish();
+//												}
+//											})
+//											.show();
+									alert();
 								}
 
 							}
@@ -112,19 +119,37 @@ public class TripDetailsActivity extends Activity {
 
 
 						} else {
-							pd.hide();
-							Snackbar snackbar = Snackbar
-									.make(coordinatorLayout, "Something went Wrong", Snackbar.LENGTH_LONG);
-							View sbView = snackbar.getView();
-							TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
-							textView.setTextColor(Color.RED);
-
-							snackbar.show();
+							pDialog.dismiss();
+							alert();
+//							new PromptDialog.Builder(TripDetailsActivity.this)
+//									.setTitle("Trip Status")
+//									.setCanceledOnTouchOutside(false)
+//									.setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
+//									.setButton1TextColor(R.color.md_blue_400)
+//
+//									.setMessage("Trip Not Started")
+//									.setButton1("OK", new PromptDialog.OnClickListener() {
+//
+//										@Override
+//										public void onClick(Dialog dialog, int which) {
+//											dialog.dismiss();
+//											finish();
+//										}
+//									})
+//									.show();
+//							pd.dismiss();
+//							Snackbar snackbar = Snackbar
+//									.make(coordinatorLayout, "Something went Wrong", Snackbar.LENGTH_LONG);
+//							View sbView = snackbar.getView();
+//							TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+//							textView.setTextColor(Color.RED);
+//
+//							snackbar.show();
 						}
 
 
 					} catch (Exception e) {
-						pd.hide();
+						pDialog.dismiss();
 						AppController.getInstance().trackException(e);
 						e.printStackTrace();
 					}
@@ -133,6 +158,7 @@ public class TripDetailsActivity extends Activity {
 			}, new Response.ErrorListener() {
 				@Override
 				public void onErrorResponse(VolleyError error) {
+					pDialog.dismiss();
 					Snackbar snackbar = Snackbar
 							.make(coordinatorLayout, "No internet connection!", Snackbar.LENGTH_LONG)
 							.setAction("RETRY", new View.OnClickListener() {
@@ -149,7 +175,7 @@ public class TripDetailsActivity extends Activity {
 					View sbView = snackbar.getView();
 					TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
 					textView.setTextColor(Color.YELLOW);
-					pd.hide();
+					pDialog.dismiss();
 					snackbar.show();
 
 
@@ -161,7 +187,7 @@ public class TripDetailsActivity extends Activity {
 			// Adding request to request queue
 			AppController.getInstance().addToRequestQueue(req);
 		} catch (Exception e) {
-			pd.hide();
+			pDialog.dismiss();
 			e.printStackTrace();
 		}
 		AppController.getInstance().trackScreenView("TripDetails screen");// for Google analytics data
@@ -178,5 +204,39 @@ public class TripDetailsActivity extends Activity {
 	    			//onBackPressed();
 	    }
 		 });
+	}
+
+	public void alert() {
+		//pd.dismiss();
+		new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
+				.setTitleText("Oops...")
+				.setContentText("Your Trip Has Not Started")
+				.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+					@Override
+					public void onClick(SweetAlertDialog sweetAlertDialog) {
+						finish();
+					}
+				})
+				.show();
+		pDialog.dismiss();
+
+
+	}
+	@Override
+	public void onPause() {
+
+		super.onPause();
+		if(pDialog!= null){
+			pDialog.dismiss();
+		}
+	}
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+
+		super.onDestroy();
+		if(pDialog!= null){
+			pDialog.dismiss();
+		}
 	}
 }

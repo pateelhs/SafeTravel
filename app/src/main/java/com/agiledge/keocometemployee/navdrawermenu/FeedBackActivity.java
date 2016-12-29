@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -17,6 +18,7 @@ import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
 import com.agiledge.keocometemployee.constants.GetMacAddress;
+import com.agiledge.keocometemployee.utilities.PromptDialog;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -315,26 +317,55 @@ public class FeedBackActivity extends Activity {
 						jobj.put("TRAVEL", selectedtraveltime + "");
 						jobj.put("OVERALL", selectedoverallexp + "");
 						jobj.put("OTHER", othercmts.getText().toString());
-						JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
+						JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress_wemp, jobj, new Response.Listener<JSONObject>() {
 							@Override
 							public void onResponse(JSONObject response) {
 								try {
-									if (response.getString("result").equalsIgnoreCase("TRUE")) {
+									Log.d("feedback****",""+response.toString());
+									if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
 										if (mdialog != null && mdialog.isShowing()) {
 											mdialog.dismiss();
 										}
-										Toast.makeText(getApplicationContext(),
-												response.getString("STATUS"),
-												Toast.LENGTH_LONG).show();
-										finish();
+										new PromptDialog.Builder(FeedBackActivity.this)
+												.setTitle("Feedback")
+												.setCanceledOnTouchOutside(false)
+												.setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
+												.setButton1TextColor(R.color.md_blue_400)
+
+												.setMessage(""+response.getString("STATUS"))
+												.setButton1("OK", new PromptDialog.OnClickListener() {
+
+													@Override
+													public void onClick(Dialog dialog, int which) {
+														dialog.dismiss();
+														finish();
+													}
+												})
+												.show();
+
 
 									} else {
 										if (mdialog != null && mdialog.isShowing()) {
 											mdialog.dismiss();
 										}
-										Toast.makeText(getApplicationContext(), "Something went wrong!", Toast.LENGTH_LONG).show();
 
 
+										new PromptDialog.Builder(FeedBackActivity.this)
+												.setTitle("Feedback")
+												.setCanceledOnTouchOutside(false)
+												.setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
+												.setButton1TextColor(R.color.md_blue_400)
+
+												.setMessage(""+response.getString("STATUS"))
+												.setButton1("OK", new PromptDialog.OnClickListener() {
+
+													@Override
+													public void onClick(Dialog dialog, int which) {
+														dialog.dismiss();
+														finish();
+													}
+												})
+												.show();
 
 									}
 								} catch (Exception e) {
@@ -350,7 +381,7 @@ public class FeedBackActivity extends Activity {
 						{
 							@Override
 							public void onErrorResponse (VolleyError error){
-								Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
+								Toast.makeText(getApplicationContext(), "Error while communicating", Toast.LENGTH_LONG).show();
 								if (mdialog != null && mdialog.isShowing()) {
 									mdialog.dismiss();
 								}

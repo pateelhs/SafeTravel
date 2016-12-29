@@ -23,7 +23,6 @@ import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
@@ -46,7 +45,7 @@ public class RegistrationIntentService extends IntentService {
     private static final String TAG = "RegIntentService";
     private static final String[] TOPICS = {"global"};
     private CommenSettings server;
-  //  SharedPreferences sharedPreferences ;
+    SharedPreferences sharedPreferences ;
     String token;
     private GetMacAddress mac;
     String macaddress=GetMacAddress.getMacAddr();
@@ -121,7 +120,8 @@ public class RegistrationIntentService extends IntentService {
                     Log.d("GCM token",""+json.toString());
                     try {
                         if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
-                           // sharedPreferences.edit().putBoolean(QuickstartPreferences.SENT_TOKEN_TO_SERVER, true).apply();
+                            //sharedPreferences.edit().putBoolean(QuickstartPreferences.SENT_TOKEN_TO_SERVER, true).apply();
+                            Log.d(TAG,"gcm sent");
 
                         } else {
                                                     }
@@ -134,7 +134,7 @@ public class RegistrationIntentService extends IntentService {
             {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
 
 
                 }

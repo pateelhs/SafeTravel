@@ -1,15 +1,16 @@
 package com.agiledge.keocometemployee.navdrawermenu;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -27,31 +28,44 @@ import android.widget.Toast;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
-import com.agiledge.keocometemployee.utilities.PromptDialog;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.cengalabs.flatui.FlatUI;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class AdocDetails extends Activity {
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
+public class AdocDetails extends AppCompatActivity {
+	private final int APP_THEME = R.array.snow;
 	private CoordinatorLayout coordinatorLayout;
 	private TransparentProgressDialog pd;
 	private String date="";
-	private String scheduleid="";
+	private String scheduleid="",msg="";
 	String android_id="";
+	SweetAlertDialog pDialog;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.adocdetails);
+		FlatUI.initDefaultValues(this);
+		FlatUI.setDefaultTheme(FlatUI.BLOOD);
+		setContentView(R.layout.modify_new);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setHomeButtonEnabled(true);
+		getSupportActionBar().setBackgroundDrawable(FlatUI.getActionBarDrawable(this, APP_THEME, false, 2));
 		coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
+		pDialog = new SweetAlertDialog(this, SweetAlertDialog.PROGRESS_TYPE);
+		pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
+		pDialog.setTitleText("Please wait...");
+		pDialog.setCancelable(false);
 		Spinner timespnr=(Spinner) findViewById(R.id.adhoctimespinner);
 		pd = new TransparentProgressDialog(this, R.drawable.loading);
 		android_id = Settings.Secure.getString(this.getContentResolver(),
 				Settings.Secure.ANDROID_ID);
-		pd.show();
+		pDialog.show();
 		timespnr.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -81,7 +95,7 @@ public class AdocDetails extends Activity {
 		adone.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				pd.show();
+				pDialog.show();
 				book();
 
 
@@ -96,10 +110,10 @@ public class AdocDetails extends Activity {
 
 			JSONObject jobj = new JSONObject();
 			jobj.put("ACTION", "MODIFY_CHECK");
-			jobj.put("IMEI",android_id);
+			jobj.put("IMEI",CommenSettings.android_id);
 			jobj.put("DATE",date);
 			final Spinner logoutspinner = (Spinner) findViewById(R.id.adhoctimespinner);
-			JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
+			JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress_wemp, jobj, new Response.Listener<JSONObject>() {
 				@Override
 				public void onResponse(JSONObject response) {
 					try {
@@ -119,17 +133,18 @@ public class AdocDetails extends Activity {
 							logoutsadp.setDropDownViewResource(R.layout.my_spinner);
 							logoutspinner.setAdapter(logoutsadp);
 							logoutspinner.setSelection(position);
-							pd.dismiss();
+							pDialog.dismiss();
 
 						} else {
 
 							Toast.makeText(getApplicationContext(), ""+response.getString("MESSAGE"), Toast.LENGTH_LONG).show();
 							finish();
-							pd.dismiss();
+							pDialog.dismiss();
 						}
 
 
 					} catch (Exception e) {
+						pDialog.dismiss();
 						AppController.getInstance().trackException(e);
 						e.printStackTrace();
 					}
@@ -138,6 +153,7 @@ public class AdocDetails extends Activity {
 			}, new Response.ErrorListener() {
 				@Override
 				public void onErrorResponse(VolleyError error) {
+					pDialog.dismiss();
 					Snackbar snackbar = Snackbar
 							.make(coordinatorLayout, "No internet connection!", Snackbar.LENGTH_LONG)
 							.setAction("RETRY", new View.OnClickListener() {
@@ -154,7 +170,7 @@ public class AdocDetails extends Activity {
 					View sbView = snackbar.getView();
 					TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
 					textView.setTextColor(Color.YELLOW);
-					pd.hide();
+					pDialog.dismiss();
 					snackbar.show();
 
 
@@ -164,6 +180,7 @@ public class AdocDetails extends Activity {
 			// Adding request to request queue
 			AppController.getInstance().addToRequestQueue(req);
 		} catch (Exception e) {
+			pDialog.dismiss();
 			e.printStackTrace();
 		}
 		//  AppController.getInstance().trackScreenView("Login");// for Google analytics data
@@ -181,38 +198,39 @@ public class AdocDetails extends Activity {
 				JSONObject jobj = new JSONObject();
 				jobj.put("ACTION", "SCHEDULE_ALTER");
 				jobj.put("SCHEDULE_ID",scheduleid);
-				jobj.put("IMEI", android_id);
+				jobj.put("IMEI", CommenSettings.android_id);
 				jobj.put("DATE", txtdate.getText().toString());
 				jobj.put("LOG_OUT", time.getSelectedItem().toString());
-
-				JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
+					Log.d("alter request",""+jobj.toString());
+				JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress_wemp, jobj, new Response.Listener<JSONObject>() {
 					@Override
 					public void onResponse(JSONObject response) {
-
+						Log.d("RESPONSE** ALTER",""+response.toString());
 						try {
 
-
-							pd.dismiss();
+							msg=response.getString("STATUS");
+							pDialog.dismiss();
 							{
-								new PromptDialog.Builder(AdocDetails.this)
-										.setTitle("Modify")
-										.setCanceledOnTouchOutside(false)
-										.setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
-										.setButton1TextColor(R.color.md_blue_400)
-
-										.setMessage(""+response.getString("STATUS"))
-
-										.setButton1("OK", new PromptDialog.OnClickListener() {
-
-											@Override
-											public void onClick(Dialog dialog, int which) {
-												dialog.dismiss();
-												Intent manage= new Intent(AdocDetails.this,ManageBookingActivity.class);
-												startActivityForResult(manage, 0);
-												finish();
-											}
-										})
-										.show();
+//								new PromptDialog.Builder(AdocDetails.this)
+//										.setTitle("Modify")
+//										.setCanceledOnTouchOutside(false)
+//										.setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
+//										.setButton1TextColor(R.color.md_blue_400)
+//
+//										.setMessage(""+response.getString("STATUS"))
+//
+//										.setButton1("OK", new PromptDialog.OnClickListener() {
+//
+//											@Override
+//											public void onClick(Dialog dialog, int which) {
+//												dialog.dismiss();
+//												Intent manage= new Intent(AdocDetails.this,ManageBookingActivity.class);
+//												startActivityForResult(manage, 0);
+//												finish();
+//											}
+//										})
+//										.show();
+								success();
 							}
 
 //								pd.dismiss();
@@ -222,6 +240,7 @@ public class AdocDetails extends Activity {
 
 
 						} catch (Exception e) {
+							pDialog.dismiss();
 							AppController.getInstance().trackException(e);
 							e.printStackTrace();
 						}
@@ -230,6 +249,7 @@ public class AdocDetails extends Activity {
 				}, new Response.ErrorListener() {
 					@Override
 					public void onErrorResponse(VolleyError error) {
+						pDialog.dismiss();
 						Snackbar snackbar = Snackbar
 								.make(coordinatorLayout, "No internet connection!", Snackbar.LENGTH_LONG)
 								.setAction("RETRY", new View.OnClickListener() {
@@ -246,7 +266,7 @@ public class AdocDetails extends Activity {
 						View sbView = snackbar.getView();
 						TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
 						textView.setTextColor(Color.YELLOW);
-						pd.hide();
+						pDialog.dismiss();
 						snackbar.show();
 
 					}
@@ -255,9 +275,10 @@ public class AdocDetails extends Activity {
 				// Adding request to request queue
 				AppController.getInstance().addToRequestQueue(req);
 			}else{
-				pd.dismiss();
+				pDialog.dismiss();
 			}
 		} catch (Exception e) {
+			pDialog.dismiss();
 			e.printStackTrace();
 		}
 
@@ -294,5 +315,51 @@ public class AdocDetails extends Activity {
 			iv.setAnimation(anim);
 			iv.startAnimation(anim);
 		}
+	}
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case android.R.id.home:
+				onBackPressed();
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+	}
+
+	public void alert() {
+		//pd.dismiss();
+		new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
+				.setTitleText("Oops...")
+				.setContentText(msg)
+				.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+					@Override
+					public void onClick(SweetAlertDialog sweetAlertDialog) {
+						finish();
+					}
+				})
+				.show();
+		pDialog.dismiss();
+
+
+	}
+
+	public void success() {
+		pDialog.dismiss();
+		new SweetAlertDialog(this, SweetAlertDialog.SUCCESS_TYPE)
+				.setTitleText("Success :)")
+				.setContentText(msg)
+				.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+					@Override
+					public void onClick(SweetAlertDialog sweetAlertDialog) {
+						//pDialog.dismiss();
+						sweetAlertDialog.dismiss();
+						finish();
+					}
+				})
+				.show();
+
+
+
 	}
 }

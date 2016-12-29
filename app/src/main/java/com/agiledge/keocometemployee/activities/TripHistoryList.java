@@ -41,7 +41,7 @@ public class TripHistoryList extends AppCompatActivity {
 
 
     // json url
-    private static final String url = CommenSettings.serverAddress;
+    private static final String url = CommenSettings.serverAddress_wemp;
     private ProgressDialog pDialog;
     private List<Trips> tripList = new ArrayList<Trips>();
     private ListView listView;
@@ -97,7 +97,7 @@ public class TripHistoryList extends AppCompatActivity {
         JSONObject jobj=new JSONObject();
         jobj.put("ACTION", "GET_JOBCARDS");
         jobj.put("MAC_ADDRESS", android_id);
-        JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress,jobj,new Response.Listener<JSONObject>() {
+        JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress_wemp,jobj,new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
 

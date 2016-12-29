@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TrackMyCabActivity">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 <android.support.v7.widget.Toolbar
@@ -47,8 +56,21 @@
         android:id="@+id/map"
         tools:context="com.agiledge.keocometemployee.activities.TrackMyCabActivity"
         android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+        <TextView
+            android:id="@+id/UpdateTrips"
+            android:background="@drawable/textbackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginTop="1dp"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:layout_marginRight="4dp"
+            android:visibility="gone"/>
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
@@ -56,6 +78,7 @@
             android:src="@drawable/panic_floating" />
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/legendfab"
+            android:visibility="visible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|left"
@@ -69,7 +92,19 @@
             android:layout_margin="35dp"
             android:src="@drawable/legend_info" />
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/busfab"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="35dp"
+            android:layout_alignParentRight="true"
+            app:layout_anchorGravity="top|right|end"
+            android:src="@drawable/bus_icon" />
+
     </FrameLayout>
 
 
 </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

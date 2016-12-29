@@ -1,5 +1,5 @@
--injars 'C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
--outjars 'C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+-injars 'C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\multi-dex\debug\componentClasses.jar'
 
 -libraryjars 'C:\adt-bundle-windows-x86_64-20140702\sdk\build-tools\23.0.3\lib\shrinkedAndroid.jar'
 
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
 -dontwarn **
--printconfiguration 'C:\Users\Pateel\Documents\SafeTravel\app\build\intermediates\multi-dex\debug\components.flags'
+-printconfiguration 'C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\multi-dex\debug\components.flags'
 
 
 -keep class com.agiledge.keocometemployee.app.AppController {
@@ -110,11 +110,27 @@
     <init>();
 }
 
+-keep class com.agiledge.keocometemployee.activities.LateNightCabTrack {
+    <init>();
+}
+
 -keep class com.agiledge.keocometemployee.activities.Booking {
     <init>();
 }
 
 -keep class com.agiledge.keocometemployee.activities.PanicAdminActivity {
+    <init>();
+}
+
+-keep class com.agiledge.keocometemployee.activities.PanicAdminBus {
+    <init>();
+}
+
+-keep class com.agiledge.keocometemployee.utilities.EmplistPanic {
+    <init>();
+}
+
+-keep class com.agiledge.keocometemployee.activities.TrackBus {
     <init>();
 }
 
@@ -146,11 +162,27 @@
     <init>();
 }
 
+-keep class com.agiledge.keocometemployee.Shuttlebook.FetchAddressIntentService {
+    <init>();
+}
+
+-keep class com.agiledge.keocometemployee.Shuttlebook.Book {
+    <init>();
+}
+
+-keep class com.agiledge.keocometemployee.Shuttlebook.MapsActivity {
+    <init>();
+}
+
 -keep class com.google.android.gms.ads.AdActivity {
     <init>();
 }
 
 -keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.common.api.GoogleApiActivity {
     <init>();
 }
 
@@ -166,7 +198,31 @@
     <init>();
 }
 
--keep class com.google.android.gms.measurement.AppMeasurementContentProvider {
+-keep class com.google.android.gms.cast.framework.media.MediaIntentReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.cast.framework.media.MediaNotificationService {
+    <init>();
+}
+
+-keep class com.google.android.gms.cast.framework.ReconnectionService {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdService {
+    <init>();
+}
+
+-keep class com.google.firebase.provider.FirebaseInitProvider {
     <init>();
 }
 
@@ -174,7 +230,23 @@
     <init>();
 }
 
+-keep class com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver {
+    <init>();
+}
+
 -keep class com.google.android.gms.measurement.AppMeasurementService {
+    <init>();
+}
+
+-keep class com.google.firebase.messaging.FirebaseMessagingService {
+    <init>();
+}
+
+-keep class com.google.android.gms.tagmanager.TagManagerService {
+    <init>();
+}
+
+-keep class com.google.android.gms.tagmanager.TagManagerPreviewActivity {
     <init>();
 }
 

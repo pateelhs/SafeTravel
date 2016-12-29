@@ -1153,8 +1153,8 @@ public class MapClass extends Activity implements OnItemClickListener {
 			Fragment mapFragment = ((MapFragment) getFragmentManager()
 					.findFragmentById(R.id.map));
 			if (mapFragment != null) {
-				googleMap = ((MapFragment) getFragmentManager()
-						.findFragmentById(R.id.map)).getMap();
+//				googleMap = ((MapFragment) getFragmentManager()
+//						.findFragmentById(R.id.map)).getMap();
 
 				// check if map is created successfully or not
 				if (googleMap == null) {
@@ -1820,24 +1820,24 @@ public class MapClass extends Activity implements OnItemClickListener {
 													.equalsIgnoreCase("YES")) {
 												displayNotificationOne();
 											}
-											MarkerOptions marker = new MarkerOptions()
-													.position(new LatLng(latitude,
-															longitude));
-											googleMap
-													.setInfoWindowAdapter(new PopupAdapter(
-															getLayoutInflater(),
-															emps));
-											marker.icon(BitmapDescriptorFactory
-													.fromResource(R.drawable.only_guys));
-											googleMap.addMarker(marker);
-											CameraPosition cameraPosition = new CameraPosition.Builder()
-													.target(new LatLng(latitude,
-															longitude)).zoom(15)
-													.build();
-
-											googleMap
-													.animateCamera(CameraUpdateFactory
-															.newCameraPosition(cameraPosition));
+//											MarkerOptions marker = new MarkerOptions()
+//													.position(new LatLng(latitude,
+//															longitude));
+//											googleMap
+//													.setInfoWindowAdapter(new PopupAdapter(
+//															getLayoutInflater(),
+//															emps));
+//											marker.icon(BitmapDescriptorFactory
+//													.fromResource(R.drawable.only_guys));
+//											googleMap.addMarker(marker);
+//											CameraPosition cameraPosition = new CameraPosition.Builder()
+//													.target(new LatLng(latitude,
+//															longitude)).zoom(15)
+//													.build();
+//
+//											googleMap
+//													.animateCamera(CameraUpdateFactory
+//															.newCameraPosition(cameraPosition));
 											if (escortalert.equalsIgnoreCase("Yes")) {
 												buildAlertMessageNoEscort();
 											}

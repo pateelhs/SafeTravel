@@ -8,6 +8,7 @@ import android.graphics.Rect;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
@@ -34,6 +35,7 @@ import cn.aigestudio.datepicker.bizs.calendars.DPCManager;
 import cn.aigestudio.datepicker.bizs.decors.DPDecor;
 import cn.aigestudio.datepicker.cons.DPMode;
 import cn.aigestudio.datepicker.views.DatePicker;
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 /**
 
@@ -41,7 +43,7 @@ import cn.aigestudio.datepicker.views.DatePicker;
  * @author Arshad and Pateel
  */
 public class DateModify extends AppCompatActivity {
-
+    SweetAlertDialog pDialog;
     List<String> scheduleddates=new ArrayList<String>();
     List<String> calscheduleddates=new ArrayList<String>();
     DatePicker picker ;
@@ -58,8 +60,13 @@ public class DateModify extends AppCompatActivity {
         android_id = Settings.Secure.getString(this.getContentResolver(),
                 Settings.Secure.ANDROID_ID);
         getSupportActionBar().setHomeButtonEnabled(true);
+
+        pDialog = new SweetAlertDialog(this, SweetAlertDialog.PROGRESS_TYPE);
+        pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
+        pDialog.setTitleText("Loading...");
+        pDialog.setCancelable(false);
         pd = new TransparentProgressDialog(this, R.drawable.loading);
-        pd.show();
+        pDialog.show();
        picker=(DatePicker) findViewById(R.id.main_dp);
         Calendar now = Calendar.getInstance();
         year = now.get(Calendar.YEAR);
@@ -111,13 +118,14 @@ public class DateModify extends AppCompatActivity {
         try {
             JSONObject jobj = new JSONObject();
 
-           // String macaddress= GetMacAddress.getMacAddr();
+
             jobj.put("ACTION", "GET_SCHEDULES");
-            jobj.put("IMEI", android_id);
-            JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
+            jobj.put("IMEI", CommenSettings.android_id);
+            JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress_wemp, jobj, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
+                        Log.d("BOOKINGS ON DATE",response.toString());
                         if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
                             JSONArray dates=response.getJSONArray("DATES");
                             SimpleDateFormat sdf=new SimpleDateFormat("yyyy-M-d");
@@ -146,14 +154,34 @@ public class DateModify extends AppCompatActivity {
                             showschedules();
 
                         } else {
-                            pd.dismiss();
-                            Toast.makeText(getApplicationContext(), "Something went wrong!", Toast.LENGTH_LONG).show();
+
+                            pDialog.dismiss();
+                            {
+//                                new PromptDialog.Builder(DateModify.this)
+//                                        .setTitle("View Booking")
+//                                        .setCanceledOnTouchOutside(false)
+//                                        .setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
+//                                        .setButton1TextColor(R.color.md_blue_400)
+//
+//                                        .setMessage("No Booking Data Found!")
+//                                        .setButton1("OK", new PromptDialog.OnClickListener() {
+//
+//                                            @Override
+//                                            public void onClick(Dialog dialog, int which) {
+//                                                dialog.dismiss();
+//                                                finish();
+//                                            }
+//                                        })
+//                                        .show();
+                                alert();
+                            }
+                            //Toast.makeText(getApplicationContext(), "Something went wrong!", Toast.LENGTH_LONG).show();
 
                         }
 
 
                     } catch (Exception e) {
-                        pd.dismiss();
+                        pDialog.dismiss();
 
 
                         e.printStackTrace();
@@ -165,7 +193,7 @@ public class DateModify extends AppCompatActivity {
             {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    pd.dismiss();
+                    pDialog.dismiss();
                     Toast.makeText(getApplicationContext(), "Server took too long to respond or internet connectivity is low" , Toast.LENGTH_LONG).show();
 
 
@@ -176,6 +204,7 @@ public class DateModify extends AppCompatActivity {
             AppController.getInstance().addToRequestQueue(req);
         }
         catch (Exception e){
+            pDialog.dismiss();
             e.printStackTrace();
         }
     }
@@ -213,9 +242,41 @@ List<String> calsch=new ArrayList<String>();
         }
     });
     picker.setDate(year,month);
-    pd.dismiss();
+    pDialog.dismiss();
 }
 
+    public void alert() {
+        //pd.dismiss();
+        new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
+                .setTitleText("Oops...")
+                .setContentText("No booking data found")
+                .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sweetAlertDialog) {
+                        finish();
+                    }
+                })
+                .show();
+        pDialog.dismiss();
 
+
+    }
+
+    public void success() {
+        pDialog.dismiss();
+        new SweetAlertDialog(this, SweetAlertDialog.SUCCESS_TYPE)
+                .setTitleText("Success :)")
+                .setContentText("")
+                .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sweetAlertDialog) {
+                        finish();
+                    }
+                })
+                .show();
+        pDialog.dismiss();
+
+
+    }
 
 }

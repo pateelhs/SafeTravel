@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
-import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -30,22 +29,12 @@ import android.widget.Toast;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
-import com.agiledge.keocometemployee.constants.GetMacAddress;
 import com.agiledge.keocometemployee.utilities.MyLocation;
-import com.agiledge.keocometemployee.utilities.PopupAdapter;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.gms.drive.internal.GetMetadataRequest;
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.CameraPosition;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.math.BigDecimal;
@@ -179,8 +168,8 @@ public class LiveTrackingActivity extends Activity implements OnItemClickListene
 	 * */
 	@SuppressLint("NewApi") private void initilizeMap() {
 		if (googleMap == null) {
-			googleMap = ((MapFragment) getFragmentManager().findFragmentById(
-					R.id.map)).getMap();
+//			googleMap = ((MapFragment) getFragmentManager().findFragmentById(
+//					R.id.map)).getMapAsync(o);
 			
 			// check if map is created successfully or not
 			if (googleMap == null) {
@@ -533,16 +522,16 @@ public class LiveTrackingActivity extends Activity implements OnItemClickListene
 									{
 										alertdist(dist);
 									}
-									MarkerOptions marker = new MarkerOptions().position(new LatLng(latitude,longitude));
-									googleMap.setInfoWindowAdapter(new PopupAdapter(getLayoutInflater(),emps));
-									marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.only_guys));
-									googleMap.addMarker(marker);
-									CameraPosition cameraPosition = new CameraPosition.Builder()
-											.target(new LatLng(latitude,
-													longitude)).zoom(15).build();
+//									MarkerOptions marker = new MarkerOptions().position(new LatLng(latitude,longitude));
+//									googleMap.setInfoWindowAdapter(new PopupAdapter(getLayoutInflater(),emps));
+//									marker.icon(BitmapDescriptorFactory.fromResource(R.drawable.only_guys));
+//									googleMap.addMarker(marker);
+//									CameraPosition cameraPosition = new CameraPosition.Builder()
+//											.target(new LatLng(latitude,
+//													longitude)).zoom(15).build();
 
-									googleMap.animateCamera(CameraUpdateFactory
-											.newCameraPosition(cameraPosition));
+//									googleMap.animateCamera(CameraUpdateFactory
+//											.newCameraPosition(cameraPosition));
 									if(escortalert.equalsIgnoreCase("Yes"))
 									{
 										buildAlertMessageNoEscort();

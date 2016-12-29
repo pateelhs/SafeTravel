@@ -17,7 +17,7 @@ android {
             storePassword 'agiledge'
         }
     }
-    compileSdkVersion 23
+    compileSdkVersion 25
     buildToolsVersion "23.0.3"
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
@@ -26,6 +26,13 @@ android {
         targetSdkVersion 23
         multiDexEnabled true
         signingConfig signingConfigs.KeonicsSafetravel
+    }
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:design:23.4.0'
+            force 'com.android.support:support-v4:23.4.0'
+            force 'com.android.support:appcompat-v7:23.4.0'
+        }
     }
     buildTypes {
         release {
@@ -42,26 +49,31 @@ repositories {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:23.3.0'
-    compile 'com.android.support:appcompat-v7:23.3.0'
-    compile 'com.google.android.gms:play-services:8.4.0'
-    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:support-v4:25.0.0'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+   compile 'com.google.android.gms:play-services:9.8.0'
+    compile 'com.android.support:design:25.0.0'
     compile 'org.apache.httpcomponents:httpmime:4.2.3'
     compile 'com.github.dkharrat.nexusdialog:nexusdialog:0.3.0'
-
+    compile 'com.google.android.gms:play-services-maps:9.8.0'
+    compile 'com.google.android.gms:play-services-location:9.8.0'
+    compile 'com.google.android.gms:play-services-analytics:9.8.0'
+    compile 'com.google.android.gms:play-services-places:9.8.0'
+    compile 'com.google.android.gms:play-services-gcm:9.8.0'
     compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
     //compile 'com.github.PhilJay:MPAndroidChart:v2.2.0'
     compile 'com.github.frankiesardo:linearlistview:1.0.1@aar'
 
-    compile 'com.jakewharton:butterknife:8.1.0'
-    apt 'com.jakewharton:butterknife-compiler:8.1.0'
-    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+
+
+
     compile 'com.android.support:multidex:1.0.0'
     compile 'com.github.ganfra:material-spinner:1.1.1'
     compile project(':DatePicker')
     compile project(':circleimageview')
-    compile 'org.greenrobot:eventbus:3.0.0'
+   // compile 'com.google.maps.android:android-maps-utils:0.4+'
 
-
-
+    compile 'com.github.eluleci:flatui:3.0.0'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.github.eggheadgames:Siren:1.4.+'
 }

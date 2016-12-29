@@ -1,54 +1,262 @@
 [
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\gpspopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\gpspopup.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\tripstatuspopup.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\tripstatuspopup.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\map.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\map.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_booking.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\activity_booking.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\popup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\popup.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\spinner_item_divider.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\spinner_item_divider.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\otp.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\otp.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\about.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\about.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\about.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\about.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\tittle_bar.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\tittle_bar.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\welcomepopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\welcomepopup.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\tool_bar.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\tool_bar.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\tripdetails.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\tripdetails.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\gpspopup.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\gpspopup.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\help.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\help.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\mapadmin1.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\mapadmin1.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\tripstatuspopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\tripstatuspopup.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\datemodify.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\datemodify.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\cabalertpopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\cabalertpopup.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\cab_info.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\cab_info.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_main.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\activity_main.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\mapadmin.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\mapadmin.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\listview_item_row.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\listview_item_row.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\list_row.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\list_row.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\escortstatus.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\SafeTravel\\app\\src\\main\\res\\layout-land\\escortstatus.xml"
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\adocdetails.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\adocdetails.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\panicactivatedpopup.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\panicactivatedpopup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_spinner.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\activity_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\cabalertpopup.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\cabalertpopup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\mycab.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\mycab.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\my_spinner.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\my_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\manage_booking.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\manage_booking.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\fynn_prompt_dialog_titlebar.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\fynn_prompt_dialog_titlebar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\managebookingnew.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\managebookingnew.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\panicemplist.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\panicemplist.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\item_row.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\item_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\fynn_prompt_dialog_normal.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\fynn_prompt_dialog_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\trip_history.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\trip_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\help.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\help.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\booking.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\booking.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\onetimeregister.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\onetimeregister.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\spinner_item.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\spinner_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\spinner_textview.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\spinner_textview.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\welcomepopup.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\welcomepopup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\exitpopup.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\exitpopup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\adhoc.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\adhoc.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\loading.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\loading.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\legentpopup.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\legentpopup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\emplist_panic.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\emplist_panic.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\listview_item_row.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\listview_item_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\home_activity.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\home_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\button_end.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\button_end.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\header.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\gridview_custom_layout.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\gridview_custom_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_main.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\cancel.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\cancel.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_maps.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\activity_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\panicpopup.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\panicpopup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\throwlayout.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\throwlayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\triphistorylist.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\triphistorylist.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\otp.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\otp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\canceldetails.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\canceldetails.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_track_my_cab.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\activity_track_my_cab.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\tripdetails.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\tripdetails.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\map.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\map.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\widget_layout.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\widget_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\escortstatus.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\escortstatus.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\modifydetails.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\modifydetails.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\popup.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\modify.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\modify.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\modify_new.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\modify_new.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\fynn_prompt_dialog_titlebar_skyblue.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\fynn_prompt_dialog_titlebar_skyblue.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_book.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\activity_book.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\panic_admin.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\panic_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\feedback.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\feedback.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\emergencycontact.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\emergencycontact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\custom_dialog.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_track_bus.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\activity_track_bus.xml"
     }
 ]

@@ -1,6 +1,7 @@
 package com.agiledge.keocometemployee.utilities;
 
 import android.content.Context;
+import android.net.ConnectivityManager;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.WindowManager;
@@ -21,5 +22,13 @@ public class Util {
 		display.getMetrics(dm);
 
 		return dm.widthPixels;
+	}
+	public  static boolean Isconnected(Context context) {
+		boolean connected;
+		ConnectivityManager conectivtyManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+		connected = conectivtyManager.getActiveNetworkInfo() != null
+				&& conectivtyManager.getActiveNetworkInfo().isAvailable()
+				&& conectivtyManager.getActiveNetworkInfo().isConnected();
+		return connected;
 	}
 }

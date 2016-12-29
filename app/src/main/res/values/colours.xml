@@ -4,7 +4,7 @@
        <color name="white_color">#FFFFFF</color>
         <color name="black_color">#000000</color>
          <color name="my_custom_color">#F2A900</color>
-    
+    <color name="bgBackSideColor">#f4f0ff</color>
           <color name="red_light">#ff5757</color>
     <color name="red_middle">#ff5757</color>
     <color name="red_dark">#ff5757</color>

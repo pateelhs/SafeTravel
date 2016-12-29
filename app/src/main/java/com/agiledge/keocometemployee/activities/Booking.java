@@ -7,7 +7,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.DialogFragment;
@@ -34,7 +33,6 @@ import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
 import com.agiledge.keocometemployee.constants.GetMacAddress;
-import com.agiledge.keocometemployee.utilities.PromptDialog;
 import com.agiledge.keocometemployee.utilities.TransparentProgressDialog;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -49,6 +47,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class Booking extends AppCompatActivity {
     public static EditText et1, et2;
     private CoordinatorLayout coordinatorLayout;
@@ -60,10 +60,10 @@ public class Booking extends AppCompatActivity {
     private String[] siteidarr;
     private String[] branchidarr;
     static public boolean setdate = false;
-    private String selectedbranchid;
-    private String selectedsiteid;
+    private String selectedbranchid,msg = "", msg2 = "";
+    private String selectedsiteid,serch = "";
     ToggleButton toggleButton;
-    String android_id="";
+    //String android_id="";
     TextView bookfor;
     AutoCompleteTextView ACTV;
     ArrayAdapter<String> adapter;
@@ -71,8 +71,8 @@ public class Booking extends AppCompatActivity {
     ArrayList<String> searchempids=new ArrayList<String>();
     String searchselectedempid="";
     String macaddress= GetMacAddress.getMacAddr();
-   public String user_type;
-
+   public String user_type, URL="http://180.179.227.73/atomKeo/employeeappservlet";
+    SweetAlertDialog pDialog;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -171,10 +171,10 @@ public class Booking extends AppCompatActivity {
         Spinner logoutspinner = (Spinner) findViewById(R.id.pro_typ);
         AppController.getInstance().trackScreenView("Booking Activity");// for Google analytics data
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        pDialog = new SweetAlertDialog(this, SweetAlertDialog.PROGRESS_TYPE);
         getSupportActionBar().setHomeButtonEnabled(true);
-        android_id = Settings.Secure.getString(this.getContentResolver(),
-                Settings.Secure.ANDROID_ID);
+//        android_id = Settings.Secure.getString(this.getContentResolver(),
+//                Settings.Secure.ANDROID_ID);
         et1 = (EditText) findViewById(R.id.selected_fromdate);
         et2 = (EditText) findViewById(R.id.selected_todate);
         submit = (Button) findViewById(R.id.submit_book);
@@ -182,25 +182,35 @@ public class Booking extends AppCompatActivity {
         toggleButton = (ToggleButton) findViewById(R.id.toggleButton1);
         ACTV = (AutoCompleteTextView) findViewById(R.id.auto);
         Bundle extras=getIntent().getExtras();
-        if(extras!=null){
-
-           String user_type=extras.getString("user_type");
-        }
+        //Toast.makeText(getApplicationContext(),""+CommenSettings.user_type,Toast.LENGTH_LONG).show();
         SharedPreferences sharedpref=getPreferences(Context.MODE_PRIVATE);
         LinearLayout one = (LinearLayout) findViewById(R.id.lin);
         one.setVisibility(View.GONE);
-        String user_type=sharedpref.getString("APP_USERTYPE","NOT_FOUND");
 
+        pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
+        pDialog.setTitleText("Loading...");
+        pDialog.setCancelable(false);
 
-        if(user_type.equalsIgnoreCase("Admin"))
+        if(CommenSettings.user_type.equalsIgnoreCase("admin"))
         {
+           // Toast.makeText(getApplicationContext(),""+CommenSettings.user_type,Toast.LENGTH_LONG).show();
             one.setVisibility(View.VISIBLE);}
 
         bookfor = (TextView) findViewById(R.id.bookfor);
         fillvalues();
         pd = new TransparentProgressDialog(this, R.drawable.loading);
-        pd.show();
-        ACTV.setThreshold(3);
+        pDialog.show();
+        ACTV.setThreshold(2);
+        ACTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Toast.makeText(getApplicationContext(),"on click actv",Toast.LENGTH_LONG).show();
+                serch = ACTV.getText().toString();
+                if (serch.length() > 2 && searchstatus && !isSearchselected) {
+                    searchfill(serch);
+                }
+            }
+        });
 
         ACTV.addTextChangedListener(new TextWatcher() {
 
@@ -240,11 +250,14 @@ public class Booking extends AppCompatActivity {
                 if (isChecked == true) {
                     bookfor.setText("Others ");
                     issearchChecked=true;
+
                     ACTV.setVisibility(View.VISIBLE);
                 } else {
                     bookfor.setText("Self  ");
+
                     ACTV.setVisibility(View.INVISIBLE);
                     issearchChecked=false;
+
                 }
             }
         });
@@ -271,7 +284,7 @@ public class Booking extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                pd.show();
+                pDialog.show();
                 book();
 
 
@@ -347,7 +360,7 @@ public class Booking extends AppCompatActivity {
             jobj.put("ACTION", "SEARCH_EMPLOYEE");
             jobj.put("SEARCHKEY",searchkey);
             searchstatus=false;
-            JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
+            JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress_wemp, jobj, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
@@ -408,7 +421,7 @@ public class Booking extends AppCompatActivity {
             final Spinner sitespinner = (Spinner) findViewById(R.id.frequency1);
             final Spinner logoutspinner = (Spinner) findViewById(R.id.pro_typ);
             final Spinner branchspinner = (Spinner) findViewById(R.id.service11);
-            JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
+            JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress_wemp, jobj, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
@@ -479,15 +492,16 @@ public class Booking extends AppCompatActivity {
                             logoutsadp.setDropDownViewResource(R.layout.spinner_textview);
                             logoutspinner.setAdapter(logoutsadp);
 
-                            pd.dismiss();
+                            pDialog.dismiss();
 
                         } else {
-
+                            pDialog.dismiss();
                             Toast.makeText(getApplicationContext(), "Something went wrong!", Toast.LENGTH_LONG).show();
                         }
 
 
                     } catch (Exception e) {
+                        pDialog.dismiss();
                         AppController.getInstance().trackException(e);
                         e.printStackTrace();
                     }
@@ -495,7 +509,7 @@ public class Booking extends AppCompatActivity {
                 }
             }, new Response.ErrorListener() {
                 @Override
-                public void onErrorResponse(VolleyError error) {
+                public void onErrorResponse(VolleyError error) {    pDialog.dismiss();
                     Snackbar snackbar = Snackbar
                             .make(coordinatorLayout, "No internet connection!", Snackbar.LENGTH_LONG)
                             .setAction("RETRY", new View.OnClickListener() {
@@ -512,7 +526,7 @@ public class Booking extends AppCompatActivity {
                     View sbView = snackbar.getView();
                     TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
                     textView.setTextColor(Color.YELLOW);
-                    pd.hide();
+                    pDialog.dismiss();
                     snackbar.show();
 
 
@@ -521,7 +535,7 @@ public class Booking extends AppCompatActivity {
 
             // Adding request to request queue
             AppController.getInstance().addToRequestQueue(req);
-        } catch (Exception e) {
+        } catch (Exception e) {    pDialog.dismiss();
             e.printStackTrace();
         }
         //  AppController.getInstance().trackScreenView("Login");// for Google analytics data
@@ -537,7 +551,7 @@ public class Booking extends AppCompatActivity {
             Spinner time = (Spinner) findViewById(R.id.pro_typ);
 
             boolean valid = true;
-            String macAddress = CommenSettings.macAddress;
+
             if (fromdate.getText().toString().equalsIgnoreCase("")) {
                 fromdate.setError("Please select date!");
                 valid = false;
@@ -578,7 +592,7 @@ public class Booking extends AppCompatActivity {
                 }
                 final JSONObject jobj = new JSONObject();
                 jobj.put("ACTION", "BOOKING");
-                jobj.put("IMEI", android_id);
+                jobj.put("IMEI", CommenSettings.android_id);
                 jobj.put("FROM_DATE", fromdate.getText().toString());
                 jobj.put("TO_DATE", todate.getText().toString());
                 jobj.put("LOG_IN", "WEEKLY OFF");
@@ -588,56 +602,61 @@ public class Booking extends AppCompatActivity {
                 jobj.put("BOOKING_FOR",searchselectedempid);
                 else
                     jobj.put("BOOKING_FOR","SELF");
-
-                JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
+                Log.d("booking request",jobj.toString());
+                JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress_wemp, jobj, new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
                             //Toast.makeText(getApplicationContext(),""+jobj.toString(),Toast.LENGTH_LONG).show();
+                            Log.d("booking request",jobj.toString());
                             Log.d("Booking RESPONSE*****",""+response.toString());
+                            msg = response.getString("MESSAGE");
                             if (response.getString("result").equalsIgnoreCase("TRUE")) {
-                                pd.dismiss();
+                                pDialog.dismiss();
                                 {
-                                    new PromptDialog.Builder(Booking.this)
-                                            .setTitle("Booking")
-                                            .setCanceledOnTouchOutside(false)
-                                            .setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
-                                            .setButton1TextColor(R.color.md_blue_400)
-
-                                            .setMessage(""+response.getString("MESSAGE"))
-                                            .setButton1("OK", new PromptDialog.OnClickListener() {
-
-                                                @Override
-                                                public void onClick(Dialog dialog, int which) {
-                                                    dialog.dismiss();
-                                                    finish();
-                                                }
-                                            })
-                                            .show();
+//                                    new PromptDialog.Builder(Booking.this)
+//                                            .setTitle("Booking")
+//                                            .setCanceledOnTouchOutside(false)
+//                                            .setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
+//                                            .setButton1TextColor(R.color.md_blue_400)
+//
+//                                            .setMessage(""+response.getString("MESSAGE"))
+//                                            .setButton1("OK", new PromptDialog.OnClickListener() {
+//
+//                                                @Override
+//                                                public void onClick(Dialog dialog, int which) {
+//                                                    dialog.dismiss();
+//                                                    finish();
+//                                                }
+//                                            })
+//                                            .show();
+                                    success();
                                 }
 //                                pd.dismiss();
 //                                Toast.makeText(getApplicationContext(), "" + response.getString("MESSAGE"), Toast.LENGTH_LONG).show();
 //                                finish();
 
                             } else {
-                                pd.dismiss();
+                                msg2 = response.getString("MESSAGE");
+                                pDialog.dismiss();
                                 {
-                                    new PromptDialog.Builder(Booking.this)
-                                            .setTitle("Booking")
-                                            .setCanceledOnTouchOutside(false)
-                                            .setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
-                                            .setButton1TextColor(R.color.md_blue_400)
-
-                                            .setMessage(""+response.getString("MESSAGE"))
-                                            .setButton1("OK", new PromptDialog.OnClickListener() {
-
-                                                @Override
-                                                public void onClick(Dialog dialog, int which) {
-                                                    dialog.dismiss();
-                                                    finish();
-                                                }
-                                            })
-                                            .show();
+//                                    new PromptDialog.Builder(Booking.this)
+//                                            .setTitle("Booking")
+//                                            .setCanceledOnTouchOutside(false)
+//                                            .setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
+//                                            .setButton1TextColor(R.color.md_blue_400)
+//
+//                                            .setMessage(""+response.getString("MESSAGE"))
+//                                            .setButton1("OK", new PromptDialog.OnClickListener() {
+//
+//                                                @Override
+//                                                public void onClick(Dialog dialog, int which) {
+//                                                    dialog.dismiss();
+//                                                    finish();
+//                                                }
+//                                            })
+//                                            .show();
+                                    alert();
                                 }
 //                                pd.dismiss();
 //                                Toast.makeText(getApplicationContext(), "" + response.getString("MESSAGE"), Toast.LENGTH_LONG).show();
@@ -646,6 +665,7 @@ public class Booking extends AppCompatActivity {
 
 
                         } catch (Exception e) {
+                            pDialog.dismiss();
                             AppController.getInstance().trackException(e);
                             e.printStackTrace();
                         }
@@ -654,6 +674,7 @@ public class Booking extends AppCompatActivity {
                 }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        pDialog.dismiss();
                         Snackbar snackbar = Snackbar
                                 .make(coordinatorLayout, "No internet connection!", Snackbar.LENGTH_LONG)
                                 .setAction("RETRY", new View.OnClickListener() {
@@ -670,7 +691,7 @@ public class Booking extends AppCompatActivity {
                         View sbView = snackbar.getView();
                         TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
                         textView.setTextColor(Color.YELLOW);
-                        pd.hide();
+                        pDialog.dismiss();
                         snackbar.show();
 
                     }
@@ -679,11 +700,11 @@ public class Booking extends AppCompatActivity {
                 // Adding request to request queue
                 AppController.getInstance().addToRequestQueue(req);
             } else {
-                pd.dismiss();
+                pDialog.dismiss();
             }
         } catch (Exception e) {
             e.printStackTrace();
-            pd.dismiss();
+            pDialog.dismiss();
         }
 
     }
@@ -708,5 +729,54 @@ public class Booking extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+    public void alert() {
+        //pd.dismiss();
+        new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
+                .setTitleText("Oops...")
+                .setContentText(msg2)
+                .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sweetAlertDialog) {
+                        finish();
+                    }
+                })
+                .show();
+        pDialog.dismiss();
 
+
+    }
+
+    public void success() {
+        pDialog.dismiss();
+        new SweetAlertDialog(this, SweetAlertDialog.SUCCESS_TYPE)
+                .setTitleText("Success :)")
+                .setContentText(msg)
+                .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sweetAlertDialog) {
+                        finish();
+                    }
+                })
+                .show();
+       // pDialog.dismiss();
+
+
+    }
+    @Override
+    public void onPause() {
+
+        super.onPause();
+        if(pDialog!= null){
+            pDialog.dismiss();
+        }
+    }
+    @Override
+    protected void onDestroy() {
+        // TODO Auto-generated method stub
+
+        super.onDestroy();
+        if(pDialog!= null){
+            pDialog.dismiss();
+        }
+    }
 }

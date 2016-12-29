@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.agiledge.keocometemployee"
-    android:versionCode="7"
-    android:versionName="1.0.6" >
+    android:versionCode="10"
+    android:versionName="1.0.9" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -12,7 +12,7 @@
         android:name="com.agiledge.keocometemployee.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.agiledge.field_serv.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.agiledge.keocometemployee.permission.C2D_MESSAGE" />
 
     <permission
         android:name="com.agiledge.keocometemployee.permission.MAPS_RECEIVE"
@@ -146,8 +146,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.agiledge.keocometemployee.navdrawermenu.AdocDetails"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait"
+            android:label="Modify Booking"
             android:theme="@style/AppTheme2" />
         <activity
             android:name="com.agiledge.keocometemployee.utilities.DateModify"
@@ -162,7 +161,11 @@
             android:theme="@style/AppTheme_home" />
         <activity
             android:name="com.agiledge.keocometemployee.activities.TrackMyCabActivity"
-            android:label="Live Tracking"
+            android:label="Bus Track"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name="com.agiledge.keocometemployee.activities.LateNightCabTrack"
+            android:label="Late Night Cab"
             android:theme="@style/AppTheme2" />
         <activity
             android:name="com.agiledge.keocometemployee.activities.Booking"
@@ -171,8 +174,25 @@
         <activity
             android:name="com.agiledge.keocometemployee.activities.PanicAdminActivity"
             android:label="Panic Action"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.agiledge.keocometemployee.activities.PanicAdminBus"
+            android:label="Panic Action"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.agiledge.keocometemployee.utilities.EmplistPanic"
+            android:label="Employees on board"
+            android:noHistory="true"
             android:theme="@style/AppTheme" >
         </activity>
+        <activity
+            android:name="com.agiledge.keocometemployee.activities.TrackBus"
+            android:label="Live Tracking Bus"
+            android:theme="@style/AppTheme2" />
         <!-- Goolge API Key -->
         <meta-data
             android:name="com.google.android.gms.version"
@@ -231,6 +251,28 @@
 
         <activity android:name="com.agiledge.keocometemployee.navdrawermenu.spinner" />
 
+        <service
+            android:name="com.agiledge.keocometemployee.Shuttlebook.FetchAddressIntentService"
+            android:exported="false" />
+
+        <activity android:name="com.agiledge.keocometemployee.Shuttlebook.Book" />
+        <activity
+            android:name="com.agiledge.keocometemployee.Shuttlebook.MapsActivity"
+            android:label="Bus Track"
+            android:theme="@style/AppTheme2" />
+        <!-- &lt;!&ndash; Broadcast Receiver that will process AppWidget updates &ndash;&gt; -->
+        <!-- <receiver android:name="MovieSearchWidget" android:label="@string/app_name"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.appwidget.action.APPWIDGET_UPDATE" /> -->
+        <!-- </intent-filter> -->
+        <!-- <meta-data android:name="android.appwidget.provider" android:resource="@xml/agile" /> -->
+        <!-- </receiver> -->
+
+
+        <!-- &lt;!&ndash; Service to perform web API queries &ndash;&gt; -->
+        <!-- <service android:name=".widget.MovieSearchWidget$UpdateService" /> -->
+
+
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
@@ -239,6 +281,10 @@
         <activity
             android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
             android:theme="@style/Theme.IAPTheme" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name="com.google.android.gms.appinvite.PreviewActivity"
             android:exported="true"
@@ -263,16 +309,58 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:exported="true"
             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
 
-        <provider
-            android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"
-            android:authorities="com.agiledge.keocometemployee.google_measurement_service"
+        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
+
+        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
+        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.agiledge.keocometemployee" />
+            </intent-filter>
+        </receiver>
+        <!--
+ Internal (not exported) receiver used by the app to start its own exported services
+             without risk of being spoofed.
+        -->
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
             android:exported="false" />
+        <!--
+ FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.agiledge.keocometemployee.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-            android:enabled="true" >
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
             <intent-filter>
-                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
             </intent-filter>
         </receiver>
 
@@ -280,6 +368,35 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.android.gms.measurement.AppMeasurementService"
             android:enabled="true"
             android:exported="false" />
+        <!--
+ FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.android.gms.tagmanager.TagManagerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+            android:noHistory="true" >
+ <!-- optional, removes the previewActivity from the activity stack. -->
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.agiledge.keocometemployee" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

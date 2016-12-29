@@ -20,8 +20,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:orientation="horizontal">
 
             <TextView
@@ -29,11 +29,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left|center_vertical"
                 android:layout_weight="1"
+                android:textSize="18dp"
                 android:textColor="@color/red"
                 android:text="Cause of Alarm"/>
 
             <Spinner
-                android:id="@+id/droppanic"
+                android:id="@+id/panicspin"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
@@ -42,238 +43,260 @@
                 android:singleLine="true"/>
         </LinearLayout>
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Primary Action"
+            android:background="@drawable/textbackground"/>
 
         <EditText
             android:id="@+id/input_comment1"
             android:layout_width="match_parent"
-            android:layout_height="74dp"
+            android:layout_height="100dp"
             android:inputType="textMultiLine"
-            android:hint="Comments" />
+            android:background="@drawable/textbackground"
+            android:hint="Mention action here" />
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@color/md_blue_50"
-        >
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_margin="15dp">
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Vehicle Number"
-                android:textStyle="bold"
-                android:textColor="#707070"
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_blue_50"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="15dp">
 
-                />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:text="\u2022"
-                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Number"
+                    android:textStyle="bold"
+                    android:textColor="#707070"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:text=""
-                />
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.86"
+                    android:gravity="center_horizontal"
+                    android:text="\u2022"
+                    />
+
+                <TextView
+                    android:id="@+id/vehnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    />
 
 
 
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Name"
+                    android:textStyle="bold"
+                    android:textColor="#707070"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.07"
+                    android:gravity="center_horizontal"
+                    android:text="\u2022"
+                    />
+
+                <TextView
+                    android:id="@+id/drivname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name "
+                    android:textStyle="bold"
+                    android:textColor="#707070"
+                    android:layout_weight="0.03" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Contact"
+                    android:textStyle="bold"
+                    android:textColor="#707070"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="center_horizontal"
+                    android:text="\u2022"
+                    />
+
+                <TextView
+                    android:id="@+id/drivcontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123456789"
+                    android:textStyle="bold"
+                    android:autoLink="phone"
+                    android:textColor="#707070"
+                    android:layout_weight="0.12" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Escort Name"
+                    android:textStyle="bold"
+                    android:textColor="#707070"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.47"
+                    android:gravity="center_horizontal"
+                    android:text="\u2022"
+                    />
+
+                <TextView
+                    android:id="@+id/escname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E name"
+                    android:textStyle="bold"
+                    android:textColor="#707070"
+                    android:layout_weight="0.18" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Escort Contact"
+                    android:textStyle="bold"
+                    android:textColor="#707070"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.36"
+                    android:gravity="center_horizontal"
+                    android:text="\u2022"
+                    />
+
+                <TextView
+                    android:id="@+id/esccontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="108"
+                    android:textStyle="bold"
+                    android:textColor="#707070"
+                    android:autoLink="phone"
+                    android:layout_weight="0.23" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vendor Name"
+                    android:textStyle="bold"
+                    android:textColor="#707070"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.36"
+                    android:gravity="center_horizontal"
+                    android:text="\u2022"
+                    />
+
+                <TextView
+                    android:id="@+id/vendorname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="108"
+                    android:textStyle="bold"
+                    android:textColor="#707070"
+                    android:autoLink="phone"
+                    android:layout_weight="0.23" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vendor Contact"
+                    android:textStyle="bold"
+                    android:textColor="#707070"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.36"
+                    android:gravity="center_horizontal"
+                    android:text="\u2022"
+                    />
+
+                <TextView
+                    android:id="@+id/vendorcontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="108"
+                    android:textStyle="bold"
+                    android:textColor="#707070"
+                    android:autoLink="phone"
+                    android:layout_weight="0.23" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_margin="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Driver Name"
-                android:textStyle="bold"
-                android:textColor="#707070"
-                />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:text="\u2022"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="name "
-                android:textStyle="bold"
-                android:textColor="#707070"
-                />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_margin="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Driver Contact"
-                android:textStyle="bold"
-                android:textColor="#707070"
-                />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:text="\u2022"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="123456789"
-                android:textStyle="bold"
-                android:autoLink="phone"
-                android:textColor="#707070"
-                />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_margin="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Escort Name"
-                android:textStyle="bold"
-                android:textColor="#707070"
-                />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:text="\u2022"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="E name"
-                android:textStyle="bold"
-                android:textColor="#707070"
-                />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_margin="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Escort Contact"
-                android:textStyle="bold"
-                android:textColor="#707070"
-                />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:text="\u2022"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="108"
-                android:textStyle="bold"
-                android:textColor="#707070"
-                android:autoLink="phone"
-                />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_margin="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Vendor Contact"
-                android:textStyle="bold"
-                android:textColor="#707070"
-                />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:text="\u2022"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="108"
-                android:textStyle="bold"
-                android:textColor="#707070"
-                android:autoLink="phone"
-                />
-
-        </LinearLayout>
-    </LinearLayout>
         </ScrollView>
-        <!--<FrameLayout-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="bottom|right"-->
-            <!--android:paddingTop="150dp"-->
-            <!--&gt;-->
 
-            <!--<android.support.design.widget.FloatingActionButton-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:paddingTop="200dp"-->
-
-                <!--android:src="@android:color/transparent" />-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:text="Details"-->
-                <!--android:elevation="16dp"-->
-                <!--android:textSize="13dp"-->
-                <!--android:background="#00ffffff"-->
-
-                <!--android:textColor="@android:color/holo_red_dark"-->
-                <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
-        <!--</FrameLayout>-->
 
     </LinearLayout>
     <!-- Save & Cancel button -->
@@ -305,7 +328,7 @@
             android:background="@drawable/buttonshape"
             android:textColor="#FFFEDE"
             android:layout_weight="1"
-            android:text="Reset"
+            android:text="Cancel"
             android:enabled="true" />
     </LinearLayout>
 </RelativeLayout>

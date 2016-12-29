@@ -1,35 +1,51 @@
 {
   "project_info": {
-    "project_number": "85186746391",
-    "project_id": "keonicssafetravel"
+    "project_number": "725846540622",
+    "firebase_url": "https://safetravelkeonics.firebaseio.com",
+    "project_id": "safetravelkeonics",
+    "storage_bucket": "safetravelkeonics.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:85186746391:android:cc623886917450cb",
+        "mobilesdk_app_id": "1:725846540622:android:cc623886917450cb",
         "android_client_info": {
           "package_name": "com.agiledge.keocometemployee"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "725846540622-iabq7pkcnjca9picptfldi1cmjfsv5e9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agiledge.keocometemployee",
+            "certificate_hash": "37F7881E8667DAC5DA041FA5BA2629478D969A32"
+          }
+        },
+        {
+          "client_id": "725846540622-ectd360jao8smcas8m1t9lospmshu4gl.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "725846540622-trjor76pqcct62cfdes5ii37jn49o8vf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyBjl5YaJ4GcI3l_9BGcoMcMlUtgTV8B0Qc"
+          "current_key": "AIzaSyB0v7I5mf7cD1cDW4ezLJ6qa1UTQPMpcRE"
         }
       ],
       "services": {
         "analytics_service": {
-          "status": 2,
-          "analytics_property": {
-            "tracking_id": "UA-77361276-1"
-          }
+          "status": 1
         },
         "appinvite_service": {
           "status": 1,
           "other_platform_oauth_client": []
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }

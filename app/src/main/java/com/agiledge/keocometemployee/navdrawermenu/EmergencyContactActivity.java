@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -51,12 +52,13 @@ public class EmergencyContactActivity extends Activity {
 		try{
 		JSONObject jobj=new JSONObject();
 		jobj.put("ACTION", "ICE_DATA");
-		jobj.put("EMP_ID",empid);
-			JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
+		jobj.put("EMP_ID",CommenSettings.empid);
+			JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress_wemp, jobj, new Response.Listener<JSONObject>() {
 				@Override
 				public void onResponse(JSONObject response) {
-					try {
+					try {Log.d("Emergencey con",""+response.toString());
 						if (response.getString("result").equalsIgnoreCase("TRUE")) {
+
 							if (mdialog != null && mdialog.isShowing()) {
 								mdialog.dismiss();
 							}
@@ -261,7 +263,7 @@ public class EmergencyContactActivity extends Activity {
 	    			jobj.put("CONTACT_NAME2", edname2.getText().toString());
 	    			jobj.put("CONTACT_NUMBER2", ednumber2.getText().toString());
 	    			jobj.put("CONTACT_EMAIL2", edemail2.getText().toString());
-						JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
+						JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress_wemp, jobj, new Response.Listener<JSONObject>() {
 							@Override
 							public void onResponse(JSONObject response) {
 								try {

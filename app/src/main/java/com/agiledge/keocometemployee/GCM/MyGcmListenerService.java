@@ -8,6 +8,8 @@ import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
@@ -23,6 +25,9 @@ import org.json.JSONObject;
 
 import java.util.List;
 
+import static android.app.Notification.DEFAULT_LIGHTS;
+import static android.app.Notification.DEFAULT_SOUND;
+import static android.app.Notification.DEFAULT_VIBRATE;
 
 
 public class MyGcmListenerService extends GcmListenerService {
@@ -61,7 +66,7 @@ public class MyGcmListenerService extends GcmListenerService {
          * In some cases it may be useful to show a notification indicating to the user
          * that a message was received.
          */
-       sendNotification(message);
+        sendNotification(message);
         // [END_EXCLUDE]
     }
     // [END receive_message]
@@ -74,9 +79,12 @@ public class MyGcmListenerService extends GcmListenerService {
     private void sendNotification(String message) {
 
         try {
+
             JSONObject json = new JSONObject(message);
+       //                                                                                System.("message",""+message.toString());
             String heading = json.getString("TYPE");
             String content = json.getString("MESSAGE");
+            String title=json.getString("DOMAIN");
 
             Intent intent = new Intent(this, MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -84,18 +92,52 @@ public class MyGcmListenerService extends GcmListenerService {
                     PendingIntent.FLAG_ONE_SHOT);
 
             Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-            NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
-                    .setSmallIcon(R.drawable.ic_launcher)
-                    .setContentTitle(heading)
-                    .setContentText(content)
-                    .setAutoCancel(true)
-                    .setSound(defaultSoundUri)
-                    .setContentIntent(pendingIntent);
 
-            NotificationManager notificationManager =
-                    (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
-            notificationManager.notify(0 /* ID of notification */, notificationBuilder.build());
+            Bitmap icon1 = BitmapFactory.decodeResource(getResources(),
+                    R.drawable.applogo);
+
+//Assign inbox style notification
+            NotificationCompat.BigTextStyle bigText = new NotificationCompat.BigTextStyle();
+            bigText.bigText(content);
+            bigText.setBigContentTitle(heading);
+            bigText.setSummaryText(title);
+
+//build notification
+            NotificationCompat.Builder mBuilder =
+                    new NotificationCompat.Builder(this)
+                            .setSmallIcon(R.drawable.agile)
+                            .setContentTitle(heading)
+                            .setContentText("RideIT")
+                            .setLargeIcon(icon1)
+                            .setSound(defaultSoundUri)
+                            .setAutoCancel(true)
+
+                            .setStyle(bigText)
+                            .setContentIntent(pendingIntent).setDefaults(DEFAULT_SOUND | DEFAULT_VIBRATE | DEFAULT_LIGHTS);
+
+// Gets an instance of the NotificationManager service
+            NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+//to post your notification to the notification bar
+            mNotificationManager.notify(0, mBuilder.build());
+
+
+
+//            NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
+//
+//                    .setSmallIcon(R.drawable.agile)
+//                    .setContentTitle(heading)
+//                    .setContentText(content)
+//                    .setAutoCancel(true)
+//
+//                    .setSound(defaultSoundUri)
+//                    .setContentIntent(pendingIntent).setDefaults(DEFAULT_SOUND | DEFAULT_VIBRATE | DEFAULT_LIGHTS);
+//
+//            NotificationManager notificationManager =
+//                    (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+//
+//            notificationManager.notify(0 /* ID of notification */, notificationBuilder.build());
         }catch(Exception e){e.printStackTrace();}
     }
     public static boolean isAppIsInBackground(Context context) {

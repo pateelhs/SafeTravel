@@ -1,74 +1,95 @@
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@color/md_red_400"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_row_layout"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="200dp">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <!-- Left column -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/modify"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pending_jobs" />
 
+        <com.cengalabs.flatui.views.FlatTextView
+            flatui:fl_fontFamily="roboto"
+            flatui:fl_fontWeight="light"
+            android:textColor="@color/md_red_400"
+            android:id="@+id/left_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="Modify" />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:weightSum="1"
-            android:layout_weight="0.5">
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button3"
-                    android:background="@android:color/transparent"
-                    android:text="Modify"
-                    android:textColor="@color/md_red_500"
-                    android:textSize="18sp"
-                    android:gravity="center|bottom"
-                    android:paddingBottom="10dp"
-                    android:layout_below="@+id/modify"
-                    android:layout_centerHorizontal="true" />
-                <ImageView
+    </LinearLayout>
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/pending_jobs"
-                    android:layout_centerInParent="true"
-                    android:id="@+id/modify"
-                    android:clickable="true" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button4"
-                    android:background="@android:color/transparent"
-                    android:text="Booking"
-                    android:textColor="@color/md_red_500"
-                    android:textSize="18sp"
-                    android:gravity="center|bottom"
-                    android:paddingBottom="10dp"
-                    android:layout_below="@+id/booking"
-                    android:layout_alignEnd="@+id/booking"
-                    android:layout_alignStart="@+id/booking" />
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/completed_jobs"
-                    android:layout_centerInParent="true"
-                    android:id="@+id/booking"
-                    android:clickable="true" />
-            </RelativeLayout>
-        </TableRow>
+    <!-- Right column -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/booking"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/completed_jobs"
+            android:textColor="@android:color/black" />
 
-    </TableLayout>
+        <com.cengalabs.flatui.views.FlatTextView
+            flatui:fl_fontFamily="roboto"
+            flatui:fl_fontWeight="light"
+            android:textColor="@color/md_red_400"
+            android:id="@+id/right2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="Booking" />
 
-</LinearLayout>
+    </LinearLayout>
+    <!-- Right column -->
+    <LinearLayout
+        android:id="@+id/latebook"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/adhoc"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bus_icon"
+            android:textColor="@android:color/black" />
+        <com.cengalabs.flatui.views.FlatTextView
+            flatui:fl_fontFamily="roboto"
+            flatui:fl_fontWeight="light"
+            android:textColor="@color/md_red_400"
+            android:id="@+id/right_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textStyle="bold"
+
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:text="Shuttle book" />
+
+    </LinearLayout>
+</TableRow>

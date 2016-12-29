@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="Divider.Width">1dp</dimen>
+    <dimen name="Margin.Double">32dp</dimen>
+    <dimen name="Margin.FABPadding">96dp</dimen>
+    <dimen name="Margin.Half">8dp</dimen>
+    <dimen name="Margin.Standard">16dp</dimen>
+    <dimen name="Text.EmptyState">20sp</dimen>
+    <dimen name="Text.Large">16sp</dimen>
+    <dimen name="Text.Small">12sp</dimen>
+    <dimen name="Text.Standard">14sp</dimen>
+    <dimen name="Text.VeryLarge">18sp</dimen>
+    <dimen name="Width.Dialog">280dp</dimen>
+    <dimen name="Width.Label">90dp</dimen>
     <dimen name="abc_action_bar_content_inset_material">16.0dip</dimen>
     <dimen name="abc_action_bar_default_height_material">56.0dip</dimen>
     <dimen name="abc_action_bar_default_padding_end_material">0.0dip</dimen>
@@ -81,6 +93,11 @@
     <dimen name="activity_vertical_margin_small">8.0dip</dimen>
     <dimen name="activity_vertical_margin_tiny">3.0dip</dimen>
     <dimen name="app_bar_height">256dp</dimen>
+    <dimen name="app_detail_head_heiht">116.0dip</dimen>
+    <dimen name="app_detail_head_title_magin_top">8.0dip</dimen>
+    <dimen name="app_details_head_icon_margin">10.0dip</dimen>
+    <dimen name="app_details_head_icon_marginLeft">12.0dip</dimen>
+    <dimen name="app_details_icon_size">98.0dip</dimen>
     <dimen name="billing_detail_header_paddingTop">16.0dip</dimen>
     <dimen name="billing_details_row_padding">14.0dip</dimen>
     <dimen name="booking_details_row_padding">8.0dip</dimen>
@@ -122,25 +139,58 @@
     <item name="disabled_alpha_material_dark" type="dimen">0.3</item>
     <item name="disabled_alpha_material_light" type="dimen">0.26</item>
     <dimen name="expanded_toolbar_title_margin_start">64dp</dimen>
+    <dimen name="fab_elevation">8dp</dimen>
+    <dimen name="fab_elevation_press">12dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="fab_margin_bottom">0.1dp</dimen>
     <dimen name="fab_margin_right">0.1dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
     <dimen name="fanb_margin">48.0dip</dimen>
+    <dimen name="font_10">8.0sp</dimen>
+    <dimen name="font_11">9.0sp</dimen>
+    <dimen name="font_12">10.0sp</dimen>
+    <dimen name="font_13">11.0sp</dimen>
+    <dimen name="font_14">12.0sp</dimen>
+    <dimen name="font_15">13.0sp</dimen>
+    <dimen name="font_16">14.0sp</dimen>
+    <dimen name="font_17">15.0sp</dimen>
+    <dimen name="font_18">16.0sp</dimen>
+    <dimen name="font_19">17.0sp</dimen>
+    <dimen name="font_20">18.0sp</dimen>
+    <dimen name="font_21">19.0sp</dimen>
+    <dimen name="font_22">20.0sp</dimen>
+    <dimen name="font_23">21.0sp</dimen>
+    <dimen name="font_24">22.0sp</dimen>
+    <dimen name="font_6">4.0sp</dimen>
+    <dimen name="font_7">5.0sp</dimen>
+    <dimen name="font_8">6.0sp</dimen>
+    <dimen name="font_9">7.0sp</dimen>
     <dimen name="form_imageview_padding_top">8.0dip</dimen>
     <dimen name="genre">13dip</dimen>
+    <dimen name="get_now_card_height">300dp</dimen>
+    <dimen name="header_height">16dp</dimen>
     <item name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item name="highlight_alpha_material_dark" type="dimen">0.2</item>
     <item name="highlight_alpha_material_light" type="dimen">0.12</item>
     <dimen name="input_textfield_horizontal_margin">20.0dip</dimen>
+    <dimen name="item_settings_bottommargin">8dp</dimen>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20.0dip</dimen>
+    <dimen name="keyboard_height">300dip</dimen>
     <dimen name="kickserv_logo_width">220.0dip</dimen>
     <dimen name="kickserv_splash_logo_height">33.0dip</dimen>
     <dimen name="kickserv_splash_logo_width">270.0dip</dimen>
+    <dimen name="list_row_padding">14.0dip</dimen>
     <dimen name="login_button_height">45.0dip</dimen>
     <dimen name="login_button_width">290.0dip</dimen>
+    <dimen name="map_dx">10dp</dimen>
+    <dimen name="map_dy">-100dp</dimen>
+    <dimen name="nav_drawer_left_margin">24dp</dimen>
+    <dimen name="nav_drawer_right_margin">84dp</dimen>
+    <dimen name="nav_drawer_width">300dp</dimen>
     <dimen name="nav_header_height">192dp</dimen>
     <dimen name="nav_header_text_margin_left">16dp</dimen>
     <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="nearby_grid_margin">12dp</dimen>
     <dimen name="notification_large_icon_height">64.0dip</dimen>
     <dimen name="notification_large_icon_width">64.0dip</dimen>
     <dimen name="notification_subtext_size">12.0dip</dimen>
@@ -149,6 +199,7 @@
     <dimen name="padding_small">4.0dip</dimen>
     <dimen name="rating">15dip</dimen>
     <dimen name="right_arrow_padding_right">6.0dip</dimen>
+    <dimen name="statusbar_size">24dp</dimen>
     <dimen name="tab_label">14sp</dimen>
     <dimen name="tab_max_width">264dp</dimen>
     <dimen name="tab_padding_bottom">16dp</dimen>
@@ -335,7 +386,8 @@
         <item name="android:actionModePasteDrawable">?actionModePasteDrawable</item>
     </style>
     <style name="Platform.Widget.AppCompat.Spinner" parent="android:Widget.Holo.Spinner"/>
-    <style name="Theme.AppInvite.Preview.Base" parent="@android:style/Theme.Holo.Light.DialogWhenLarge.NoActionBar"/>
+    <style name="Theme.AppInvite.Preview.Base" parent="@android:style/Theme.Holo.Light.DialogWhenLarge.NoActionBar">
+</style>
     <style name="TransparentProgressDialog" parent="android:Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowBackground">@android:color/transparent</item>
