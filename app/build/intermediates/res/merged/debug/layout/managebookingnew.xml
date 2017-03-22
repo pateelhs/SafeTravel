@@ -20,7 +20,7 @@
             android:layout_height="100dp"
             android:src="@drawable/pending_jobs" />
 
-        <com.cengalabs.flatui.views.FlatTextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             flatui:fl_fontFamily="roboto"
             flatui:fl_fontWeight="light"
             android:textColor="@color/md_red_400"
@@ -48,7 +48,7 @@
             android:src="@drawable/completed_jobs"
             android:textColor="@android:color/black" />
 
-        <com.cengalabs.flatui.views.FlatTextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             flatui:fl_fontFamily="roboto"
             flatui:fl_fontWeight="light"
             android:textColor="@color/md_red_400"
@@ -76,7 +76,7 @@
             android:layout_height="100dp"
             android:src="@drawable/bus_icon"
             android:textColor="@android:color/black" />
-        <com.cengalabs.flatui.views.FlatTextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             flatui:fl_fontFamily="roboto"
             flatui:fl_fontWeight="light"
             android:textColor="@color/md_red_400"

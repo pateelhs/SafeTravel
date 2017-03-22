@@ -11,18 +11,35 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:orientation="vertical"
-    android:weightSum="11" >
+    android:weightSum="10" >
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1" >
+        android:visibility="gone"
+        android:background="@color/md_red_400">
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/emergency_header" />
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
+            android:id="@+id/tdh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Emergency Contacts"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+
+            android:textSize="25sp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:src="@drawable/back_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:onClick="onBackPressed"
+            />
     </FrameLayout>
 
     <FrameLayout

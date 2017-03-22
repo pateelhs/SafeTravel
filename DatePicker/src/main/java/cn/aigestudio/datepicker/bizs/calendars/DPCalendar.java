@@ -92,7 +92,7 @@ public abstract class DPCalendar {
                 daysInMonth = 28;
             }
         }
-        int dayOfWeek = c.get(Calendar.DAY_OF_WEEK) - Calendar.MONDAY;// changed by pateel from sunday to monday
+        int dayOfWeek= c.get(Calendar.DAY_OF_WEEK) - Calendar.SUNDAY;// changed by pateel from sunday to monday
         int day = 1;
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 7; j++) {

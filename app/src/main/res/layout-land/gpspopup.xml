@@ -11,7 +11,7 @@
         android:layout_margin="5dp"
         android:background="#BF000000" >
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             android:textSize="32sp"
             android:textStyle="bold" />
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/title1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/title2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,7 +51,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_alignParentBottom="true" >
+            android:layout_alignParentBottom="true"
+            android:background="#000000" >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -66,15 +67,15 @@
                     android:layout_weight="1.4"
                     android:background="@null"
                     android:text="YES"
-                    android:textColor="#Efffff"
+                    android:textColor="#ff5757"
                     android:textSize="18sp" />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/center"
-                    android:layout_width="10dp"
+                    android:layout_width="25dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
-                    android:background="#ff3300" />
+                    android:background="#ff5757" />
 
                 <Button
                     android:id="@+id/no"
@@ -83,7 +84,7 @@
                     android:layout_weight="1.4"
                     android:background="@null"
                     android:text="NO"
-                    android:textColor="#Efffff"
+                    android:textColor="#ff5757"
                     android:textSize="18sp" />
             </LinearLayout>
         </RelativeLayout>

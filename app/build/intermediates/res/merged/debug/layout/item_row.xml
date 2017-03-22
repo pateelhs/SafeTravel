@@ -14,7 +14,7 @@
         android:paddingLeft="16dp"
         android:src="@drawable/a"/>
  
-    <TextView
+    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="12dp"

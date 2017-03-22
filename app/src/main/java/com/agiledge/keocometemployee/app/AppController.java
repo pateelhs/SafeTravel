@@ -5,14 +5,17 @@ import android.content.Context;
 import android.support.multidex.MultiDex;
 import android.text.TextUtils;
 
+import com.agiledge.keocometemployee.constants.CommenSettings;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
+import com.crashlytics.android.Crashlytics;
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.StandardExceptionParser;
 import com.google.android.gms.analytics.Tracker;
+import io.fabric.sdk.android.Fabric;
 
 public class AppController extends Application {
 
@@ -29,10 +32,12 @@ public class AppController extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Fabric.with(this, new Crashlytics());
         mInstance = this;
         MultiDex.install(this);
         AnalyticsTrackers.initialize(this);
         AnalyticsTrackers.getInstance().get(AnalyticsTrackers.Target.APP);
+        logUser();
     }
 
     public static synchronized AppController getInstance() {
@@ -46,6 +51,14 @@ public class AppController extends Application {
 
         return mRequestQueue;
     }
+    private void logUser() {
+        // TODO: Use the current user's information
+        // You can call any combination of these three methods
+        Crashlytics.setUserIdentifier(CommenSettings.empid);
+        Crashlytics.setUserEmail(CommenSettings.email);
+        Crashlytics.setUserName(CommenSettings.displayname);
+    }
+
 
 //    public ImageLoader getImageLoader() {
 //        getRequestQueue();

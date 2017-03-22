@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
@@ -67,11 +68,12 @@ public class Home_Activity extends AppCompatActivity {
     ArrayList arrayList;
     String android_id="";
     ImageView profile;
+    Typeface type;
     boolean startapp=false;
     private static final int REQUEST_CODE=0;
     String displayname="Hi ",empid="",gender="",user_type="";
     public static String[] gridViewStrings = {
-            "Track Shuttle",
+            "Track Bus",
             "Book Cab",
             "Trip Details",
             "Emergency Contacts",
@@ -95,6 +97,7 @@ public class Home_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
        toolbar = (Toolbar) findViewById(R.id.toolbar_home);
+    type = Typeface.createFromAsset(getAssets(), "fonts/AvantGarde Md BT.ttf");
         try {
             setSupportActionBar(toolbar);
             //gcm
@@ -170,7 +173,7 @@ try {
                                 Intent map = new Intent(Home_Activity.this, TrackMyCabActivity.class);
 
                                 boolean isEnabled = isGPSenabled();
-                                if (isEnabled) {
+                                if (isEnabled|| !isEnabled) {
                                     map.putExtra("empid", empid);
                                     map.putExtra("user_type", user_type);
                                     startActivityForResult(map, 0);
@@ -260,6 +263,8 @@ try {
         rootLayoutAndroid = (CoordinatorLayout) findViewById(R.id.android_coordinator_layout);
         collapsingToolbarLayoutAndroid = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_android_layout);
         collapsingToolbarLayoutAndroid.setTitle(displayname);
+        collapsingToolbarLayoutAndroid.setCollapsedTitleTypeface(type);
+
     }
     @Override
     protected void onPause() {
@@ -277,6 +282,8 @@ try {
         super.onResume();
         LocalBroadcastManager.getInstance(this).registerReceiver(mRegistrationBroadcastReceiver,
                 new IntentFilter(QuickstartPreferences.REGISTRATION_COMPLETE));
+        try{
+            checkCurrentAppVersion();}catch (Exception e){e.printStackTrace();}
     }
     @Override
     public void onBackPressed()
@@ -441,12 +448,21 @@ try {
     }
 
     private void checkCurrentAppVersion() {
+     try{
         Log.d("check version","here");
         Siren siren = Siren.getInstance(getApplicationContext());
         siren.setSirenListener(sirenListener);
-
+        siren.setMajorUpdateAlertType(SirenAlertType.FORCE);
+        siren.setMinorUpdateAlertType(SirenAlertType.FORCE);
+        siren.setPatchUpdateAlertType(SirenAlertType.FORCE);
+        siren.setRevisionUpdateAlertType(SirenAlertType.FORCE);
         siren.setVersionCodeUpdateAlertType(SirenAlertType.FORCE);
+
         siren.checkVersion(this, SirenVersionCheckType.IMMEDIATELY, CommenSettings.SIREN_JSON_URL);
+     }
+     catch(Exception e) {
+         e.printStackTrace();
+     }
     }
 
     ISirenListener sirenListener = new ISirenListener() {

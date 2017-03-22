@@ -9,15 +9,20 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.support.annotation.NonNull;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -37,13 +42,22 @@ import com.android.volley.toolbox.JsonObjectRequest;
 
 import org.json.JSONObject;
 
+import static android.Manifest.permission.READ_PHONE_STATE;
+import static com.agiledge.keocometemployee.constants.CommenSettings.android_id;
+import static com.agiledge.keocometemployee.constants.CommenSettings.empid;
+import static com.agiledge.keocometemployee.constants.CommenSettings.gender;
+import static com.agiledge.keocometemployee.constants.CommenSettings.user_type;
+
 public class MainActivity extends Activity {
 	private CoordinatorLayout coordinatorLayout;
 	public static String macAddress;
 	private static final int REQUEST_CODE=0;
 	boolean startapp=false;
+	public boolean granted=false;
 	private static final String TAG = MainActivity.class.getSimpleName();
-
+	String IMEINumber="";
+	private static final int MY_PERMISSIONS_REQUEST_READ_PHONE_STATE = 0;
+	int REQUEST_CHECK_SETTINGS = 100;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -51,7 +65,7 @@ public class MainActivity extends Activity {
 
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
-
+		marshmallowornot();
 		if(Util.Isconnected(this))
 			start();
 		else{
@@ -70,42 +84,111 @@ public class MainActivity extends Activity {
 
 	}
 
+public void marshmallowornot(){
+	try {
+		if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+			loadIMEI();
+		} else {
+			granted = true;
+			doPermissionGrantedStuffs();
+		}
+	}catch (Exception e){e.printStackTrace();}
+}
+	public void loadIMEI() {
+		try{
+		// Check if the READ_PHONE_STATE permission is already available.
+		if (ActivityCompat.checkSelfPermission(this, READ_PHONE_STATE)
+				!= PackageManager.PERMISSION_GRANTED) {
+			// READ_PHONE_STATE permission has not been granted.
+			requestReadPhoneStatePermission();
+		} else {
+			granted=true;
+			// READ_PHONE_STATE permission is already been granted.
+			doPermissionGrantedStuffs();
+		}}catch (Exception e){e.printStackTrace();}
+	}
+
+	public void doPermissionGrantedStuffs() {
+		try{
+			granted=true;
+			//Have an  object of TelephonyManager
+			TelephonyManager tm =(TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+			//Get IMEI Number of Phone  //////////////// for this example i only need the IMEI
+			IMEINumber=tm.getDeviceId();
+			CommenSettings.imei=IMEINumber;
+
+			android_id= Settings.Secure.getString(this.getContentResolver(),
+					Settings.Secure.ANDROID_ID);
 
 
+			System.out.println("IMEI======= "+IMEINumber.toString());}
+		catch(Exception e){e.printStackTrace();}}
+	/**
+	 * Requests the READ_PHONE_STATE permission.
+	 * If the permission has been denied previously, a dialog will prompt the user to grant the
+	 * permission, otherwise it is requested directly.
+	 */
+	private void requestReadPhoneStatePermission() {
+		try{
+		if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+				READ_PHONE_STATE)) {
+			// Provide an additional rationale to the user if the permission was not granted
+			// and the user would benefit from additional context for the use of the permission.
+			// For example if the user has previously denied the permission.
+
+
+			new AlertDialog.Builder(MainActivity.this)
+					.setTitle("Permission Request")
+
+					.setMessage(getString(R.string.permission_read_phone_state_rationale))
+					.setCancelable(false)
+					.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int which) {
+							//re-request
+							ActivityCompat.requestPermissions(MainActivity.this,
+									new String[]{READ_PHONE_STATE},
+									MY_PERMISSIONS_REQUEST_READ_PHONE_STATE);
+							dialog.cancel();
+						}
+					})
+					.setIcon(R.drawable.agile)
+					.show();
+		} else {
+			// READ_PHONE_STATE permission has not been granted yet. Request it directly.
+			ActivityCompat.requestPermissions(this, new String[]{READ_PHONE_STATE},
+					MY_PERMISSIONS_REQUEST_READ_PHONE_STATE);
+		}
+	}catch (Exception e){e.printStackTrace();}}
 
 
 	public void start(){
 		SharedPreferences sharedpref=getPreferences(Context.MODE_PRIVATE);
 		CommenSettings.displayname=sharedpref.getString("APP_USERNAME","NOT_FOUND");
 		CommenSettings.email=sharedpref.getString("APP_EMAIL","NOT_FOUND");
-		CommenSettings.gender=sharedpref.getString("APP_EMP_GENDER","NOT_FOUND");
-		CommenSettings.user_type=sharedpref.getString("APP_USERTYPE","NOT_FOUND");
-		CommenSettings.empid=sharedpref.getString("APP_EMPID","NOT_FOUND");
+		gender=sharedpref.getString("APP_EMP_GENDER","NOT_FOUND");
+		user_type=sharedpref.getString("APP_USERTYPE","NOT_FOUND");
+		empid=sharedpref.getString("APP_EMPID","NOT_FOUND");
 		try {
-			CommenSettings.android_id = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
+			android_id = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
 		}
 		catch (Exception e)
 		{e.printStackTrace();}
 
-		if(CommenSettings.displayname.equalsIgnoreCase("NOT_FOUND")||CommenSettings.email.equalsIgnoreCase("NOT_FOUND")||CommenSettings.gender.equalsIgnoreCase("NOT_FOUND")||CommenSettings.user_type.equalsIgnoreCase("NOT_FOUND")||CommenSettings.empid.equalsIgnoreCase("NOT_FOUND")) {
+		if(CommenSettings.displayname.equalsIgnoreCase("NOT_FOUND")||CommenSettings.email.equalsIgnoreCase("NOT_FOUND")|| gender.equalsIgnoreCase("NOT_FOUND")|| user_type.equalsIgnoreCase("NOT_FOUND")|| empid.equalsIgnoreCase("NOT_FOUND")) {
 			initial();
 		}
 		else {
-			boolean isEnabled = isGPSenabled();
-			if (isEnabled) {
+			try {
 				Intent in = new Intent(getApplicationContext(), Home_Activity.class);
-//					in.putExtra("user_type", user_type);
-//					in.putExtra("displayname",username);
-//					in.putExtra("gender",gender);
-//					in.putExtra("email",email);
-//					in.putExtra("empid",empid);
+				in.putExtra("user_type", user_type);
+				in.putExtra("displayname", CommenSettings.displayname);
+				in.putExtra("gender", gender);
+				in.putExtra("email", CommenSettings.email);
+				in.putExtra("empid", empid);
 				startActivity(in);
 				finish();
-			} else {
-				buildAlertMessageNoGps();
+			}catch(Exception e){e.printStackTrace();}
 
-
-			}
 		}
 	}
 
@@ -117,7 +200,46 @@ public class MainActivity extends Activity {
 
 	}
 
+	/**
+	 * Callback received when a permissions request has been completed.
+	 */
+	@Override
+	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+										   @NonNull int[] grantResults) {
 
+		if (requestCode == MY_PERMISSIONS_REQUEST_READ_PHONE_STATE) {
+			// Received permission result for READ_PHONE_STATE permission.est.");
+			// Check if the only required permission has been granted
+			if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+				// READ_PHONE_STATE permission has been granted, proceed with displaying IMEI Number
+				//alertAlert(getString(R.string.permision_available_read_phone_state));
+				granted=true;
+
+				doPermissionGrantedStuffs();
+				start();
+			} else {
+
+				//requestReadPhoneStatePermission();}
+				alertAlert(getString(R.string.permissions_not_granted_read_phone_state));
+			}
+		}}
+
+
+
+	private void alertAlert(String msg) {
+		new AlertDialog.Builder(MainActivity.this)
+				.setTitle("Permission Request")
+				.setMessage("Allow RideIT to acces to read phone state")
+				.setCancelable(false)
+				.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int which) {
+						marshmallowornot();
+
+					}
+				})
+				.setIcon(R.drawable.agile)
+				.show();
+	}
 	private boolean isGPSenabled()
 	{
 		final LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -187,12 +309,12 @@ public class MainActivity extends Activity {
 			JSONObject jobj=new JSONObject();
 
 			boolean isEnabled = isGPSenabled();
-			if(isEnabled)
+			if(granted)
 			{
 
 				jobj.put("ACTION", "IMEI_CHECK");
-				jobj.put("IMEI_NUMBER",CommenSettings.android_id);
-				Log.d("ANDROID_IDD******",CommenSettings.android_id);
+				jobj.put("IMEI_NUMBER", CommenSettings.android_id);
+				Log.d("ANDROID_IDD******", android_id);
 				JsonObjectRequest req = new JsonObjectRequest(CommenSettings.serverAddress, jobj, new Response.Listener<JSONObject>() {
 					@Override
 					public void onResponse(JSONObject response) {
@@ -208,12 +330,12 @@ public class MainActivity extends Activity {
 								editor.putString("APP_USERTYPE",response.getString("user_type"));
 								editor.commit();
 								Intent in = new Intent(getApplicationContext(), Home_Activity.class);
-								CommenSettings.empid=response.getString("EMP_ID");
+								empid=response.getString("EMP_ID");
 
 								CommenSettings.displayname=response.getString("EMP_NAME");
-								CommenSettings.user_type=response.getString("user_type");
+								user_type=response.getString("user_type");
 								CommenSettings.email=response.getString("EMP_EMAIL");
-								CommenSettings.gender=response.getString("EMP_GENDER");
+								gender=response.getString("EMP_GENDER");
 								startActivity(in);
 								finish();
 
@@ -265,7 +387,8 @@ public class MainActivity extends Activity {
 			}
 			else
 			{
-				buildAlertMessageNoGps();
+				marshmallowornot();
+				//buildAlertMessageNoGps();
 
 			}
 		}catch(Exception e){e.printStackTrace();}

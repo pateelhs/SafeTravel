@@ -4,10 +4,13 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,6 +21,7 @@ import android.widget.TextView;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.Shuttlebook.MapsActivity;
 import com.agiledge.keocometemployee.activities.Booking;
+import com.agiledge.keocometemployee.utilities.CustomTypefaceSpan;
 import com.agiledge.keocometemployee.utilities.DateModify;
 import com.agiledge.keocometemployee.utilities.PromptDialog;
 
@@ -34,6 +38,14 @@ public class ManageBookingActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.managebookingnew);
+		getSupportActionBar().setBackgroundDrawable(
+				getResources().getDrawable(R.drawable.top_band));
+		//getSupportActionBar().setTitle((Html.fromHtml("<font color=\"#FFFFFF\">" + getString(R.string.Live_tracking) + "</font>")));
+		Typeface font2 = Typeface.createFromAsset(getAssets(), "fonts/AvantGarde Md BT.ttf");
+		SpannableStringBuilder SS = new SpannableStringBuilder("Manage Booking");
+		SS.setSpan (new CustomTypefaceSpan("", font2), 0, SS.length(), Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+		getSupportActionBar().setTitle(SS);
+		getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_arrow);
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		getSupportActionBar().setHomeButtonEnabled(true);
 		modify=(ImageView)findViewById(R.id.modify);

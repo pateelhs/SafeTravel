@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1" >
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="30dp"
@@ -61,7 +61,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/cdatevalue"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -111,7 +111,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/dummyintime"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -125,7 +125,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/cintimevalue"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -182,7 +182,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/dummyouttime"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -196,7 +196,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/couttimevalue"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -225,7 +225,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1" >
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/ccanceldone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

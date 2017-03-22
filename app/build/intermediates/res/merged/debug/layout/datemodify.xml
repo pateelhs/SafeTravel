@@ -3,10 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     tools:context=".utilities.DateModify">
 
     <cn.aigestudio.datepicker.views.DatePicker
         android:id="@+id/main_dp"
+        android:layout_marginTop="1dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

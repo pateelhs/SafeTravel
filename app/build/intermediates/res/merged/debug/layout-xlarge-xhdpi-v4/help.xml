@@ -1,14 +1,21 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<RelativeLayout 
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/helpwhite_bg"
     android:orientation="vertical" >
 
-    <TextView
+    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
         android:id="@+id/textView2"
         android:background="#ff5757"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:text="HELP"
         android:textColor="#ffffff"
         android:gravity="center"
@@ -16,7 +23,7 @@
         android:layout_alignParentTop="true"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <TextView
+    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,3 +34,4 @@
          />
 
 </RelativeLayout>
+</ScrollView>

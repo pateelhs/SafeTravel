@@ -7,7 +7,7 @@
        android:orientation="vertical"
     android:background="#b5b4b3" >
 
-    <TextView
+    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,7 +31,7 @@
           android:layout_width="match_parent"
           android:layout_weight="1.75">
           
-          <TextView 
+          <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView 
               android:id="@+id/dummytext"
               android:layout_height="match_parent"
               android:layout_width="match_parent"

@@ -25,7 +25,7 @@
             android:textColor="#ff5757"
             android:textSize="18sp" />
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/cabtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:textSize="32sp"
             android:textStyle="bold" />
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/disttitle1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

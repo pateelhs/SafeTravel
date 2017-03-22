@@ -8,11 +8,14 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
+import android.location.LocationManager;
 import android.media.RingtoneManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -22,6 +25,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
 import android.provider.Settings;
+import android.support.annotation.NonNull;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -31,15 +35,20 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.NotificationCompat;
 import android.support.v7.widget.Toolbar;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -47,6 +56,7 @@ import android.widget.Toast;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
+import com.agiledge.keocometemployee.utilities.CustomTypefaceSpan;
 import com.agiledge.keocometemployee.utilities.MyLocation;
 import com.agiledge.keocometemployee.utilities.PopupAdapter;
 import com.agiledge.keocometemployee.utilities.TransparentProgressDialog;
@@ -57,9 +67,16 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.PendingResult;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.LocationSettingsRequest;
+import com.google.android.gms.location.LocationSettingsResult;
+import com.google.android.gms.location.LocationSettingsStatusCodes;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -80,11 +97,15 @@ import java.util.List;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
 import static com.agiledge.keocometemployee.constants.CommenSettings.user_type;
+import static java.lang.Double.parseDouble;
 
-//import com.google.maps.android.clustering.ClusterManager;
 
-public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
+
+public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener,ResultCallback<LocationSettingsResult> {
     private CoordinatorLayout coordinatorLayout;
+    int REQUEST_CHECK_SETTINGS = 100;
+    boolean isEnabled;
+    private static final String TAG1 = TrackMyCabActivity.class.getSimpleName();
     GoogleMap mGoogleMap;
     SupportMapFragment mapFrag;
     LocationRequest mLocationRequest;
@@ -98,13 +119,14 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
     static int alertval = 0, escval = 0, tripstatusval = 0;
     String tripid="",tripdate="",triptime="";
     boolean tripstarted=false,panicactive=false,showadmincabs=true,distalert=true,cabalert=true,resetmap=false,mytripsecurity=false,boarded=false;
-    int refreshinterval=60000;
+    int refreshinterval=10000;
     FloatingActionButton legendfab;
     FloatingActionButton fab;
+    FrameLayout infolayout;
     FloatingActionButton infofab,busfab;
     String currentcabaddress="",distance="",eta="",mycabregno="";
     Handler mHandler;
-    double longitude,latitude,mylatitude,mylongitude;
+    double longitude,latitude,mylatitude,mylongitude,picklatitude,pickuplong,droplatitude,droplongitude,shuttlelat,shuttlelong;
     //double last_lat=0.0,last_long=0.0;
     int empcount=0;
     List<String> mytripempnames=new ArrayList<String>();
@@ -117,6 +139,10 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
     boolean isRunning1st=true;
     //ClusterManager<MyItem> mClusterManager;
     String android_id="",usertype="";
+    //for shuttle track
+    boolean shuttlestarted=false,nearby=false,passed=false;
+    String shuttlevehicleid="",title="Bus Track",logtype="";
+    Marker myshuttle;
     private static final String TAG = TrackMyCabActivity.class.getSimpleName();
 
     @Override
@@ -124,11 +150,28 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track_my_cab);
-        android_id= Settings.Secure.getString(this.getContentResolver(),
-                Settings.Secure.ANDROID_ID);
+        try {
+            android_id = Settings.Secure.getString(this.getContentResolver(),Settings.Secure.ANDROID_ID);
+        }
+        catch (Exception e){
+            android_id=CommenSettings.android_id;
+            e.printStackTrace();}
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
+     isEnabled= isGPSenabled();
+        if (!isEnabled) {
+            displayLocationSettingsRequest(this);
+        }
+        infolayout=(FrameLayout) findViewById(R.id.infolayout);
+        Typeface font2 = Typeface.createFromAsset(getAssets(), "fonts/AvantGarde Md BT.ttf");
+        SpannableStringBuilder SS = new SpannableStringBuilder(title);
+        SS.setSpan (new CustomTypefaceSpan("", font2), 0, SS.length(), Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+        getSupportActionBar().setTitle(SS);
+        getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.top_band));
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_arrow);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+
+
         fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.hide();
         fab.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.md_yellow_800)));
@@ -161,7 +204,7 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
         if(user_type.equalsIgnoreCase("admin")){
             total_trips.setVisibility(View.VISIBLE);
             busfab.setVisibility(View.GONE);
-            legendfab.setVisibility(View.VISIBLE);
+            legendfab.setVisibility(View.INVISIBLE);
         }
         else{
             try {
@@ -186,20 +229,21 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
 
             //System.out.println(usertype);
         }
-        else{usertype= user_type.toString();}
+        else{usertype= CommenSettings.user_type.toString();}
 
         if(usertype.equalsIgnoreCase("emp")) {
             legendfab.hide();
-            refreshinterval=30000;
+            refreshinterval=7000;
             showadmincabs=false;
         }
         infofab=(FloatingActionButton) findViewById(R.id.infofab);
-        infofab.hide();
+        //infofab.hide();
+        infolayout.setVisibility(View.INVISIBLE);
         infofab.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.md_blue_500)));
         infofab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setETA(latitude,longitude,mylatitude,mylongitude);
+                setETA(shuttlelat,shuttlelong,CommenSettings.pickuplat,CommenSettings.pickuplong);
             }
         });
 
@@ -215,15 +259,6 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
         mapFrag.getMapAsync(this);
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        this.mHandler.removeCallbacks(m_Runnable);
-        //stop location updates when Activity is no longer active
-        if (mGoogleApiClient != null) {
-            LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
-        }
-    }
 
     @Override
     public void onMapReady(GoogleMap googleMap)
@@ -244,7 +279,7 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
                 mGoogleMap.getUiSettings().isMapToolbarEnabled();
                 mGoogleMap.getUiSettings().setCompassEnabled(true);
                 mGoogleMap.getUiSettings().setRotateGesturesEnabled(false);
-
+                mGoogleMap.getUiSettings().setMapToolbarEnabled(true);
 
 
             }
@@ -256,6 +291,7 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
             mGoogleMap.getUiSettings().setIndoorLevelPickerEnabled(true);
             mGoogleMap.getUiSettings().setTiltGesturesEnabled(false);
             mGoogleMap.getUiSettings().setRotateGesturesEnabled(false);
+            mGoogleMap.getUiSettings().setMapToolbarEnabled(true);
         }
         //setUpClusterer();
     }
@@ -362,13 +398,25 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
                             buildGoogleApiClient();
                         }
                         mGoogleMap.setMyLocationEnabled(true);
+                        mGoogleMap.getUiSettings().setMyLocationButtonEnabled(true);
+                        mGoogleMap.getUiSettings().setZoomControlsEnabled(true);
                     }
 
                 } else {
+                    checkLocationPermission();
+                    LayoutInflater inflater = getLayoutInflater();
+                    View toastLayout = inflater.inflate(R.layout.custom_toast, (ViewGroup) findViewById(R.id.custom_toast_layout));
+                    TextView msg=(TextView) toastLayout.findViewById(R.id.custom_toast_message);
+                    msg.setText("Kindly allow RideIT to access location");
+
+                    Toast toast = new Toast(getApplicationContext());
+                    toast.setDuration(Toast.LENGTH_SHORT);
+                    toast.setView(toastLayout);
+                    toast.show();
 
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.
-                    Toast.makeText(this, "permission denied", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(this, "App needs location permission to work ", Toast.LENGTH_LONG).show();
                 }
                 return;
             }
@@ -471,7 +519,8 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
                                 date.setText("date:"+tripdate);
                                 time.setText("time:"+triptime);
                                 tripstarted=true;
-                                infofab.show();
+                                //infolayout.setVisibility(View.VISIBLE);
+                               // infofab.show();
                                 mytripempnames=new ArrayList<String>();
                                 mytripempids=new ArrayList<String>();
                                 mytripempgenders=new ArrayList<String>();
@@ -601,8 +650,8 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        builder.setTitle("CAB ALERT");
-        builder.setMessage("Cab Is "+bd+" KM From Your Location");
+        builder.setTitle("VEHICLE PROXIMITY ALERT");
+        builder.setMessage("Your vehicle Is "+bd+" KM From Your Pickup Location");
         builder.setCancelable(false);
 
         builder.setPositiveButton("Ok", new DialogInterface.OnClickListener()
@@ -627,7 +676,7 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
         Button Ok = (Button) dialog.findViewById(R.id.cabOK);
 
         TextView distxt = (TextView) dialog.findViewById(R.id.disttitle1);
-        distxt.setText("Cab is " + bd + " KM From Your Location");
+        distxt.setText("Your vehicle Is " + bd + " KM From Your Location");
         Ok.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -808,20 +857,29 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
         {
 
             try {
-                if (resetmap)
-                    clearAllMarkers();
+//                if (resetmap)
+//                    clearAllMarkers();
+//
+//                else
+//                    resetmap = true;
+//                if (tripstarted) {
+//                    isRunFirst = true;
+//                    updateMyCabposition();
+//                } else {
+//                    getTripDetails();
+//                    // getEMPDetails();
+//                }
+//                if (showadmincabs) {
+//                    updateAdminCab();
+//                }
+                if(shuttlestarted){
+                    checkshuttletrip();
+                    refreshinterval=5000;
+                }else{
+                    plotMystop();
+                    plotMyPickUpDrop();
 
-                else
-                    resetmap = true;
-                if (tripstarted) {
-                    isRunFirst = true;
-                    updateMyCabposition();
-                } else {
-                    getTripDetails();
-                    // getEMPDetails();
-                }
-                if (showadmincabs) {
-                    updateAdminCab();
+
                 }
                 TrackMyCabActivity.this.mHandler.postDelayed(m_Runnable, refreshinterval);
 
@@ -834,84 +892,21 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
         }
 
     };
-    public void getEMPDetails(){
-        try {
-            JSONObject jobj = new JSONObject();
-            jobj.put("ACTION", "TRIPDETAILS");
-            jobj.put("TRIP_ID",tripid);
-            JsonObjectRequest req = new JsonObjectRequest(CommenSettings.bus_serverAddress, jobj, new Response.Listener<JSONObject>() {
-                @Override
-                public void onResponse(JSONObject response) {
-                    try {
-                        //Toast.makeText(getApplicationContext(),""+response.toString(),Toast.LENGTH_LONG).show();
-                        if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
 
-
-                        }
-
-
-
-                        else {
-                            Toast.makeText(getApplicationContext(), "Something went wrong!!", Toast.LENGTH_LONG).show();
-                        }
-
-
-                    } catch (Exception e) {
-                        AppController.getInstance().trackException(e);
-                        e.printStackTrace();
-                    }
-
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    // Toast.makeText(getApplicationContext(), "Server took too long to respond or your internet connectivity is low" , Toast.LENGTH_LONG).show();
-                    Snackbar snackbar = Snackbar
-                            .make(coordinatorLayout, "Server took too long to respond or internet connectivity is low!", Snackbar.LENGTH_LONG)
-                            .setAction("RETRY", new View.OnClickListener() {
-                                @Override
-                                public void onClick(View view) {
-                                    getTripDetails();
-                                }
-                            });
-
-                    // Changing message text color
-                    snackbar.setActionTextColor(Color.RED);
-
-                    // Changing action button text color
-                    View sbView = snackbar.getView();
-                    TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
-                    textView.setTextColor(Color.BLUE);
-                    textView.setMaxLines(3);
-                    pd.hide();
-                    snackbar.show();
-
-                }
-            });
-            int socketTimeout = 15000;//5 seconds - change to what you want
-            RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
-            req.setRetryPolicy(policy);
-            // Adding request to request queue
-            AppController.getInstance().addToRequestQueue(req);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        //  AppController.getInstance().trackScreenView("Login");// for Google analytics data
-
-    }
     public void updateMyCabposition(){
         try {
             JSONObject jobj = new JSONObject();
             jobj.put("ACTION", "VEHICLE_LOCATION");
             jobj.put("TRIP_ID", tripid);
+            jobj.put("IMEI_NUMBER", android_id);
             JsonObjectRequest req = new JsonObjectRequest(CommenSettings.bus_serverAddress, jobj, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
                         if (response.getString("result").equalsIgnoreCase("TRUE")) {
                             if (response.getString("LAT") != null && !response.getString("LAT").equalsIgnoreCase("") && response.getString("LONG") != null && !response.getString("LONG").equalsIgnoreCase("")) {
-                                longitude = Double.parseDouble(response.getString("LONG"));
-                                latitude = Double.parseDouble(response.getString("LAT"));
+                                longitude = parseDouble(response.getString("LONG"));
+                                latitude = parseDouble(response.getString("LAT"));
                                 //last_lat=Double.parseDouble(response.getString("LAST_LAT"));
                                 //last_long=Double.parseDouble(response.getString("LAST_LONG"));
                                 try {
@@ -1054,8 +1049,8 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
                             if (LAT.length() == LONG.length()) {
                                 for (int i = 0; i < LAT.length(); i++) {
                                     double offset = i / 60d;
-                                    longitude = Double.parseDouble(LONG.get(i).toString());
-                                    latitude = Double.parseDouble(LAT.get(i).toString());
+                                    longitude = parseDouble(LONG.get(i).toString());
+                                    latitude = parseDouble(LAT.get(i).toString());
                                     MarkerOptions marker = new MarkerOptions()
                                             .position(
                                                     new LatLng(latitude,
@@ -1286,7 +1281,7 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
     @Override
     protected void onStart() {
         super.onStart();
-        getTripDetails();
+       // getTripDetails();
         this.mHandler = new Handler();
         m_Runnable.run();
     }
@@ -1462,4 +1457,416 @@ public class TrackMyCabActivity extends AppCompatActivity implements OnMapReadyC
 
     }
 
+
+    public void plotMyPickUpDrop(){
+        try {
+            JSONObject jobj = new JSONObject();
+            jobj.put("ACTION", "GET_PICKUPDROP");
+            jobj.put("IMEI_NUMBER",android_id);
+            JsonObjectRequest req = new JsonObjectRequest(CommenSettings.bus_serverAddress, jobj, new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    try {
+                        Log.d("PLOT MY PICKUP",""+response.toString());
+                        if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
+                            clearAllMarkers();
+                            String lat = response.optString("PICKUP_LAT");
+                            String lon = response.getString("PICKUP_LONG");
+                            String dlat = response.optString("DROP_LAT");
+                            String dlon = response.getString("DROP_LONG");
+                            picklatitude=parseDouble(lat);
+                            pickuplong=parseDouble(lon);
+                            droplatitude=parseDouble(dlat);
+                            droplongitude=parseDouble(dlon);
+                            CommenSettings.pickuplat=picklatitude;
+                            CommenSettings.pickuplong=pickuplong;
+                            CommenSettings.droplat=droplatitude;
+                            CommenSettings.droplong=droplongitude;
+                            longitude = parseDouble(lon);
+                            latitude = parseDouble(lat);
+
+
+
+                            boolean samePickUpAndDrop = false;
+
+
+                            if(!lat.isEmpty() && !lon.isEmpty()) {
+
+                                LatLng latLng = new LatLng(parseDouble(lat), parseDouble(lon));
+                                MarkerOptions markerOptions = new MarkerOptions();
+                                markerOptions.position(latLng);
+                                markerOptions.title("PICKUP LOCATION");
+
+                                if(!dlat.isEmpty() && !dlon.isEmpty()) {
+
+                                    //if both pickup and drop are very close
+
+                                    double differenceInKm = distance(Double.parseDouble(lat),Double.parseDouble(lon),Double.parseDouble(dlat),Double.parseDouble(dlon));
+                                    double differenceInMeter = differenceInKm * 1000 ;
+
+                                    if(differenceInMeter <= 100)
+                                    {
+
+
+                                        markerOptions.title("PICKUP & DROP LOCATION");
+                                        samePickUpAndDrop= true;
+                                    }
+
+
+                                }
+
+                                    markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.add_marker));
+                                    mGoogleMap.addMarker(markerOptions);
+
+
+                            }
+                            if(!dlat.isEmpty() && !dlon.isEmpty() && !samePickUpAndDrop ) {
+
+
+                                LatLng latLng2 = new LatLng(parseDouble(dlat), parseDouble(dlon));
+
+                                MarkerOptions markerOptions2 = new MarkerOptions();
+                                markerOptions2.position(latLng2);
+                                markerOptions2.title("DROP LOCATION");
+                                markerOptions2.icon(BitmapDescriptorFactory.fromResource(R.drawable.add_marker));
+                                mGoogleMap.addMarker(markerOptions2);
+                            }
+                            /*shuttlestarted=true;
+                            shuttlevehicleid=response.getString("VEHICLEID");
+                            longitude = latLng.latitude;
+                            latitude = latLng.longitude;*/
+                        }else{
+                            /*shuttlestarted=false;
+                            shuttlevehicleid="";*/
+                            clearAllMarkers();
+                        }
+
+                    } catch (Exception e) {
+                        AppController.getInstance().trackException(e);
+                        e.printStackTrace();
+                    }
+
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    // Toast.makeText(getApplicationContext(), "Server took too long to respond or your internet connectivity is low" , Toast.LENGTH_LONG).show();
+                    Snackbar snackbar = Snackbar
+                            .make(coordinatorLayout, "Server took too long to respond or internet connectivity is low!", Snackbar.LENGTH_LONG)
+                            .setAction("RETRY", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    plotMyPickUpDrop();
+                                }
+                            });
+
+                    // Changing message text color
+                    snackbar.setActionTextColor(Color.RED);
+
+                    // Changing action button text color
+                    View sbView = snackbar.getView();
+                    TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+                    textView.setTextColor(Color.BLUE);
+                    textView.setMaxLines(3);
+                    pd.hide();
+                    snackbar.show();
+
+                }
+            });
+            int socketTimeout = 15000;//5 seconds - change to what you want
+            RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+            req.setRetryPolicy(policy);
+            // Adding request to request queue
+            AppController.getInstance().addToRequestQueue(req);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //  AppController.getInstance().trackScreenView("Login");// for Google analytics data
+
+    }
+
+    public void plotMystop(){
+        try {
+            JSONObject jobj = new JSONObject();
+            jobj.put("ACTION", "GET_MYSTOP");
+            jobj.put("IMEI_NUMBER",android_id);
+            JsonObjectRequest req = new JsonObjectRequest(CommenSettings.bus_serverAddress, jobj, new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    try {
+                        Log.d("PLOT MY STOP",""+response.toString());
+                        if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
+                            clearAllMarkers();
+                            logtype=response.getString("LOGTYPE");
+                            LatLng latLng = new LatLng(parseDouble(response.getString("LAT")), parseDouble(response.getString("LNG")));
+                            /*MarkerOptions markerOptions = new MarkerOptions();
+                            markerOptions.position(latLng);
+                            markerOptions.title("Scheduled Time-"+response.getString("TIME"));
+                            markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.add_marker));
+                            mGoogleMap.addMarker(markerOptions);*/
+
+                            if (response.getString("LAT") != null && !response.getString("LAT").equalsIgnoreCase("") && response.getString("LNG") != null && !response.getString("LNG").equalsIgnoreCase("")){
+                            shuttlestarted=true;
+                            }
+                            shuttlevehicleid=response.getString("VEHICLEID");
+                            if(shuttlestarted && logtype.equalsIgnoreCase("IN")&&!nearby){
+                                infolayout.setVisibility(View.VISIBLE);
+                                //infofab.hide();
+                            }
+                            else if(nearby)
+                            {  infolayout.setVisibility(View.INVISIBLE);}
+                            else
+                            {  infolayout.setVisibility(View.INVISIBLE);}
+                            /*longitude = latLng.latitude;
+                            latitude = latLng.longitude;*/
+                        }else{
+                            shuttlestarted=false;
+                            shuttlevehicleid="";
+                            clearAllMarkers();
+                        }
+
+                    } catch (Exception e) {
+                        AppController.getInstance().trackException(e);
+                        e.printStackTrace();
+                    }
+
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    // Toast.makeText(getApplicationContext(), "Server took too long to respond or your internet connectivity is low" , Toast.LENGTH_LONG).show();
+                    Snackbar snackbar = Snackbar
+                            .make(coordinatorLayout, "Server took too long to respond or internet connectivity is low!", Snackbar.LENGTH_LONG)
+                            .setAction("RETRY", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    plotMystop();
+                                }
+                            });
+
+                    // Changing message text color
+                    snackbar.setActionTextColor(Color.RED);
+
+                    // Changing action button text color
+                    View sbView = snackbar.getView();
+                    TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+                    textView.setTextColor(Color.BLUE);
+                    textView.setMaxLines(3);
+                    pd.hide();
+                    snackbar.show();
+
+                }
+            });
+            int socketTimeout = 15000;//5 seconds - change to what you want
+            RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+            req.setRetryPolicy(policy);
+            // Adding request to request queue
+            AppController.getInstance().addToRequestQueue(req);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //  AppController.getInstance().trackScreenView("Login");// for Google analytics data
+
+    }
+
+    public void checkshuttletrip(){
+        try {
+            JSONObject jobj = new JSONObject();
+            jobj.put("ACTION", "GET_SHUTTLEPOSITION");
+            Log.d(" shuttlevehicleid ",shuttlevehicleid);
+            jobj.put("VEHICLE_ID",shuttlevehicleid);
+            JsonObjectRequest req = new JsonObjectRequest(CommenSettings.bus_serverAddress, jobj, new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    try {
+                        Log.d("checkshuttletrip bus",""+response.toString());
+                        if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
+                            LatLng latLng = new LatLng(parseDouble(response.getString("LAT")), parseDouble(response.getString("LNG")));
+
+                            shuttlelat=parseDouble(response.getString("LAT"));
+                            shuttlelong=parseDouble(response.getString("LNG"));
+                            LatLng shuttleposition= new LatLng(shuttlelat,shuttlelong);
+                            if(myshuttle==null) {
+                                MarkerOptions markerOptions = new MarkerOptions();
+                                markerOptions.position(latLng);
+                                markerOptions.title("My Vehicle " + response.optString("VEHICLE") );
+                                markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.my_car));
+                                myshuttle = mGoogleMap.addMarker(markerOptions);
+                                Log.d("",""+latitude +" "+ longitude +" "+  latLng.latitude+ " " +latLng.longitude);
+                                if(shuttleposition!=null) {
+                                    CameraUpdate center = CameraUpdateFactory.newLatLng(shuttleposition);
+                                    CameraUpdate zoom = CameraUpdateFactory.zoomTo(15);
+
+                                    mGoogleMap.moveCamera(center);
+                                    mGoogleMap.animateCamera(CameraUpdateFactory.zoomIn());
+                                    mGoogleMap.animateCamera(zoom);
+                                    // Zoom out to zoom level 10, animating with a duration of 2 seconds.
+                                    mGoogleMap.animateCamera(CameraUpdateFactory.zoomTo(15), 5000, null);
+                                    mGoogleMap.setBuildingsEnabled(true);
+                                }
+                                double dist = distance(latitude, longitude,latLng.latitude, latLng.longitude);
+                                Log.d("","distance=========================== "+ dist);
+                                if(dist<0.1)
+                                {
+
+                                    nearby=true;
+                                System.out.println("NEARBY"+nearby);
+
+                                }
+
+                                if (dist < 2 && distalert) {
+                                    Log.d("","dist     =======");
+                                    displayNotificationOne();
+                                    alertdist(dist);
+                                    Log.d("","dist     =======");
+                                }
+                            }else{
+                                myshuttle.setPosition(latLng);
+                            }
+
+
+                        }
+
+                    } catch (Exception e) {
+                        AppController.getInstance().trackException(e);
+                        e.printStackTrace();
+                    }
+
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    // Toast.makeText(getApplicationContext(), "Server took too long to respond or your internet connectivity is low" , Toast.LENGTH_LONG).show();
+                    Snackbar snackbar = Snackbar
+                            .make(coordinatorLayout, "Server took too long to respond or internet connectivity is low!", Snackbar.LENGTH_LONG)
+                            .setAction("RETRY", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    checkshuttletrip();
+                                }
+                            });
+
+                    // Changing message text color
+                    snackbar.setActionTextColor(Color.RED);
+
+                    // Changing action button text color
+                    View sbView = snackbar.getView();
+                    TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+                    textView.setTextColor(Color.BLUE);
+                    textView.setMaxLines(3);
+                    pd.hide();
+                    snackbar.show();
+
+                }
+            });
+            int socketTimeout = 15000;//5 seconds - change to what you want
+            RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+            req.setRetryPolicy(policy);
+            // Adding request to request queue
+            AppController.getInstance().addToRequestQueue(req);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //  AppController.getInstance().trackScreenView("Login");// for Google analytics data
+
+    }
+
+    private void displayLocationSettingsRequest(Context context) {
+        GoogleApiClient googleApiClient = new GoogleApiClient.Builder(context)
+                .addApi(LocationServices.API).build();
+        googleApiClient.connect();
+
+        LocationRequest locationRequest = LocationRequest.create();
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        locationRequest.setInterval(2000);
+        locationRequest.setFastestInterval(4000 / 2);
+
+        LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder().addLocationRequest(locationRequest);
+        builder.setAlwaysShow(true);
+
+        PendingResult<LocationSettingsResult> result = LocationServices.SettingsApi.checkLocationSettings(googleApiClient, builder.build());
+        result.setResultCallback(new ResultCallback<LocationSettingsResult>() {
+            @Override
+            public void onResult(LocationSettingsResult result) {
+                final Status status = result.getStatus();
+                switch (status.getStatusCode()) {
+                    case LocationSettingsStatusCodes.SUCCESS:
+                        Log.i(TAG, "All location settings are satisfied.");
+                        break;
+                    case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
+                        Log.i(TAG, "Location settings are not satisfied. Show the user a dialog to upgrade location settings ");
+
+                        try {
+                            // Show the dialog by calling startResolutionForResult(), and check the result
+                            // in onActivityResult().
+                            status.startResolutionForResult(TrackMyCabActivity.this, REQUEST_CHECK_SETTINGS);
+                        } catch (IntentSender.SendIntentException e) {
+                            Log.i(TAG, "PendingIntent unable to execute request.");
+                        }
+                        break;
+                    case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
+                        Log.i(TAG, "Location settings are inadequate, and cannot be fixed here. Dialog not created.");
+                        break;
+                }
+            }
+        });
+    }
+    private boolean isGPSenabled()
+    {
+        final LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+        return manager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+    }
+    @Override
+    public void onResult(@NonNull LocationSettingsResult locationSettingsResult) {
+        final Status status = locationSettingsResult.getStatus();
+        switch (status.getStatusCode()) {
+            case LocationSettingsStatusCodes.SUCCESS:
+
+                // NO need to show the dialog;
+
+                break;
+
+            case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
+                //  Location settings are not satisfied. Show the user a dialog
+
+                try {
+                    // Show the dialog by calling startResolutionForResult(), and check the result
+                    // in onActivityResult().
+
+                    status.startResolutionForResult(this, REQUEST_CHECK_SETTINGS);
+
+                } catch (IntentSender.SendIntentException e) {
+
+                    //failed to show
+                }
+                break;
+
+            case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
+                // Location settings are unavailable so not possible to show any dialog now
+                break;
+        }
+    }
+    @Override
+    public void onPause() {
+        super.onPause();
+        this.mHandler.removeCallbacks(m_Runnable);
+        //stop location updates when Activity is no longer active
+        try {
+            if (mGoogleApiClient != null) {
+                LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
+            }
+        }catch (Exception e){e.printStackTrace();}
+    }
+    @Override
+    public void onResume(){
+        super.onResume();
+        if (mGoogleApiClient != null) {
+            mGoogleApiClient.connect();
+        }
+        this.mHandler = new Handler();
+        m_Runnable.run();
+
+
+    }
 }

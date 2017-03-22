@@ -1675,27 +1675,6 @@
                         "endOffset": 17664
                     }
                 }
-            },
-            {
-                "to": {
-                    "startLine": 242,
-                    "startColumn": 4,
-                    "startOffset": 17669,
-                    "endLine": 243,
-                    "endColumn": 8,
-                    "endOffset": 17794
-                },
-                "from": {
-                    "file": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\9.8.0\\res\\values-v21\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 172,
-                        "endLine": 5,
-                        "endColumn": 8,
-                        "endOffset": 297
-                    }
-                }
             }
         ]
     }

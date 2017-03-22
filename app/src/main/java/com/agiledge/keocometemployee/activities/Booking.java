@@ -6,12 +6,15 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.MenuItem;
@@ -33,6 +36,7 @@ import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
 import com.agiledge.keocometemployee.constants.GetMacAddress;
+import com.agiledge.keocometemployee.utilities.CustomTypefaceSpan;
 import com.agiledge.keocometemployee.utilities.TransparentProgressDialog;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -170,13 +174,27 @@ public class Booking extends AppCompatActivity {
         final Spinner sitespnr = (Spinner) findViewById(R.id.frequency1);
         Spinner logoutspinner = (Spinner) findViewById(R.id.pro_typ);
         AppController.getInstance().trackScreenView("Booking Activity");// for Google analytics data
+
+        getSupportActionBar().setBackgroundDrawable(
+                getResources().getDrawable(R.drawable.top_band));
+        //getSupportActionBar().setTitle((Html.fromHtml("<font color=\"#FFFFFF\">" + getString(R.string.Live_tracking) + "</font>")));
+        Typeface font2 = Typeface.createFromAsset(getAssets(), "fonts/AvantGarde Md BT.ttf");
+        SpannableStringBuilder SS = new SpannableStringBuilder("Booking");
+        SS.setSpan (new CustomTypefaceSpan("", font2), 0, SS.length(), Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+        getSupportActionBar().setTitle(SS);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_arrow);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         pDialog = new SweetAlertDialog(this, SweetAlertDialog.PROGRESS_TYPE);
-        getSupportActionBar().setHomeButtonEnabled(true);
+
 //        android_id = Settings.Secure.getString(this.getContentResolver(),
 //                Settings.Secure.ANDROID_ID);
         et1 = (EditText) findViewById(R.id.selected_fromdate);
         et2 = (EditText) findViewById(R.id.selected_todate);
+        Typeface type = Typeface.createFromAsset(getAssets(),"fonts/AvantGarde Md BT.ttf");
+        et1.setTypeface(type);
+        et2.setTypeface(type);
         submit = (Button) findViewById(R.id.submit_book);
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
         toggleButton = (ToggleButton) findViewById(R.id.toggleButton1);

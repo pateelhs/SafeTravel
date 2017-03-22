@@ -2,9 +2,12 @@ package com.agiledge.keocometemployee.activities;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -21,6 +24,7 @@ import android.widget.Toast;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
+import com.agiledge.keocometemployee.utilities.CustomTypefaceSpan;
 import com.agiledge.keocometemployee.utilities.EmplistPanic;
 import com.agiledge.keocometemployee.utilities.PromptDialog;
 import com.agiledge.keocometemployee.utilities.TransparentProgressDialog;
@@ -55,8 +59,15 @@ public class PanicAdminActivity extends AppCompatActivity {
         setContentView(R.layout.panic_admin);
        stop=(Button) findViewById(R.id.approve) ;
         reset=(Button) findViewById(R.id.reset);
+        getSupportActionBar().setBackgroundDrawable(
+                getResources().getDrawable(R.drawable.top_band));
+        //getSupportActionBar().setTitle((Html.fromHtml("<font color=\"#FFFFFF\">" + getString(R.string.Live_tracking) + "</font>")));
+        Typeface font2 = Typeface.createFromAsset(getAssets(), "fonts/AvantGarde Md BT.ttf");
+        SpannableStringBuilder SS = new SpannableStringBuilder("Panic Action");
+        SS.setSpan (new CustomTypefaceSpan("", font2), 0, SS.length(), Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+        getSupportActionBar().setTitle(SS);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_arrow);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
         SURL=CommenSettings.serverAddress_wemp;
         Bundle extras=getIntent().getExtras();
         if(extras!=null){

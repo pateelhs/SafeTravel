@@ -25,7 +25,7 @@
                 android:orientation="vertical"
                 android:weightSum="2" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/Plaindate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
                     android:textSize="15sp" />
 
                 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/Thdate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                 android:orientation="vertical"
                 android:weightSum="2" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/PlainDistance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
                     android:textColor="#000000"
                     android:textSize="15sp" />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/Thdistance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                     android:textSize="12sp" />
             </LinearLayout>
 
-            <TextView
+            <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                 android:id="@+id/center123"
                 android:layout_width="1dp"
                 android:layout_height="45dp"
@@ -103,7 +103,7 @@
                 android:orientation="vertical"
                 android:weightSum="2" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/PlainLocation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
                     android:textColor="#000000"
                     android:textSize="15sp" />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/ThLoction"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
                     android:textSize="12sp" />
             </LinearLayout>
 
-            <TextView
+            <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                 android:id="@+id/center1234"
                 android:layout_width="1dp"
                 android:layout_height="45dp"

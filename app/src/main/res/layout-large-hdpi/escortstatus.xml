@@ -12,7 +12,7 @@
         android:layout_margin="5dp"
         android:background="#000000" >
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/estitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:textColor="#ff5757"
             android:textSize="18sp" />
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/estextView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

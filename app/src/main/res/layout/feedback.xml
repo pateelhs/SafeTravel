@@ -4,15 +4,16 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:weightSum="9"
+    android:weightSum="8"
     android:background="#B2B2B2">
 
     <FrameLayout
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1" >
+       >
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="55dp"
@@ -21,6 +22,15 @@
             android:textSize="25sp"
             android:gravity="center"
             android:textColor="#ffffff" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:src="@drawable/back_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:onClick="onBackPressed"
+            />
 
     </FrameLayout>
 
@@ -44,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.15" >
-           <TextView 
+           <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView 
                android:layout_height="match_parent"
                android:layout_width="match_parent"
                android:text="DATE"
@@ -68,7 +78,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1.20"
                  >
-            <TextView 
+            <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView 
                android:layout_height="match_parent"
                android:layout_width="match_parent"
                android:text="TRIP"
@@ -81,7 +91,7 @@
                 android:layout_weight="0.90" >
             <Spinner
         android:id="@+id/feedlogspinner"
-        android:layout_width="80dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
         android:layout_gravity="center"       
         />
@@ -110,7 +120,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
             
-            <TextView 
+            <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView 
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 
@@ -185,7 +195,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
                     android:text="Vehicle Condition"
@@ -267,7 +277,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
                     android:text="Driver Behaviour"
@@ -346,7 +356,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
                     android:text="Travel Time"
@@ -426,7 +436,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
                     android:text="Overall Experience"
@@ -529,7 +539,7 @@
         android:layout_marginTop="5dp"
         >
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/feedbackdone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

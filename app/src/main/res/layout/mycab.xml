@@ -45,7 +45,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="0.40" >
 
-                        <TextView
+                        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                             android:id="@+id/livetrack"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -82,7 +82,7 @@
                     android:orientation="horizontal"
                     android:weightSum="4" >
 
-                    <TextView
+                    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                         android:id="@+id/t1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
-                    <TextView
+                    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                         android:id="@+id/t2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
-                    <TextView
+                    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                         android:id="@+id/t3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -111,7 +111,7 @@
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
-                    <TextView
+                    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                         android:id="@+id/t4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

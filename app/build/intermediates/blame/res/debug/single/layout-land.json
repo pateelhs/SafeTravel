@@ -76,6 +76,10 @@
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\manage_booking.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\tripdetailsnew.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\tripdetailsnew.xml"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\fynn_prompt_dialog_titlebar.xml",
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\fynn_prompt_dialog_titlebar.xml"
     },
@@ -124,12 +128,20 @@
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\welcomepopup.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_maps2.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\activity_maps2.xml"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\exitpopup.xml",
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\exitpopup.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\adhoc.xml",
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\adhoc.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\dilog_activity_present.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-land\\dilog_activity_present.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\loading.xml",

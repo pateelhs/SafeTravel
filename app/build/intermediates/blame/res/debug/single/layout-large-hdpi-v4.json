@@ -20,6 +20,10 @@
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\triphistorylist.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\tripdetailsnew.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\tripdetailsnew.xml"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\widget_layout.xml",
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\widget_layout.xml"
     },
@@ -36,12 +40,12 @@
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\fynn_prompt_dialog_titlebar_skyblue.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\emplist_panic.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\emplist_panic.xml"
-    },
-    {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\modify_new.xml",
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\modify_new.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\emplist_panic.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\emplist_panic.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\panicpopup.xml",
@@ -108,6 +112,10 @@
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\home_activity.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\activity_maps2.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\activity_maps2.xml"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\loading.xml",
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\loading.xml"
     },
@@ -146,6 +154,10 @@
     {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\item_row.xml",
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\item_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\dilog_activity_present.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-large-hdpi\\dilog_activity_present.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-large-hdpi-v4\\booking.xml",

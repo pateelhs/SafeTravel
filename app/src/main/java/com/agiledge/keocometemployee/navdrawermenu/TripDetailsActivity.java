@@ -1,15 +1,19 @@
 package com.agiledge.keocometemployee.navdrawermenu;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.content.Context;
 import android.graphics.Color;
-import android.net.wifi.WifiManager;
+import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
 import android.util.Log;
+import android.util.TypedValue;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -18,6 +22,8 @@ import android.widget.TextView;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
+import com.agiledge.keocometemployee.utilities.CustomTypefaceSpan;
+import com.agiledge.keocometemployee.utilities.JustifiedTextView;
 import com.agiledge.keocometemployee.utilities.TransparentProgressDialog;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -28,38 +34,60 @@ import org.json.JSONObject;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
 @SuppressLint("ResourceAsColor")
-public class TripDetailsActivity extends Activity {
+public class TripDetailsActivity extends AppCompatActivity {
 	private CoordinatorLayout coordinatorLayout;
 	SweetAlertDialog pDialog;
 	public static TextView textView;
 	private TransparentProgressDialog pd;
+	private JustifiedTextView dcontct;
 	TextView regno;
 	TextView dname;
-	TextView dcontct;
+	//TextView dcontct;
 	TextView tcode;
 	TextView econt;
+	TextView vendorname;
+	TextView helpdesk;
+	TextView shiftTime;
 	String android_id="";
 	public static String macAddress;
 	String macaddress= CommenSettings.macAddress;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.tripdetails);
+		setContentView(R.layout.tripdetailsnew);
+
+		Typeface font2 = Typeface.createFromAsset(getAssets(), "fonts/AvantGarde Md BT.ttf");
+		SpannableStringBuilder SS = new SpannableStringBuilder("Trip Details");
+		SS.setSpan (new CustomTypefaceSpan("", font2), 0, SS.length(), Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+		getSupportActionBar().setTitle(SS);
+		getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.top_band));
+		getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_arrow);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setHomeButtonEnabled(true);
+
+
 		pd = new TransparentProgressDialog(this, R.drawable.loading);
 		android_id = Settings.Secure.getString(this.getContentResolver(),
 				Settings.Secure.ANDROID_ID);
 		regno=(TextView) findViewById(R.id.td2);
 		dname=(TextView) findViewById(R.id.td4);
-		dcontct=(TextView) findViewById(R.id.td6);
+		dcontct=(JustifiedTextView) findViewById(R.id.td6);
+		dcontct.setTextSize(TypedValue.COMPLEX_UNIT_SP,15);
+		dcontct.setLineSpacing(0);
+		dcontct.setBackgroundColor(Color.TRANSPARENT);
+		dcontct.setAlignment(Paint.Align.LEFT);
+		dcontct.setTypeFace(Typeface.createFromAsset(getAssets(), "fonts/AvantGarde Md BT.ttf"));
 		tcode=(TextView) findViewById(R.id.td8);
-		econt=(TextView) findViewById(R.id.td10);
+		vendorname=(TextView) findViewById(R.id.td10);
+		helpdesk =(TextView) findViewById(R.id.td12);
+		shiftTime =(TextView) findViewById(R.id.td14);
+
 		pDialog = new SweetAlertDialog(this, SweetAlertDialog.PROGRESS_TYPE);
 		pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
 		pDialog.setTitleText("Loading...");
 		pDialog.setCancelable(false);
 		coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
-		WifiManager wimanager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-		macAddress = wimanager.getConnectionInfo().getMacAddress();
+
 		imageclick();
 		fillvalues();
 
@@ -72,7 +100,7 @@ public class TripDetailsActivity extends Activity {
 		try {
 			pDialog.show();
 			JSONObject jobj = new JSONObject();
-			jobj.put("ACTION", "TRIP_DETAILS");
+			jobj.put("ACTION", "GET_MYSTOP");
 			jobj.put("IMEI_NUMBER",CommenSettings.android_id);
 
 			JsonObjectRequest req = new JsonObjectRequest(CommenSettings.bus_serverAddress, jobj, new Response.Listener<JSONObject>() {
@@ -80,19 +108,22 @@ public class TripDetailsActivity extends Activity {
 				public void onResponse(JSONObject response) {
 					try {
 						Log.d("trip details page",response.toString());
-						if (response.getString("result").equalsIgnoreCase("TRUE")) {
+						if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
 							pDialog.dismiss();
-							if(!response.getString("TRIP_ID").equalsIgnoreCase("")){
-								regno.setText(response.getString("REG_NO"));
-								dname.setText(response.getString("DRIVER_NAME"));
-								dcontct.setText(response.getString("DRIVER_CONTACT"));
-								tcode.setText(response.getString("TRIP_CODE"));
-								if(response.getString("SECURITY").equalsIgnoreCase("YES"))
+							/*if(!response.getString("TRIP_ID").equalsIgnoreCase("")){*/
+								regno.setText(response.getString("ROUTENAME"));
+								dname.setText(response.getString("TIME"));
+								dcontct.setText(response.getString("ADDRESS"));
+								tcode.setText(response.getString("VEHICLENO"));
+							vendorname.setText(response.getString("VENDOR"));
+							helpdesk.setText(response.getString("HELPDESK"));
+							shiftTime.setText(response.getString("SHIFTTIME"));
+								/*if(response.getString("SECURITY").equalsIgnoreCase("YES"))
 								{
 									econt.setText(response.getString("ESCORT_CONTACT"));
-								}
-							}
-							else{
+								}*/
+							/*}*/
+						/*	else{
 								pDialog.dismiss();
 								{
 //									new PromptDialog.Builder(TripDetailsActivity.this)
@@ -114,7 +145,7 @@ public class TripDetailsActivity extends Activity {
 									alert();
 								}
 
-							}
+							}*/
 
 
 
@@ -208,17 +239,19 @@ public class TripDetailsActivity extends Activity {
 
 	public void alert() {
 		//pd.dismiss();
+		pDialog.dismiss();
 		new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
-				.setTitleText("Oops...")
+				.setTitleText("Info")
 				.setContentText("Your Trip Has Not Started")
 				.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
 					@Override
 					public void onClick(SweetAlertDialog sweetAlertDialog) {
+						sweetAlertDialog.dismiss();
 						finish();
 					}
 				})
 				.show();
-		pDialog.dismiss();
+
 
 
 	}
@@ -237,6 +270,18 @@ public class TripDetailsActivity extends Activity {
 		super.onDestroy();
 		if(pDialog!= null){
 			pDialog.dismiss();
+		}
+	}
+
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case android.R.id.home:
+				onBackPressed();
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
 		}
 	}
 }

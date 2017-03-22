@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingBottom="15dp">
-                <com.cengalabs.flatui.views.FlatTextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     flatui:fl_fontFamily="roboto"
                     flatui:fl_fontWeight="light"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -91,9 +91,8 @@
                 android:id="@+id/topLeftLayout" android:layout_width="300dp"
                 android:paddingRight="20dp">
 
-                <com.cengalabs.flatui.views.FlatTextView
-                    flatui:fl_fontFamily="roboto"
-                    flatui:fl_fontWeight="light"
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
+
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/countryText" android:text="  From city"
                     android:textColor="@color/md_red_400"
@@ -125,7 +124,7 @@
 
                 android:id="@+id/frequency" android:layout_width="300dp"
                 android:paddingRight="20dp">
-                <com.cengalabs.flatui.views.FlatTextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     flatui:fl_fontFamily="roboto"
                     flatui:fl_fontWeight="light"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -147,7 +146,7 @@
             </RelativeLayout>
             <com.linearlistview.LinearListView android:orientation="vertical"  android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/chat_divider" android:showDividers="middle" style="@style/details_content_layout" />
             <com.linearlistview.LinearListView android:orientation="vertical"  android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/chat_divider" android:showDividers="middle" style="@style/details_content_layout" />
-            <com.cengalabs.flatui.views.FlatTextView
+            <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                 flatui:fl_fontFamily="roboto"
                 flatui:fl_fontWeight="light"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -169,7 +168,7 @@
             <com.linearlistview.LinearListView android:orientation="vertical"  android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/chat_divider" android:showDividers="middle" style="@style/details_content_layout" />
             <com.linearlistview.LinearListView android:orientation="vertical"  android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/chat_divider" android:showDividers="middle" style="@style/details_content_layout" />
             <com.linearlistview.LinearListView android:orientation="vertical"  android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/chat_divider" android:showDividers="middle" style="@style/details_content_layout" />
-            <com.cengalabs.flatui.views.FlatTextView
+            <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                 flatui:fl_fontFamily="roboto"
                 flatui:fl_fontWeight="light"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -194,7 +193,7 @@
 
                 android:id="@+id/product_typy" android:layout_width="300dp"
                 android:paddingRight="20dp">
-                <com.cengalabs.flatui.views.FlatTextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     flatui:fl_fontFamily="roboto"
                     flatui:fl_fontWeight="light"
                     android:textAppearance="?android:attr/textAppearanceMedium"

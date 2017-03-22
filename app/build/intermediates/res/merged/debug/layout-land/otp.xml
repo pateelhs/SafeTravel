@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1" >
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/dummytext"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -42,7 +42,7 @@
                 android:layout_weight="1.2"
                 android:src="@drawable/logo_icon" />
 
-            <TextView
+            <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                 android:id="@+id/laytitle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -60,7 +60,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1" >
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/dummytext2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -95,7 +95,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1" >
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/dummytext5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -127,7 +127,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1" >
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/dummytext1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -142,7 +142,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1" >
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/dummytext4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -155,7 +155,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1" >
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/copyright"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

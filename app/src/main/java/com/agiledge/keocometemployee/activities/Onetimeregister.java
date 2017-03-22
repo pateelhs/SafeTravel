@@ -14,6 +14,7 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -237,6 +238,9 @@ public class Onetimeregister extends Activity {
 							public void onResponse(JSONObject response) {
 								try {
 
+
+									Log.d("RESPONSE INITISL",response.toString());
+
 									if (response.getString("result").equalsIgnoreCase("TRUE")) {
 
 										if(mdialog != null && mdialog.isShowing()){
@@ -278,7 +282,7 @@ public class Onetimeregister extends Activity {
 						}, new Response.ErrorListener() {
 							@Override
 							public void onErrorResponse(VolleyError error) {
-								Toast.makeText(getApplicationContext(), "Error while communicating" + error.getMessage(), Toast.LENGTH_LONG).show();
+								Toast.makeText(getApplicationContext(), "Something went wrong", Toast.LENGTH_LONG).show();
 								if(mdialog != null && mdialog.isShowing()){
 									mdialog.dismiss();
 								}

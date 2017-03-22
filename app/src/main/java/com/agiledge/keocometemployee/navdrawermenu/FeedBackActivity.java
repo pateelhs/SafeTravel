@@ -1,14 +1,21 @@
 package com.agiledge.keocometemployee.navdrawermenu;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.support.v7.app.AppCompatActivity;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -17,7 +24,7 @@ import android.widget.Toast;
 import com.agiledge.keocometemployee.R;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
-import com.agiledge.keocometemployee.constants.GetMacAddress;
+import com.agiledge.keocometemployee.utilities.CustomTypefaceSpan;
 import com.agiledge.keocometemployee.utilities.PromptDialog;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -30,27 +37,42 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-public class FeedBackActivity extends Activity {
+public class FeedBackActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
 	RadioButton vehile1, vehile2, vehile3, vehile4;
 	RadioButton driver1, driver2, driver3, driver4;
 	RadioButton time1, time2, time3, time4;
 	RadioButton overall1, overall2, overall3, overall4;
 	EditText comment;
-	String android_id="";
+	String android_id="",item="";
 	TextView feedbackdone;
 	int selectedvehiclecondition, selecteddriverbehaviour, selectedtraveltime,
 			selectedoverallexp;
 	private ProgressDialog mdialog;
+	ImageView back;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.feedback);
+		Typeface font2 = Typeface.createFromAsset(getAssets(), "fonts/AvantGarde Md BT.ttf");
+		SpannableStringBuilder SS = new SpannableStringBuilder("Trip FeedBack");
+		SS.setSpan (new CustomTypefaceSpan("", font2), 0, SS.length(), Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+		getSupportActionBar().setTitle(SS);
+		getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.top_band));
+		getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_arrow);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setHomeButtonEnabled(true);
+		back=(ImageView) findViewById(R.id.imageView1);
+
+
 		List<String> dates = new ArrayList<String>();
-		List<String> logs = new ArrayList<String>();
-		//logs.add("IN");
+		final List<String> logs = new ArrayList<String>();
+		logs.add("IN");
 		logs.add("OUT");
+		Spinner spinner = (Spinner) findViewById(R.id.feedlogspinner);
+		spinner.setOnItemSelectedListener(this);
 		android_id = Settings.Secure.getString(this.getContentResolver(),
 				Settings.Secure.ANDROID_ID);
 		Calendar cal = Calendar.getInstance();
@@ -64,15 +86,25 @@ public class FeedBackActivity extends Activity {
 				android.R.layout.simple_spinner_item, dates);
 		ArrayAdapter<String> logType = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, logs);
+		List<String> categories = new ArrayList<String>();
+		categories.add("IN");
+		categories.add("OUT");
+		// Creating adapter for spinner
+		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
 
-		datePicked
-				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		logType.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		// Drop down layout style - list view with radio button
 
-		Spinner logTypespinner = (Spinner) findViewById(R.id.feedlogspinner);
+
+		// attaching data adapter to spinner
+		spinner.setAdapter(dataAdapter);
+
+		datePicked.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+		//Spinner logTypespinner = (Spinner) findViewById(R.id.feedlogspinner);
 		Spinner datespinner = (Spinner) findViewById(R.id.feeddatespinner);
 
-		logTypespinner.setAdapter(logType);
+		//logTypespinner.setAdapter(logType);
 		datespinner.setAdapter(datePicked);
 
 		vehile1 = (RadioButton) findViewById(R.id.Radiobutton1);
@@ -95,6 +127,8 @@ public class FeedBackActivity extends Activity {
 		overall3 = (RadioButton) findViewById(R.id.Radiobutton15);
 		overall4 = (RadioButton) findViewById(R.id.Radiobutton16);
 		comment = (EditText) findViewById(R.id.othercommentseditText1);
+		Typeface type = Typeface.createFromAsset(getAssets(),"fonts/AvantGarde Md BT.ttf");
+		comment.setTypeface(type);
 		feedbackdone = (TextView) findViewById(R.id.feedbackdone);
 
 		vehile1.setOnClickListener(new View.OnClickListener() {
@@ -261,7 +295,12 @@ public class FeedBackActivity extends Activity {
 				selectedoverallexp = 4;
 			}
 		});
-
+		back.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				onBackPressed();
+			}
+		});
 		feedbackdone.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -297,21 +336,23 @@ public class FeedBackActivity extends Activity {
 				else {
 
 					try {
-						JSONObject jobj = new JSONObject();
+						final JSONObject jobj = new JSONObject();
 						Spinner logTypespinner = (Spinner) findViewById(R.id.feedlogspinner);
 						Spinner datespinner = (Spinner) findViewById(R.id.feeddatespinner);
-						String logType = logTypespinner.getSelectedItem()
-								.toString();
+						//String logType = logTypespinner.getSelectedItem().toString();
+
+
 						String date1 = datespinner.getSelectedItem().toString();
 
 
 
-						String macaddress= GetMacAddress.getMacAddr();
+
+
 						jobj.put("ACTION", "EMP_FEEDBACK");
 						EditText othercmts = (EditText) findViewById(R.id.othercommentseditText1);
 						jobj.put("IMEI", android_id);
 						jobj.put("DATE", date1);
-						jobj.put("LOGTYPE", logType);
+						jobj.put("LOGTYPE", item);
 						jobj.put("VC", selectedvehiclecondition + "");
 						jobj.put("DRIVER", selecteddriverbehaviour + "");
 						jobj.put("TRAVEL", selectedtraveltime + "");
@@ -321,11 +362,13 @@ public class FeedBackActivity extends Activity {
 							@Override
 							public void onResponse(JSONObject response) {
 								try {
+									System.out.println("FEEDBACK REQUEST-->"+jobj.toString());
 									Log.d("feedback****",""+response.toString());
-									if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
+//									if (response.getString("RESULT").equalsIgnoreCase("TRUE")) {
 										if (mdialog != null && mdialog.isShowing()) {
 											mdialog.dismiss();
 										}
+
 										new PromptDialog.Builder(FeedBackActivity.this)
 												.setTitle("Feedback")
 												.setCanceledOnTouchOutside(false)
@@ -344,30 +387,30 @@ public class FeedBackActivity extends Activity {
 												.show();
 
 
-									} else {
-										if (mdialog != null && mdialog.isShowing()) {
-											mdialog.dismiss();
-										}
+//									} else {
+//										if (mdialog != null && mdialog.isShowing()) {
+//											mdialog.dismiss();
+//										}
 
 
-										new PromptDialog.Builder(FeedBackActivity.this)
-												.setTitle("Feedback")
-												.setCanceledOnTouchOutside(false)
-												.setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
-												.setButton1TextColor(R.color.md_blue_400)
+//										new PromptDialog.Builder(FeedBackActivity.this)
+//												.setTitle("Feedback")
+//												.setCanceledOnTouchOutside(false)
+//												.setViewStyle(PromptDialog.VIEW_STYLE_TITLEBAR_SKYBLUE)
+//												.setButton1TextColor(R.color.md_blue_400)
+//
+//												.setMessage(""+response.getString("STATUS"))
+//												.setButton1("OK", new PromptDialog.OnClickListener() {
+//
+//													@Override
+//													public void onClick(Dialog dialog, int which) {
+//														dialog.dismiss();
+//														finish();
+//													}
+//												})
+//												.show();
 
-												.setMessage(""+response.getString("STATUS"))
-												.setButton1("OK", new PromptDialog.OnClickListener() {
 
-													@Override
-													public void onClick(Dialog dialog, int which) {
-														dialog.dismiss();
-														finish();
-													}
-												})
-												.show();
-
-									}
 								} catch (Exception e) {
 									if (mdialog != null && mdialog.isShowing()) {
 										mdialog.dismiss();
@@ -391,54 +434,7 @@ public class FeedBackActivity extends Activity {
 
 						// Adding request to request queue
 						AppController.getInstance().addToRequestQueue(req);
-//						ServerCommunication sobj = new ServerCommunication(jobj);
-//						sobj.setDataDownloadListen(new DataDownloadListener() {
-//							public void dataSuccess(String result) {
-//								try {
-//									if (result != null
-//											&& !result.equalsIgnoreCase("")) {
-//										JSONObject robj;
-//										robj = new JSONObject(result);
-//
-//										if (mdialog != null
-//												&& mdialog.isShowing()) {
-//											mdialog.dismiss();
-//										}
-//
-//										FeedBackActivity.this.finish();
-//										Toast.makeText(getApplicationContext(),
-//												robj.getString("STATUS"),
-//												Toast.LENGTH_LONG).show();
-//										onBackPressed();
-//
-//									} else {
-//										if (mdialog != null
-//												&& mdialog.isShowing()) {
-//											mdialog.dismiss();
-//										}
-//
-//										Toast.makeText(getApplicationContext(),
-//												"Oops Error In Communication",
-//												Toast.LENGTH_SHORT).show();
-//
-//									}
-//
-//								} catch (JSONException e) {
-//									// TODO Auto-generated catch block
-//									e.printStackTrace();
-//								}
-//							}
-//
-//							public void datafail() {
-//								if (mdialog != null && mdialog.isShowing()) {
-//									mdialog.dismiss();
-//								}
-//								Toast.makeText(getApplicationContext(),
-//										"No Network", Toast.LENGTH_SHORT)
-//										.show();
-//							}
-//						});
-//						sobj.execute();
+
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
@@ -467,40 +463,33 @@ public class FeedBackActivity extends Activity {
 		{
 
 			 super.onBackPressed();
-//			Intent intent = new Intent(FeedBackActivity.this, MapClass.class);
-//			startActivity(intent);
-			//System.exit(1);
-	  //  	Toast.makeText(getApplicationContext(), "in start", Toast.LENGTH_LONG).show();
-	    	//finish();
+
 		}
-	
+
+
+	@Override
+	public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+		// On selecting a spinner item
+	    item = parent.getItemAtPosition(position).toString();
+
+		// Showing selected spinner item
+		//Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
+
+	}
+
+	public void onNothingSelected(AdapterView<?> arg0) {
+		// TODO Auto-generated method stub
+
+	}
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case android.R.id.home:
+				onBackPressed();
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+	}
 }
-	/* @Override
-	    public void onBackPressed() {
-	       
-	            super.onBackPressed();
-
-	           
-	                Intent intent = new Intent(this, MapClass.class);
-	                finish();
-	                startActivity(intent);
-	           
-	            }
-	        }
-	    }
-*/
-	// else
-	// {
-	// Toast.makeText(getBaseContext(),"Thank You For Your Feedback",Toast.LENGTH_SHORT).show();
-	// finish();
-	// comment.setText("Vehicle -"+
-	// selectedvehiclecondition+" Driver -"+selecteddriverbehaviour+" Time -"+selectedtraveltime+
-	// " OverAll -"+selectedoverallexp);
-	// }
-
-// hide server
-// });
-// }
-// }
-// hide server
 

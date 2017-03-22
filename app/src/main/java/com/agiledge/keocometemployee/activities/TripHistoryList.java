@@ -3,11 +3,14 @@ package com.agiledge.keocometemployee.activities;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -20,6 +23,7 @@ import com.agiledge.keocometemployee.adapter.CustomListAdapter;
 import com.agiledge.keocometemployee.app.AppController;
 import com.agiledge.keocometemployee.constants.CommenSettings;
 import com.agiledge.keocometemployee.navdrawermenu.FeedBackActivity;
+import com.agiledge.keocometemployee.utilities.CustomTypefaceSpan;
 import com.agiledge.keocometemployee.utilities.OtherFunctions;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -56,8 +60,15 @@ public class TripHistoryList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.triphistorylist);
+        getSupportActionBar().setBackgroundDrawable(
+                getResources().getDrawable(R.drawable.top_band));
+        //getSupportActionBar().setTitle((Html.fromHtml("<font color=\"#FFFFFF\">" + getString(R.string.Live_tracking) + "</font>")));
+        Typeface font2 = Typeface.createFromAsset(getAssets(), "fonts/AvantGarde Md BT.ttf");
+        SpannableStringBuilder SS = new SpannableStringBuilder("Trip History");
+        SS.setSpan (new CustomTypefaceSpan("", font2), 0, SS.length(), Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+        getSupportActionBar().setTitle(SS);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_arrow);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
         listView = (ListView) findViewById(R.id.list);
 
         android_id = Settings.Secure.getString(this.getContentResolver(),

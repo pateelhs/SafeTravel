@@ -20,29 +20,62 @@
                 android:layout_weight="0.92"
                 android:background="#ff5757" >
 
-                <ImageView
-                    android:id="@+id/navigationicon"
-                    android:layout_width="50dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
-                    android:onClick="@+id/nav"
-                    android:src="@drawable/nav_menu" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
 
-                <TextView
-                    android:id="@+id/livetrack"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="                 LIVE TRACKING"
-                    android:textColor="#ededed"
-                    android:textSize="23sp" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.25" >
+
+                        <ImageView
+                            android:id="@+id/navigationicon"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+
+                            android:onClick="@+id/nav"
+                            android:src="@drawable/nav_menu" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.44" >
+
+                        <TextView
+                            android:id="@+id/livetrack"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="LIVE TRACKING"
+                            android:textColor="#ededed"
+                            android:textSize="23sp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.31" >
+
+                        <ImageView
+                            android:id="@+id/panicalaram"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/panic"
+                            android:gravity="center" />
+                    </FrameLayout>
+                </LinearLayout>
             </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.94"
-                android:background="#ffffff" >
+                android:background="#b5b4b3" >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -56,7 +89,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="end"
-                        android:text=""
+                        android:text="TIME:"
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -75,7 +108,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="end"
-                        android:text=""
+                        android:text="DATE:"
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -94,7 +127,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.14" >
-
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:elevation="2dp"
+                    android:background="#fff"
+                    android:layout_height="wrap_content">
+                    </SearchView>
                 <fragment
                     android:id="@+id/map"
                     android:name="com.google.android.gms.maps.MapFragment"
@@ -124,7 +163,7 @@
                 android:layout_height="100dp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -146,7 +185,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/profilename"
-                     android:textColor="#000000"
+                    android:textColor="#000000"
                     android:textSize="12sp" />
             </RelativeLayout>
         </RelativeLayout>
@@ -165,20 +204,24 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true" >
+            android:layout_margin="10dp" >
 
             <TextView
                 android:id="@+id/copyright"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:text="Agiledge Solutions"
-                android:autoLink="" 
+                android:autoLink=""
                 android:gravity="center"
+                android:text="Agiledge Solutions"
                 android:textColor="#ffffff"
                 android:textSize="14sp" />
+            <TextView
+                android:id="@+id/informationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </RelativeLayout>
     </RelativeLayout>
 

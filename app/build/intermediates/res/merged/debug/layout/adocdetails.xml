@@ -15,7 +15,7 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/dmydate"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -75,7 +75,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/adhocdatevalue"
                     android:layout_width="90dp"
                     android:layout_height="match_parent"
@@ -135,7 +135,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" >
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                      android:id="@+id/dmytime"
                      android:layout_width="match_parent"
                      android:layout_height="match_parent"
@@ -170,7 +170,7 @@
 
 </FrameLayout>
 
-    <TextView
+    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
         android:id="@+id/adhocdone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

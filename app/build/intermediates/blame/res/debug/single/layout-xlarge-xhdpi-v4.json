@@ -36,6 +36,10 @@
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\button_end.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\tripdetailsnew.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\tripdetailsnew.xml"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\welcomepopup.xml",
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\welcomepopup.xml"
     },
@@ -212,6 +216,10 @@
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\gridview_custom_layout.xml"
     },
     {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\dilog_activity_present.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\dilog_activity_present.xml"
+    },
+    {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\triphistorylist.xml",
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\triphistorylist.xml"
     },
@@ -246,6 +254,10 @@
     {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\activity_maps.xml",
         "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\activity_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\activity_maps2.xml",
+        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\activity_maps2.xml"
     },
     {
         "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\toolbar.xml",

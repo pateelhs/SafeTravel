@@ -5,7 +5,7 @@
     android:background="#f2f2f2"
     android:orientation="vertical">
 
-    <TextView
+    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -14,7 +14,7 @@
         android:textColor="@color/md_teal_500"
         android:textSize="20sp" />
 
-    <TextView
+    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
@@ -24,7 +24,7 @@
         android:textSize="14sp"
         android:textStyle="italic" />
 
-    <TextView
+    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
         android:id="@+id/custom_dialog_tv_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

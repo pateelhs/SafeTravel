@@ -19,7 +19,7 @@
             >
 
 
-            <TextView
+            <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="date:"
@@ -28,7 +28,7 @@
                 android:textAllCaps="true"
                 android:textSize="22dp"
                 android:id="@+id/toolbar_title" />
-            <TextView
+            <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="time: "
@@ -55,7 +55,7 @@
                 tools:context="com.agiledge.visandroid.activities.TrackMyCabActivity"
                 android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
-            <TextView
+            <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                 android:id="@+id/UpdateTrips"
                 android:background="@drawable/textbackground"
                 android:layout_width="wrap_content"

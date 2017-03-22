@@ -4282,30 +4282,9 @@
                     "startLine": 388,
                     "startColumn": 4,
                     "startOffset": 24615,
-                    "endLine": 389,
-                    "endColumn": 8,
-                    "endOffset": 24736
-                },
-                "from": {
-                    "file": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\9.8.0\\res\\values-v11\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 172,
-                        "endLine": 5,
-                        "endColumn": 8,
-                        "endOffset": 293
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 390,
-                    "startColumn": 4,
-                    "startOffset": 24741,
-                    "endLine": 400,
+                    "endLine": 398,
                     "endColumn": 12,
-                    "endOffset": 25446
+                    "endOffset": 25320
                 },
                 "from": {
                     "file": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\values-v11\\styles.xml",

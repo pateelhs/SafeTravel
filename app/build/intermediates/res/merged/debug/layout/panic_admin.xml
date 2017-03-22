@@ -24,7 +24,7 @@
             android:paddingRight="10dp"
             android:orientation="horizontal">
 
-            <TextView
+            <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left|center_vertical"
@@ -43,7 +43,7 @@
                 android:singleLine="true"/>
         </LinearLayout>
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Primary Action"
@@ -72,7 +72,7 @@
                 android:layout_height="fill_parent"
                 android:layout_margin="15dp">
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Vehicle Number"
@@ -80,7 +80,7 @@
                     android:textColor="#707070"
 
                     />
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.86"
@@ -88,7 +88,7 @@
                     android:text="\u2022"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/vehnumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
                 android:layout_height="fill_parent"
                 android:layout_margin="15dp">
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Driver Name"
@@ -113,7 +113,7 @@
                     android:textColor="#707070"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.07"
@@ -121,7 +121,7 @@
                     android:text="\u2022"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/drivname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -136,7 +136,7 @@
                 android:layout_height="fill_parent"
                 android:layout_margin="15dp">
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Driver Contact"
@@ -144,7 +144,7 @@
                     android:textColor="#707070"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.35"
@@ -152,7 +152,7 @@
                     android:text="\u2022"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/drivcontact"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -168,7 +168,7 @@
                 android:layout_height="fill_parent"
                 android:layout_margin="15dp">
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Escort Name"
@@ -176,7 +176,7 @@
                     android:textColor="#707070"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.47"
@@ -184,7 +184,7 @@
                     android:text="\u2022"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/escname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -199,7 +199,7 @@
                 android:layout_height="fill_parent"
                 android:layout_margin="15dp">
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Escort Contact"
@@ -207,7 +207,7 @@
                     android:textColor="#707070"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.36"
@@ -215,7 +215,7 @@
                     android:text="\u2022"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/esccontact"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -231,7 +231,7 @@
                 android:layout_height="fill_parent"
                 android:layout_margin="15dp">
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Vendor Name"
@@ -239,7 +239,7 @@
                     android:textColor="#707070"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.36"
@@ -247,7 +247,7 @@
                     android:text="\u2022"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/vendorname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -264,7 +264,7 @@
                 android:layout_height="fill_parent"
                 android:layout_margin="15dp">
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Vendor Contact"
@@ -272,7 +272,7 @@
                     android:textColor="#707070"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.36"
@@ -280,7 +280,7 @@
                     android:text="\u2022"
                     />
 
-                <TextView
+                <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
                     android:id="@+id/vendorcontact"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -15,7 +15,7 @@ android:background="#000000"
         android:contentDescription="@null"
         android:src="@drawable/applogo" /> 
 
-     <TextView
+     <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
     android:id="@+id/header_tvleft"
     android:layout_width="5dp"
     android:layout_height="fill_parent"

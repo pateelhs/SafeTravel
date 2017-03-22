@@ -21,7 +21,7 @@
     >
 
 
-    <TextView
+    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="date:"
@@ -30,7 +30,7 @@
         android:textAllCaps="true"
         android:textSize="22dp"
         android:id="@+id/toolbar_title" />
-    <TextView
+    <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="time: "
@@ -47,7 +47,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.1" >
-
+        <!--<com.arlib.floatingsearchview.FloatingSearchView-->
+            <!--android:id="@+id/floating_search_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:floatingSearch_searchBarMarginLeft="@dimen/search_view_inset"-->
+            <!--app:floatingSearch_searchBarMarginTop="@dimen/search_view_inset"-->
+            <!--app:floatingSearch_searchBarMarginRight="@dimen/search_view_inset"-->
+            <!--app:floatingSearch_searchHint="Search..."-->
+            <!--app:floatingSearch_suggestionsListAnimDuration="250"-->
+            <!--app:floatingSearch_showSearchKey="false"-->
+            <!--app:floatingSearch_leftActionMode="showHamburger"-->
+            <!--app:floatingSearch_menu="@menu/main"-->
+            <!--app:floatingSearch_close_search_on_keyboard_dismiss="true"/>-->
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:map="http://schemas.android.com/apk/res-auto"
@@ -57,7 +69,7 @@
         tools:context="com.agiledge.keocometemployee.activities.TrackMyCabActivity"
         android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
-        <TextView
+        <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
             android:id="@+id/UpdateTrips"
             android:background="@drawable/textbackground"
             android:layout_width="wrap_content"
@@ -76,21 +88,8 @@
             android:layout_gravity="bottom|center"
             android:layout_margin="35dp"
             android:src="@drawable/panic_floating" />
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/legendfab"
-            android:visibility="visible"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|left"
-            android:layout_margin="35dp"
-            android:src="@drawable/legend_info" />
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/infofab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
-            android:layout_margin="35dp"
-            android:src="@drawable/legend_info" />
+
+
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/busfab"
@@ -103,6 +102,42 @@
             app:layout_anchorGravity="top|right|end"
             android:src="@drawable/bus_icon" />
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/legendfab"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="35dp"
+            android:src="@drawable/legend_info" />
+        <FrameLayout
+            android:id="@+id/infolayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:visibility="invisible">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/infofab"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="35dp"
+                />
+
+
+            <com.agiledge.keocometemployee.utilities.AvantGardeStyleTextView
+                android:id="@+id/infofabtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ETA"
+                android:textSize="20dp"
+                android:elevation="16dp"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </FrameLayout>
     </FrameLayout>
 
 
