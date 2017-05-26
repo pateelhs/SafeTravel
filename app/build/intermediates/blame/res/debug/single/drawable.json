@@ -1,1034 +1,778 @@
 [
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/res/drawable/common_google_signin_btn_text_dark_focused.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\popup_bg.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\popup_bg.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/safebus_ride_icon3.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/safebus_ride_icon3.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/bus_icon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/bus_icon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bbb.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\bbb.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/splash.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/splash.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_forward30.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_forward30.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/baccc.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/baccc.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\panic_pop_up_activate.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\panic_pop_up_activate.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/singlelady_noesc.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/singlelady_noesc.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_mono_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/toggle_on.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/toggle_on.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\loading.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\loading.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\safebus_launcher_icon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\safebus_launcher_icon.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/ic_action_share.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/ic_action_share.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\list_selector.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\list_selector.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/toggle_selector.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/toggle_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\person_2.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\person_2.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/avatar_female.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/avatar_female.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/custom_selector.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/custom_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buttonshape.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\buttonshape.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_text_cursor_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_ratingbar_full_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/menu_about.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/menu_about.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\atleast_onelady.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\atleast_onelady.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/toggle_off.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/toggle_off.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\singlelady_withesc.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\singlelady_withesc.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\managr_booking.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\managr_booking.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/menu_history.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/menu_history.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\warning.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\warning.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_btn_left_pressed.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_btn_left_pressed.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_textfield_search_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_dialog_material_background_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/rounded_corner.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/rounded_corner.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\atleast_onelady_cab.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\atleast_onelady_cab.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/eta.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/eta.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_btn_single_pressed.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_btn_single_pressed.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/list_row_bg.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/list_row_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/menu_emergency.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/menu_emergency.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\location1.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\location1.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_btn_right_normal.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_btn_right_normal.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_rewind30.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_expanded_controller_rewind30.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_bg_normal.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_bg_normal.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/busicon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/busicon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_button_background.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.3\\res\\drawable\\red_button_background.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/edittextbg.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/edittextbg.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/buttonshape.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/buttonshape.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\error_center_x.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.3\\res\\drawable\\error_center_x.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_btn_center_normal.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_btn_center_normal.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\baccc.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\baccc.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_cab_background_top_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\emergency_header.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\emergency_header.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/divider.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/divider.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\uber_icon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\uber_icon.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/dialog_background.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/90dd239b0c00d90fa71e5a0513267ccd53ffe113/output/res/drawable/dialog_background.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dotted_line.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\dotted_line.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/backk.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/backk.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\a.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\a.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/request_button.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/request_button.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_btn_right_pressed.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_btn_right_pressed.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\splash.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/help_icon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/help_icon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_off.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\toggle_off.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_btn_left_selector.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_btn_left_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\em_btn.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\em_btn.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/loading.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/loading.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\live_trackingadmin.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\live_trackingadmin.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/top_band.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/top_band.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edittextbg.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\edittextbg.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/rounded_corner_map.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/rounded_corner_map.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_button_background.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.3\\res\\drawable\\blue_button_background.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/person_1.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/person_1.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\drop_down.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\drop_down.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/ic_btn_current_location.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/ic_btn_current_location.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/booking.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/booking.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_bg_normal.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_bg_normal.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/right_arrow.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/right_arrow.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\time.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\time.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_cast_dark.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/stopss.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/stopss.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/new1neutral.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/new1neutral.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_selector.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\toggle_selector.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_about.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\menu_about.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/feedback_20.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/feedback_20.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\listitem_background.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\listitem_background.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/agile.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/agile.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/trip_history.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/trip_history.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edit_bg.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\edit_bg.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/em_btn.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/em_btn.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\success_circle.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.3\\res\\drawable\\success_circle.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/only_male_cab.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/only_male_cab.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/popup_bg.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/popup_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_details.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\menu_details.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/error_circle.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/90dd239b0c00d90fa71e5a0513267ccd53ffe113/output/res/drawable/error_circle.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\safebus_icon1.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\safebus_icon1.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/dotted_line.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/dotted_line.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tourist.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\tourist.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/menu_feedback.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/menu_feedback.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_icon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\logo_icon.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/circle.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/circle.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edit_bg_new.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\edit_bg_new.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\eta.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\eta.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/location1.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/location1.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_pause.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_pause.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/menu_tracking.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/menu_tracking.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_on_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_on_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/menu_help.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/menu_help.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\avatar_male.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\avatar_male.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/person_2.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/person_2.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward30.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_forward30.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/panic_icon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/panic_icon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\feedbackedittextbg.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\feedbackedittextbg.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/my_car.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/my_car.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\map_uber_car.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\map_uber_car.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/uber_car90.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/uber_car90.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_pause.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_pause.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/date.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/date.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gray_button_background.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.3\\res\\drawable\\gray_button_background.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_btn_single_normal.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_btn_single_normal.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/map_uber_car.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/map_uber_car.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/success_circle.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/90dd239b0c00d90fa71e5a0513267ccd53ffe113/output/res/drawable/success_circle.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\horizontal_line.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\horizontal_line.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/location_icon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/location_icon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\single_lady_with_escort_cab.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\single_lady_with_escort_cab.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/res/drawable/common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_mute.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_expanded_controller_mute.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/helpwhite_bg.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/helpwhite_bg.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_title_bar_bg_skyblue.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_title_bar_bg_skyblue.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/ic_gps_lime.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/ic_gps_lime.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\date.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\date.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/menu_booking.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/menu_booking.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\only_male_cab.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\only_male_cab.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/edit_bg.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/edit_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\safebus_icon2.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\safebus_icon2.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/bookingedittextbg.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/bookingedittextbg.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_btn_left_selector.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_btn_left_selector.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/atleast_onelady.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/atleast_onelady.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/location2.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/location2.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\only_driver.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\only_driver.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/blue_button_background.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/90dd239b0c00d90fa71e5a0513267ccd53ffe113/output/res/drawable/blue_button_background.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bifurcator.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\bifurcator.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/emergencycontact_icon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/emergencycontact_icon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\panic_cab.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\panic_cab.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/late.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/late.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/a.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/a.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_switch_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bookingedittextbg.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\bookingedittextbg.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/app_launch_icon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/app_launch_icon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\success_bow.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.3\\res\\drawable\\success_bow.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/new1stressful.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/new1stressful.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_btn_right_normal.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_btn_right_normal.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/only_guys.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/only_guys.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_home.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\bg_home.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/my_background.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/e6a89b8bdae0f8756470a04965a0072bf0beaf97/output/res/drawable/my_background.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\panic_activated.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\panic_activated.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/legend_info.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/legend_info.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pan_car.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\pan_car.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/res/drawable/common_google_signin_btn_text_light_focused.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind10.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_rewind10.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/list_row_bg_hover.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/list_row_bg_hover.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tripdetails_icon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\tripdetails_icon.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/copyright.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/copyright.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\female_avatar.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\female_avatar.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/panic_activated.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/panic_activated.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_rewind.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_connecting_dark.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/background.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/background.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_share.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\ic_action_share.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_rewind30.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_rewind30.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/emps.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/emps.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\warning_sigh.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.3\\res\\drawable\\warning_sigh.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/et_emer_bg.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/et_emer_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\panic.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\panic.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/modify.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/modify.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_skip_prev.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_skip_prev.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/uber_icon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/uber_icon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pending_jobs.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\pending_jobs.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/single_lady_without_esc_cab.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/single_lady_without_esc_cab.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_corner_map.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\rounded_corner_map.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/managr_booking.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/managr_booking.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_pause_large.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_pause_large.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/warning_circle.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/90dd239b0c00d90fa71e5a0513267ccd53ffe113/output/res/drawable/warning_circle.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\oval_btn_selector.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.github.arimorty\\floatingsearchview\\2.0.3\\res\\drawable\\oval_btn_selector.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/menu_details.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/menu_details.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\list_row_bg_hover.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\list_row_bg_hover.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_btn_center_selector.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_btn_center_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\person_1.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\person_1.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/drop_down.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/drop_down.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divider.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\divider.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/new1bad.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/new1bad.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_play_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/live_trackingadmin.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/live_trackingadmin.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_forward.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/nav_menu.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/nav_menu.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/iconcar.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/iconcar.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_closed_caption.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_expanded_controller_closed_caption.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_stop_live_stream.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_stop_live_stream.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/ic_clean.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/ic_clean.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_play.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_play.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/gray_button_background.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/90dd239b0c00d90fa71e5a0513267ccd53ffe113/output/res/drawable/gray_button_background.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_actionbar_bg_gradient_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_expanded_controller_actionbar_bg_gradient_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/completed_jobs.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/completed_jobs.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\warning_circle.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.3\\res\\drawable\\warning_circle.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/add_marker.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/add_marker.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_play.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_play.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/about_icon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/about_icon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\booking.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\booking.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/pan_car.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/pan_car.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/horizontal_line.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/horizontal_line.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\agile.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\agile.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/red_button_background.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/90dd239b0c00d90fa71e5a0513267ccd53ffe113/output/res/drawable/red_button_background.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gradient_bg.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\gradient_bg.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/emergency_header.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/emergency_header.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_skip_next.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_skip_next.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_btn_center_pressed.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_btn_center_pressed.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop_large.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_stop_large.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/singlelady_withesc.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/singlelady_withesc.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top_band.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\top_band.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/only_driver.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/only_driver.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\suggestion_item_background.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.github.arimorty\\floatingsearchview\\2.0.3\\res\\drawable\\suggestion_item_background.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/panic_pop_up_activate.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/panic_pop_up_activate.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_history.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\menu_history.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_seekbar_thumb.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_expanded_controller_seekbar_thumb.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/edit_bg_new.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/edit_bg_new.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_mono_dark.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/right_a.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/right_a.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_launch_icon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\app_launch_icon.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/bg_home.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/bg_home.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_btn_check_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divider_background.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.github.arimorty\\floatingsearchview\\2.0.3\\res\\drawable\\divider_background.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\in_time.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\in_time.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/button_background_transparent.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/button_background_transparent.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\help_icon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\help_icon.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_btn_single_selector.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_btn_single_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\avatar_female.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\avatar_female.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/ic_launcher.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\ic_launcher.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/safebus_launcher_icon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/safebus_launcher_icon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_a.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\right_a.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_material_background_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_dialog_material_background_dark.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_btn_right_pressed.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_btn_right_pressed.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.8.0\\res\\drawable\\cast_ic_notification_connecting.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/pending_jobs.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/pending_jobs.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_btn_right_selector.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_btn_right_selector.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/logo_icon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/logo_icon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/19c96a5486cb8892eaf4353fedadf813857baa6c/output/res/drawable/design_snackbar_background.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_btn_center_normal.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_btn_center_normal.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/in_time.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/in_time.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\emergencycontact_icon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\emergencycontact_icon.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/single_lady_with_escort_cab.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/single_lady_with_escort_cab.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward10.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_forward10.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/out_time.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/out_time.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_btn_single_selector.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_btn_single_selector.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\btn.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_btn_single_pressed.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_btn_single_pressed.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\drawable\\design_fab_background.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/warning_sigh.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/90dd239b0c00d90fa71e5a0513267ccd53ffe113/output/res/drawable/warning_sigh.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\circle.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/female_avatar.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/female_avatar.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_material_background_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_dialog_material_background_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/panic.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/panic.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\background.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/my_cab.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/my_cab.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_arrow.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\back_arrow.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new1bad.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\new1bad.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/error_center_x.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/90dd239b0c00d90fa71e5a0513267ccd53ffe113/output/res/drawable/error_center_x.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_arrow.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\right_arrow.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/avatar_male.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/avatar_male.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_stop.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_expanded_controller_stop.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/new1good.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/new1good.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_skip_prev.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_skip_prev.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_ratingbar_full_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\textbackground.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\textbackground.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/bbb.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/bbb.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\modify.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\modify.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/feedbackedittextbg.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/feedbackedittextbg.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_skip_next.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_skip_next.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/res/drawable/common_google_signin_btn_icon_light_focused.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\drawable\\design_snackbar_background.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new1neutral.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\new1neutral.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/only_driver_cab.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/only_driver_cab.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\only_driver_cab.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\only_driver_cab.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/success_bow.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/90dd239b0c00d90fa71e5a0513267ccd53ffe113/output/res/drawable/success_bow.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_mini_controller_gradient_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_mini_controller_gradient_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/tripdetails_icon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/tripdetails_icon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new1stressful.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\new1stressful.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/applogo.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/applogo.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_text_cursor_material.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/safebus_icon1.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/safebus_icon1.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\iconcar.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\iconcar.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/navdrawer_listselector.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/navdrawer_listselector.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_pause.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_expanded_controller_pause.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\safebus_ride_icon3.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\safebus_ride_icon3.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/panic_cab.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/panic_cab.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_skip_previous.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_expanded_controller_skip_previous.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/listitem_background.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/listitem_background.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_connecting_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/19c96a5486cb8892eaf4353fedadf813857baa6c/output/res/drawable/design_fab_background.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\about_icon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\about_icon.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/atleast_onelady_cab.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/atleast_onelady_cab.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\add_marker.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\add_marker.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/list_row_selector.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/list_row_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\my_cab.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\my_cab.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/warning.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/warning.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_small_icon.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_small_icon.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/chat_divider.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/chat_divider.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_close_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_close_dark.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chat_divider.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\chat_divider.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/btn.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/btn.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_corner.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\rounded_corner.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\singlelady_noesc.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\singlelady_noesc.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_btn_single_normal.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_btn_single_normal.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_clean.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\ic_clean.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/safebus_icon2.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/safebus_icon2.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind30.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_rewind30.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/panic_floating.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/panic_floating.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_on.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\toggle_on.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_btn_left_normal.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_btn_left_normal.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_btn_current_location.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\ic_btn_current_location.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/time.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/time.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\error_circle.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.3\\res\\drawable\\error_circle.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/list_selector.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/list_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\panic_floating.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\panic_floating.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/tourist.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/tourist.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/bifurcator.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/bifurcator.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_close_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_close_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/gradient_bg_hover.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/gradient_bg_hover.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\trip_history.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\trip_history.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_title_bar_bg_skyblue.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_title_bar_bg_skyblue.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_mute.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_mute.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/gradient_bg.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/gradient_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\late.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\late.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/safebus_ride_icon.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/safebus_ride_icon.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\et_emer_bg.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\et_emer_bg.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_pause_light.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/back_arrow.png",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/back_arrow.png"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\emps.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\emps.png"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/fynn_prompt_dialog_btn_right_selector.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/fynn_prompt_dialog_btn_right_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_selector.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\custom_selector.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_play.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_expanded_controller_play.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_forward30.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_expanded_controller_forward30.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\single_lady_without_esc_cab.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\single_lady_without_esc_cab.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\list_row_bg.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\list_row_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\applogo.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\applogo.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_feedback.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\menu_feedback.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_pause_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_skip_next.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_expanded_controller_skip_next.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_help.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\menu_help.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_disconnect.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_disconnect.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bus_icon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\bus_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_btn_left_pressed.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_btn_left_pressed.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_mini_controller_progress_drawable.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_mini_controller_progress_drawable.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navdrawer_listselector.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\navdrawer_listselector.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\helpwhite_bg.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\helpwhite_bg.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\request_button.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\request_button.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_gps_lime.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\ic_gps_lime.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_skip_ad_label_border.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_skip_ad_label_border.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\out_time.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\out_time.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\nav_menu.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\nav_menu.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_closed_caption.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_closed_caption.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button_background_transparent.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\button_background_transparent.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_background.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\cn.pedant.sweetalert\\library\\1.3\\res\\drawable\\dialog_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gradient_bg_hover.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\gradient_bg_hover.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_emergency.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\menu_emergency.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\completed_jobs.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\completed_jobs.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\my_car.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\my_car.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_expand.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\ic_expand.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_booking.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\menu_booking.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backk.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\backk.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stopss.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\stopss.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\my_background.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.github.ganfra\\material-spinner\\1.1.1\\res\\drawable\\my_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_play_large.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_play_large.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\safebus_ride_icon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\safebus_ride_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\feedback_20.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\feedback_20.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new1good.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\new1good.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\copyright.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\copyright.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_on_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_on_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_seekbar_track.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_expanded_controller_seekbar_track.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\list_row_selector.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\list_row_selector.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\only_guys.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\only_guys.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_collapse.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\ic_collapse.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\legend_info.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\legend_info.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_audiotrack_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_audiotrack_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\busicon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\busicon.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_btn_center_pressed.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_btn_center_pressed.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_dark.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_play_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\location2.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\location2.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_cast_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_tracking.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\menu_tracking.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\panic_icon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\panic_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_btn_center_selector.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_btn_center_selector.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fynn_prompt_dialog_btn_left_normal.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\fynn_prompt_dialog_btn_left_normal.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_bg_gradient_light.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_expanded_controller_bg_gradient_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\location_icon.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\location_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\uber_car90.png",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\drawable\\uber_car90.png"
-    },
-    {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_stop.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/drawable/textbackground.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/drawable/textbackground.xml"
     }
 ]

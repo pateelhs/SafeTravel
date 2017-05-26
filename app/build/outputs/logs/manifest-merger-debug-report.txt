@@ -1,851 +1,579 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:2:1-281:12
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:2:1-281:12
 	package
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:4:5-44
-		INJECTED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:4:5-44
+		INJECTED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:6:5-33
-		INJECTED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:6:5-33
+		INJECTED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:5:5-29
-		INJECTED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:5:5-29
+		INJECTED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:multidex:1.0.1] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:25.0.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.0\AndroidManifest.xml:20:5-43
-MERGED from [com.github.dkharrat.nexusdialog:nexusdialog:0.3.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.github.dkharrat.nexusdialog\nexusdialog\0.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-location:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.8.0\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-analytics:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-places:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-gcm:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-iid:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.github.frankiesardo:linearlistview:1.0.1] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.github.frankiesardo\linearlistview\1.0.1\AndroidManifest.xml:4:5-5:47
-MERGED from [com.android.support:multidex:1.0.1] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
-MERGED from [com.github.ganfra:material-spinner:1.1.1] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.github.ganfra\material-spinner\1.1.1\AndroidManifest.xml:6:5-8:41
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [KeonicsSafeTravel:DatePicker:2.2.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\KeonicsSafeTravel\DatePicker\2.2.0\AndroidManifest.xml:8:5-10:41
-MERGED from [KeonicsSafeTravel:circleimageview:unspecified] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\KeonicsSafeTravel\circleimageview\unspecified\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.github.eluleci:flatui:3.0.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.github.eluleci\flatui\3.0.0\AndroidManifest.xml:5:5-7:41
-MERGED from [cn.pedant.sweetalert:library:1.3] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\cn.pedant.sweetalert\library\1.3\AndroidManifest.xml:7:5-9:41
-MERGED from [com.pnikosis:materialish-progress:1.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.pnikosis\materialish-progress\1.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.github.eggheadgames:Siren:1.4.7] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.github.eggheadgames\Siren\1.4.7\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.6.5\AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:beta:1.2.2] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.2.2\AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:23:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.14\AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.3.10] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.10\AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:23:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:23:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.3.10] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.10\AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:23:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:23:5-43
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:design:23.4.0] /Users/pateelhs_agile/.android/build-cache/19c96a5486cb8892eaf4353fedadf813857baa6c/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.0.0] /Users/pateelhs_agile/.android/build-cache/d699e9b82841bf70737c5d08584c352344aadf84/output/AndroidManifest.xml:20:5-43
+MERGED from [com.github.dkharrat.nexusdialog:nexusdialog:0.3.0] /Users/pateelhs_agile/.android/build-cache/e838b70bfe748753bd85a58980608cf308028e70/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-location:9.8.0] /Users/pateelhs_agile/.android/build-cache/9ccbcd3e3568e5c69a4adbbaa42b4dccfb8f3a73/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-analytics:9.8.0] /Users/pateelhs_agile/.android/build-cache/dcdbbb2413823d26d142bb4b6898f652d1d32db6/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] /Users/pateelhs_agile/.android/build-cache/9ab7f59a4d122759de8b73d3bb401a5dba8d4548/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-places:9.8.0] /Users/pateelhs_agile/.android/build-cache/ce591114bde9df6c159351239c976e36ff62095a/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-maps:9.8.0] /Users/pateelhs_agile/.android/build-cache/101dcad1b49edacc63069e8478bd297070cd9407/output/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-gcm:9.8.0] /Users/pateelhs_agile/.android/build-cache/eaeec1101e36aef106b044a8dda2d2582aced1fc/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-iid:9.8.0] /Users/pateelhs_agile/.android/build-cache/336d970c6cbe71bd2a7fb9b782d428f0ec844682/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:9.8.0] /Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] /Users/pateelhs_agile/.android/build-cache/8834000725fd43e8326ac345103e298af250ef7f/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] /Users/pateelhs_agile/.android/build-cache/fe09731937db6c1a6f3488bd5e4ed7bd94fd802f/output/AndroidManifest.xml:17:5-42
+MERGED from [com.github.frankiesardo:linearlistview:1.0.1] /Users/pateelhs_agile/.android/build-cache/e512d3be48aa057b959d30b4c303ab33b2582f7f/output/AndroidManifest.xml:4:5-5:47
+MERGED from [com.android.support:multidex:1.0.1] /Users/pateelhs_agile/.android/build-cache/c36fd4a40198ec6e8c941cad0b8bcc4b0bac38cb/output/AndroidManifest.xml:18:5-42
+MERGED from [com.github.ganfra:material-spinner:1.1.1] /Users/pateelhs_agile/.android/build-cache/e6a89b8bdae0f8756470a04965a0072bf0beaf97/output/AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:recyclerview-v7:23.4.0] /Users/pateelhs_agile/.android/build-cache/80add06a2bc541531574064cdad770d6eceb3e52/output/AndroidManifest.xml:20:5-43
+MERGED from [KeonicsSafeTravel:DatePicker:2.2.0] /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/DatePicker/build/intermediates/bundles/default/AndroidManifest.xml:8:5-10:41
+MERGED from [KeonicsSafeTravel:circleimageview:unspecified] /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/circleimageview/build/intermediates/bundles/default/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.eluleci:flatui:3.0.0] /Users/pateelhs_agile/.android/build-cache/55e338245a3bcc8bfd76454a36a2107de145bc15/output/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.pedant.sweetalert:library:1.3] /Users/pateelhs_agile/.android/build-cache/90dd239b0c00d90fa71e5a0513267ccd53ffe113/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.pnikosis:materialish-progress:1.0] /Users/pateelhs_agile/.android/build-cache/4168e5376e974b83bacf6ded884351389369ffbe/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.eggheadgames:Siren:1.4.7] /Users/pateelhs_agile/.android/build-cache/24b160a36e77afa5dac3ebee960075cf4a132847/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/pateelhs_agile/.android/build-cache/898a232a2e2712e0a6907680288cba6dba4273ef/output/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/pateelhs_agile/.android/build-cache/c6beeb647baf6c2774197e61b6faddc65fc0e5a6/output/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/pateelhs_agile/.android/build-cache/5f76eeae4a019ed3c638ebb70424d4bac5163db7/output/AndroidManifest.xml:20:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] /Users/pateelhs_agile/.android/build-cache/0fc54f1c43702cce53bf009ff550afb5c1d2273f/output/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.2] /Users/pateelhs_agile/.android/build-cache/4c6fac0b05ab447e19262fd893f5215fc0cfb268/output/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] /Users/pateelhs_agile/.android/build-cache/62edeef22a1718aad815f683f21d19aba2a64644/output/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.3.10] /Users/pateelhs_agile/.android/build-cache/85bf2959ed2d8758925a13d87b2b16883900fdf3/output/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.14] /Users/pateelhs_agile/.android/build-cache/cb6500a3aa1e8f75f393555f7c6c778cb1e49353/output/AndroidManifest.xml:23:5-43
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:10:9-38
-		INJECTED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:10:9-38
+		INJECTED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:9:9-35
-		INJECTED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:9:9-35
+		INJECTED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml
 permission#com.agiledge.keocometemployee.permission.C2D_MESSAGE
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:12:5-14:47
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:12:5-14:47
 	android:protectionLevel
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:14:9-44
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:14:9-44
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:13:9-76
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:13:9-76
 uses-permission#com.agiledge.keocometemployee.permission.C2D_MESSAGE
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:16:5-92
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:16:5-92
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:16:22-89
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:16:22-89
 permission#com.agiledge.keocometemployee.permission.MAPS_RECEIVE
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:18:5-20:47
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:18:5-20:47
 	android:protectionLevel
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:20:9-44
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:20:9-44
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:19:9-77
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:19:9-77
 uses-permission#com.agiledge.keocometemployee.permission.MAPS_RECEIVE
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:22:5-93
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:22:5-93
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:22:22-90
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:22:22-90
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:23:5-75
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:23:5-75
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:23:22-72
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:23:22-72
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.8.0\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.8.0\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-maps:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-gcm:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.8.0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-iid:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.8.0\AndroidManifest.xml:21:5-66
-MERGED from [com.github.eggheadgames:Siren:1.4.7] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.github.eggheadgames\Siren\1.4.7\AndroidManifest.xml:11:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.6.5\AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:beta:1.2.2] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.2.2\AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:25:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.14\AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.3.10] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.10\AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:25:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:25:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.3.10] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.10\AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:25:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:25:5-67
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics:9.8.0] /Users/pateelhs_agile/.android/build-cache/dcdbbb2413823d26d142bb4b6898f652d1d32db6/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] /Users/pateelhs_agile/.android/build-cache/9ab7f59a4d122759de8b73d3bb401a5dba8d4548/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:9.8.0] /Users/pateelhs_agile/.android/build-cache/101dcad1b49edacc63069e8478bd297070cd9407/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-gcm:9.8.0] /Users/pateelhs_agile/.android/build-cache/eaeec1101e36aef106b044a8dda2d2582aced1fc/output/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:9.8.0] /Users/pateelhs_agile/.android/build-cache/336d970c6cbe71bd2a7fb9b782d428f0ec844682/output/AndroidManifest.xml:21:5-66
+MERGED from [com.github.eggheadgames:Siren:1.4.7] /Users/pateelhs_agile/.android/build-cache/24b160a36e77afa5dac3ebee960075cf4a132847/output/AndroidManifest.xml:11:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] /Users/pateelhs_agile/.android/build-cache/0fc54f1c43702cce53bf009ff550afb5c1d2273f/output/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.2] /Users/pateelhs_agile/.android/build-cache/4c6fac0b05ab447e19262fd893f5215fc0cfb268/output/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] /Users/pateelhs_agile/.android/build-cache/62edeef22a1718aad815f683f21d19aba2a64644/output/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.3.10] /Users/pateelhs_agile/.android/build-cache/85bf2959ed2d8758925a13d87b2b16883900fdf3/output/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.14] /Users/pateelhs_agile/.android/build-cache/cb6500a3aa1e8f75f393555f7c6c778cb1e49353/output/AndroidManifest.xml:25:5-67
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:24:22-64
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:24:22-64
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:25:5-81
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:25:5-81
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:25:22-78
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:25:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:26:5-79
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:26:5-79
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:26:22-76
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:26:22-76
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:27:5-98
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:27:5-98
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:27:22-95
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:27:22-95
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:28:5-79
-MERGED from [com.google.android.gms:play-services-maps:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\AndroidManifest.xml:19:5-78
-MERGED from [com.google.android.gms:play-services-analytics:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.8.0\AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.8.0\AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-maps:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\AndroidManifest.xml:19:5-78
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:28:5-79
+MERGED from [com.google.android.gms:play-services-analytics:9.8.0] /Users/pateelhs_agile/.android/build-cache/dcdbbb2413823d26d142bb4b6898f652d1d32db6/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] /Users/pateelhs_agile/.android/build-cache/9ab7f59a4d122759de8b73d3bb401a5dba8d4548/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:9.8.0] /Users/pateelhs_agile/.android/build-cache/101dcad1b49edacc63069e8478bd297070cd9407/output/AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:28:22-76
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:28:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:29:5-76
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:29:5-76
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:29:22-73
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:29:22-73
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:30:5-82
-MERGED from [com.google.android.gms:play-services-gcm:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.8.0\AndroidManifest.xml:20:5-81
-MERGED from [com.google.android.gms:play-services-iid:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.8.0\AndroidManifest.xml:20:5-81
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:30:5-82
+MERGED from [com.google.android.gms:play-services-gcm:9.8.0] /Users/pateelhs_agile/.android/build-cache/eaeec1101e36aef106b044a8dda2d2582aced1fc/output/AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:9.8.0] /Users/pateelhs_agile/.android/build-cache/336d970c6cbe71bd2a7fb9b782d428f0ec844682/output/AndroidManifest.xml:20:5-81
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:30:22-79
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:30:22-79
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:31:5-68
-MERGED from [com.google.android.gms:play-services-analytics:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.8.0\AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.8.0\AndroidManifest.xml:24:5-67
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:31:5-68
+MERGED from [com.google.android.gms:play-services-analytics:9.8.0] /Users/pateelhs_agile/.android/build-cache/dcdbbb2413823d26d142bb4b6898f652d1d32db6/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] /Users/pateelhs_agile/.android/build-cache/9ab7f59a4d122759de8b73d3bb401a5dba8d4548/output/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:31:22-65
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:31:22-65
 uses-feature#0x00020000
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:34:5-36:35
-MERGED from [com.google.android.gms:play-services-maps:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\AndroidManifest.xml:21:5-77
-MERGED from [com.google.android.gms:play-services-maps:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\AndroidManifest.xml:21:5-77
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:34:5-36:35
+MERGED from [com.google.android.gms:play-services-maps:9.8.0] /Users/pateelhs_agile/.android/build-cache/101dcad1b49edacc63069e8478bd297070cd9407/output/AndroidManifest.xml:21:5-77
 	android:glEsVersion
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:35:9-41
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:35:9-41
 	android:required
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:36:9-32
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:36:9-32
 supports-screens
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:43:5-49:40
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:43:5-49:40
 	android:largeScreens
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:45:9-36
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:45:9-36
 	android:smallScreens
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:48:9-36
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:48:9-36
 	android:normalScreens
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:46:9-37
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:46:9-37
 	android:xlargeScreens
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:49:9-37
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:49:9-37
 	android:resizeable
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:47:9-34
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:47:9-34
 	android:anyDensity
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:44:9-34
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:44:9-34
 application
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:52:5-279:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:25.0.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.github.dkharrat.nexusdialog:nexusdialog:0.3.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.github.dkharrat.nexusdialog\nexusdialog\0.3.0\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-location:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.8.0\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-analytics:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.8.0\AndroidManifest.xml:26:5-19
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.8.0\AndroidManifest.xml:26:5-19
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\9.8.0\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.8.0\AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-gcm:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.8.0\AndroidManifest.xml:23:5-19
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-iid:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.8.0\AndroidManifest.xml:23:5-19
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.github.frankiesardo:linearlistview:1.0.1] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.github.frankiesardo\linearlistview\1.0.1\AndroidManifest.xml:6:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [KeonicsSafeTravel:circleimageview:unspecified] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\KeonicsSafeTravel\circleimageview\unspecified\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.github.eluleci:flatui:3.0.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.github.eluleci\flatui\3.0.0\AndroidManifest.xml:9:5-20
-MERGED from [cn.pedant.sweetalert:library:1.3] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\cn.pedant.sweetalert\library\1.3\AndroidManifest.xml:11:5-20
-MERGED from [com.pnikosis:materialish-progress:1.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.pnikosis\materialish-progress\1.0\AndroidManifest.xml:11:5-15:19
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.6.5\AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:beta:1.2.2] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.2.2\AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:27:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.14\AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.3.10] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.10\AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:27:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:27:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.3.10] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.10\AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:27:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.14\AndroidManifest.xml:27:5-20
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:52:5-279:19
+MERGED from [com.android.support:design:23.4.0] /Users/pateelhs_agile/.android/build-cache/19c96a5486cb8892eaf4353fedadf813857baa6c/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:25.0.0] /Users/pateelhs_agile/.android/build-cache/d699e9b82841bf70737c5d08584c352344aadf84/output/AndroidManifest.xml:22:5-20
+MERGED from [com.github.dkharrat.nexusdialog:nexusdialog:0.3.0] /Users/pateelhs_agile/.android/build-cache/e838b70bfe748753bd85a58980608cf308028e70/output/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-location:9.8.0] /Users/pateelhs_agile/.android/build-cache/9ccbcd3e3568e5c69a4adbbaa42b4dccfb8f3a73/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-analytics:9.8.0] /Users/pateelhs_agile/.android/build-cache/dcdbbb2413823d26d142bb4b6898f652d1d32db6/output/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] /Users/pateelhs_agile/.android/build-cache/9ab7f59a4d122759de8b73d3bb401a5dba8d4548/output/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-places:9.8.0] /Users/pateelhs_agile/.android/build-cache/ce591114bde9df6c159351239c976e36ff62095a/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:9.8.0] /Users/pateelhs_agile/.android/build-cache/101dcad1b49edacc63069e8478bd297070cd9407/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-gcm:9.8.0] /Users/pateelhs_agile/.android/build-cache/eaeec1101e36aef106b044a8dda2d2582aced1fc/output/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid:9.8.0] /Users/pateelhs_agile/.android/build-cache/336d970c6cbe71bd2a7fb9b782d428f0ec844682/output/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-base:9.8.0] /Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] /Users/pateelhs_agile/.android/build-cache/8834000725fd43e8326ac345103e298af250ef7f/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] /Users/pateelhs_agile/.android/build-cache/fe09731937db6c1a6f3488bd5e4ed7bd94fd802f/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.github.frankiesardo:linearlistview:1.0.1] /Users/pateelhs_agile/.android/build-cache/e512d3be48aa057b959d30b4c303ab33b2582f7f/output/AndroidManifest.xml:6:5-20
+MERGED from [KeonicsSafeTravel:circleimageview:unspecified] /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/circleimageview/build/intermediates/bundles/default/AndroidManifest.xml:9:5-20
+MERGED from [com.github.eluleci:flatui:3.0.0] /Users/pateelhs_agile/.android/build-cache/55e338245a3bcc8bfd76454a36a2107de145bc15/output/AndroidManifest.xml:9:5-20
+MERGED from [cn.pedant.sweetalert:library:1.3] /Users/pateelhs_agile/.android/build-cache/90dd239b0c00d90fa71e5a0513267ccd53ffe113/output/AndroidManifest.xml:11:5-20
+MERGED from [com.pnikosis:materialish-progress:1.0] /Users/pateelhs_agile/.android/build-cache/4168e5376e974b83bacf6ded884351389369ffbe/output/AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/pateelhs_agile/.android/build-cache/898a232a2e2712e0a6907680288cba6dba4273ef/output/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/pateelhs_agile/.android/build-cache/c6beeb647baf6c2774197e61b6faddc65fc0e5a6/output/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/pateelhs_agile/.android/build-cache/5f76eeae4a019ed3c638ebb70424d4bac5163db7/output/AndroidManifest.xml:22:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] /Users/pateelhs_agile/.android/build-cache/0fc54f1c43702cce53bf009ff550afb5c1d2273f/output/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.2] /Users/pateelhs_agile/.android/build-cache/4c6fac0b05ab447e19262fd893f5215fc0cfb268/output/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] /Users/pateelhs_agile/.android/build-cache/62edeef22a1718aad815f683f21d19aba2a64644/output/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.3.10] /Users/pateelhs_agile/.android/build-cache/85bf2959ed2d8758925a13d87b2b16883900fdf3/output/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.14] /Users/pateelhs_agile/.android/build-cache/cb6500a3aa1e8f75f393555f7c6c778cb1e49353/output/AndroidManifest.xml:27:5-20
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:56:9-41
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:56:9-41
 	android:allowBackup
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:54:9-35
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:54:9-35
 	android:icon
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:55:9-41
-		REJECTED from [com.pnikosis:materialish-progress:1.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.pnikosis\materialish-progress\1.0\AndroidManifest.xml:13:9-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:55:9-41
+		REJECTED from [com.pnikosis:materialish-progress:1.0] /Users/pateelhs_agile/.android/build-cache/4168e5376e974b83bacf6ded884351389369ffbe/output/AndroidManifest.xml:13:9-45
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:57:9-40
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:57:9-40
 	tools:replace
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:58:9-37
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:58:9-37
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:53:9-42
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:53:9-42
 activity#com.agiledge.keocometemployee.activities.MainActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:59:9-74:20
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:59:9-74:20
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:63:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:63:13-45
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:61:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:61:13-74
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:62:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:62:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:60:13-52
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:60:13-52
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:65:13-73:29
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:65:13-73:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:66:17-68:48
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:66:17-68:48
 	android:noHistory
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:68:21-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:68:21-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:67:21-62
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:67:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:70:17-72:48
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:70:17-72:48
 	android:noHistory
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:72:21-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:72:21-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:71:21-68
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:71:21-68
 activity#com.agiledge.keocometemployee.activities.Onetimeregister
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:75:9-80:15
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:75:9-80:15
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:78:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:78:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:77:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:77:13-74
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:79:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:79:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:76:13-55
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:76:13-55
 activity#com.agiledge.keocometemployee.activities.OTPActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:81:9-85:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:81:9-85:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:85:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:85:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:83:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:83:13-74
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:84:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:84:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:82:13-51
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:82:13-51
 activity#com.agiledge.keocometemployee.activities.MapClass
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:86:9-89:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:86:9-89:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:89:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:89:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:88:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:88:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:87:13-48
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:87:13-48
 activity#com.agiledge.keocometemployee.navdrawermenu.HelpActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:90:9-93:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:90:9-93:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:93:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:93:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:92:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:92:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:91:13-55
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:91:13-55
 activity#com.agiledge.keocometemployee.navdrawermenu.TripDetailsActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:94:9-98:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:94:9-98:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:98:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:98:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:97:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:97:13-74
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:96:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:96:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:95:13-62
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:95:13-62
 activity#com.agiledge.keocometemployee.navdrawermenu.AboutActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:99:9-103:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:99:9-103:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:103:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:103:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:101:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:101:13-74
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:102:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:102:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:100:13-56
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:100:13-56
 activity#com.agiledge.keocometemployee.navdrawermenu.EmergencyContactActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:104:9-109:48
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:104:9-109:48
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:107:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:107:13-49
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:108:13-37
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:108:13-37
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:106:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:106:13-74
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:109:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:109:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:105:13-67
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:105:13-67
 activity#com.agiledge.keocometemployee.navdrawermenu.TripHistoryActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:110:9-113:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:110:9-113:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:113:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:113:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:112:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:112:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:111:13-62
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:111:13-62
 activity#com.agiledge.keocometemployee.navdrawermenu.ManageBookingActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:114:9-118:47
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:114:9-118:47
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:117:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:117:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:116:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:116:13-74
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:118:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:118:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:115:13-64
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:115:13-64
 activity#com.agiledge.keocometemployee.navdrawermenu.CancelActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:119:9-122:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:119:9-122:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:122:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:122:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:121:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:121:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:120:13-57
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:120:13-57
 activity#com.agiledge.keocometemployee.navdrawermenu.ModifyActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:123:9-126:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:123:9-126:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:126:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:126:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:125:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:125:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:124:13-57
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:124:13-57
 activity#com.agiledge.keocometemployee.navdrawermenu.BookingActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:127:9-130:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:127:9-130:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:130:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:130:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:129:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:129:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:128:13-58
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:128:13-58
 activity#com.agiledge.keocometemployee.navdrawermenu.CancelDetails
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:131:9-134:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:131:9-134:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:134:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:134:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:133:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:133:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:132:13-56
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:132:13-56
 activity#com.agiledge.keocometemployee.navdrawermenu.ModifyDetails
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:135:9-138:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:135:9-138:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:138:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:138:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:137:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:137:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:136:13-56
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:136:13-56
 activity#com.agiledge.keocometemployee.navdrawermenu.FeedBackActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:139:9-142:47
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:139:9-142:47
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:141:13-37
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:141:13-37
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:142:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:142:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:140:13-59
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:140:13-59
 activity#com.agiledge.keocometemployee.activities.LiveTrackingActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:143:9-146:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:143:9-146:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:146:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:146:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:145:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:145:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:144:13-60
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:144:13-60
 activity#com.agiledge.keocometemployee.navdrawermenu.AdhocActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:147:9-150:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:147:9-150:52
 	android:screenOrientation
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:150:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:150:13-49
 	android:configChanges
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:149:13-74
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:149:13-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:148:13-56
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:148:13-56
 activity#com.agiledge.keocometemployee.navdrawermenu.AdocDetails
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:151:9-154:48
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:151:9-154:48
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:153:13-43
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:153:13-43
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:154:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:154:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:152:13-54
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:152:13-54
 activity#com.agiledge.keocometemployee.utilities.DateModify
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:155:9-158:48
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:155:9-158:48
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:157:13-43
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:157:13-43
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:158:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:158:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:156:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:156:13-49
 activity#com.agiledge.keocometemployee.activities.TripHistoryList
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:159:9-162:47
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:159:9-162:47
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:161:13-37
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:161:13-37
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:162:13-44
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:162:13-44
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:160:13-55
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:160:13-55
 activity#com.agiledge.keocometemployee.activities.Home_Activity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:163:9-165:52
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:163:9-165:52
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:165:13-49
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:165:13-49
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:164:13-53
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:164:13-53
 activity#com.agiledge.keocometemployee.activities.TrackMyCabActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:166:9-169:48
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:166:9-169:48
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:168:13-38
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:168:13-38
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:169:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:169:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:167:13-58
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:167:13-58
 activity#com.agiledge.keocometemployee.activities.LateNightCabTrack
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:170:9-173:48
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:170:9-173:48
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:172:13-43
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:172:13-43
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:173:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:173:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:171:13-57
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:171:13-57
 activity#com.agiledge.keocometemployee.activities.Booking
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:175:9-177:48
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:175:9-177:48
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:176:13-48
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:176:13-48
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:177:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:177:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:175:19-53
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:175:19-53
 activity#com.agiledge.keocometemployee.activities.PanicAdminActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:179:9-185:20
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:179:9-185:20
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:180:13-41
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:180:13-41
 	android:windowSoftInputMode
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:181:13-56
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:181:13-56
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:182:13-44
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:182:13-44
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:179:19-93
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:179:19-93
 activity#com.agiledge.keocometemployee.activities.PanicAdminBus
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:187:9-193:20
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:187:9-193:20
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:188:13-41
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:188:13-41
 	android:windowSoftInputMode
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:189:13-56
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:189:13-56
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:190:13-44
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:190:13-44
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:187:19-88
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:187:19-88
 activity#com.agiledge.keocometemployee.utilities.EmplistPanic
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:194:9-200:20
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:194:9-200:20
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:198:13-47
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:198:13-47
 	android:noHistory
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:197:13-37
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:197:13-37
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:196:13-44
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:196:13-44
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:195:13-80
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:195:13-80
 activity#com.agiledge.keocometemployee.activities.TrackBus
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:203:9-206:48
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:203:9-206:48
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:205:13-46
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:205:13-46
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:206:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:206:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:204:13-48
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:204:13-48
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:208:9-210:69
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:208:9-210:69
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] /Users/pateelhs_agile/.android/build-cache/fe09731937db6c1a6f3488bd5e4ed7bd94fd802f/output/AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:210:13-66
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:210:13-66
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:209:13-58
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:209:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:211:9-213:71
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:211:9-213:71
 	android:value
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:213:13-68
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:213:13-68
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:212:13-62
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:212:13-62
 receiver#com.google.android.gms.gcm.GcmReceiver
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:215:9-224:20
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:215:9-224:20
 	android:exported
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:217:13-36
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:217:13-36
 	android:permission
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:218:13-73
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:218:13-73
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:216:13-66
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:216:13-66
 intent-filter#com.agiledge.keocometemployee+com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:219:13-223:29
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:219:13-223:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:220:17-81
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:220:17-81
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:220:25-78
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:220:25-78
 category#com.agiledge.keocometemployee
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:222:17-74
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:222:17-74
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:222:27-71
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:222:27-71
 service#com.agiledge.keocometemployee.GCM.MyGcmListenerService
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:226:9-232:19
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:226:9-232:19
 	android:exported
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:228:13-37
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:228:13-37
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:227:13-53
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:227:13-53
 intent-filter#com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:229:13-231:29
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:229:13-231:29
 service#com.agiledge.keocometemployee.GCM.MyInstanceIDListenerService
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:233:9-239:19
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:233:9-239:19
 	android:exported
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:235:13-37
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:235:13-37
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:234:13-60
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:234:13-60
 intent-filter#com.google.android.gms.iid.InstanceID
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:236:13-238:29
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:236:13-238:29
 action#com.google.android.gms.iid.InstanceID
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:237:17-80
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:237:17-80
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:237:25-77
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:237:25-77
 service#com.agiledge.keocometemployee.GCM.RegistrationIntentService
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:240:9-242:40
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:240:9-242:40
 	android:exported
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:242:13-37
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:242:13-37
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:241:13-58
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:241:13-58
 receiver#com.google.android.gms.analytics.AnalyticsReceiver
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:244:9-250:20
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:244:9-250:20
 	android:enabled
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:246:13-35
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:246:13-35
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:245:13-78
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:245:13-78
 intent-filter#com.google.android.gms.analytics.ANALYTICS_DISPATCH
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:247:13-249:29
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:247:13-249:29
 action#com.google.android.gms.analytics.ANALYTICS_DISPATCH
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:248:17-94
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:248:17-94
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:248:25-91
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:248:25-91
 service#com.google.android.gms.analytics.AnalyticsService
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:252:9-255:40
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:252:9-255:40
 	android:enabled
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:254:13-35
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:254:13-35
 	android:exported
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:255:13-37
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:255:13-37
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:253:13-77
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:253:13-77
 activity#com.agiledge.keocometemployee.navdrawermenu.spinner
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:264:9-59
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:264:9-59
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:264:19-56
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:264:19-56
 service#com.agiledge.keocometemployee.Shuttlebook.FetchAddressIntentService
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:266:9-268:40
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:266:9-268:40
 	android:exported
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:268:13-37
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:268:13-37
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:267:13-66
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:267:13-66
 activity#com.agiledge.keocometemployee.Shuttlebook.Book
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:270:9-54
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:270:9-54
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:270:19-51
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:270:19-51
 activity#com.agiledge.keocometemployee.Shuttlebook.MapsActivity
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:271:9-273:57
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:271:9-273:57
 	android:label
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:272:13-38
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:272:13-38
 	android:theme
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:273:13-45
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:273:13-45
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:271:19-59
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:271:19-59
 meta-data#io.fabric.ApiKey
-ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:276:9-278:72
+ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:276:9-278:72
 	android:value
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:278:13-69
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:278:13-69
 	android:name
-		ADDED from C:\Users\Pateel\Documents\KeonicsSafeTravel\app\src\main\AndroidManifest.xml:277:13-44
+		ADDED from /Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/AndroidManifest.xml:277:13-44
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:19:9-172
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:19:9-172
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:19:9-172
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:19:9-172
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:19:9-172
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:19:9-172
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:19:9-172
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:9.8.0] /Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] /Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] /Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Pateel\Documents\KeonicsSafeTravel\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] /Users/pateelhs_agile/.android/build-cache/cfa0b29d2df57b8fb516ea7f6224930bdffe40d7/output/AndroidManifest.xml:19:19-85

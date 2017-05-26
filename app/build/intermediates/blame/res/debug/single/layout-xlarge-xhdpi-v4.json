@@ -1,286 +1,286 @@
 [
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\panicpopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\panicpopup.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/help.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/help.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\modify.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\modify.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/tripstatuspopup.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/tripstatuspopup.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\throwlayout.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\throwlayout.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/modify.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/modify.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\booking.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\booking.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/adhoc.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/adhoc.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\modify_new.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\modify_new.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/button_end.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/button_end.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\popup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\popup.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/cabalertpopup.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/cabalertpopup.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\cabalertpopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\cabalertpopup.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/trip_history.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/trip_history.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\loading.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\loading.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/dilog_activity_present.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/dilog_activity_present.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\button_end.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\button_end.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/widget_layout.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/widget_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\tripdetailsnew.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\tripdetailsnew.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/panic_admin.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/panic_admin.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\welcomepopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\welcomepopup.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/onetimeregister.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/onetimeregister.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\legentpopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\legentpopup.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/modify_new.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/modify_new.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\spinner_textview.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\spinner_textview.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/panicemplist.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/panicemplist.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\mycab.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\mycab.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/listview_item_row.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/listview_item_row.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\otp.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\otp.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/escortstatus.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/escortstatus.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\my_spinner.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\my_spinner.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/fynn_prompt_dialog_titlebar_skyblue.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/fynn_prompt_dialog_titlebar_skyblue.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\cab_info.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\cab_info.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/confirm_book.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/confirm_book.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\gpspopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\gpspopup.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/locselect.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/locselect.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\custom_dialog.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\custom_dialog.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/activity_track_bus.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/activity_track_bus.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\trip_history.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\trip_history.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/header.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/header.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\tool_bar.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\tool_bar.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/cancel.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/cancel.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\panic_admin.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\panic_admin.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/otp.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/otp.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\widget_layout.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\widget_layout.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/fynn_prompt_dialog_titlebar.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/fynn_prompt_dialog_titlebar.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\fynn_prompt_dialog_titlebar.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\fynn_prompt_dialog_titlebar.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/map.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/map.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\exitpopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\exitpopup.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/modifydetails.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/modifydetails.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\spinner_item.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\spinner_item.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/emergencycontact.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/emergencycontact.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\activity_track_bus.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\activity_track_bus.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/my_spinner.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/my_spinner.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\datemodify.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\datemodify.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/gpspopup.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/gpspopup.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\map.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\map.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/adocdetails.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/adocdetails.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\activity_track_my_cab.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\activity_track_my_cab.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/item_row.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/item_row.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\emergencycontact.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\emergencycontact.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/custom_dialog.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/custom_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\panicemplist.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\panicemplist.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/fynn_prompt_dialog_normal.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/fynn_prompt_dialog_normal.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\canceldetails.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\canceldetails.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/list_row.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/list_row.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\about.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\about.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/managebookingnew.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/managebookingnew.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\activity_book.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\activity_book.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/tripdetails.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/tripdetails.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\feedback.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\feedback.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/mapadmin.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/mapadmin.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\home_activity.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\home_activity.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/canceldetails.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/canceldetails.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\help.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\help.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/datemodify.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/datemodify.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\activity_main.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\activity_main.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/loading.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/loading.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\locselect.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\locselect.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/toolbar.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/toolbar.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\item_row.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\item_row.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/tittle_bar.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/tittle_bar.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\onetimeregister.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\onetimeregister.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/triphistorylist.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/triphistorylist.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\activity_booking.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\activity_booking.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/tripdetailsnew.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/tripdetailsnew.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\adocdetails.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\adocdetails.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/activity_main.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\panicactivatedpopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\panicactivatedpopup.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/home_activity.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/home_activity.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\tripstatuspopup.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\tripstatuspopup.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/feedback.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/feedback.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\fynn_prompt_dialog_normal.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\fynn_prompt_dialog_normal.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/panicactivatedpopup.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/panicactivatedpopup.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\manage_booking.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\manage_booking.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/booking.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/booking.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\emplist_panic.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\emplist_panic.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/spinner_item.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/spinner_item.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\tripdetails.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\tripdetails.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/mapadmin1.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/mapadmin1.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\listview_item_row.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\listview_item_row.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/about.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/about.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\managebookingnew.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\managebookingnew.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/manage_booking.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/manage_booking.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\fynn_prompt_dialog_titlebar_skyblue.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\fynn_prompt_dialog_titlebar_skyblue.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/activity_book.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/activity_book.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\gridview_custom_layout.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\gridview_custom_layout.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/exitpopup.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/exitpopup.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\dilog_activity_present.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\dilog_activity_present.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/activity_spinner.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/activity_spinner.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\triphistorylist.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\triphistorylist.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/tool_bar.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/tool_bar.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\cancel.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\cancel.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/activity_maps.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/activity_maps.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\list_row.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\list_row.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/activity_booking.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/activity_booking.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\activity_spinner.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\activity_spinner.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/spinner_item_divider.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/spinner_item_divider.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\adhoc.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\adhoc.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/activity_maps2.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/activity_maps2.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\mapadmin.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\mapadmin.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/panicpopup.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/panicpopup.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\modifydetails.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\modifydetails.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/mycab.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/mycab.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\tittle_bar.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\tittle_bar.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/throwlayout.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/throwlayout.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\activity_maps.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\activity_maps.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/emplist_panic.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/emplist_panic.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\activity_maps2.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\activity_maps2.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/gridview_custom_layout.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/gridview_custom_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\toolbar.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\toolbar.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/spinner_textview.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/spinner_textview.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\mapadmin1.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\mapadmin1.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/popup.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/popup.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\header.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\header.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/cab_info.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/cab_info.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\spinner_item_divider.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\spinner_item_divider.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/legentpopup.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/legentpopup.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\escortstatus.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\escortstatus.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/welcomepopup.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/welcomepopup.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\layout-xlarge-xhdpi-v4\\confirm_book.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\layout-xlarge-xhdpi\\confirm_book.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/layout-xlarge-xhdpi-v4/activity_track_my_cab.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/layout-xlarge-xhdpi/activity_track_my_cab.xml"
     }
 ]

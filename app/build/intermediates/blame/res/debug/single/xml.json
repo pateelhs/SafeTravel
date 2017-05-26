@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\xml\\agile.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\xml\\agile.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/xml/app_tracker.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/xml/app_tracker.xml"
     },
     {
-        "merged": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\xml\\app_tracker.xml",
-        "source": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\src\\main\\res\\xml\\app_tracker.xml"
+        "merged": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/res/merged/debug/xml/agile.xml",
+        "source": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/src/main/res/xml/agile.xml"
     }
 ]

@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="linearlistview-1.0.1">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.frankiesardo/linearlistview/1.0.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.frankiesardo/linearlistview/1.0.1/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/e512d3be48aa057b959d30b4c303ab33b2582f7f/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e512d3be48aa057b959d30b4c303ab33b2582f7f/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\res\\merged\\debug\\values-w600dp-v13\\values-w600dp-v13.xml",
+        "outputFile": "/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 114
                 },
                 "from": {
-                    "file": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-w600dp-v13\\values-w600dp-v13.xml",
+                    "file": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/values-w600dp-v13/values-w600dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 169
                 },
                 "from": {
-                    "file": "C:\\Users\\Pateel\\Documents\\KeonicsSafeTravel\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-w600dp-v13\\values-w600dp-v13.xml",
+                    "file": "/Users/pateelhs_agile/.android/build-cache/1d8edf66acf66a1ca00e9e21205ab520a3c66a52/output/res/values-w600dp-v13/values-w600dp-v13.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,

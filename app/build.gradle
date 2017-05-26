@@ -23,12 +23,12 @@ android {
         KeonicsSafetravel {
             keyAlias 'agiledge'
             keyPassword 'agiledge'
-            storeFile file('C:\\Users\\Pateel\\Documents/SafetravelKeonics.jks')
+            storeFile file('/Users/pateelhs_agile/AndroidStudioProjects/KeonicsSafeTravel/SafetravelKeonics.jks')
             storePassword 'agiledge'
         }
     }
     compileSdkVersion 25
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '25.0.0'
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.agiledge.keocometemployee"
